@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>难以支持非业务属性的拓展</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/难以支持非业务属性的拓展/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/难以支持非业务属性的拓展/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1723" class="ax_default paragraph">
+        <div id="u1723_div" class=""></div>
+        <div id="u1723_text" class="text ">
+          <p><span>抛开一切语言自动添加的字段，我开发者自己也可能会主动添加字段来满足</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1724" class="ax_default heading_3">
+        <div id="u1724_div" class=""></div>
+        <div id="u1724_text" class="text ">
+          <p><span>以js为例，我们现在有个需求：跟踪person对象的修改次数，保存在名为 ver 的变量里</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1725" class="ax_default paragraph">
+        <div id="u1725_div" class=""></div>
+        <div id="u1725_text" class="text ">
+          <p><span>我自己心里知道，这个ver不是个人信息，最终不会写到数据库里，只是我编程时用来管理数据的一种临时对象，例如脏值检查、快速判断是否被修改过等目的</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1726" class="ax_default paragraph">
+        <div id="u1726_div" class=""></div>
+        <div id="u1726_text" class="text ">
+          <p><span>而至于这个修改方法，我可以写个update(){...ver++...}，为了避免干扰，我还可以把它放到链上</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1727" class="ax_default paragraph">
+        <div id="u1727_div" class=""></div>
+        <div id="u1727_text" class="text ">
+          <p><span>而ver 是跟随每个数据的，所以只能放到 实例 内部</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1728" class="ax_default box_1">
+        <div id="u1728_div" class=""></div>
+        <div id="u1728_text" class="text ">
+          <p><span>class Person {</span></p><p><span>&nbsp;&nbsp;&nbsp; constructor(name, age, city) {</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; this.name = name;</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; this.age = age;</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; this.city = city;</span></p><p><span style="color:#0000FF;">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; this.ver = 0</span></p><p><span>&nbsp;&nbsp;&nbsp; }</span></p><p><span>}</span></p><p><span>Person.prototype.update=function(){this.ver++}</span></p><p><span><br></span></p><p><span>let person = new Person(&quot;张三&quot;, 25, &quot;北京&quot;);</span></p><p><span style="color:#0000FF;">person.update()</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1729" class="ax_default box_1">
+        <div id="u1729_div" class=""></div>
+        <div id="u1729_text" class="text ">
+          <p><span>name：张三</span></p><p><span>age：25</span></p><p><span>city：“北京”</span></p><p><span style="color:#0000FF;">ver：0</span></p><p><span>[[prototype]]: Person.prototype</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1730" class="ax_default box_1">
+        <div id="u1730_div" class=""></div>
+        <div id="u1730_text" class="text ">
+          <p><span>...</span></p><p><span style="color:#0000FF;">update()</span></p><p><span>...</span></p><p><span>[[prototype]]: Object.prototype</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1731" class="ax_default heading_3">
+        <div id="u1731_div" class=""></div>
+        <div id="u1731_text" class="text ">
+          <p><span>person</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1732" class="ax_default heading_3">
+        <div id="u1732_div" class=""></div>
+        <div id="u1732_text" class="text ">
+          <p><span>Person.prototype</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1733" class="ax_default paragraph">
+        <div id="u1733_div" class=""></div>
+        <div id="u1733_text" class="text ">
+          <p><span>我真正希望的是：</span></p><p><span>1、{name、age、city}作为核心业务数据，需保存进数据库里</span></p><p><span>2、而ver字段仅仅是软件运行时的一种跟踪数据的手段，而不是我的业务数据，</span><span style="color:#0000FF;">但在传统OOP语言里，我只能将其和业务数据混杂在一起</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1734" class="ax_default label">
+        <div id="u1734_div" class=""></div>
+        <div id="u1734_text" class="text ">
+          <p><span>非业务数据 会 污染核心业务数据</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u1735" class="ax_default line">
+        <img id="u1735_img" class="img " src="images/c指针_语法复杂/u85.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1736" class="ax_default paragraph">
+        <div id="u1736_div" class=""></div>
+        <div id="u1736_text" class="text ">
+          <p><span>然后就又回到了原点：</span></p><p><span>打印对象时，我得手动剔除ver</span></p><p><span>对象拷贝时，我得手动剔除ver</span></p><p><span>网络传输时，我得手动剔除ver</span></p><p><span>写数据库时，我得手动剔除ver</span></p><p><span>....</span></p><p><span>总之想做任何针对a的访问时，这个ver都会永永远远干扰我，它始终和我的业务数据混在一起了</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1737" class="ax_default heading_3">
+        <div id="u1737_div" class=""></div>
+        <div id="u1737_text" class="text ">
+          <p><span style="color:#008000;">-- 当然，任何一个编程语言都可以通过各种设计模式，拐弯抹角的封装子类、封装代理来处理，但终究很麻烦，这是一种妥协，而不是我真正想表达的意思</span></p><p><span style="color:#008000;">-- 而实际上从一开始， 我就已经知道了{name age city}是我要的对象，ver只是这个数据对象的属性，但传统OOP根本不支持这种建模</span></p><p><span style="color:#0000FF;">——说到底，传统编程压根就没真正搞清楚什么是对象、什么是属性这一基本问题</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1738" class="ax_default box_1">
+        <div id="u1738_div" class=""></div>
+      </div>
+    </div>
+  </body>
+</html>

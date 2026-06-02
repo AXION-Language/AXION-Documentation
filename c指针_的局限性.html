@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>C指针 的局限性</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/c指针_的局限性/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/c指针_的局限性/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u91" class="ax_default box_1">
+        <div id="u91_div" class=""></div>
+        <div id="u91_text" class="text ">
+          <p><span>void *p;</span></p><p><span>p++;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // ❌ 编译报错：不能对 void* 做指针运算（指针运算必须依赖明确Type，只有Type才能提供步长）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u92" class="ax_default label">
+        <div id="u92_div" class=""></div>
+        <div id="u92_text" class="text ">
+          <p><span>【指针】与【类型系统】强耦合，这注定限制了指针操作的上限</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u93" class="ax_default line">
+        <img id="u93_img" class="img " src="images/c指针_语法复杂/u85.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u94" class="ax_default paragraph">
+        <div id="u94_div" class=""></div>
+        <div id="u94_text" class="text ">
+          <p><span>这似乎有些反直觉，照理说除了机器码/汇编，最底层的语言不就是C了吗？</span></p><p><span>理论上现如今没有任何一门编程语言的指针操控能力比C更强——然而事实并非如此</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u95" class="ax_default paragraph">
+        <div id="u95_div" class=""></div>
+        <div id="u95_text" class="text ">
+          <p><span>如果是 int* p=0x1000&nbsp; ; </span></p><p><span>p+1 = 0x1004</span></p><p><span><br></span></p><p><span>如果是 double* p=0x1000; </span></p><p><span>p+1 = 0x1008</span></p><p><span><br></span></p><p><span>只有当T=char时，即 char* p=0x1000;</span></p><p><span>p+1 才=0x1001</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u96" class="ax_default paragraph">
+        <div id="u96_div" class=""></div>
+        <div id="u96_text" class="text ">
+          <p><span>假设有个T类型的指针</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u97" class="ax_default paragraph">
+        <div id="u97_div" class=""></div>
+        <div id="u97_text" class="text ">
+          <p><span>T* p = 0x1000</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u98" class="ax_default paragraph">
+        <div id="u98_div" class=""></div>
+        <div id="u98_text" class="text ">
+          <p><span>p+n 并不是0x1001，而是 0x1000 + (sizeof T)*n</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u99" class="ax_default paragraph">
+        <div id="u99_div" class=""></div>
+        <div id="u99_text" class="text ">
+          <p><span>也就是说：除非指针直接指向char类型，否则无法进行“步长=1字节”的最细粒度的指针操作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u100" class="ax_default paragraph">
+        <div id="u100_div" class=""></div>
+        <div id="u100_text" class="text ">
+          <p><span>没错，不可思议的是，即便在C语言里你也无法实现这一点</span></p><p><span>否则，你就得强迫自己定义一个char类型的指针（这显然是莫名其妙的）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u101" class="ax_default paragraph">
+        <div id="u101_div" class=""></div>
+        <div id="u101_text" class="text ">
+          <p><span>那如果定义成void*类型呢？编译错误</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u102" class="ax_default box_1">
+        <div id="u102_div" class=""></div>
+        <div id="u102_text" class="text ">
+          <p><span>// 分配一个 chunk（5个int，共20字节）</span></p><p><span>&nbsp;&nbsp;&nbsp; int* chunk = malloc(5 * sizeof(int));</span></p><p><span><br></span></p><p><span>// 强制转型，并第3个字节写入数据</span></p><p><span>&nbsp;((char*)chunk)[2] = 0xFF;</span></p><p><span><br></span></p><p><span>//强制转型，并往某个自主指定的位置写数据</span></p><p><span>*( (int*)0x1000 ) = 0x12345678;&nbsp;&nbsp; </span></p><p><span><br></span></p><p><span>//再混几个二级指针进去，那就更乱套了，感觉不是在写代码，而是在做面试题</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u103" class="ax_default paragraph">
+        <div id="u103_div" class=""></div>
+        <div id="u103_text" class="text ">
+          <p><span>你可以强制转型成*char，但也导致这些“毫无语义价值”的转型语句充斥着你的代码，一大堆括号、一大堆*&amp;.....维护起来非常痛苦</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u104" class="ax_default paragraph">
+        <div id="u104_div" class=""></div>
+        <div id="u104_text" class="text ">
+          <p><span>有些特殊对象是没法定义类型的，但我又确实需要往特定位置写数据</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u105" class="ax_default box_1">
+        <div id="u105_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u106" class="ax_default box_1">
+        <div id="u106_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u107" class="ax_default paragraph">
+        <div id="u107_div" class=""></div>
+        <div id="u107_text" class="text ">
+          <p><span>例如堆管理器内，对于同一个堆块chunk</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u108" class="ax_default heading_3">
+        <div id="u108_div" class=""></div>
+        <div id="u108_text" class="text ">
+          <p><span>fd</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u109" class="ax_default box_1">
+        <div id="u109_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u110" class="ax_default heading_3">
+        <div id="u110_div" class=""></div>
+        <div id="u110_text" class="text ">
+          <p><span>bk</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u111" class="ax_default heading_3">
+        <div id="u111_div" class=""></div>
+        <div id="u111_text" class="text ">
+          <p><span>空闲</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u112" class="ax_default box_1">
+        <div id="u112_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u113" class="ax_default heading_3">
+        <div id="u113_div" class=""></div>
+        <div id="u113_text" class="text ">
+          <p><span>userdata</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u114" class="ax_default heading_3">
+        <div id="u114_div" class=""></div>
+        <div id="u114_text" class="text ">
+          <p><span>空闲时</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u115" class="ax_default heading_3">
+        <div id="u115_div" class=""></div>
+        <div id="u115_text" class="text ">
+          <p><span>有数据时</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u116" class="ax_default paragraph">
+        <div id="u116_div" class=""></div>
+        <div id="u116_text" class="text ">
+          <p><span>同一个chunk</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u117" class="ax_default paragraph">
+        <div id="u117_div" class=""></div>
+        <div id="u117_text" class="text ">
+          <p><span>--这用union联合体无法实现</span></p><p><span>因为联合体无法处理fd和bk同时出现的情况</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u118" class="ax_default paragraph">
+        <div id="u118_div" class=""></div>
+        <div id="u118_text" class="text ">
+          <p><span>虽说是能实现吧，但开发者心里始终有根刺：为什么我非得依赖char类型？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u119" class="ax_default paragraph">
+        <div id="u119_div" class=""></div>
+        <div id="u119_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">你无法承诺未来char的编码体系是稳定不变的</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">char类型本身是存字符的： a b c..z&nbsp; A B C..Z 空格 回车 &amp; @ ~....各种符号 </span></p><p><span style="font-family:'微软雅黑';font-weight:400;">暂时来看，char的编码规则是8位(1字节)，所以可以姑且投机取巧</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">但你能确保未来char的编码系统不会变化吗？假设char未来变成16位编码了，你怎么办？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u120" class="ax_default paragraph">
+        <div id="u120_div" class=""></div>
+        <div id="u120_text" class="text ">
+          <p><span>这根本不是“字节数 相等的对象可以互相转型”能够解释的</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u121" class="ax_default box_1">
+        <div id="u121_div" class=""></div>
+        <div id="u121_text" class="text ">
+          <p><span>&nbsp;&nbsp;&nbsp; int a = 0x1000;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span></p><p><span>&nbsp;&nbsp;&nbsp; int *p = (int*)a;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; // 整型转为指针</span></p><p><span>或是</span></p><p><span>&nbsp;&nbsp;&nbsp; int* p = 0x1000;&nbsp; &nbsp;&nbsp; </span></p><p><span>&nbsp;&nbsp;&nbsp; int a = (int)a;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; // 指针转整型</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u122" class="ax_default paragraph">
+        <div id="u122_div" class=""></div>
+        <div id="u122_text" class="text ">
+          <p><span>例如int和32位地址，C语言允许转型</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u123" class="ax_default paragraph">
+        <div id="u123_div" class=""></div>
+        <div id="u123_text" class="text ">
+          <p><span>但实际上这是有风险的，因为int类型的编码规则里，首位是符号位（0是正数、1是负数）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u124" class="ax_default heading_3">
+        <div id="u124_div" class=""></div>
+        <div id="u124_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;color:#0000FF;">1</span><span style="font-family:'微软雅黑';font-weight:400;"> 1 1 1&nbsp; &nbsp; 0 1 1 0&nbsp; &nbsp; 1 1 1 0&nbsp; &nbsp;&nbsp; 0 0 1 1&nbsp; &nbsp; &nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u125" class="ax_default paragraph">
+        <div id="u125_div" class=""></div>
+        <div id="u125_text" class="text ">
+          <p><span>对于负数int，转成地址后数值会完全改变，丢失掉原本的数学语义</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u126" class="ax_default paragraph">
+        <div id="u126_div" class=""></div>
+        <div id="u126_text" class="text ">
+          <p><span>int 实际只有15位数据位</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Curly Bracket) -->
+      <div id="u127" class="ax_default box_1">
+        <img id="u127_img" class="img " src="images/c指针_的局限性/u127.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u128" class="ax_default paragraph">
+        <div id="u128_div" class=""></div>
+        <div id="u128_text" class="text ">
+          <p><span>2的15次方-1数据（-32767 ~ 32767）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u129" class="ax_default paragraph">
+        <div id="u129_div" class=""></div>
+        <div id="u129_text" class="text ">
+          <p><span>符号位</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u130" class="ax_default paragraph">
+        <div id="u130_div" class=""></div>
+        <div id="u130_text" class="text ">
+          <p><span>而32位地址就是32位</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u131" class="ax_default paragraph">
+        <div id="u131_div" class=""></div>
+        <div id="u131_text" class="text ">
+          <p><span>-- 负数里不用考虑 -0 所以能多一个</span></p><p><span>例如如果只有2位，1符号位+1数据位</span></p><p><span>10 并不是-0 (+0已经被00..表示过了)，所以10就可用来代表-2(用来表示-0就浪费了)</span></p><p><span>11是-1，则刚好和01的+1相加抵消成00，所以10就得是-2</span></p><p><span>负数的补码规则：对应正数的反码+1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u132" class="ax_default heading_3">
+        <div id="u132_div" class=""></div>
+        <div id="u132_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;color:#0000FF;">1</span><span style="font-family:'微软雅黑';font-weight:400;"> 1 1 1&nbsp; &nbsp; 0 1 1 0&nbsp; &nbsp; 1 1 1 0&nbsp; &nbsp;&nbsp; 0 0 1 1&nbsp; &nbsp; &nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u133" class="ax_default paragraph">
+        <div id="u133_div" class=""></div>
+        <div id="u133_text" class="text ">
+          <p><span>= −2333</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u134" class="ax_default paragraph">
+        <div id="u134_div" class=""></div>
+        <div id="u134_text" class="text ">
+          <p><span>= 63203</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u135" class="ax_default paragraph">
+        <div id="u135_div" class=""></div>
+        <div id="u135_text" class="text ">
+          <p><span>说到底，这一切都只是投机取巧、只是一种刚好，缺乏直接的语义支持</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u136" class="ax_default paragraph">
+        <div id="u136_div" class=""></div>
+        <div id="u136_text" class="text ">
+          <p><span>虽说负数本身就没法当做地址，但难道正数、无符号整数unsigned int就一定可以吗？</span></p><p><span>——这一切都依赖于现存的编码方式，你无法承诺int、unsigned int编码体系未来是否会改变</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Vertical Line) -->
+      <div id="u137" class="ax_default line">
+        <img id="u137_img" class="img " src="images/c指针_的局限性/u137.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u138" class="ax_default paragraph">
+        <div id="u138_div" class=""></div>
+        <div id="u138_text" class="text ">
+          <p><span>同样一个逻辑，与其说拐弯抹角用各种奇技淫巧去拟合</span></p><p><span>我们当然希望能用更精确的语义直抒胸臆，这才开发者的浪漫，才是语言的优雅</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u139" class="compound ax_default line" WidgetHeight="1" WidgetWidth="152" CompoundMode="true">
+        <img id="u139_img" class="singleImg img " src="images/c指针_的局限性/u139.png"/>
+        <div id="u139p000" class="ax_vector_shape" WidgetTopLeftX="-0.487179487179487" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.487179487179487" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.487179487179487" WidgetBottomLeftY="0" WidgetBottomRightX="0.487179487179487" WidgetBottomRightY="0">
+          <img id="u139p000_img" class="img " src="images/c指针_的局限性/u139p000.png"/>
+        </div>
+        <div id="u139p001" class="ax_vector_shape" WidgetTopLeftX="-0.136363636363636" WidgetTopLeftY="0" WidgetTopRightX="6.77272727272727" WidgetTopRightY="0" WidgetBottomLeftX="-0.136363636363636" WidgetBottomLeftY="0.05" WidgetBottomRightX="6.77272727272727" WidgetBottomRightY="0.05">
+          <img id="u139p001_img" class="img " src="images/c指针_的局限性/u139p001.png"/>
+        </div>
+        <div id="u139p002" class="ax_vector_shape" WidgetTopLeftX="6.77272727272727" WidgetTopLeftY="0" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0" WidgetBottomLeftX="6.77272727272727" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="-0.05">
+          <img id="u139p002_img" class="img " src="images/c指针_的局限性/u139p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u140" class="ax_default paragraph">
+        <div id="u140_div" class=""></div>
+        <div id="u140_text" class="text ">
+          <p><span>-- 抛开一切复杂度不谈</span></p><p><span>现在我面前一个存储设备，我需要将数据写入某个位置，结果你让我非得转型成char类型，这本身就是一件很令人膈应的事情</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u141" class="ax_default paragraph">
+        <div id="u141_div" class=""></div>
+        <div id="u141_text" class="text ">
+          <p><span>为什么需要更自由的指针？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u142" class="ax_default label">
+        <div id="u142_div" class=""></div>
+        <div id="u142_text" class="text ">
+          <p><span>C语言能从技术层面实现“自由指针”，但缺乏直接的语义支持</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u143" class="ax_default line">
+        <img id="u143_img" class="img " src="images/c指针_语法复杂/u85.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u144" class="ax_default paragraph">
+        <div id="u144_div" class=""></div>
+        <div id="u144_text" class="text ">
+          <p><span>我们之所以用C、用Java、用Python.....这些编程语言，而不是直接去写汇编和机器码</span></p><p><span>就是因为语义对开发者的意义，不仅关乎写出代码的那一刻，更关乎长远维护的成本</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u145" class="ax_default paragraph">
+        <div id="u145_div" class=""></div>
+        <div id="u145_text" class="text ">
+          <p><span>既然说char可以，那如果有另一种1字节的类型T，那是不是T可以了？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u146" class="ax_default paragraph">
+        <div id="u146_div" class=""></div>
+        <div id="u146_text" class="text ">
+          <p><span>当然，从技术角度说T当然可以，但这就意味着一个大型项目里有的人用char、用的人用T1、有的人用T2....</span></p><p><span>关键是char、T1、T2...本身可能会承载业务语义，这些语义混杂在一起是难以维护的</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u147" class="ax_default box_1">
+        <div id="u147_div" class=""></div>
+      </div>
+    </div>
+  </body>
+</html>
