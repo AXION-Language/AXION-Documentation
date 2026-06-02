@@ -68,7 +68,7 @@
       <div id="u274" class="ax_default paragraph">
         <div id="u274_div" class=""></div>
         <div id="u274_text" class="text ">
-          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">【AXION指针传递性】是一个非常方便的特性</span></p><p><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">尤其是将指针传递给子函数对源目标进行修改时，指针始终指向目标对象</span></p><p><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">无论有多少级指针嵌套 x-&gt;.....-&gt;c-&gt;b-&gt;a，你都可以通过x直接修改到源对象a，而不用担心“多级指针”所带来的复杂度</span></p><p><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;color:#0000FF;">类型签名“int x-&gt;” 已充分说明了这一点：符号x一定会指向目标int</span></p>
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">【AXION指针传递性】是一个非常方便的特性</span></p><p><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">尤其是将指针传递给子函数对源目标进行修改时，指针始终指向目标对象</span></p><p><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">无论有多少级指针嵌套 x-&gt;.....-&gt;c-&gt;b-&gt;a，你都可以通过x直接修改到源对象a，而不用担心“多级指针”所带来的复杂度</span></p><p><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;color:#0000FF;">类型签名“int x-&gt;” 已充分说明了这一点：符号x一定会直接指向目标int （一次解引用）</span></p>
         </div>
       </div>
 
@@ -221,7 +221,7 @@
       <div id="u294" class="ax_default heading_3">
         <div id="u294_div" class=""></div>
         <div id="u294_text" class="text ">
-          <p><span>这种理解本身是客观存在的——这是【单纯的、静态的 符号替换】，关系在编译时就固定，运行时完全不需要地址/指针进行重定向，之后在【解释型对象】里我们会给出关于它的方案</span></p><p><span><br></span></p><p><span>但【AXION的指针】并不是服务于这种场景的</span></p><p><span>【AXION的指针】被设计为依赖运行时地址，是一种【运行时的动态指针】——为了和传统编程的指针变量对应上</span></p>
+          <p><span>这种理解本身是客观存在的——这是【单纯的、静态的 符号替换】，关系在编译时就固定，运行时完全不需要地址/指针进行重定向，之后在【解释型句柄】里我们会给出关于它的方案</span></p><p><span><br></span></p><p><span>但【AXION的指针】并不是服务于这种场景的</span></p><p><span>【AXION的指针】被设计为依赖运行时地址，是一种【运行时的动态指针】——为了和传统编程的指针变量对应上</span></p>
         </div>
       </div>
 
@@ -785,7 +785,7 @@
       <div id="u364" class="ax_default heading_3">
         <div id="u364_div" class=""></div>
         <div id="u364_text" class="text ">
-          <p><span>下面我们将详细解释为什么</span></p><p><span>下面各种所谓的“错误理解”，并非真正的错误——这些理解本身是客观存在且合理的，之后我们很快会说到，它们都有自己对应的解决方案，但不是&quot;-&gt;&quot;</span></p>
+          <p><span>下面我们将详细解释为什么</span></p><p><span>下面各种所谓的“错误理解”，并非真正的错误——这些理解本身是客观存在且合理的，之后我们很快会说到，它们都有自己对应的解决方案，但不是指针&quot;-&gt;&quot;</span></p>
         </div>
       </div>
 
@@ -793,7 +793,7 @@
       <div id="u365" class="ax_default label">
         <div id="u365_div" class=""></div>
         <div id="u365_text" class="text ">
-          <p><span>正确理解: AXION指针是【指针型句柄】-&gt;【符号所代表的对象】</span></p>
+          <p><span>正确理解: AXION指针是指向对象的，而不是指向句柄的</span></p>
         </div>
       </div>
 
@@ -1011,7 +1011,7 @@
       <div id="u392" class="ax_default heading_3">
         <div id="u392_div" class=""></div>
         <div id="u392_text" class="text ">
-          <p><span style="color:#0000FF;">d 指向 c所代表的对象</span></p><p><span style="color:#0000FF;">c是指针，所以c代表的对象是 c_addr~ </span></p><p><span style="color:#008000;">所以最终结果是 d_addr = c_addr </span></p>
+          <p><span>d 指向 c所代表的对象</span></p><p><span>c是指针，所以c代表的对象是 c_addr~ </span></p><p><span>所以最终结果是 d_addr = c_addr </span></p>
         </div>
       </div>
 
@@ -2713,7 +2713,7 @@
       <div id="u603" class="ax_default heading_3">
         <div id="u603_div" class=""></div>
         <div id="u603_text" class="text ">
-          <p><span>和之前不同的是，c和d在语义上已经不再是int对象，而是个单纯的地址对象 —— </span><span style="color:#0000FF;">注意类型签名已经不再是int了，c是~int、d是~~int 这说明它们现在只是个地址</span></p><p><span>你需要手动解引用才能访问目标对象(不能像上面那样直接print c 、print d了)</span></p>
+          <p><span>和之前不同的是，c和d在语义上已经不再是int对象，而是个单纯的地址对象 —— </span><span style="color:#0000FF;">类型签名已经不再是int了，c是~int、d是~~int 这说明它们现在只是个地址</span></p><p><span>你需要手动解引用才能访问目标对象(不能像上面那样直接print c 、print d了)</span></p>
         </div>
       </div>
 
@@ -2729,7 +2729,7 @@
       <div id="u605" class="ax_default heading_3">
         <div id="u605_div" class=""></div>
         <div id="u605_text" class="text ">
-          <p><span>所以，若只是为了访问与操作目标对象，那肯定是直接用指针语法-&gt;更方便——</span><span style="color:#0000FF;">直接操作源对象是最普遍、最常用的场景，所以AXION有单独的语法支持</span></p>
+          <p><span>所以，若只是为了访问与操作目标对象，那肯定是直接用指针语法-&gt;更方便——</span><span style="color:#0000FF;">直接操作源对象是最普遍、最常用的场景</span></p>
         </div>
       </div>
 
