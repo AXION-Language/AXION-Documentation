@@ -1,4 +1,4 @@
-# [AXION](https://axion-language.github.io/AXION-Documentation/)是一门编译型编程语言
+# [AXION是一门编译型编程语言](https://axion-language.github.io/AXION-Documentation/)
 
 ### 在传统编程里，我的思维被语言绑架：
 

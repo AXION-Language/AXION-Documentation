@@ -25,23 +25,39 @@
     <div id="base" class="">
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u1190" class="ax_default label">
-        <div id="u1190_div" class=""></div>
-        <div id="u1190_text" class="text ">
+      <div id="u1188" class="ax_default label">
+        <div id="u1188_div" class=""></div>
+        <div id="u1188_text" class="text ">
           <p><span>符号 与 句柄 </span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u1191" class="ax_default line">
-        <img id="u1191_img" class="img " src="images/c指针_语法复杂/u85.png"/>
+      <div id="u1189" class="ax_default line">
+        <img id="u1189_img" class="img " src="images/c指针_语法复杂/u85.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1190" class="ax_default paragraph">
+        <div id="u1190_div" class=""></div>
+        <div id="u1190_text" class="text ">
+          <p><span>是AXION里具有奠基意义的设计哲学，是对人类基本世界观的抽象</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1191" class="ax_default paragraph">
+        <div id="u1191_div" class=""></div>
+        <div id="u1191_text" class="text ">
+          <p><span>上文已经或多或少涉及到，这个模块花三个章节做个系统性的讲解</span></p>
+        </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u1192" class="ax_default paragraph">
         <div id="u1192_div" class=""></div>
         <div id="u1192_text" class="text ">
-          <p><span>是AXION里具有奠基意义的设计哲学，是对人类基本世界观的抽象</span></p>
+          <p><span>这里我们引入了一个新概念：句柄 (Handle)</span></p>
         </div>
       </div>
 
@@ -49,7 +65,7 @@
       <div id="u1193" class="ax_default paragraph">
         <div id="u1193_div" class=""></div>
         <div id="u1193_text" class="text ">
-          <p><span>上文已经或多或少涉及到，这个模块花三个章节做个系统性的讲解</span></p>
+          <p><span>&nbsp;&quot;句柄&quot; 这个命名借鉴自windows平台，是一个用来标识对象或者项目的“无符号整数”</span></p>
         </div>
       </div>
 
@@ -57,15 +73,15 @@
       <div id="u1194" class="ax_default paragraph">
         <div id="u1194_div" class=""></div>
         <div id="u1194_text" class="text ">
-          <p><span>这里我们引入了一个新概念：句柄 (Handle)</span></p>
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">那为什么不直接叫“符号”？非得搞出个“句柄”的概念？</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">正如“C语言地址与指针”的关系：</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">指针本质上就是个地址，但是 int* 解引用能得到一个int，所以我们人为给它包装了一层“指针”概念</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑';font-weight:400;">类比“符号 与 句柄”也是同理</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">a、b、c....在客观上只是符号，纯粹的图形本身没任何语义</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">但我们主观上需要它承担 &quot;访问对象&quot; 的职责，所以给它一个新概念叫“句柄(Handle)”</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑';font-weight:400;">再例如“沙盘中的 🚩 与 军队”</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">🚩本身可能是塑料/木头做的，但显然我们在意的根本不是🚩本身是塑料还是木头</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">🚩在沙盘里只是一个【象征物】，我在意的是它所象征的军队</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">——这是为了强调职能 (代表什么)，而不是强调【象征物】本身是什么</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u1195" class="ax_default paragraph">
+      <div id="u1195" class="ax_default box_1">
         <div id="u1195_div" class=""></div>
         <div id="u1195_text" class="text ">
-          <p><span>&nbsp;&quot;句柄&quot; 这个命名借鉴自windows平台，是一个用来标识对象或者项目的“无符号整数”</span></p>
+          <p><span>窗口句柄 HWND hWnd = 00000000001208A4&nbsp;&nbsp; </span></p><p><span>文件句柄 HANDLE hFile = 0x00000000000000B4</span></p><p><span>进程句柄 HANDLE hProcess = 0x00000000000000F0</span></p>
         </div>
       </div>
 
@@ -73,15 +89,15 @@
       <div id="u1196" class="ax_default paragraph">
         <div id="u1196_div" class=""></div>
         <div id="u1196_text" class="text ">
-          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">那为什么不直接叫“符号”？非得搞出个“句柄”的概念？</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">正如“C语言地址与指针”的关系：</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">指针本质上就是个地址，但是 int* 解引用能得到一个int，所以我们人为给它包装了一层“指针”概念</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑';font-weight:400;">类比“符号 与 句柄”也是同理</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">a、b、c....在客观上只是符号，纯粹的图形本身没任何语义</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">但我们主观上需要它承担 &quot;访问对象&quot; 的职责，所以给它一个新概念叫“句柄(Handle)”</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑';font-weight:400;">再例如“沙盘中的 🚩 与 军队”</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">🚩本身可能是塑料/木头做的，但显然我们在意的根本不是🚩本身是塑料还是木头</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">🚩在沙盘里只是一个【象征物】，我在意的是它所象征的军队</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">——这是为了强调职能 (代表什么)，而不是强调【象征物】本身是什么</span></p>
+          <p><span>闹麻了，那为什么不像传统编程那样直接叫“变量”？</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u1197" class="ax_default box_1">
+      <div id="u1197" class="ax_default paragraph">
         <div id="u1197_div" class=""></div>
         <div id="u1197_text" class="text ">
-          <p><span>窗口句柄 HWND hWnd = 00000000001208A4&nbsp;&nbsp; </span></p><p><span>文件句柄 HANDLE hFile = 0x00000000000000B4</span></p><p><span>进程句柄 HANDLE hProcess = 0x00000000000000F0</span></p>
+          <p><span>那么，将其抽象一下——</span></p><p><span>本质上就是通过&quot;身份证、手机号...或是符号、整数...&quot; 之类【象征物】来访问特定的资源，有这种价值的【象征物】就称为【句柄】</span></p>
         </div>
       </div>
 
@@ -89,29 +105,13 @@
       <div id="u1198" class="ax_default paragraph">
         <div id="u1198_div" class=""></div>
         <div id="u1198_text" class="text ">
-          <p><span>闹麻了，那为什么不像传统编程那样直接叫“变量”？</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u1199" class="ax_default paragraph">
-        <div id="u1199_div" class=""></div>
-        <div id="u1199_text" class="text ">
-          <p><span>那么，将其抽象一下——</span></p><p><span>本质上就是通过&quot;身份证、手机号...或是符号、整数...&quot; 之类【象征物】来访问特定的资源，有这种价值的【象征物】就称为【句柄】</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u1200" class="ax_default paragraph">
-        <div id="u1200_div" class=""></div>
-        <div id="u1200_text" class="text ">
           <p><span style="font-family:'微软雅黑';font-weight:400;">这并非故弄玄虚</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑';font-weight:400;">而是传统编程【变量】的概念过于狭隘</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">1、只能用来表示开始 a=1 之后 a=2 这种单纯的数值改变</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">2、与内存强耦合，一个变量就对应底层一块内存数据</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑';font-weight:400;">而在AXION里，【句柄】功能异常强大，</span><span style="font-family:'微软雅黑';font-weight:400;">远远超出单纯的【符号、变量、值】这些概念范畴</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">在之前指针问题里，句柄所不可替代的价值已初露锋芒，而在之后很快会学到的【APP(Attrbute-Property-Payload)建模理论里】你会更加惊叹于它的价值</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u1201" class="ax_default box_1">
-        <div id="u1201_div" class=""></div>
+      <div id="u1199" class="ax_default box_1">
+        <div id="u1199_div" class=""></div>
       </div>
     </div>
   </body>

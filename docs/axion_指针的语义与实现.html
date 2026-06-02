@@ -605,7 +605,7 @@
       <div id="u808" class="ax_default paragraph">
         <div id="u808_div" class=""></div>
         <div id="u808_text" class="text ">
-          <p><span>2、int，所以输出dd 0x1000</span></p>
+          <p><span>2、b_ADDR偏移4，要实现b_ADDR=~a，所以输出dd 0x1000 </span></p>
         </div>
       </div>
 
@@ -864,7 +864,7 @@
       <div id="u837" class="ax_default paragraph">
         <div id="u837_div" class=""></div>
         <div id="u837_text" class="text ">
-          <p><span>--上文也说过，这完全是C++设计者自己的固执，个人觉得毫无道理</span></p><p><span><br></span></p><p><span>实际上，借助即将学习到的“解释型对象”，你可以实现真正的“静态映射”语义( 完全不占任何运行时内存，甚至连ptr都不存在) ——这完全是开发者自己的自由</span></p><p><span>到时候，你能用它实现更多、更有想象力、更自由、更丰富的语义——就像自然语言那样，定义新概念、然后使用它</span></p><p><span>这里的“指针”仅仅“解释型对象”所有应用场景中的冰山一角</span></p><p><span><br></span></p><p><span>但根据上文，可以大致猜测到的是：所谓“解释型”，对应的就是这个“句柄类型：解释型”的字段</span></p>
+          <p><span>传统编程：指针是地址</span></p>
         </div>
       </div>
 
@@ -872,141 +872,138 @@
       <div id="u838" class="ax_default paragraph">
         <div id="u838_div" class=""></div>
         <div id="u838_text" class="text ">
-          <p><span>传统编程：指针是地址</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u839" class="ax_default paragraph">
-        <div id="u839_div" class=""></div>
-        <div id="u839_text" class="text ">
           <p><span>AXION对“指针”的定义和传统编程不同</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u840" class="ax_default line">
-        <img id="u840_img" class="img " src="images/axion_指针的语义与实现/u789.png"/>
+      <div id="u839" class="ax_default line">
+        <img id="u839_img" class="img " src="images/axion_指针的语义与实现/u789.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u840" class="ax_default paragraph">
+        <div id="u840_div" class=""></div>
+        <div id="u840_text" class="text ">
+          <p><span>AXION：指针是一种“句柄类型”</span></p>
+        </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u841" class="ax_default paragraph">
         <div id="u841_div" class=""></div>
         <div id="u841_text" class="text ">
-          <p><span>AXION：指针是一种“句柄类型”</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u842" class="ax_default paragraph">
-        <div id="u842_div" class=""></div>
-        <div id="u842_text" class="text ">
           <p><span style="color:#0000FF;">1、我们可通过a来访问对象，所以符号a也称为“句柄”</span></p><p><span><br></span></p><p><span>2、当定义int a-&gt;x 后，此时&quot;符号a是一个int类型的指针&quot;，这有两层含义——</span></p><p><span>a的【数据类型】是int</span></p><p><span>a是【指针型】句柄</span></p><p><span><br></span></p><p><span>3、之后我们说</span></p><p><span>“指针a、指针b”——</span><span style="color:#0000FF;">指的是 句柄本身，与目标对象无关</span></p><p><span>“对象a、对象b”——指的是 符号所指向的目标对象</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u843" class="ax_default box_1">
-        <div id="u843_div" class=""></div>
-        <div id="u843_text" class="text ">
+      <div id="u842" class="ax_default box_1">
+        <div id="u842_div" class=""></div>
+        <div id="u842_text" class="text ">
           <p><span>&nbsp;int* a=&amp;x&nbsp; </span></p><p><span>&nbsp;// x本身是地址(例如 地址0x1000)，但我们称之为“指针”</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u844" class="ax_default paragraph">
-        <div id="u844_div" class=""></div>
-        <div id="u844_text" class="text ">
+      <div id="u843" class="ax_default paragraph">
+        <div id="u843_div" class=""></div>
+        <div id="u843_text" class="text ">
           <p><span>--这一节里，可简单理解为一种“关系模式、关系类型”，就像箭头那样</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u845" class="ax_default box_1">
-        <div id="u845_div" class=""></div>
-        <div id="u845_text" class="text ">
+      <div id="u844" class="ax_default box_1">
+        <div id="u844_div" class=""></div>
+        <div id="u844_text" class="text ">
           <p><span>&nbsp;int a-&gt;x&nbsp;&nbsp; </span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u846" class="ax_default box_1">
-        <div id="u846_div" class=""></div>
-        <div id="u846_text" class="text ">
-          <p><span>符号：a</span></p><p><span>对象类型：int</span></p><p><span style="color:#0000FF;">句柄类型：解释型</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u847" class="ax_default paragraph">
-        <div id="u847_div" class=""></div>
-        <div id="u847_text" class="text ">
+      <div id="u845" class="ax_default paragraph">
+        <div id="u845_div" class=""></div>
+        <div id="u845_text" class="text ">
           <p><span style="font-family:'微软雅黑';font-weight:400;">2、b_ADDR的类型签名~int 在符号表里被拆分为2部分</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">具体原因在之后《</span><span style="font-family:'微软雅黑';font-weight:400;">地址与类型系统的关系</span><span style="font-family:'微软雅黑';font-weight:400;">》中会解释</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u848" class="ax_default connector">
-        <img id="u848_seg0" class="img " src="images/axion_指针的语义与实现/u848_seg0.png" alt="u848_seg0"/>
-        <img id="u848_seg1" class="img " src="images/axion_指针的语义与实现/u848_seg1.png" alt="u848_seg1"/>
-        <img id="u848_seg2" class="img " src="images/axion_指针的语义与实现/u848_seg2.png" alt="u848_seg2"/>
-        <div id="u848_text" class="text " style="display:none; visibility: hidden">
+      <div id="u846" class="ax_default connector">
+        <img id="u846_seg0" class="img " src="images/axion_指针的语义与实现/u846_seg0.png" alt="u846_seg0"/>
+        <img id="u846_seg1" class="img " src="images/axion_指针的语义与实现/u846_seg1.png" alt="u846_seg1"/>
+        <img id="u846_seg2" class="img " src="images/axion_指针的语义与实现/u846_seg2.png" alt="u846_seg2"/>
+        <div id="u846_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u849" class="ax_default connector">
-        <img id="u849_seg0" class="img " src="images/axion_指针的语义与实现/u849_seg0.png" alt="u849_seg0"/>
-        <img id="u849_seg1" class="img " src="images/axion_指针的语义与实现/u849_seg1.png" alt="u849_seg1"/>
-        <img id="u849_seg2" class="img " src="images/axion_指针的语义与实现/u848_seg2.png" alt="u849_seg2"/>
-        <div id="u849_text" class="text " style="display:none; visibility: hidden">
+      <div id="u847" class="ax_default connector">
+        <img id="u847_seg0" class="img " src="images/axion_指针的语义与实现/u847_seg0.png" alt="u847_seg0"/>
+        <img id="u847_seg1" class="img " src="images/axion_指针的语义与实现/u847_seg1.png" alt="u847_seg1"/>
+        <img id="u847_seg2" class="img " src="images/axion_指针的语义与实现/u846_seg2.png" alt="u847_seg2"/>
+        <div id="u847_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u850" class="ax_default heading_3">
-        <div id="u850_div" class=""></div>
-        <div id="u850_text" class="text ">
+      <div id="u848" class="ax_default heading_3">
+        <div id="u848_div" class=""></div>
+        <div id="u848_text" class="text ">
           <p><span>-- AXION可编译成其他能直接操控CPU与内存的底层语言，例如机器码、汇编、C、LLVM.....甚至AXION自己</span></p><p><span>但本章节姑且先编译成 NASM、C、LLVM ，这会让你更有“实感”</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u851" class="ax_default heading_3">
-        <div id="u851_div" class=""></div>
-        <div id="u851_text" class="text ">
+      <div id="u849" class="ax_default heading_3">
+        <div id="u849_div" class=""></div>
+        <div id="u849_text" class="text ">
           <p><span>b</span></p>
         </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u850" class="ax_default paragraph">
+        <div id="u850_div" class=""></div>
+        <div id="u850_text" class="text ">
+          <p><span>a是 int类型的指针/引用</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Curly Bracket) -->
+      <div id="u851" class="ax_default box_1">
+        <img id="u851_img" class="img " src="images/axion_指针的语义与实现/u851.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u852" class="ax_default paragraph">
         <div id="u852_div" class=""></div>
         <div id="u852_text" class="text ">
-          <p><span>a是 int类型的指针/引用</span></p>
+          <p><span>按C的思路：a本质是地址，只不过叫指针</span></p><p><span>按C++的思路：一种抽象的、指针里面又包了层对象的“特殊对象类型”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u853" class="ax_default paragraph">
+        <div id="u853_div" class=""></div>
+        <div id="u853_text" class="text ">
+          <p><span>a是 int类型 的指针</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Curly Bracket) -->
-      <div id="u853" class="ax_default box_1">
-        <img id="u853_img" class="img " src="images/axion_指针的语义与实现/u853.png"/>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u854" class="ax_default paragraph">
-        <div id="u854_div" class=""></div>
-        <div id="u854_text" class="text ">
-          <p><span>按C的思路：a本质是地址，只不过叫指针</span></p><p><span>按C++的思路：一种抽象的、指针里面又包了层对象的“特殊对象类型”</span></p>
-        </div>
+      <div id="u854" class="ax_default box_1">
+        <img id="u854_img" class="img " src="images/axion_指针的语义与实现/u854.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u855" class="ax_default paragraph">
         <div id="u855_div" class=""></div>
         <div id="u855_text" class="text ">
-          <p><span>a是 int类型 的指针</span></p>
+          <p><span>对象类型</span></p>
         </div>
       </div>
 
@@ -1019,20 +1016,23 @@
       <div id="u857" class="ax_default paragraph">
         <div id="u857_div" class=""></div>
         <div id="u857_text" class="text ">
-          <p><span>对象类型</span></p>
+          <p><span>句柄类型</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Curly Bracket) -->
-      <div id="u858" class="ax_default box_1">
-        <img id="u858_img" class="img " src="images/axion_指针的语义与实现/u858.png"/>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u858" class="ax_default paragraph">
+        <div id="u858_div" class=""></div>
+        <div id="u858_text" class="text ">
+          <p><span>--符号与对象之间的关系</span></p>
+        </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u859" class="ax_default paragraph">
         <div id="u859_div" class=""></div>
         <div id="u859_text" class="text ">
-          <p><span>句柄类型</span></p>
+          <p><span>-- AXION的句柄类型不止一种，指针型只是其一</span></p>
         </div>
       </div>
 
@@ -1040,43 +1040,27 @@
       <div id="u860" class="ax_default paragraph">
         <div id="u860_div" class=""></div>
         <div id="u860_text" class="text ">
-          <p><span>--符号与对象之间的关系</span></p>
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">3个句柄 a、b、b_ADDR</span><span style="font-family:'微软雅黑';font-weight:400;"> ：</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">a代表的对象固定为0x1000位置的数据</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">b代表的对象是b_ADDR的解引用(b_ADDR~)，会随着b_ADDR的值动态改变</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">b_ADDR是编译器根据 b-&gt;自动生成的</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">2个对象</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">0x1000里的10 —— 可用句柄a和b访问)</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">0x1004里的0x1000 —— 可用句柄b_ADDR访问)</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u861" class="ax_default paragraph">
+      <div id="u861" class="ax_default box_1">
         <div id="u861_div" class=""></div>
-        <div id="u861_text" class="text ">
-          <p><span>-- AXION的句柄类型不止一种，指针型只是其一</span></p>
-        </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u862" class="ax_default paragraph">
         <div id="u862_div" class=""></div>
         <div id="u862_text" class="text ">
-          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">3个句柄 a、b、b_ADDR</span><span style="font-family:'微软雅黑';font-weight:400;"> ：</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">a代表的对象固定为0x1000位置的数据</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">b代表的对象是b_ADDR的解引用(b_ADDR~)，会随着b_ADDR的值动态改变</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">b_ADDR是编译器根据 b-&gt;自动生成的</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">2个对象</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">0x1000里的10 —— 可用句柄a和b访问)</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">0x1004里的0x1000 —— 可用句柄b_ADDR访问)</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u863" class="ax_default box_1">
-        <div id="u863_div" class=""></div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u864" class="ax_default paragraph">
-        <div id="u864_div" class=""></div>
-        <div id="u864_text" class="text ">
           <p><span>--【句柄】只是编译期概念（为了让编译器定位到对象而存在的助记符），不占运行时内存；</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u865" class="ax_default paragraph">
-        <div id="u865_div" class=""></div>
-        <div id="u865_text" class="text ">
+      <div id="u863" class="ax_default paragraph">
+        <div id="u863_div" class=""></div>
+        <div id="u863_text" class="text ">
           <p><span>-- 运行时真正占内存的才叫对象</span></p>
         </div>
       </div>
