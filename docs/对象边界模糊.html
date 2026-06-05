@@ -25,157 +25,157 @@
     <div id="base" class="">
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u1701" class="ax_default label">
-        <div id="u1701_div" class=""></div>
-        <div id="u1701_text" class="text ">
+      <div id="u1715" class="ax_default label">
+        <div id="u1715_div" class=""></div>
+        <div id="u1715_text" class="text ">
           <p><span>对象边界模糊</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u1702" class="ax_default line">
-        <img id="u1702_img" class="img " src="images/“一切皆对象”？/u1472.png"/>
+      <div id="u1716" class="ax_default line">
+        <img id="u1716_img" class="img " src="images/“一切皆对象”？/u1486.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u1703" class="ax_default paragraph">
-        <div id="u1703_div" class=""></div>
-        <div id="u1703_text" class="text ">
+      <div id="u1717" class="ax_default paragraph">
+        <div id="u1717_div" class=""></div>
+        <div id="u1717_text" class="text ">
           <p><span>我甚至无法解释清楚“我的对象是什么”</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u1704" class="ax_default box_1">
-        <div id="u1704_div" class=""></div>
-        <div id="u1704_text" class="text ">
+      <div id="u1718" class="ax_default box_1">
+        <div id="u1718_div" class=""></div>
+        <div id="u1718_text" class="text ">
           <p><span>name：张三</span></p><p><span>age：25</span></p><p><span>city：“北京”</span></p><p><span style="color:#0000FF;">[[prototype]]: Object.prototype</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u1705" class="ax_default heading_3">
-        <div id="u1705_div" class=""></div>
-        <div id="u1705_text" class="text ">
-          <p><span>console.log(person)</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u1706" class="ax_default box_1">
-        <div id="u1706_div" class=""></div>
-        <div id="u1706_text" class="text ">
-          <p><span>0: 1</span></p><p><span>1: 2</span></p><p><span>2: 3</span></p><p><span>3: 4</span></p><p><span>4: 5</span></p><p><span style="color:#0000FF;">length = 5</span></p><p><span style="color:#0000FF;">[[prototype]]: Array(0)</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u1707" class="ax_default box_1">
-        <div id="u1707_div" class=""></div>
-        <div id="u1707_text" class="text ">
-          <p><span>let person = { </span></p><p><span>name: &quot;张三&quot;, </span></p><p><span>age: 25 ,</span></p><p><span>city:&quot;北京&quot;}</span></p><p><span><br></span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u1708" class="ax_default box_1">
-        <div id="u1708_div" class=""></div>
-        <div id="u1708_text" class="text ">
-          <p><span>let arr = [1,2,3,4,5]</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u1709" class="ax_default heading_3">
-        <div id="u1709_div" class=""></div>
-        <div id="u1709_text" class="text ">
-          <p><span>我以为person是：</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u1710" class="ax_default paragraph">
-        <div id="u1710_div" class=""></div>
-        <div id="u1710_text" class="text ">
-          <p><span>对有追求的开发者而言，编译器/解释器强行给我塞数据是非常令人不安的，每次使用总会伴随着心智负担</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u1711" class="ax_default paragraph">
-        <div id="u1711_div" class=""></div>
-        <div id="u1711_text" class="text ">
-          <p><span>打印对象时，会默认把[[prototype]]打印出来混淆视听吗？</span></p><p><span>对象拷贝时，会默认把[[prototype]]拷贝一份增加成本吗？？</span></p><p><span>网络传输时，会自动把[[prototype]]中的东西也传出去浪费带宽吗？</span></p><p><span>写数据库时，[[prototype]]字段也会自动写进去吗？虽然我知道JS是引用，但是否给我擅自带出个指针？</span></p><p><span>.......</span></p><p><span>当然最终我可以说服自己，因为[[...]]这个符号本身就很特殊，确实可以做特殊处理，所以姑且能接受</span></p><p><span>但话说回来，既然你JS已经给它特殊化了，那为什么我不能直接访问[[...]]</span></p><p><span>而非得经过一路找到原型链最顶层Object.prototype.__proto__(getter+setter)，绕那么一大圈才能访问到自己的[[prototype]]？</span><span style="color:#0000FF;">越是深层次的对象，访问.__proto__的性能越差</span></p><p><span>—— 这种为访问__proto__而产生的原型链查找成本我是无法接受的</span></p><p><span><br></span></p><p><span><br></span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u1712" class="ax_default heading_3">
-        <div id="u1712_div" class=""></div>
-        <div id="u1712_text" class="text ">
-          <p><span>-- 你别跟我说什么V8引擎有缓存优化，作为一名开发者，我在意的是这个逻辑本身是否合理，而不是你最终用什么手段拐弯抹角去优化它</span></p><p><span>——亲自掌控底层逻辑，这是我作为开发者的尊严与骄傲，而现在却被语言&quot;厂商&quot;剥夺了</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u1713" class="ax_default paragraph">
-        <div id="u1713_div" class=""></div>
-        <div id="u1713_text" class="text ">
-          <p><span>抛开[[prototype]]，难道就可以安心了吗？——不</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u1714" class="ax_default box_1">
-        <div id="u1714_div" class=""></div>
-        <div id="u1714_text" class="text ">
-          <p><span>[1,2,3,4,5]</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u1715" class="ax_default heading_3">
-        <div id="u1715_div" class=""></div>
-        <div id="u1715_text" class="text ">
-          <p><span>我以为arr是：</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u1716" class="ax_default heading_3">
-        <div id="u1716_div" class=""></div>
-        <div id="u1716_text" class="text ">
-          <p><span>console.log(arr)</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u1717" class="ax_default heading_3">
-        <div id="u1717_div" class=""></div>
-        <div id="u1717_text" class="text ">
-          <p><span>我姑且认为 [[prototype]]很特殊，所以不会干扰；但length=5，又会再次令我焦虑</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u1718" class="ax_default paragraph">
-        <div id="u1718_div" class=""></div>
-        <div id="u1718_text" class="text ">
-          <p><span>打印对象时，会默认把length打印出来混淆视听吗？</span></p><p><span>对象拷贝时，会默认把length拷贝一份增加成本吗？？</span></p><p><span>网络传输时，会自动把length中的东西也传出去浪费带宽吗？</span></p><p><span>写数据库时，length字段默认写进去吗？</span></p><p><span>.......</span></p><p><span style="color:#0000FF;">原型链/继承链上那些属性算不算对象一部分？</span></p><p><span>当别人问我 arr有几个成员时，我该回答5个？6个？还是7个？.......</span><span style="color:#0000FF;">链上的呢？</span></p><p><span>在for循环遍历时，length会干扰遍历吗？</span><span style="color:#0000FF;">链上的呢？</span><span>——当然相信任何语言都一定会处理好，但终究还是令人不安</span></p><p><span>...</span></p><p><span style="color:#0000FF;"><br></span></p><p><span>说起来，我就想要一个干干净净的[1,2,3,4,5]根本做不到，语言总是会无视我的主观意愿给我塞一堆“不花精力去了解又感觉不放心，但去了解又很花精力”的东西——总之心智负担很重</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u1719" class="ax_default paragraph">
+      <div id="u1719" class="ax_default heading_3">
         <div id="u1719_div" class=""></div>
         <div id="u1719_text" class="text ">
-          <p><span>——但这不是JS一家的问题，而是所有传统OOP编程语言都是如此</span></p>
+          <p><span>console.log(person)</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u1720" class="ax_default box_1">
         <div id="u1720_div" class=""></div>
+        <div id="u1720_text" class="text ">
+          <p><span>0: 1</span></p><p><span>1: 2</span></p><p><span>2: 3</span></p><p><span>3: 4</span></p><p><span>4: 5</span></p><p><span style="color:#0000FF;">length = 5</span></p><p><span style="color:#0000FF;">[[prototype]]: Array(0)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1721" class="ax_default box_1">
+        <div id="u1721_div" class=""></div>
+        <div id="u1721_text" class="text ">
+          <p><span>let person = { </span></p><p><span>name: &quot;张三&quot;, </span></p><p><span>age: 25 ,</span></p><p><span>city:&quot;北京&quot;}</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1722" class="ax_default box_1">
+        <div id="u1722_div" class=""></div>
+        <div id="u1722_text" class="text ">
+          <p><span>let arr = [1,2,3,4,5]</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1723" class="ax_default heading_3">
+        <div id="u1723_div" class=""></div>
+        <div id="u1723_text" class="text ">
+          <p><span>我以为person是：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1724" class="ax_default paragraph">
+        <div id="u1724_div" class=""></div>
+        <div id="u1724_text" class="text ">
+          <p><span>对有追求的开发者而言，编译器/解释器强行给我塞数据是非常令人不安的，每次使用总会伴随着心智负担</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1725" class="ax_default paragraph">
+        <div id="u1725_div" class=""></div>
+        <div id="u1725_text" class="text ">
+          <p><span>打印对象时，会默认把[[prototype]]打印出来混淆视听吗？</span></p><p><span>对象拷贝时，会默认把[[prototype]]拷贝一份增加成本吗？？</span></p><p><span>网络传输时，会自动把[[prototype]]中的东西也传出去浪费带宽吗？</span></p><p><span>写数据库时，[[prototype]]字段也会自动写进去吗？虽然我知道JS是引用，但是否给我擅自带出个指针？</span></p><p><span>.......</span></p><p><span>当然最终我可以说服自己，因为[[...]]这个符号本身就很特殊，确实可以做特殊处理，所以姑且能接受</span></p><p><span>但话说回来，既然你JS已经给它特殊化了，那为什么我不能直接访问[[...]]</span></p><p><span>而非得经过一路找到原型链最顶层Object.prototype.__proto__(getter+setter)，绕那么一大圈才能访问到自己的[[prototype]]？</span><span style="color:#0000FF;">越是深层次的对象，访问.__proto__的性能越差</span></p><p><span>—— 这种为访问__proto__而产生的原型链查找成本我是无法接受的</span></p><p><span><br></span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1726" class="ax_default heading_3">
+        <div id="u1726_div" class=""></div>
+        <div id="u1726_text" class="text ">
+          <p><span>-- 你别跟我说什么V8引擎有缓存优化，作为一名开发者，我在意的是这个逻辑本身是否合理，而不是你最终用什么手段拐弯抹角去优化它</span></p><p><span>——亲自掌控底层逻辑，这是我作为开发者的尊严与骄傲，而现在却被语言&quot;厂商&quot;剥夺了</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1727" class="ax_default paragraph">
+        <div id="u1727_div" class=""></div>
+        <div id="u1727_text" class="text ">
+          <p><span>抛开[[prototype]]，难道就可以安心了吗？——不</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1728" class="ax_default box_1">
+        <div id="u1728_div" class=""></div>
+        <div id="u1728_text" class="text ">
+          <p><span>[1,2,3,4,5]</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1729" class="ax_default heading_3">
+        <div id="u1729_div" class=""></div>
+        <div id="u1729_text" class="text ">
+          <p><span>我以为arr是：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1730" class="ax_default heading_3">
+        <div id="u1730_div" class=""></div>
+        <div id="u1730_text" class="text ">
+          <p><span>console.log(arr)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1731" class="ax_default heading_3">
+        <div id="u1731_div" class=""></div>
+        <div id="u1731_text" class="text ">
+          <p><span>我姑且认为 [[prototype]]很特殊，所以不会干扰；但length=5，又会再次令我焦虑</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1732" class="ax_default paragraph">
+        <div id="u1732_div" class=""></div>
+        <div id="u1732_text" class="text ">
+          <p><span>打印对象时，会默认把length打印出来混淆视听吗？</span></p><p><span>对象拷贝时，会默认把length拷贝一份增加成本吗？？</span></p><p><span>网络传输时，会自动把length中的东西也传出去浪费带宽吗？</span></p><p><span>写数据库时，length字段默认写进去吗？</span></p><p><span>.......</span></p><p><span style="color:#0000FF;">原型链/继承链上那些属性算不算对象一部分？</span></p><p><span>当别人问我 arr有几个成员时，我该回答5个？6个？还是7个？.......</span><span style="color:#0000FF;">链上的呢？</span></p><p><span>在for循环遍历时，length会干扰遍历吗？</span><span style="color:#0000FF;">链上的呢？</span><span>——当然相信任何语言都一定会处理好，但终究还是令人不安</span></p><p><span>...</span></p><p><span style="color:#0000FF;"><br></span></p><p><span>说起来，我就想要一个干干净净的[1,2,3,4,5]根本做不到，语言总是会无视我的主观意愿给我塞一堆“不花精力去了解又感觉不放心，但去了解又很花精力”的东西——总之心智负担很重</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1733" class="ax_default paragraph">
+        <div id="u1733_div" class=""></div>
+        <div id="u1733_text" class="text ">
+          <p><span>——但这不是JS一家的问题，而是所有传统OOP编程语言都是如此</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1734" class="ax_default box_1">
+        <div id="u1734_div" class=""></div>
       </div>
     </div>
   </body>

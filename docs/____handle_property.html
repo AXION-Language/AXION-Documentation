@@ -1,0 +1,631 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>句柄属性Handle Property</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/____handle_property/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/____handle_property/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1954" class="ax_default paragraph">
+        <div id="u1954_div" class=""></div>
+        <div id="u1954_text" class="text ">
+          <p><span>句柄属性 Handle Property</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u1955" class="ax_default line">
+        <img id="u1955_img" class="img " src="images/object_payload_property/u1840.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1956" class="ax_default box_1">
+        <div id="u1956_div" class=""></div>
+        <div id="u1956_text" class="text ">
+          <p><span>int a : 10</span></p><p><span><br></span></p><p><span>fn update1 ( int n-&gt;){ n = Math.randomInt(0,100) }</span></p><p><span><br></span></p><p><span>update1 (a)</span></p><p><span>update1 (a)</span></p><p><span>update1 (a)</span></p><p><span>print a</span></p><p><span><br></span></p><p><span><br></span></p><p><span>int b : 10</span></p><p><span>int ver ：0</span></p><p><span><br></span></p><p><span>fn update2 (int n-&gt;,int v-&gt;){</span></p><p><span>&nbsp;&nbsp;&nbsp; n = request(&quot;https://...&quot;).data</span></p><p><span>&nbsp;&nbsp;&nbsp; v++</span></p><p><span>}</span></p><p><span><br></span></p><p><span>update2(b,b_ver)</span></p><p><span>update2(b,b_ver)</span></p><p><span>update2(b,b_ver)</span></p><p><span>print b,b_ver</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1957" class="ax_default heading_3">
+        <div id="u1957_div" class=""></div>
+        <div id="u1957_text" class="text ">
+          <p><span>定义</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1958" class="ax_default heading_3">
+        <div id="u1958_div" class=""></div>
+        <div id="u1958_text" class="text ">
+          <p><span>仅依附于句柄、绑定于句柄的属性，与具体对象无关</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1959" class="ax_default box_1">
+        <div id="u1959_div" class=""></div>
+        <div id="u1959_text" class="text ">
+          <p><span>let b ={</span></p><p><span style="color:#0000FF;">value :10</span></p><p><span>ver:0</span></p><p><span>function update(){...}</span></p><p><span>}</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1960" class="ax_default heading_3">
+        <div id="u1960_div" class=""></div>
+        <div id="u1960_text" class="text ">
+          <p><span>--记录b被修改的次数</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1961" class="ax_default heading_3">
+        <div id="u1961_div" class=""></div>
+        <div id="u1961_text" class="text ">
+          <p><span>--随机修改数据 </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1962" class="ax_default heading_3">
+        <div id="u1962_div" class=""></div>
+        <div id="u1962_text" class="text ">
+          <p><span>--多次随机修改a</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1963" class="ax_default heading_3">
+        <div id="u1963_div" class=""></div>
+        <div id="u1963_text" class="text ">
+          <p><span>--打印b和b_ver</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1964" class="ax_default heading_3">
+        <div id="u1964_div" class=""></div>
+        <div id="u1964_text" class="text ">
+          <p><span>--从服务器获得真实数据，并更新版本号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1965" class="ax_default heading_3">
+        <div id="u1965_div" class=""></div>
+        <div id="u1965_text" class="text ">
+          <p><span>--b的值都来自于服务器真实数据</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1966" class="ax_default heading_3">
+        <div id="u1966_div" class=""></div>
+        <div id="u1966_text" class="text ">
+          <p><span>--a的初值是10，之后的值都是随机数</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u1967" class="ax_default line">
+        <img id="u1967_img" class="img " src="images/____handle_property/u1967.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1968" class="ax_default heading_3">
+        <div id="u1968_div" class=""></div>
+        <div id="u1968_text" class="text ">
+          <p><span>--打印a</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1969" class="ax_default heading_3">
+        <div id="u1969_div" class=""></div>
+        <div id="u1969_text" class="text ">
+          <p><span>普通写法</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1970" class="ax_default box_1">
+        <div id="u1970_div" class=""></div>
+        <div id="u1970_text" class="text ">
+          <p><span style="color:#0000FF;">#</span><span>fn </span><span style="color:#0000FF;">update</span><span>() {&nbsp; </span><span style="color:#0000FF;">this</span><span>= Math.randomInt(0,100) }</span></p><p><span>int a : 10</span></p><p><span><br></span></p><p><span>a#update()</span></p><p><span>a.update()</span></p><p><span>a.update()</span></p><p><span>print a</span></p><p><span><br></span></p><p><span><br></span></p><p><span><br></span></p><p><span style="color:#0000FF;">#</span><span>fn </span><span style="color:#0000FF;">update</span><span> (){</span></p><p><span>&nbsp;&nbsp;&nbsp; </span><span style="color:#0000FF;">this</span><span> = request(&quot;https://...&quot;).data</span></p><p><span>&nbsp;&nbsp;&nbsp; </span><span style="color:#0000FF;">ver</span><span>++</span></p><p><span>}</span></p><p><span style="color:#0000FF;">#</span><span>int ver ：0</span></p><p><span>int b : 10</span></p><p><span><br></span></p><p><span>b#update()</span></p><p><span>b.update()</span></p><p><span>b.update()</span></p><p><span>print b,b#ver</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1971" class="ax_default heading_3">
+        <div id="u1971_div" class=""></div>
+        <div id="u1971_text" class="text ">
+          <p><span>Payload-Property Model </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u1972" class="compound ax_default line" WidgetHeight="1" WidgetWidth="304" CompoundMode="true">
+        <img id="u1972_img" class="singleImg img " src="images/____handle_property/u1972.png"/>
+        <div id="u1972p000" class="ax_vector_shape" WidgetTopLeftX="-0.493506493506494" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.493506493506494" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.493506493506494" WidgetBottomLeftY="0" WidgetBottomRightX="0.493506493506494" WidgetBottomRightY="0">
+          <img id="u1972p000_img" class="img " src="images/____handle_property/u1972p000.png"/>
+        </div>
+        <div id="u1972p001" class="ax_vector_shape" WidgetTopLeftX="0" WidgetTopLeftY="-0.5" WidgetTopRightX="76" WidgetTopRightY="-0.5" WidgetBottomLeftX="0" WidgetBottomLeftY="0" WidgetBottomRightX="76" WidgetBottomRightY="0">
+          <img id="u1972p001_img" class="img " src="images/axion_指针的语义与实现/u818p001.png"/>
+        </div>
+        <div id="u1972p002" class="ax_vector_shape" WidgetTopLeftX="13.6818181818182" WidgetTopLeftY="0" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0" WidgetBottomLeftX="13.6818181818182" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="-0.05">
+          <img id="u1972p002_img" class="img " src="images/c指针_的局限性/u139p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1973" class="ax_default heading_3">
+        <div id="u1973_div" class=""></div>
+        <div id="u1973_text" class="text ">
+          <p><span>--无需担心和b的update重名</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u1974" class="ax_default line">
+        <img id="u1974_img" class="img " src="images/____handle_property/u1974.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1975" class="ax_default heading_3">
+        <div id="u1975_div" class=""></div>
+        <div id="u1975_text" class="text ">
+          <p><span style="color:#008000;">--无需指针形参，在【句柄上下文】里，</span><span style="color:#0000FF;">this就代表payload，这里就是a</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1976" class="ax_default paragraph">
+        <div id="u1976_div" class=""></div>
+        <div id="u1976_text" class="text ">
+          <p><span>按照Payload-Property </span></p><p><span>进行建模</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1977" class="ax_default box_1">
+        <div id="u1977_div" class=""></div>
+        <div id="u1977_text" class="text ">
+          <p><span>10</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1978" class="ax_default box_1">
+        <div id="u1978_div" class=""></div>
+        <div id="u1978_text" class="text ">
+          <p><span>fn update</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1979" class="ax_default box_1">
+        <div id="u1979_div" class=""></div>
+        <div id="u1979_text" class="text ">
+          <p><span>#</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1980" class="ax_default heading_3">
+        <div id="u1980_div" class=""></div>
+        <div id="u1980_text" class="text ">
+          <p><span>H-Property</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1981" class="ax_default heading_3">
+        <div id="u1981_div" class=""></div>
+        <div id="u1981_text" class="text ">
+          <p><span>Payload</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1982" class="ax_default heading_3">
+        <div id="u1982_div" class=""></div>
+        <div id="u1982_text" class="text ">
+          <p><span>句柄属性</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1983" class="ax_default box_1">
+        <div id="u1983_div" class=""></div>
+        <div id="u1983_text" class="text ">
+          <p><span>10</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1984" class="ax_default box_1">
+        <div id="u1984_div" class=""></div>
+        <div id="u1984_text" class="text ">
+          <p><span>int ver</span></p><p><span>fn update</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1985" class="ax_default box_1">
+        <div id="u1985_div" class=""></div>
+        <div id="u1985_text" class="text ">
+          <p><span>#</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1986" class="ax_default heading_3">
+        <div id="u1986_div" class=""></div>
+        <div id="u1986_text" class="text ">
+          <p><span>H-Property</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1987" class="ax_default heading_3">
+        <div id="u1987_div" class=""></div>
+        <div id="u1987_text" class="text ">
+          <p><span>Payload</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1988" class="ax_default heading_3">
+        <div id="u1988_div" class=""></div>
+        <div id="u1988_text" class="text ">
+          <p><span>句柄属性</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1989" class="ax_default heading_3">
+        <div id="u1989_div" class=""></div>
+        <div id="u1989_text" class="text ">
+          <p><span>--用 【句柄属性访问符】#update()&nbsp; 或【通用属性访问符】.update()</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1990" class="ax_default heading_3">
+        <div id="u1990_div" class=""></div>
+        <div id="u1990_text" class="text ">
+          <p><span>--无需指针形参，方法体内直接用this代表b</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1991" class="ax_default heading_3">
+        <div id="u1991_div" class=""></div>
+        <div id="u1991_text" class="text ">
+          <p><span>-- 虽然ver被定义在update后，但fn可无视定义顺序访问整个【句柄上下文】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1992" class="ax_default heading_3">
+        <div id="u1992_div" class=""></div>
+        <div id="u1992_text" class="text ">
+          <p><span>--也可以写 this#ver 或 this.ver，不用担心和其他句柄的ver属性冲突</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1993" class="ax_default heading_3">
+        <div id="u1993_div" class=""></div>
+        <div id="u1993_text" class="text ">
+          <p><span>--用 【句柄属性访问符】#update()&nbsp; 或【通用属性访问符】.update()</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1994" class="ax_default heading_3">
+        <div id="u1994_div" class=""></div>
+        <div id="u1994_text" class="text ">
+          <p><span>--脱离【句柄上下文】后，则需明确写 b#ver 或b.ver ；不能光写个ver</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1995" class="ax_default heading_3">
+        <div id="u1995_div" class=""></div>
+        <div id="u1995_text" class="text ">
+          <p><span>排除那些函数特性（之后会在【函数】章节单独学习），这里仅聚焦于【句柄属性】的特性：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1996" class="ax_default paragraph">
+        <div id="u1996_div" class=""></div>
+        <div id="u1996_text" class="text ">
+          <p><span>上例中，a和b的对象类型都是int，所以二者的对象属性完全相同（都是空）</span></p><p><span>但即便都是int，也并不意味着a与b的属性完全相同</span></p><p><span>因为 a b的环境、用法 .... 也可能存在不同，这个差异是由 a 与 b 这两个句柄本身带来的，所以叫【句柄属性】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1997" class="ax_default heading_3">
+        <div id="u1997_div" class=""></div>
+        <div id="u1997_text" class="text ">
+          <p><span>【句柄属性】 可以在 【对象类型】之外，为不同对象赋予个体差异</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1998" class="ax_default heading_3">
+        <div id="u1998_div" class=""></div>
+        <div id="u1998_text" class="text ">
+          <p><span>--目前任何传统编程都无法实现这个建模，而实际上这是人类非常普通的世界观</span></p><p><span>--因为传统编程的里只有【变量与类型】，如果a与b类型相同，那a与b的字段就一定完全相同，没有个体差异&nbsp; (这里只是以int举例，实际换成 new Person()结果是一样的)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1999" class="ax_default heading_3">
+        <div id="u1999_div" class=""></div>
+        <div id="u1999_text" class="text ">
+          <p><span>利用【句柄属性】，我们能集中管理原本分散、零碎的对象，对象之间的关系更加明确，更利于进行模块化的维护</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2000" class="ax_default paragraph">
+        <div id="u2000_div" class=""></div>
+        <div id="u2000_text" class="text ">
+          <p><span>上例只是个简单例子，实际开发中一个上下文内的变量、方法非常多</span></p><p><span>传统编程里零散、扁平的对象模型方式无法支持“立体化的认知需求”</span></p><p><span>需要去解决各种变量名冲突问题，例如update1、update2、a_ver、b_ver 代码很乱</span></p><p><span>且对象关系错综复杂不直观，需要一步步调试才能慢慢理清楚对象之间的关系</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2001" class="ax_default paragraph">
+        <div id="u2001_div" class=""></div>
+        <div id="u2001_text" class="text ">
+          <p><span>当然你可能会反驳：那js不是有object吗？不也能把相关数据集中起来管理吗？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2002" class="ax_default paragraph">
+        <div id="u2002_div" class=""></div>
+        <div id="u2002_text" class="text ">
+          <p><span>但这样b的语义就变成了整个js-object，你必须用b.value才能访问这个10</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2003" class="ax_default box_1">
+        <div id="u2003_div" class=""></div>
+        <div id="u2003_text" class="text ">
+          <p><span>b.update(</span><span style="color:#0000FF;">b.value</span><span>)</span></p><p><span>console.log(</span><span style="color:#0000FF;">b.value</span><span>)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2004" class="ax_default paragraph">
+        <div id="u2004_div" class=""></div>
+        <div id="u2004_text" class="text ">
+          <p><span>可以看到，传统编程要么采用扁平化、零散化的定义——丢失对象关系、变量名冲突、要注意定义的先后顺序.........总之问题非常多，难以维护</span></p><p><span>要么就用传统OOP建模方式 —— 但这就破坏了语义，</span><span style="color:#0000FF;">必须用&nbsp; b.value、b.__value、b.body、b.get().......</span><span>之类各种千奇百怪的手段才能获得目标对象</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2005" class="ax_default box_1">
+        <div id="u2005_div" class=""></div>
+        <div id="u2005_text" class="text ">
+          <p><span>#ver:0</span></p><p><span>#fn update(){...}</span></p><p><span>int b：10</span></p><p><span><br></span></p><p><span>b.update()</span></p><p><span>print b</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2006" class="ax_default paragraph">
+        <div id="u2006_div" class=""></div>
+        <div id="u2006_text" class="text ">
+          <p><span>而在AXION里，符号的语义精准且明确，且在 payload-property Model里其价值得到进一步的体现</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2007" class="ax_default paragraph">
+        <div id="u2007_div" class=""></div>
+        <div id="u2007_text" class="text ">
+          <p><span>——这就是之前我们反复强调的语义“a究竟代表什么 ”，传统OOP编程的根本痛点就在于此</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2008" class="ax_default box_1">
+        <div id="u2008_div" class=""></div>
+        <div id="u2008_text" class="text ">
+          <p><span>10</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2009" class="ax_default box_1">
+        <div id="u2009_div" class=""></div>
+        <div id="u2009_text" class="text ">
+          <p><span>int ver</span></p><p><span>fn update</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2010" class="ax_default box_1">
+        <div id="u2010_div" class=""></div>
+        <div id="u2010_text" class="text ">
+          <p><span>#</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2011" class="ax_default heading_3">
+        <div id="u2011_div" class=""></div>
+        <div id="u2011_text" class="text ">
+          <p><span>H-Property</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2012" class="ax_default heading_3">
+        <div id="u2012_div" class=""></div>
+        <div id="u2012_text" class="text ">
+          <p><span>Payload</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2013" class="ax_default heading_3">
+        <div id="u2013_div" class=""></div>
+        <div id="u2013_text" class="text ">
+          <p><span>句柄属性</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2014" class="ax_default heading_3">
+        <div id="u2014_div" class=""></div>
+        <div id="u2014_text" class="text ">
+          <p><span>b永远指代这块数据</span></p><p><span>无论未来的属性、类型系统多么复杂，任何时候你都可以用b直接访问它，并坚信它一定是个 int ！</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2015" class="ax_default heading_3">
+        <div id="u2015_div" class=""></div>
+        <div id="u2015_text" class="text ">
+          <p><span>b#ver</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2016" class="ax_default heading_3">
+        <div id="u2016_div" class=""></div>
+        <div id="u2016_text" class="text ">
+          <p><span>b#update</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2017" class="ax_default paragraph">
+        <div id="u2017_div" class=""></div>
+        <div id="u2017_text" class="text ">
+          <p><span>--得绞尽脑汁想个变量名来存这个10， 例如__b、value、__value、body...或getter之类的访问器</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Curly Bracket) -->
+      <div id="u2018" class="ax_default box_1">
+        <img id="u2018_img" class="img " src="images/____handle_property/u2018.png"/>
+      </div>
+
+      <!-- Unnamed (Curly Bracket) -->
+      <div id="u2019" class="ax_default box_1">
+        <img id="u2019_img" class="img " src="images/____handle_property/u2019.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2020" class="ax_default heading_3">
+        <div id="u2020_div" class=""></div>
+        <div id="u2020_text" class="text ">
+          <p><span>句柄a的上下文</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2021" class="ax_default heading_3">
+        <div id="u2021_div" class=""></div>
+        <div id="u2021_text" class="text ">
+          <p><span>句柄b的上下文</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2022" class="ax_default box_1">
+        <img id="u2022_img" class="img " src="images/____handle_property/u2022.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2023" class="ax_default box_1">
+        <img id="u2023_img" class="img " src="images/____handle_property/u2023.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2024" class="ax_default paragraph">
+        <div id="u2024_div" class=""></div>
+        <div id="u2024_text" class="text ">
+          <p><span>解析</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u2025" class="ax_default line">
+        <img id="u2025_img" class="img " src="images/object_payload_property/u1840.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2026" class="ax_default heading_3">
+        <div id="u2026_div" class=""></div>
+        <div id="u2026_text" class="text ">
+          <p><span>【句柄上下文】：payload 和 句柄属性 组成的部分</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2027" class="ax_default paragraph">
+        <div id="u2027_div" class=""></div>
+        <div id="u2027_text" class="text ">
+          <p><span>1、避免变量名冲突，例如多个变量都有ver字段的情况</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2028" class="ax_default paragraph">
+        <div id="u2028_div" class=""></div>
+        <div id="u2028_text" class="text ">
+          <p><span>2、【句柄上下文】是一种【结构型上下文】，这意味着不用担心定义顺序，之前定义的函数可以正常访问后面定义的变量</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2029" class="ax_default heading_3">
+        <div id="u2029_div" class=""></div>
+        <div id="u2029_text" class="text ">
+          <p><span>--在传统编程里，正常情况下，如果在一个【过程型上下文】内（例如函数内）</span></p><p><span>前面定义的函数 f 是无法直接访问之后定义的变量 a 的，会提示a undefined，除非再额外增加类似于“变量提前”的机制额外处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2030" class="ax_default heading_3">
+        <div id="u2030_div" class=""></div>
+        <div id="u2030_text" class="text ">
+          <p><span>--不会破坏【类型签名】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2031" class="ax_default box_1">
+        <div id="u2031_div" class=""></div>
+      </div>
+    </div>
+  </body>
+</html>
