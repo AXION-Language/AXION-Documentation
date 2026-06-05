@@ -1,4 +1,5 @@
 # [AXION是一门编译型编程语言](https://axion-language.github.io/AXION-Documentation/)
+(多次打开可能有缓存，最好按Ctrl+F5强制刷新下)
 
 ### 在传统编程里，我的思维被语言绑架：
 
