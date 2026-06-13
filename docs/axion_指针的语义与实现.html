@@ -116,7 +116,7 @@
       <div id="u748" class="ax_default paragraph">
         <div id="u748_div" class=""></div>
         <div id="u748_text" class="text ">
-          <p><span style="font-family:'微软雅黑';font-weight:400;">b是 0x1000 </span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">？？？</span></p>
+          <p><span style="font-family:'微软雅黑';font-weight:400;">b是 0x1000 </span><span style="font-family:'微软雅黑 Bold', '微软雅黑';font-weight:700;">？？？</span></p>
         </div>
       </div>
 
@@ -204,7 +204,7 @@
       <div id="u759" class="ax_default box_1">
         <div id="u759_div" class=""></div>
         <div id="u759_text" class="text ">
-          <p><span style="font-family:'微软雅黑';font-weight:400;">int a = 10</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">int </span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;color:#0000FF;">b</span><span style="font-family:'微软雅黑';font-weight:400;"> -&gt; a </span></p>
+          <p><span style="font-family:'微软雅黑';font-weight:400;">int a = 10</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">int </span><span style="font-family:'微软雅黑 Bold', '微软雅黑';font-weight:700;color:#0000FF;">b</span><span style="font-family:'微软雅黑';font-weight:400;"> -&gt; a </span></p>
         </div>
       </div>
 
@@ -362,7 +362,7 @@
       <div id="u778" class="ax_default paragraph">
         <div id="u778_div" class=""></div>
         <div id="u778_text" class="text ">
-          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">AXION的指针是运行时动态可变的，而非静态的—— 这和C++那种静态引用完全不同</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">例如若后续继续修改b-&gt;c</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">.text段指令本身未变</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">但b_ADDR的值会从a的地址(0x1004)变成了c地址(0x1008)</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">之后读到的就是c数据的20</span></p>
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑';font-weight:700;">AXION的指针是运行时动态可变的，而非静态的—— 这和C++那种静态引用完全不同</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">例如若后续继续修改b-&gt;c</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">.text段指令本身未变</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">但b_ADDR的值会从a的地址(0x1004)变成了c地址(0x1008)</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">之后读到的就是c数据的20</span></p>
         </div>
       </div>
 
@@ -802,7 +802,7 @@
       <div id="u830" class="ax_default heading_3">
         <div id="u830_div" class=""></div>
         <div id="u830_text" class="text ">
-          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">理论上，通过类型就可以知道数据大小，可通过累加之前对象的大小计算出偏移，但实际上最好还是存一个“偏移”字段</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">有两方面考虑：</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">1、照顾编译效率：如果变量很多，编译器每次读到变量名就得去当场重新累加计算一遍，效率很低</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">2、照顾运行效率：实际分配给对象的内存可能会 ≥ 对象本身size，因为需要考虑内存对齐来提高CPU的访存效率(会分配额外的空白内存用以填充对齐)</span></p>
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑';font-weight:700;">理论上，通过类型就可以知道数据大小，可通过累加之前对象的大小计算出偏移，但实际上最好还是存一个“偏移”字段</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">有两方面考虑：</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">1、照顾编译效率：如果变量很多，编译器每次读到变量名就得去当场重新累加计算一遍，效率很低</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">2、照顾运行效率：实际分配给对象的内存可能会 ≥ 对象本身size，因为需要考虑内存对齐来提高CPU的访存效率(会分配额外的空白内存用以填充对齐)</span></p>
         </div>
       </div>
 
@@ -1040,7 +1040,7 @@
       <div id="u860" class="ax_default paragraph">
         <div id="u860_div" class=""></div>
         <div id="u860_text" class="text ">
-          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">3个句柄 a、b、b_ADDR</span><span style="font-family:'微软雅黑';font-weight:400;"> ：</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">a代表的对象固定为0x1000位置的数据</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">b代表的对象是b_ADDR的解引用(b_ADDR~)，会随着b_ADDR的值动态改变</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">b_ADDR是编译器根据 b-&gt;自动生成的</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">2个对象</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">0x1000里的10 —— 可用句柄a和b访问)</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">0x1004里的0x1000 —— 可用句柄b_ADDR访问)</span></p>
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑';font-weight:700;">3个句柄 a、b、b_ADDR</span><span style="font-family:'微软雅黑';font-weight:400;"> ：</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">a代表的对象固定为0x1000位置的数据</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">b代表的对象是b_ADDR的解引用(b_ADDR~)，会随着b_ADDR的值动态改变</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">b_ADDR是编译器根据 b-&gt;自动生成的</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑';font-weight:700;">2个对象</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">0x1000里的10 —— 可用句柄a和b访问)</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">0x1004里的0x1000 —— 可用句柄b_ADDR访问)</span></p>
         </div>
       </div>
 

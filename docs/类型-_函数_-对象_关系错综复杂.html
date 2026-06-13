@@ -648,7 +648,7 @@
       <div id="u1639" class="ax_default paragraph">
         <div id="u1639_div" class=""></div>
         <div id="u1639_text" class="text ">
-          <p><span>看A对象：虽然控制台打印出来叫</span><span style="color:#0000FF;">function</span><span> Function，但实际它不属于Function，而只是一个普通的 </span><span style="color:#0000FF;">function</span><span>，它起着构造函数的作用</span></p><p><span>看B对象：虽然控制台打印出来叫 Function.prototype，但实际上它本身并不绑定“Function.prototype”，它只是一个普通对象，定义着</span><span style="color:#0000FF;">functions</span><span>的属性集</span></p><p><span>A本身是个function，为了让A能够享受functions的属性集，我需要让A.__proto__指向B</span></p><p><span style="color:#0000FF;">只不过在JS里，我只能用借助“Function”这个命名当跳板，所以只能通过Function.__proto__ = Function.prototype 的语法实现这个效果( 这个Funtion.prototype其实就是我们想要的function.prototype )</span></p><p><span style="color:#0000FF;">违和感来自于变量名，但实际结果是正确无误的✔️</span></p>
+          <p><span>看A对象：虽然控制台打印出来叫</span><span style="color:#0000FF;">function</span><span> Function，但实际它不属于Function，而只是一个起着构造函数的作用的普通 </span><span style="color:#0000FF;">function</span></p><p><span>看B对象：虽然控制台打印出来叫 Function.prototype，但实际上它本身并不绑定“Function.prototype”，它只是一个普通对象，定义着</span><span style="color:#0000FF;">functions</span><span>的属性集</span></p><p><span>A本身是个function，为了让A能够享受functions的属性集，我需要让A.__proto__指向B</span></p><p><span style="color:#0000FF;">只不过在JS里，我只能用借助“Function”这个命名当跳板，所以只能通过Function.__proto__ = Function.prototype 的语法实现这个效果( 这个Funtion.prototype其实就是我们想要的function.prototype )</span></p><p><span style="color:#0000FF;">违和感来自于变量名，但实际结果是正确无误的✔️</span></p>
         </div>
       </div>
 
