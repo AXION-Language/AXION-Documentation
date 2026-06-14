@@ -26,7 +26,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'华文中宋 Bold', '华文中宋';
+  font-family:'华文中宋 Bold', '华文中宋 Regular', '华文中宋';
   font-weight:700;
   font-style:normal;
   font-size:20px;
@@ -39,7 +39,7 @@
   top:57px;
   width:109px;
   height:24px;
-  font-family:'华文中宋 Bold', '华文中宋';
+  font-family:'华文中宋 Bold', '华文中宋 Regular', '华文中宋';
   font-weight:700;
   font-style:normal;
   font-size:20px;
@@ -156,7 +156,7 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:313px;
+  width:271px;
   height:24px;
   background:inherit;
   background-color:rgba(255, 255, 255, 0);
@@ -165,7 +165,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'华文中宋 Bold', '华文中宋';
+  font-family:'华文中宋 Bold', '华文中宋 Regular', '华文中宋';
   font-weight:700;
   font-style:normal;
   font-size:20px;
@@ -176,9 +176,9 @@
   position:absolute;
   left:33px;
   top:589px;
-  width:313px;
+  width:271px;
   height:24px;
-  font-family:'华文中宋 Bold', '华文中宋';
+  font-family:'华文中宋 Bold', '华文中宋 Regular', '华文中宋';
   font-weight:700;
   font-style:normal;
   font-size:20px;
@@ -189,7 +189,7 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:313px;
+  width:271px;
   white-space:nowrap;
 }
 #u1835_img {
@@ -322,10 +322,10 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
-  color:#008000;
+  color:#1E1E1E;
 }
 #u1839 {
   border-width:0px;
@@ -334,10 +334,10 @@
   top:741px;
   width:47px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
-  color:#008000;
+  color:#1E1E1E;
 }
 #u1839_text {
   border-width:0px;
@@ -361,10 +361,10 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
-  color:#008000;
+  color:#1E1E1E;
 }
 #u1840 {
   border-width:0px;
@@ -373,10 +373,10 @@
   top:671px;
   width:64px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
-  color:#008000;
+  color:#1E1E1E;
 }
 #u1840_text {
   border-width:0px;
@@ -431,7 +431,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'华文中宋 Bold', '华文中宋';
+  font-family:'华文中宋 Bold', '华文中宋 Regular', '华文中宋';
   font-weight:700;
   font-style:normal;
   font-size:20px;
@@ -444,7 +444,7 @@
   top:390px;
   width:137px;
   height:24px;
-  font-family:'华文中宋 Bold', '华文中宋';
+  font-family:'华文中宋 Bold', '华文中宋 Regular', '华文中宋';
   font-weight:700;
   font-style:normal;
   font-size:20px;
@@ -570,7 +570,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
   font-size:14px;
@@ -583,7 +583,7 @@
   top:941px;
   width:318px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
   font-size:14px;
@@ -647,7 +647,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -658,7 +658,7 @@
   top:981px;
   width:81px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -684,7 +684,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -695,7 +695,7 @@
   top:981px;
   width:64px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -839,7 +839,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -850,7 +850,7 @@
   top:1034px;
   width:52px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -927,7 +927,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'华文中宋 Bold', '华文中宋';
+  font-family:'华文中宋 Bold', '华文中宋 Regular', '华文中宋';
   font-weight:700;
   font-style:normal;
   font-size:20px;
@@ -940,7 +940,7 @@
   top:3311px;
   width:375px;
   height:24px;
-  font-family:'华文中宋 Bold', '华文中宋';
+  font-family:'华文中宋 Bold', '华文中宋 Regular', '华文中宋';
   font-weight:700;
   font-style:normal;
   font-size:20px;
@@ -1000,7 +1000,7 @@
   border-width:0px;
   position:absolute;
   left:42px;
-  top:3468px;
+  top:3462px;
   width:914px;
   height:56px;
 }
@@ -1026,7 +1026,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -1037,7 +1037,7 @@
   top:3566px;
   width:886px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -1063,7 +1063,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -1074,7 +1074,7 @@
   top:3390px;
   width:495px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -1169,7 +1169,7 @@
   border-width:0px;
   position:absolute;
   left:42px;
-  top:3791px;
+  top:3780px;
   width:644px;
   height:28px;
 }
@@ -1195,7 +1195,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'华文中宋 Bold', '华文中宋';
+  font-family:'华文中宋 Bold', '华文中宋 Regular', '华文中宋';
   font-weight:700;
   font-style:normal;
   font-size:20px;
@@ -1208,7 +1208,7 @@
   top:2755px;
   width:334px;
   height:24px;
-  font-family:'华文中宋 Bold', '华文中宋';
+  font-family:'华文中宋 Bold', '华文中宋 Regular', '华文中宋';
   font-weight:700;
   font-style:normal;
   font-size:20px;
@@ -1649,7 +1649,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
   font-size:14px;
@@ -1662,7 +1662,7 @@
   top:2876px;
   width:64px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
   font-size:14px;
@@ -1690,7 +1690,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
   font-size:14px;
@@ -1703,7 +1703,7 @@
   top:2910px;
   width:64px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
   font-size:14px;
@@ -1731,7 +1731,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
   font-size:14px;
@@ -1744,7 +1744,7 @@
   top:3023px;
   width:76px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
   font-size:14px;
@@ -1808,7 +1808,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -1819,7 +1819,7 @@
   top:1308px;
   width:32px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -1845,7 +1845,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -1856,7 +1856,7 @@
   top:1285px;
   width:64px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -1918,7 +1918,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -1929,7 +1929,7 @@
   top:1338px;
   width:52px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -2233,7 +2233,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'华文中宋 Bold', '华文中宋';
+  font-family:'华文中宋 Bold', '华文中宋 Regular', '华文中宋';
   font-weight:700;
   font-style:normal;
   font-size:20px;
@@ -2246,7 +2246,7 @@
   top:1562px;
   width:271px;
   height:24px;
-  font-family:'华文中宋 Bold', '华文中宋';
+  font-family:'华文中宋 Bold', '华文中宋 Regular', '华文中宋';
   font-weight:700;
   font-style:normal;
   font-size:20px;
@@ -2337,7 +2337,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -2348,7 +2348,7 @@
   top:1638px;
   width:32px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -2374,7 +2374,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -2385,7 +2385,7 @@
   top:1615px;
   width:64px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -2447,7 +2447,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -2458,7 +2458,7 @@
   top:1668px;
   width:52px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -3002,7 +3002,7 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:479px;
+  width:396px;
   height:24px;
   background:inherit;
   background-color:rgba(255, 255, 255, 0);
@@ -3011,7 +3011,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'华文中宋 Bold', '华文中宋';
+  font-family:'华文中宋 Bold', '华文中宋 Regular', '华文中宋';
   font-weight:700;
   font-style:normal;
   font-size:20px;
@@ -3022,9 +3022,9 @@
   position:absolute;
   left:33px;
   top:2389px;
-  width:479px;
+  width:396px;
   height:24px;
-  font-family:'华文中宋 Bold', '华文中宋';
+  font-family:'华文中宋 Bold', '华文中宋 Regular', '华文中宋';
   font-weight:700;
   font-style:normal;
   font-size:20px;
@@ -3035,7 +3035,7 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:479px;
+  width:396px;
   white-space:nowrap;
 }
 #u1912_img {
@@ -3079,7 +3079,7 @@
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
   box-shadow:none;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
@@ -3090,7 +3090,7 @@
   top:2603px;
   width:1px;
   height:28px;
-  font-family:'微软雅黑 Bold', '微软雅黑';
+  font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
   font-weight:700;
   font-style:normal;
 }
