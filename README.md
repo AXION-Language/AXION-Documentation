@@ -80,7 +80,7 @@ AXION不仅是编程范式，更是对“人类如何认知世界”这一根本
 $\color{#008000}{\text{——这正是“AXION”名称的由来}}$  
 <br><br><br><br>
 
-# 本文档将从按 先Tutorial 后Documentation 的顺序进行组织
+# 本文档按 先Tutorial 后Documentation 的顺序进行组织
 ### Tutorial 教程
 这个Turorial并不是上来就教你如何写代码  
 而是从0开始，带着你分析与推理，不断重复“发现问题->分析原因->解决问题”这个过程  
