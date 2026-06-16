@@ -25,10 +25,34 @@
     <div id="base" class="">
 
       <!-- Unnamed (Rectangle) -->
+      <div id="u604" class="ax_default box_1">
+        <div id="u604_div" class=""></div>
+        <div id="u604_text" class="text ">
+          <p><span>int a = 10</span></p><p><span>int b -&gt; a</span></p><p><span><br></span></p><p><span>print (a+5, b+5)&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u605" class="ax_default paragraph">
+        <div id="u605_div" class=""></div>
+        <div id="u605_text" class="text ">
+          <p><span>--输出 15 15 ✔️ </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u606" class="ax_default paragraph">
+        <div id="u606_div" class=""></div>
+        <div id="u606_text" class="text ">
+          <p><span>合理，b现在作为int ，和同为int类型的a表现完全一致！</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
       <div id="u607" class="ax_default box_1">
         <div id="u607_div" class=""></div>
         <div id="u607_text" class="text ">
-          <p><span>int a = 10</span></p><p><span>int b -&gt; a</span></p><p><span><br></span></p><p><span>print (a+5, b+5)&nbsp; </span></p>
+          <p><span>int a = 10</span></p><p><span><br></span></p><p><span>f(</span><span style="color:#0000FF;">int x-&gt;</span><span>){ x=x+1}</span></p><p><span><br></span></p><p><span>f(a)</span></p><p><span><br></span></p><p><span>print a&nbsp; </span></p>
         </div>
       </div>
 
@@ -36,7 +60,7 @@
       <div id="u608" class="ax_default paragraph">
         <div id="u608_div" class=""></div>
         <div id="u608_text" class="text ">
-          <p><span>--输出 15 15 ✔️ </span></p>
+          <p><span>--拼接参数后得到 int x-&gt;a ，所以修改x就是修改a</span></p>
         </div>
       </div>
 
@@ -44,23 +68,23 @@
       <div id="u609" class="ax_default paragraph">
         <div id="u609_div" class=""></div>
         <div id="u609_text" class="text ">
-          <p><span>合理，b现在作为int ，和同为int类型的a表现完全一致！</span></p>
+          <p><span>--输出11 ✔️</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u610" class="ax_default box_1">
+      <div id="u610" class="ax_default paragraph">
         <div id="u610_div" class=""></div>
         <div id="u610_text" class="text ">
-          <p><span>int a = 10</span></p><p><span><br></span></p><p><span>f(</span><span style="color:#0000FF;">int x-&gt;</span><span>){ x=x+1}</span></p><p><span><br></span></p><p><span>f(a)</span></p><p><span><br></span></p><p><span>print a&nbsp; </span></p>
+          <p><span>--直接传入a即可，不用写*a 或 &amp;a...之类奇怪的东西——这不是简化，而是“语义的完美契合”，这是与传统编程根本性的区别</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u611" class="ax_default paragraph">
+      <div id="u611" class="ax_default box_1">
         <div id="u611_div" class=""></div>
         <div id="u611_text" class="text ">
-          <p><span>--拼接参数后得到 int x-&gt;a ，所以修改x就是修改a</span></p>
+          <p><span>int a = 10</span></p><p><span>int b -&gt;a</span></p><p><span><br></span></p><p><span>f(int x){</span></p><p><span>&nbsp;x=x+1</span></p><p><span>}</span></p><p><span><br></span></p><p><span>f (b)</span></p><p><span>print b&nbsp; </span></p>
         </div>
       </div>
 
@@ -68,7 +92,7 @@
       <div id="u612" class="ax_default paragraph">
         <div id="u612_div" class=""></div>
         <div id="u612_text" class="text ">
-          <p><span>--输出11 ✔️</span></p>
+          <p><span>--传参时相当于int x=b，所以也是单独拷贝了一份，而b-&gt;a，所以实际相当于从a拷贝</span></p><p><span>既然是拷贝，那修改x就不会修改原值</span></p>
         </div>
       </div>
 
@@ -76,31 +100,31 @@
       <div id="u613" class="ax_default paragraph">
         <div id="u613_div" class=""></div>
         <div id="u613_text" class="text ">
-          <p><span>--直接传入a即可，不用写*a 或 &amp;a...之类奇怪的东西——这不是简化，而是“语义的完美契合”，这是与传统编程根本性的区别</span></p>
+          <p><span>--输出10 ✔️</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u614" class="ax_default box_1">
+      <div id="u614" class="ax_default paragraph">
         <div id="u614_div" class=""></div>
         <div id="u614_text" class="text ">
-          <p><span>int a = 10</span></p><p><span>int b -&gt;a</span></p><p><span><br></span></p><p><span>f(int x){</span></p><p><span>&nbsp;x=x+1</span></p><p><span>}</span></p><p><span><br></span></p><p><span>f (b)</span></p><p><span>print b&nbsp; </span></p>
+          <p><span>而在AXION的方案里，修改引用 &amp; 修改值 不存在歧义</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u615" class="ax_default paragraph">
+      <div id="u615" class="ax_default box_1">
         <div id="u615_div" class=""></div>
         <div id="u615_text" class="text ">
-          <p><span>--传参时相当于int x=b，所以也是单独拷贝了一份，而b-&gt;a，所以实际相当于从a拷贝</span></p><p><span>既然是拷贝，那修改x就不会修改原值</span></p>
+          <p><span>回顾当时C++的问题</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u616" class="ax_default paragraph">
+      <div id="u616" class="ax_default box_1">
         <div id="u616_div" class=""></div>
         <div id="u616_text" class="text ">
-          <p><span>--输出10 ✔️</span></p>
+          <p><span>int a = 5</span></p><p><span>int b = 10</span></p><p><span><br></span></p><p><span>int c-&gt;a </span></p><p><span>print c&nbsp; </span></p><p><span><br></span></p><p><span>c-&gt;b</span></p><p><span>print c </span></p><p><span><br></span></p><p><span>c=a </span></p><p><span>print a,b,c </span></p>
         </div>
       </div>
 
@@ -108,23 +132,23 @@
       <div id="u617" class="ax_default paragraph">
         <div id="u617_div" class=""></div>
         <div id="u617_text" class="text ">
-          <p><span>而在AXION的方案里，修改引用 &amp; 修改值 不存在歧义</span></p>
+          <p><span>--c指向a</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u618" class="ax_default box_1">
+      <div id="u618" class="ax_default paragraph">
         <div id="u618_div" class=""></div>
         <div id="u618_text" class="text ">
-          <p><span>回顾当时C++的问题</span></p>
+          <p><span>--箭头-&gt;表示修改指针</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u619" class="ax_default box_1">
+      <div id="u619" class="ax_default paragraph">
         <div id="u619_div" class=""></div>
         <div id="u619_text" class="text ">
-          <p><span>int a = 5</span></p><p><span>int b = 10</span></p><p><span><br></span></p><p><span>int c-&gt;a </span></p><p><span>print c&nbsp; </span></p><p><span><br></span></p><p><span>c-&gt;b</span></p><p><span>print c </span></p><p><span><br></span></p><p><span>c=a </span></p><p><span>print a,b,c </span></p>
+          <p><span>--输出5</span></p>
         </div>
       </div>
 
@@ -132,7 +156,7 @@
       <div id="u620" class="ax_default paragraph">
         <div id="u620_div" class=""></div>
         <div id="u620_text" class="text ">
-          <p><span>--c指向a</span></p>
+          <p><span>--输出10</span></p>
         </div>
       </div>
 
@@ -140,7 +164,7 @@
       <div id="u621" class="ax_default paragraph">
         <div id="u621_div" class=""></div>
         <div id="u621_text" class="text ">
-          <p><span>--箭头-&gt;表示修改指针</span></p>
+          <p><span>--输出5，5，5</span></p>
         </div>
       </div>
 
@@ -148,39 +172,39 @@
       <div id="u622" class="ax_default paragraph">
         <div id="u622_div" class=""></div>
         <div id="u622_text" class="text ">
-          <p><span>--输出5</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u623" class="ax_default paragraph">
-        <div id="u623_div" class=""></div>
-        <div id="u623_text" class="text ">
-          <p><span>--输出10</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u624" class="ax_default paragraph">
-        <div id="u624_div" class=""></div>
-        <div id="u624_text" class="text ">
-          <p><span>--输出5，5，5</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u625" class="ax_default paragraph">
-        <div id="u625_div" class=""></div>
-        <div id="u625_text" class="text ">
           <p><span>不存在Javascript、java、python.....里那种意义不明的“引用对象/值对象”区分，AXION里所有数据类型逻辑完全一致</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u626" class="ax_default box_1">
+      <div id="u623" class="ax_default box_1">
+        <div id="u623_div" class=""></div>
+        <div id="u623_text" class="text ">
+          <p><span>let a = 123;&nbsp; &nbsp; &nbsp; // 值类型</span></p><p><span>let b = a;</span></p><p><span>b = 456;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // a 仍是 123&nbsp; ✔符合直觉</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u624" class="ax_default box_1">
+        <div id="u624_div" class=""></div>
+        <div id="u624_text" class="text ">
+          <p><span>let a = {x:1,y:1};&nbsp;&nbsp; // 引用类型</span></p><p><span>let b = a;</span></p><p><span>b. x = 2;&nbsp; &nbsp; &nbsp; &nbsp; // a.x 也变成 2 ❌ 违反直觉/产生歧义</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u625" class="ax_default heading_3">
+        <div id="u625_div" class=""></div>
+        <div id="u625_text" class="text ">
+          <p><span>Javascript、java.....</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u626" class="ax_default heading_3">
         <div id="u626_div" class=""></div>
         <div id="u626_text" class="text ">
-          <p><span>let a = 123;&nbsp; &nbsp; &nbsp; // 值类型</span></p><p><span>let b = a;</span></p><p><span>b = 456;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // a 仍是 123&nbsp; ✔符合直觉</span></p>
+          <p><span>AXION</span></p>
         </div>
       </div>
 
@@ -188,15 +212,15 @@
       <div id="u627" class="ax_default box_1">
         <div id="u627_div" class=""></div>
         <div id="u627_text" class="text ">
-          <p><span>let a = {x:1,y:1};&nbsp;&nbsp; // 引用类型</span></p><p><span>let b = a;</span></p><p><span>b. x = 2;&nbsp; &nbsp; &nbsp; &nbsp; // a.x 也变成 2 ❌ 违反直觉/产生歧义</span></p>
+          <p><span>let a = 123;&nbsp; &nbsp; &nbsp; </span></p><p><span>let b = a;</span></p><p><span>b = 456;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // a 仍是 123&nbsp; ✔符合直觉</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u628" class="ax_default heading_3">
+      <div id="u628" class="ax_default box_1">
         <div id="u628_div" class=""></div>
         <div id="u628_text" class="text ">
-          <p><span>Javascript、java.....</span></p>
+          <p><span>let a = {x:1,y:1};&nbsp;&nbsp; </span></p><p><span>let b = a;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; // =一定是拷贝，b与a 是完全独立的个体</span></p><p><span>b. x = 2;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // a.x 仍然是1 ✔符合直觉</span></p>
         </div>
       </div>
 
@@ -204,7 +228,7 @@
       <div id="u629" class="ax_default heading_3">
         <div id="u629_div" class=""></div>
         <div id="u629_text" class="text ">
-          <p><span>AXION</span></p>
+          <p><span>AXION的语义里，绝对不会默认隐性地区分所谓的“引用类型/值类型”，一切语义都严格遵循用户主观意愿</span></p><p><span>用户应当手动用-&gt;定义“指针”，杜绝任何歧义：</span></p>
         </div>
       </div>
 
@@ -212,39 +236,39 @@
       <div id="u630" class="ax_default box_1">
         <div id="u630_div" class=""></div>
         <div id="u630_text" class="text ">
-          <p><span>let a = 123;&nbsp; &nbsp; &nbsp; </span></p><p><span>let b = a;</span></p><p><span>b = 456;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // a 仍是 123&nbsp; ✔符合直觉</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u631" class="ax_default box_1">
-        <div id="u631_div" class=""></div>
-        <div id="u631_text" class="text ">
-          <p><span>let a = {x:1,y:1};&nbsp;&nbsp; </span></p><p><span>let b = a;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; // =一定是拷贝，b与a 是完全独立的个体</span></p><p><span>b. x = 2;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // a.x 仍然是1 ✔符合直觉</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u632" class="ax_default heading_3">
-        <div id="u632_div" class=""></div>
-        <div id="u632_text" class="text ">
-          <p><span>AXION的语义里，绝对不会默认隐性地区分所谓的“引用类型/值类型”，一切语义都严格遵循用户主观意愿</span></p><p><span>用户应当手动用-&gt;定义“指针”，杜绝任何歧义：</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u633" class="ax_default box_1">
-        <div id="u633_div" class=""></div>
-        <div id="u633_text" class="text ">
           <p><span>let a = {x:1,y:1};&nbsp; &nbsp; </span></p><p><span>let </span><span style="color:#0000FF;">b -&gt; a</span><span>;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; // b指向a，此时可通过b来修改a</span></p><p><span>b. x = 2;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; // a.x=2&nbsp; ✔符合直觉</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u634" class="ax_default paragraph">
+      <div id="u631" class="ax_default paragraph">
+        <div id="u631_div" class=""></div>
+        <div id="u631_text" class="text ">
+          <p><span>不存在C语言中“对数组变量名的特殊处理”的情况，AXION里所有数据类型【变量名】语义完全一致</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u632" class="ax_default box_1">
+        <div id="u632_div" class=""></div>
+        <div id="u632_text" class="text ">
+          <p><span>int a[5] = {1,2,3,4,5};</span></p><p><span><br></span></p><p><span>// 数组的变量名是地址</span></p><p><span>printf(&quot;%p\n&quot;, a);&nbsp; &nbsp; &nbsp; // 0x1000....</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u633" class="ax_default heading_3">
+        <div id="u633_div" class=""></div>
+        <div id="u633_text" class="text ">
+          <p><span>C语言</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u634" class="ax_default box_1">
         <div id="u634_div" class=""></div>
         <div id="u634_text" class="text ">
-          <p><span>不存在C语言中“对数组变量名的特殊处理”的情况，AXION里所有数据类型【变量名】语义完全一致</span></p>
+          <p><span>int a = 10;&nbsp; &nbsp; &nbsp; </span></p><p><span>printf(&quot;%d\n&quot;, a);&nbsp;&nbsp; // 10，其他类型的变量名是值&nbsp; </span></p>
         </div>
       </div>
 
@@ -252,7 +276,7 @@
       <div id="u635" class="ax_default box_1">
         <div id="u635_div" class=""></div>
         <div id="u635_text" class="text ">
-          <p><span>int a[5] = {1,2,3,4,5};</span></p><p><span><br></span></p><p><span>// 数组的变量名是地址</span></p><p><span>printf(&quot;%p\n&quot;, a);&nbsp; &nbsp; &nbsp; // 0x1000....</span></p>
+          <p><span>int a[5] = {1,2,3,4,5}</span></p><p><span>int b = 10&nbsp;&nbsp; </span></p><p><span><br></span></p><p><span>// 所有对象的变量名，都用于指代对象本身，逻辑完全统一</span></p><p><span>print a&nbsp; &nbsp; &nbsp; // {1,2,3,4,5}</span></p><p><span>print b&nbsp; &nbsp;&nbsp; // 10</span></p><p><span>print ~a&nbsp;&nbsp; // 要手动取引用，才会得到地址</span></p>
         </div>
       </div>
 
@@ -260,15 +284,15 @@
       <div id="u636" class="ax_default heading_3">
         <div id="u636_div" class=""></div>
         <div id="u636_text" class="text ">
-          <p><span>C语言</span></p>
+          <p><span>AXION</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u637" class="ax_default box_1">
+      <div id="u637" class="ax_default paragraph">
         <div id="u637_div" class=""></div>
         <div id="u637_text" class="text ">
-          <p><span>int a = 10;&nbsp; &nbsp; &nbsp; </span></p><p><span>printf(&quot;%d\n&quot;, a);&nbsp;&nbsp; // 10，其他类型的变量名是值&nbsp; </span></p>
+          <p><span>不存在“C系列”对结构体访问的特殊处理，AXION里无论是指针还是源对象，访问逻辑完全一致（因为类型签名相同）</span></p>
         </div>
       </div>
 
@@ -276,7 +300,7 @@
       <div id="u638" class="ax_default box_1">
         <div id="u638_div" class=""></div>
         <div id="u638_text" class="text ">
-          <p><span>int a[5] = {1,2,3,4,5}</span></p><p><span>int b = 10&nbsp;&nbsp; </span></p><p><span><br></span></p><p><span>// 所有对象的变量名，都用于指代对象本身，逻辑完全统一</span></p><p><span>print a&nbsp; &nbsp; &nbsp; // {1,2,3,4,5}</span></p><p><span>print b&nbsp; &nbsp;&nbsp; // 10</span></p><p><span>print ~a&nbsp;&nbsp; // 要手动取引用，才会得到地址</span></p>
+          <p><span>struct Point a = {1,1};</span></p><p><span>struct Point</span><span style="color:#0000FF;">*</span><span> ptr = </span><span style="color:#0000FF;">&amp;</span><span>p; </span></p><p><span><br></span></p><p><span>printf(&quot;%d\n&quot;, </span><span style="color:#0000FF;">(*ptr)</span><span>.x); //&nbsp; 1（先解引用，再用 .）</span></p><p><span>printf(&quot;%d\n&quot;, ptr</span><span style="color:#0000FF;">-&gt;</span><span>x);&nbsp;&nbsp; //&nbsp; 1（箭头简化，等价上面）</span></p>
         </div>
       </div>
 
@@ -284,15 +308,15 @@
       <div id="u639" class="ax_default heading_3">
         <div id="u639_div" class=""></div>
         <div id="u639_text" class="text ">
-          <p><span>AXION</span></p>
+          <p><span>C、C++、C#</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u640" class="ax_default paragraph">
+      <div id="u640" class="ax_default heading_3">
         <div id="u640_div" class=""></div>
         <div id="u640_text" class="text ">
-          <p><span>不存在“C系列”对结构体访问的特殊处理，AXION里无论是指针还是源对象，访问逻辑完全一致（因为类型签名相同）</span></p>
+          <p><span>AXION</span></p>
         </div>
       </div>
 
@@ -300,7 +324,7 @@
       <div id="u641" class="ax_default box_1">
         <div id="u641_div" class=""></div>
         <div id="u641_text" class="text ">
-          <p><span>struct Point a = {1,1};</span></p><p><span>struct Point</span><span style="color:#0000FF;">*</span><span> ptr = </span><span style="color:#0000FF;">&amp;</span><span>p; </span></p><p><span><br></span></p><p><span>printf(&quot;%d\n&quot;, </span><span style="color:#0000FF;">(*ptr)</span><span>.x); //&nbsp; 1（先解引用，再用 .）</span></p><p><span>printf(&quot;%d\n&quot;, ptr</span><span style="color:#0000FF;">-&gt;</span><span>x);&nbsp;&nbsp; //&nbsp; 1（箭头简化，等价上面）</span></p>
+          <p><span style="font-family:'微软雅黑';font-weight:400;">Point a = {1,1}</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">Point b -&gt;a&nbsp;&nbsp; //声明b指向a</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑';font-weight:400;">// 无论ab，均用</span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">.</span><span style="font-family:'微软雅黑';font-weight:400;">访问成员</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">print a.x&nbsp; &nbsp; &nbsp;&nbsp; // 1</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">print b.x&nbsp; &nbsp; &nbsp; // 既然b都指向{1,1}这个对象了，那当然可以直接用b.x访问，合情合理</span></p>
         </div>
       </div>
 
@@ -308,7 +332,7 @@
       <div id="u642" class="ax_default heading_3">
         <div id="u642_div" class=""></div>
         <div id="u642_text" class="text ">
-          <p><span>C、C++、C#</span></p>
+          <p><span>-- 一切指针重定向逻辑由-&gt;承载， 对象签名上没有任何变化，都是 “Point”，所以可统一用Point行为规则</span></p>
         </div>
       </div>
 
@@ -316,7 +340,7 @@
       <div id="u643" class="ax_default heading_3">
         <div id="u643_div" class=""></div>
         <div id="u643_text" class="text ">
-          <p><span>AXION</span></p>
+          <p><span>-- 对象签名的不同(Point 和 *Point不同)必然导致语法规则的不同</span></p>
         </div>
       </div>
 
@@ -324,120 +348,120 @@
       <div id="u644" class="ax_default box_1">
         <div id="u644_div" class=""></div>
         <div id="u644_text" class="text ">
-          <p><span style="font-family:'微软雅黑';font-weight:400;">Point a = {1,1}</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">Point b -&gt;a&nbsp;&nbsp; //声明b指向a</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑';font-weight:400;">// 无论ab，均用</span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">.</span><span style="font-family:'微软雅黑';font-weight:400;">访问成员</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">print a.x&nbsp; &nbsp; &nbsp;&nbsp; // 1</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">print b.x&nbsp; &nbsp; &nbsp; // 既然b都指向{1,1}这个对象了，那当然可以直接用b.x访问，合情合理</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u645" class="ax_default heading_3">
-        <div id="u645_div" class=""></div>
-        <div id="u645_text" class="text ">
-          <p><span>-- 一切指针重定向逻辑由-&gt;承载， 对象签名上没有任何变化，都是 “Point”，所以可统一用Point行为规则</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u646" class="ax_default heading_3">
-        <div id="u646_div" class=""></div>
-        <div id="u646_text" class="text ">
-          <p><span>-- 对象签名的不同(Point 和 *Point不同)必然导致语法规则的不同</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u647" class="ax_default box_1">
-        <div id="u647_div" class=""></div>
-        <div id="u647_text" class="text ">
           <p><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">方法论：解耦了 句柄操作 和 对象操作 </span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">-&gt;表示修改句柄&nbsp; </span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">= 表示修改对象（赋值）</span><span style="font-family:'微软雅黑';font-weight:400;"> </span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u648" class="ax_default paragraph">
-        <div id="u648_div" class=""></div>
-        <div id="u648_text" class="text ">
+      <div id="u645" class="ax_default paragraph">
+        <div id="u645_div" class=""></div>
+        <div id="u645_text" class="text ">
           <p><span>- 这里的句柄类型就是“指针”，反应着符号与对象之间的关系</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u649" class="ax_default paragraph">
-        <div id="u649_div" class=""></div>
-        <div id="u649_text" class="text ">
+      <div id="u646" class="ax_default paragraph">
+        <div id="u646_div" class=""></div>
+        <div id="u646_text" class="text ">
           <p><span>--“统一的世界观”对开发者是至关重要的</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u650" class="ax_default label">
-        <div id="u650_div" class=""></div>
-        <div id="u650_text" class="text ">
+      <div id="u647" class="ax_default label">
+        <div id="u647_div" class=""></div>
+        <div id="u647_text" class="text ">
           <p><span>运算</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u651" class="ax_default line">
-        <img id="u651_img" class="img " src="images/axion指针的使用/u651.png"/>
+      <div id="u648" class="ax_default line">
+        <img id="u648_img" class="img " src="images/axion指针的使用/u648.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u652" class="ax_default label">
-        <div id="u652_div" class=""></div>
-        <div id="u652_text" class="text ">
+      <div id="u649" class="ax_default label">
+        <div id="u649_div" class=""></div>
+        <div id="u649_text" class="text ">
           <p><span>函数调用：用指针修改外部对象的两种设计风格</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u653" class="ax_default line">
-        <img id="u653_img" class="img " src="images/axion指针的使用/u651.png"/>
+      <div id="u650" class="ax_default line">
+        <img id="u650_img" class="img " src="images/axion指针的使用/u648.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u654" class="ax_default label">
-        <div id="u654_div" class=""></div>
-        <div id="u654_text" class="text ">
+      <div id="u651" class="ax_default label">
+        <div id="u651_div" class=""></div>
+        <div id="u651_text" class="text ">
           <p><span>函数调用：像普通对象一样使用指针</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u655" class="ax_default line">
-        <img id="u655_img" class="img " src="images/axion指针的使用/u651.png"/>
+      <div id="u652" class="ax_default line">
+        <img id="u652_img" class="img " src="images/axion指针的使用/u648.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u656" class="ax_default label">
-        <div id="u656_div" class=""></div>
-        <div id="u656_text" class="text ">
+      <div id="u653" class="ax_default label">
+        <div id="u653_div" class=""></div>
+        <div id="u653_text" class="text ">
           <p><span>明确区分：修改指针 &amp; 修改值</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u657" class="ax_default line">
-        <img id="u657_img" class="img " src="images/axion指针的使用/u657.png"/>
+      <div id="u654" class="ax_default line">
+        <img id="u654_img" class="img " src="images/axion指针的使用/u654.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u658" class="ax_default label">
-        <div id="u658_div" class=""></div>
-        <div id="u658_text" class="text ">
+      <div id="u655" class="ax_default label">
+        <div id="u655_div" class=""></div>
+        <div id="u655_text" class="text ">
           <p><span>适用任何对象，赋值逻辑完全一致</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u659" class="ax_default line">
-        <img id="u659_img" class="img " src="images/axion指针的使用/u657.png"/>
+      <div id="u656" class="ax_default line">
+        <img id="u656_img" class="img " src="images/axion指针的使用/u654.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u660" class="ax_default box_1">
+      <div id="u657" class="ax_default box_1">
+        <div id="u657_div" class=""></div>
+        <div id="u657_text" class="text ">
+          <p><span>方法论：</span></p><p><span>把指针语义交给-&gt;负责 (由-&gt;来告诉编译器自动解引用)</span></p><p><span>从而解放变量a的语义、并保护了类型签名</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u658" class="ax_default paragraph">
+        <div id="u658_div" class=""></div>
+        <div id="u658_text" class="text ">
+          <p><span>目的：通过f修改源对象</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u659" class="ax_default box_1">
+        <div id="u659_div" class=""></div>
+        <div id="u659_text" class="text ">
+          <p><span>int a = 10</span></p><p><span><br></span></p><p><span><br></span></p><p><span>f(</span><span style="color:#0000FF;">~int x</span><span>){</span></p><p><span>&nbsp;</span><span style="color:#0000FF;">x~</span><span> = </span><span style="color:#0000FF;">x~</span><span> + 1</span></p><p><span>}</span></p><p><span><br></span></p><p><span>f(~a)</span></p><p><span><br></span></p><p><span>print a&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u660" class="ax_default paragraph">
         <div id="u660_div" class=""></div>
         <div id="u660_text" class="text ">
-          <p><span>方法论：</span></p><p><span>把指针语义交给-&gt;负责 (由-&gt;来告诉编译器自动解引用)</span></p><p><span>从而解放变量a的语义、并保护了类型签名</span></p>
+          <p><span>--形参x 是 int类型的引用，这意味着它只接受【内存地址】作为参数</span></p>
         </div>
       </div>
 
@@ -445,263 +469,260 @@
       <div id="u661" class="ax_default paragraph">
         <div id="u661_div" class=""></div>
         <div id="u661_text" class="text ">
-          <p><span>目的：通过f修改源对象</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u662" class="ax_default box_1">
-        <div id="u662_div" class=""></div>
-        <div id="u662_text" class="text ">
-          <p><span>int a = 10</span></p><p><span><br></span></p><p><span><br></span></p><p><span>f(</span><span style="color:#0000FF;">~int x</span><span>){</span></p><p><span>&nbsp;</span><span style="color:#0000FF;">x~</span><span> = </span><span style="color:#0000FF;">x~</span><span> + 1</span></p><p><span>}</span></p><p><span><br></span></p><p><span>f(~a)</span></p><p><span><br></span></p><p><span>print a&nbsp; </span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u663" class="ax_default paragraph">
-        <div id="u663_div" class=""></div>
-        <div id="u663_text" class="text ">
-          <p><span>--形参x 是 int类型的引用，这意味着它只接受【内存地址】作为参数</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u664" class="ax_default paragraph">
-        <div id="u664_div" class=""></div>
-        <div id="u664_text" class="text ">
           <p><span style="color:#008000;">--由于x本身是~int，</span><span style="color:#0000FF;">两边同时解引用</span><span style="color:#008000;">，所以x~就是int，因此可以用x~来操作目标int</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u665" class="ax_default paragraph">
-        <div id="u665_div" class=""></div>
-        <div id="u665_text" class="text ">
+      <div id="u662" class="ax_default paragraph">
+        <div id="u662_div" class=""></div>
+        <div id="u662_text" class="text ">
           <p><span>--传入a的地址，~a就是~int类型</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u666" class="ax_default connector">
-        <img id="u666_seg0" class="img " src="images/axion指针的使用/u666_seg0.png" alt="u666_seg0"/>
-        <img id="u666_seg1" class="img " src="images/axion指针的使用/u666_seg1.png" alt="u666_seg1"/>
-        <img id="u666_seg2" class="img " src="images/axion指针的使用/u666_seg2.png" alt="u666_seg2"/>
-        <div id="u666_text" class="text " style="display:none; visibility: hidden">
+      <div id="u663" class="ax_default connector">
+        <img id="u663_seg0" class="img " src="images/axion指针的使用/u663_seg0.png" alt="u663_seg0"/>
+        <img id="u663_seg1" class="img " src="images/axion指针的使用/u663_seg1.png" alt="u663_seg1"/>
+        <img id="u663_seg2" class="img " src="images/axion指针的使用/u663_seg2.png" alt="u663_seg2"/>
+        <div id="u663_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u667" class="ax_default heading_3">
-        <div id="u667_div" class=""></div>
-        <div id="u667_text" class="text ">
+      <div id="u664" class="ax_default heading_3">
+        <div id="u664_div" class=""></div>
+        <div id="u664_text" class="text ">
           <p><span>函数设计：形参是指针，直接用句柄修改</span></p><p><span>用户调用：只需传入句柄(符号名)</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u668" class="ax_default connector">
-        <img id="u668_seg0" class="img " src="images/axion指针的使用/u668_seg0.png" alt="u668_seg0"/>
-        <img id="u668_seg1" class="img " src="images/axion指针的使用/u668_seg1.png" alt="u668_seg1"/>
-        <img id="u668_seg2" class="img " src="images/axion指针的使用/u668_seg2.png" alt="u668_seg2"/>
-        <img id="u668_seg3" class="img " src="images/axion指针的使用/u666_seg2.png" alt="u668_seg3"/>
-        <div id="u668_text" class="text " style="display:none; visibility: hidden">
+      <div id="u665" class="ax_default connector">
+        <img id="u665_seg0" class="img " src="images/axion指针的使用/u665_seg0.png" alt="u665_seg0"/>
+        <img id="u665_seg1" class="img " src="images/axion指针的使用/u665_seg1.png" alt="u665_seg1"/>
+        <img id="u665_seg2" class="img " src="images/axion指针的使用/u665_seg2.png" alt="u665_seg2"/>
+        <img id="u665_seg3" class="img " src="images/axion指针的使用/u663_seg2.png" alt="u665_seg3"/>
+        <div id="u665_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u669" class="ax_default heading_3">
-        <div id="u669_div" class=""></div>
-        <div id="u669_text" class="text ">
+      <div id="u666" class="ax_default heading_3">
+        <div id="u666_div" class=""></div>
+        <div id="u666_text" class="text ">
           <p><span>函数设计：形参是地址，通过解引用修改</span></p><p><span>用户调用：主动传入地址</span></p>
         </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u667" class="ax_default paragraph">
+        <div id="u667_div" class=""></div>
+        <div id="u667_text" class="text ">
+          <p><span>在底层开发里，自由操作指针的能力是非常强大且实用的，你可以用它实现更多有想象力的功能，例如</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u668" class="ax_default box_1">
+        <div id="u668_div" class=""></div>
+        <div id="u668_text" class="text ">
+          <p><span>--先定义一个T类型的指针</span></p><p><span>T a-&gt;Null</span></p><p><span><br></span></p><p><span>--接着自由操作a_ADDR，便可将任意内存数据当做T类型来操作，能最大限度满足你对底层硬件的任何操作需求</span></p><p><span>a_ADDR = 0x7FF0A</span></p><p><span>a_ADDR = ~b</span></p><p><span>a_ADDR = a_ADDR + 16</span></p><p><span>...</span></p><p><span>print a</span></p><p><span><br></span></p><p><span>--单论指针操作，传统编程从技术上也能实现，但回顾前文众多对比都能证明：AXION更优雅、更便捷</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u669" class="ax_default line">
+        <img id="u669_img" class="img " src="images/axion_地址与类型系统的关系/u185.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u670" class="ax_default paragraph">
         <div id="u670_div" class=""></div>
         <div id="u670_text" class="text ">
-          <p><span>在底层开发里，自由操作指针的能力是非常强大且实用的，你可以用它实现更多有想象力的功能，例如</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u671" class="ax_default box_1">
-        <div id="u671_div" class=""></div>
-        <div id="u671_text" class="text ">
-          <p><span>--先定义一个T类型的指针</span></p><p><span>T a-&gt;Null</span></p><p><span><br></span></p><p><span>--接着自由操作a_ADDR，便可将任意内存数据当做T类型来操作，能最大限度满足你对底层硬件的任何操作需求</span></p><p><span>a_ADDR = 0x7FF0A</span></p><p><span>a_ADDR = ~b</span></p><p><span>a_ADDR = a_ADDR + 16</span></p><p><span>...</span></p><p><span>print a</span></p><p><span><br></span></p><p><span>--单论指针操作，传统编程从技术上也能实现，但回顾前文众多对比都能证明：AXION更优雅、更便捷</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Horizontal Line) -->
-      <div id="u672" class="ax_default line">
-        <img id="u672_img" class="img " src="images/axion_地址与类型系统的关系/u188.png"/>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u673" class="ax_default paragraph">
-        <div id="u673_div" class=""></div>
-        <div id="u673_text" class="text ">
           <p><span>更灵活的用法</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u674" class="ax_default heading_3">
-        <div id="u674_div" class=""></div>
-        <div id="u674_text" class="text ">
+      <div id="u671" class="ax_default heading_3">
+        <div id="u671_div" class=""></div>
+        <div id="u671_text" class="text ">
           <p><span>-- 编译器在符号表里自动生成 ~T&nbsp; a_ADDR : 0x0000</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u675" class="ax_default heading_3">
-        <div id="u675_div" class=""></div>
-        <div id="u675_text" class="text ">
+      <div id="u672" class="ax_default heading_3">
+        <div id="u672_div" class=""></div>
+        <div id="u672_text" class="text ">
           <p><span>-- ~b只要是个地址即可，和b本身是不是T类型无关 </span></p>
         </div>
       </div>
 
       <!-- Unnamed (Table) -->
-      <div id="u676" class="ax_default">
+      <div id="u673" class="ax_default">
 
         <!-- Unnamed (Table Cell) -->
-        <div id="u677" class="ax_default table_cell">
-          <img id="u677_img" class="img " src="images/axion指针的使用/u677.png"/>
+        <div id="u674" class="ax_default table_cell">
+          <img id="u674_img" class="img " src="images/axion指针的使用/u674.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u675" class="ax_default">
+          <img id="u675_img" class="img " src="images/axion指针的使用/u674.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u676" class="ax_default">
+          <img id="u676_img" class="img " src="images/axion指针的使用/u674.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u677" class="ax_default">
+          <img id="u677_img" class="img " src="images/axion指针的使用/u674.png"/>
         </div>
 
         <!-- Unnamed (Table Cell) -->
         <div id="u678" class="ax_default">
-          <img id="u678_img" class="img " src="images/axion指针的使用/u677.png"/>
+          <img id="u678_img" class="img " src="images/axion指针的使用/u674.png"/>
         </div>
 
         <!-- Unnamed (Table Cell) -->
         <div id="u679" class="ax_default">
-          <img id="u679_img" class="img " src="images/axion指针的使用/u677.png"/>
+          <img id="u679_img" class="img " src="images/axion指针的使用/u674.png"/>
         </div>
 
         <!-- Unnamed (Table Cell) -->
         <div id="u680" class="ax_default">
-          <img id="u680_img" class="img " src="images/axion指针的使用/u677.png"/>
+          <img id="u680_img" class="img " src="images/axion指针的使用/u674.png"/>
         </div>
 
         <!-- Unnamed (Table Cell) -->
         <div id="u681" class="ax_default">
-          <img id="u681_img" class="img " src="images/axion指针的使用/u677.png"/>
+          <img id="u681_img" class="img " src="images/axion指针的使用/u674.png"/>
         </div>
 
         <!-- Unnamed (Table Cell) -->
         <div id="u682" class="ax_default">
-          <img id="u682_img" class="img " src="images/axion指针的使用/u677.png"/>
+          <img id="u682_img" class="img " src="images/axion指针的使用/u682.png"/>
         </div>
+      </div>
 
-        <!-- Unnamed (Table Cell) -->
-        <div id="u683" class="ax_default">
-          <img id="u683_img" class="img " src="images/axion指针的使用/u677.png"/>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u683" class="ax_default heading_3">
+        <div id="u683_div" class=""></div>
+        <div id="u683_text" class="text ">
+          <p><span>T a </span></p>
         </div>
+      </div>
 
-        <!-- Unnamed (Table Cell) -->
-        <div id="u684" class="ax_default">
-          <img id="u684_img" class="img " src="images/axion指针的使用/u677.png"/>
+      <!-- Unnamed (Connector) -->
+      <div id="u684" class="ax_default connector">
+        <img id="u684_seg0" class="img " src="images/axion指针的使用/u684_seg0.png" alt="u684_seg0"/>
+        <img id="u684_seg1" class="img " src="images/axion指针的使用/u684_seg1.png" alt="u684_seg1"/>
+        <img id="u684_seg2" class="img " src="images/axion指针的使用/u684_seg2.png" alt="u684_seg2"/>
+        <div id="u684_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
         </div>
+      </div>
 
-        <!-- Unnamed (Table Cell) -->
-        <div id="u685" class="ax_default">
-          <img id="u685_img" class="img " src="images/axion指针的使用/u685.png"/>
-        </div>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u685" class="ax_default box_1">
+        <div id="u685_div" class=""></div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u686" class="ax_default heading_3">
         <div id="u686_div" class=""></div>
         <div id="u686_text" class="text ">
-          <p><span>T a </span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Connector) -->
-      <div id="u687" class="ax_default connector">
-        <img id="u687_seg0" class="img " src="images/axion指针的使用/u687_seg0.png" alt="u687_seg0"/>
-        <img id="u687_seg1" class="img " src="images/axion指针的使用/u687_seg1.png" alt="u687_seg1"/>
-        <img id="u687_seg2" class="img " src="images/axion指针的使用/u687_seg2.png" alt="u687_seg2"/>
-        <div id="u687_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u688" class="ax_default box_1">
-        <div id="u688_div" class=""></div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u689" class="ax_default heading_3">
-        <div id="u689_div" class=""></div>
-        <div id="u689_text" class="text ">
           <p><span>-- 0x7FF1A，纯数学运算，与T类型无关，无需像传统编程那样用(char*)转型</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u690" class="ax_default box_1">
-        <img id="u690_img" class="img " src="images/axion指针的使用/u690.png"/>
+      <div id="u687" class="ax_default box_1">
+        <img id="u687_img" class="img " src="images/axion指针的使用/u687.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u691" class="ax_default box_1">
-        <img id="u691_img" class="img " src="images/axion指针的使用/u690.png"/>
+      <div id="u688" class="ax_default box_1">
+        <img id="u688_img" class="img " src="images/axion指针的使用/u687.png"/>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u692" class="ax_default connector">
-        <img id="u692_seg0" class="img " src="images/axion指针的使用/u692_seg0.png" alt="u692_seg0"/>
-        <img id="u692_seg1" class="img " src="images/axion指针的使用/u692_seg1.png" alt="u692_seg1"/>
-        <img id="u692_seg2" class="img " src="images/axion指针的使用/u692_seg2.png" alt="u692_seg2"/>
-        <div id="u692_text" class="text " style="display:none; visibility: hidden">
+      <div id="u689" class="ax_default connector">
+        <img id="u689_seg0" class="img " src="images/axion指针的使用/u689_seg0.png" alt="u689_seg0"/>
+        <img id="u689_seg1" class="img " src="images/axion指针的使用/u689_seg1.png" alt="u689_seg1"/>
+        <img id="u689_seg2" class="img " src="images/axion指针的使用/u689_seg2.png" alt="u689_seg2"/>
+        <div id="u689_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u693" class="ax_default connector">
-        <img id="u693_seg0" class="img " src="images/axion指针的使用/u693_seg0.png" alt="u693_seg0"/>
-        <img id="u693_seg1" class="img " src="images/axion指针的使用/u693_seg1.png" alt="u693_seg1"/>
-        <img id="u693_seg2" class="img " src="images/axion指针的使用/u693_seg2.png" alt="u693_seg2"/>
-        <div id="u693_text" class="text " style="display:none; visibility: hidden">
+      <div id="u690" class="ax_default connector">
+        <img id="u690_seg0" class="img " src="images/axion指针的使用/u690_seg0.png" alt="u690_seg0"/>
+        <img id="u690_seg1" class="img " src="images/axion指针的使用/u690_seg1.png" alt="u690_seg1"/>
+        <img id="u690_seg2" class="img " src="images/axion指针的使用/u690_seg2.png" alt="u690_seg2"/>
+        <div id="u690_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u694" class="ax_default heading_3">
-        <div id="u694_div" class=""></div>
-        <div id="u694_text" class="text ">
+      <div id="u691" class="ax_default heading_3">
+        <div id="u691_div" class=""></div>
+        <div id="u691_text" class="text ">
           <p><span>像调整&quot;机械臂&quot;那样自由调整ADDR</span></p><p><span>你可以把任意一块内存按T类型处理</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u695" class="ax_default heading_3">
-        <div id="u695_div" class=""></div>
-        <div id="u695_text" class="text ">
+      <div id="u692" class="ax_default heading_3">
+        <div id="u692_div" class=""></div>
+        <div id="u692_text" class="text ">
           <p><span>-- T 类型</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u696" class="ax_default heading_3">
-        <div id="u696_div" class=""></div>
-        <div id="u696_text" class="text ">
+      <div id="u693" class="ax_default heading_3">
+        <div id="u693_div" class=""></div>
+        <div id="u693_text" class="text ">
           <p><span>假设sizeof T=2</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u697" class="ax_default box_1">
+      <div id="u694" class="ax_default box_1">
+        <div id="u694_div" class=""></div>
+        <div id="u694_text" class="text ">
+          <p><span>int a = 10, b = 20;</span></p><p><span>int&amp; r = a;&nbsp; // r 是 a 的引用，底层仍基于指针实现（内存里保存的是 &amp;a）</span></p><p><span>r = b</span><span style="color:#0000FF;">;&nbsp; &nbsp; &nbsp;&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u695" class="ax_default paragraph">
+        <div id="u695_div" class=""></div>
+        <div id="u695_text" class="text ">
+          <p><span>// 歧义：是把 a 改成 20，还是让 r 引用 b？</span></p><p><span>实际执行：把 a 的值改成 20。r 仍然引用 a ——❌️歧义</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u696" class="ax_default box_1">
+        <div id="u696_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u697" class="ax_default paragraph">
         <div id="u697_div" class=""></div>
         <div id="u697_text" class="text ">
-          <p><span>int a = 10, b = 20;</span></p><p><span>int&amp; r = a;&nbsp; // r 是 a 的引用，底层仍基于指针实现（内存里保存的是 &amp;a）</span></p><p><span>r = b</span><span style="color:#0000FF;">;&nbsp; &nbsp; &nbsp;&nbsp; </span></p>
+          <p><span>--输出11 ✔️</span></p>
         </div>
       </div>
 
@@ -709,43 +730,22 @@
       <div id="u698" class="ax_default paragraph">
         <div id="u698_div" class=""></div>
         <div id="u698_text" class="text ">
-          <p><span>// 歧义：是把 a 改成 20，还是让 r 引用 b？</span></p><p><span>实际执行：把 a 的值改成 20。r 仍然引用 a ——❌️歧义</span></p>
+          <p><span>-- 等号=表示修改对象</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u699" class="ax_default box_1">
+      <div id="u699" class="ax_default paragraph">
         <div id="u699_div" class=""></div>
+        <div id="u699_text" class="text ">
+          <p><span>-- 栈存储</span></p>
+        </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u700" class="ax_default paragraph">
         <div id="u700_div" class=""></div>
         <div id="u700_text" class="text ">
-          <p><span>--输出11 ✔️</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u701" class="ax_default paragraph">
-        <div id="u701_div" class=""></div>
-        <div id="u701_text" class="text ">
-          <p><span>-- 等号=表示修改对象</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u702" class="ax_default paragraph">
-        <div id="u702_div" class=""></div>
-        <div id="u702_text" class="text ">
-          <p><span>-- 栈存储</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u703" class="ax_default paragraph">
-        <div id="u703_div" class=""></div>
-        <div id="u703_text" class="text ">
           <p><span>-- 这里先别纠结关键字是不是let、b有没有类型签名</span></p><p><span>这里只是模仿JS语法讨论=赋值的问题</span></p>
         </div>
       </div>

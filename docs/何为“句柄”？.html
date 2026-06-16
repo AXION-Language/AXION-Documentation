@@ -25,39 +25,63 @@
     <div id="base" class="">
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2651" class="ax_default label">
-        <div id="u2651_div" class=""></div>
-        <div id="u2651_text" class="text ">
+      <div id="u2648" class="ax_default label">
+        <div id="u2648_div" class=""></div>
+        <div id="u2648_text" class="text ">
           <p><span>什么才算句柄？</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u2652" class="ax_default line">
-        <img id="u2652_img" class="img " src="images/c指针_语法复杂/u85.png"/>
+      <div id="u2649" class="ax_default line">
+        <img id="u2649_img" class="img " src="images/c指针_语法复杂/u82.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2653" class="ax_default heading_3">
-        <div id="u2653_div" class=""></div>
-        <div id="u2653_text" class="text ">
+      <div id="u2650" class="ax_default heading_3">
+        <div id="u2650_div" class=""></div>
+        <div id="u2650_text" class="text ">
           <p><span>-- 不用去试图总结“句柄必须是静态的、唯一的、稳定的、编译器直接识别的...”之类的特征——特征是举不完的，只会把简单问题复杂化（要想证明它是对的，你就必须把所有特征都遍历一遍）</span></p><p><span>-- 也不用从写法形态上区分，现在有a，a[2]，a.x .....未来也难保会有新的书写形态</span></p><p><span>--&nbsp; 直接从“句柄的产生”来思考就行了</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2654" class="ax_default box_1">
-        <div id="u2654_div" class=""></div>
-        <div id="u2654_text" class="text ">
+      <div id="u2651" class="ax_default box_1">
+        <div id="u2651_div" class=""></div>
+        <div id="u2651_text" class="text ">
           <p><span>Person a : </span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2655" class="ax_default box_1">
+      <div id="u2652" class="ax_default box_1">
+        <div id="u2652_div" class=""></div>
+        <div id="u2652_text" class="text ">
+          <p><span>姓名: &quot;小明&quot;</span></p><p><span>性别</span></p><p><span>年龄</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2653" class="ax_default paragraph">
+        <div id="u2653_div" class=""></div>
+        <div id="u2653_text" class="text ">
+          <p><span>由定义产生，编译器看到 a 就知道是这个名叫&quot;小明&quot;的人，这是编译器天然支持的直接指代</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2654" class="ax_default paragraph">
+        <div id="u2654_div" class=""></div>
+        <div id="u2654_text" class="text ">
+          <p><span>不存在定义过程：你并不是定义用“小明”指代这个对象，而仅仅是往对象本身填入“小明”这个数据</span></p><p><span>所以当你说“小明”这个词的时候，只会被理解为是 getObjectByName(&quot;小明&quot;) ，这只是个查询过程</span></p><p><span>小明可能会改名，但a永远是a</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2655" class="ax_default paragraph">
         <div id="u2655_div" class=""></div>
         <div id="u2655_text" class="text ">
-          <p><span>姓名: &quot;小明&quot;</span></p><p><span>性别</span></p><p><span>年龄</span></p>
+          <p><span>不存在定义过程，而只有查询过程</span></p><p><span>另一方面， “这个”一般会被理解为“这个对象”“这个人”...的简写，它已经明确限定“对象”的语义了</span></p>
         </div>
       </div>
 
@@ -65,7 +89,7 @@
       <div id="u2656" class="ax_default paragraph">
         <div id="u2656_div" class=""></div>
         <div id="u2656_text" class="text ">
-          <p><span>由定义产生，编译器看到 a 就知道是这个名叫&quot;小明&quot;的人，这是编译器天然支持的直接指代</span></p>
+          <p><span>a </span></p>
         </div>
       </div>
 
@@ -73,7 +97,7 @@
       <div id="u2657" class="ax_default paragraph">
         <div id="u2657_div" class=""></div>
         <div id="u2657_text" class="text ">
-          <p><span>不存在定义过程：你并不是定义用“小明”指代这个对象，而仅仅是往对象本身填入“小明”这个数据</span></p><p><span>所以当你说“小明”这个词的时候，只会被理解为是 getObjectByName(&quot;小明&quot;) ，这只是个查询过程</span></p><p><span>小明可能会改名，但a永远是a</span></p>
+          <p><span>小明</span></p>
         </div>
       </div>
 
@@ -81,7 +105,7 @@
       <div id="u2658" class="ax_default paragraph">
         <div id="u2658_div" class=""></div>
         <div id="u2658_text" class="text ">
-          <p><span>不存在定义过程，而只有查询过程</span></p><p><span>另一方面， “这个”一般会被理解为“这个对象”“这个人”...的简写，它已经明确限定“对象”的语义了</span></p>
+          <p><span>这个</span></p>
         </div>
       </div>
 
@@ -89,7 +113,7 @@
       <div id="u2659" class="ax_default paragraph">
         <div id="u2659_div" class=""></div>
         <div id="u2659_text" class="text ">
-          <p><span>a </span></p>
+          <p><span>不是句柄❌️</span></p>
         </div>
       </div>
 
@@ -97,7 +121,7 @@
       <div id="u2660" class="ax_default paragraph">
         <div id="u2660_div" class=""></div>
         <div id="u2660_text" class="text ">
-          <p><span>小明</span></p>
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">是句柄</span><span style="font-family:'微软雅黑';font-weight:400;">✔️</span></p>
         </div>
       </div>
 
@@ -105,7 +129,7 @@
       <div id="u2661" class="ax_default paragraph">
         <div id="u2661_div" class=""></div>
         <div id="u2661_text" class="text ">
-          <p><span>这个</span></p>
+          <p><span>不是句柄❌️</span></p>
         </div>
       </div>
 
@@ -113,276 +137,282 @@
       <div id="u2662" class="ax_default paragraph">
         <div id="u2662_div" class=""></div>
         <div id="u2662_text" class="text ">
-          <p><span>不是句柄❌️</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2663" class="ax_default paragraph">
-        <div id="u2663_div" class=""></div>
-        <div id="u2663_text" class="text ">
-          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">是句柄</span><span style="font-family:'微软雅黑';font-weight:400;">✔️</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2664" class="ax_default paragraph">
-        <div id="u2664_div" class=""></div>
-        <div id="u2664_text" class="text ">
-          <p><span>不是句柄❌️</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2665" class="ax_default paragraph">
-        <div id="u2665_div" class=""></div>
-        <div id="u2665_text" class="text ">
           <p><span style="font-family:'微软雅黑';font-weight:400;">【句柄】必须是在</span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">定义过程</span><span style="font-family:'微软雅黑';font-weight:400;">中产生——所谓“定义”，就是“将句柄 与 对象 链接起来”的过程</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">没有定义过程，就一定不存在【句柄】，更不存在【句柄类型】（实例型、指针型、解释型....），进而也就不存在【句柄属性】</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2666" class="ax_default heading_3">
-        <div id="u2666_div" class=""></div>
-        <div id="u2666_text" class="text ">
+      <div id="u2663" class="ax_default heading_3">
+        <div id="u2663_div" class=""></div>
+        <div id="u2663_text" class="text ">
           <p><span>-- 这是“定义&quot; 的过程</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2667" class="ax_default label">
-        <div id="u2667_div" class=""></div>
-        <div id="u2667_text" class="text ">
+      <div id="u2664" class="ax_default label">
+        <div id="u2664_div" class=""></div>
+        <div id="u2664_text" class="text ">
           <p><span>完整对比</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u2668" class="ax_default line">
-        <img id="u2668_img" class="img " src="images/c指针_语法复杂/u85.png"/>
+      <div id="u2665" class="ax_default line">
+        <img id="u2665_img" class="img " src="images/c指针_语法复杂/u82.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2669" class="ax_default box_1">
-        <div id="u2669_div" class=""></div>
+      <div id="u2666" class="ax_default box_1">
+        <div id="u2666_div" class=""></div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2670" class="ax_default paragraph">
-        <div id="u2670_div" class=""></div>
-        <div id="u2670_text" class="text ">
+      <div id="u2667" class="ax_default paragraph">
+        <div id="u2667_div" class=""></div>
+        <div id="u2667_text" class="text ">
           <p><span>地球</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Shape) -->
+      <div id="u2668" class="ax_default icon">
+        <img id="u2668_img" class="img " src="images/object-property/u1834.png"/>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u2669" class="ax_default icon">
+        <img id="u2669_img" class="img " src="images/何为“属性”？/u2448.png"/>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u2670" class="ax_default icon">
+        <img id="u2670_img" class="img " src="images/何为“属性”？/u2449.png"/>
+      </div>
+
+      <!-- Unnamed (Shape) -->
       <div id="u2671" class="ax_default icon">
-        <img id="u2671_img" class="img " src="images/object-property/u1837.png"/>
+        <img id="u2671_img" class="img " src="images/何为“属性”？/u2449.png"/>
       </div>
 
       <!-- Unnamed (Shape) -->
       <div id="u2672" class="ax_default icon">
-        <img id="u2672_img" class="img " src="images/何为“属性”？/u2451.png"/>
+        <img id="u2672_img" class="img " src="images/何为“属性”？/u2449.png"/>
       </div>
 
       <!-- Unnamed (Shape) -->
       <div id="u2673" class="ax_default icon">
-        <img id="u2673_img" class="img " src="images/何为“属性”？/u2452.png"/>
+        <img id="u2673_img" class="img " src="images/何为“属性”？/u2449.png"/>
       </div>
 
       <!-- Unnamed (Shape) -->
       <div id="u2674" class="ax_default icon">
-        <img id="u2674_img" class="img " src="images/何为“属性”？/u2452.png"/>
+        <img id="u2674_img" class="img " src="images/何为“属性”？/u2449.png"/>
       </div>
 
       <!-- Unnamed (Shape) -->
       <div id="u2675" class="ax_default icon">
-        <img id="u2675_img" class="img " src="images/何为“属性”？/u2452.png"/>
+        <img id="u2675_img" class="img " src="images/何为“属性”？/u2449.png"/>
       </div>
 
       <!-- Unnamed (Shape) -->
       <div id="u2676" class="ax_default icon">
-        <img id="u2676_img" class="img " src="images/何为“属性”？/u2452.png"/>
+        <img id="u2676_img" class="img " src="images/何为“属性”？/u2448.png"/>
       </div>
 
       <!-- Unnamed (Shape) -->
       <div id="u2677" class="ax_default icon">
-        <img id="u2677_img" class="img " src="images/何为“属性”？/u2452.png"/>
-      </div>
-
-      <!-- Unnamed (Shape) -->
-      <div id="u2678" class="ax_default icon">
-        <img id="u2678_img" class="img " src="images/何为“属性”？/u2452.png"/>
-      </div>
-
-      <!-- Unnamed (Shape) -->
-      <div id="u2679" class="ax_default icon">
-        <img id="u2679_img" class="img " src="images/何为“属性”？/u2451.png"/>
-      </div>
-
-      <!-- Unnamed (Shape) -->
-      <div id="u2680" class="ax_default icon">
-        <img id="u2680_img" class="img " src="images/何为“属性”？/u2451.png"/>
+        <img id="u2677_img" class="img " src="images/何为“属性”？/u2448.png"/>
       </div>
 
       <!-- Unnamed (SVG) -->
-      <div id="u2681" class="ax_default image">
-        <img id="u2681_img" class="img " src="images/何为“属性”？/u2465.png"/>
+      <div id="u2678" class="ax_default image">
+        <img id="u2678_img" class="img " src="images/何为“属性”？/u2462.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2682" class="ax_default heading_3">
-        <div id="u2682_div" class=""></div>
-        <div id="u2682_text" class="text ">
+      <div id="u2679" class="ax_default heading_3">
+        <div id="u2679_div" class=""></div>
+        <div id="u2679_text" class="text ">
           <p><span>对象属性</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2683" class="ax_default box_1">
-        <div id="u2683_div" class=""></div>
-        <div id="u2683_text" class="text ">
+      <div id="u2680" class="ax_default box_1">
+        <div id="u2680_div" class=""></div>
+        <div id="u2680_text" class="text ">
           <p><span>姓名</span></p><p><span>性别</span></p><p><span>年龄</span></p><p><span>天空下</span></p><p><span>树林边</span></p><p><span>....</span></p><p><span>getCONTEXT( ) </span></p><p><span><br></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u2684" class="ax_default line">
-        <img id="u2684_img" class="img " src="images/何为“属性”？/u2636.png"/>
+      <div id="u2681" class="ax_default line">
+        <img id="u2681_img" class="img " src="images/何为“属性”？/u2633.png"/>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u2685" class="ax_default line">
-        <img id="u2685_img" class="img " src="images/何为“属性”？/u2636.png"/>
+      <div id="u2682" class="ax_default line">
+        <img id="u2682_img" class="img " src="images/何为“属性”？/u2633.png"/>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u2686" class="compound ax_default line" WidgetHeight="1" WidgetWidth="203" CompoundMode="true">
-        <img id="u2686_img" class="singleImg img " src="images/何为“句柄”？/u2686.png"/>
-        <div id="u2686p000" class="ax_vector_shape" WidgetTopLeftX="-0.485576923076923" WidgetTopLeftY="0" WidgetTopRightX="0.490384615384615" WidgetTopRightY="0" WidgetBottomLeftX="-0.485576923076923" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.490384615384615" WidgetBottomRightY="0.166666666666667">
-          <img id="u2686p000_img" class="img " src="images/何为“句柄”？/u2686p000.png"/>
+      <div id="u2683" class="compound ax_default line" WidgetHeight="1" WidgetWidth="203" CompoundMode="true">
+        <img id="u2683_img" class="singleImg img " src="images/何为“句柄”？/u2683.png"/>
+        <div id="u2683p000" class="ax_vector_shape" WidgetTopLeftX="-0.485576923076923" WidgetTopLeftY="0" WidgetTopRightX="0.490384615384615" WidgetTopRightY="0" WidgetBottomLeftX="-0.485576923076923" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.490384615384615" WidgetBottomRightY="0.166666666666667">
+          <img id="u2683p000_img" class="img " src="images/何为“句柄”？/u2683p000.png"/>
         </div>
-        <div id="u2686p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.25" WidgetTopRightX="50.5" WidgetTopRightY="-0.25" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="50.5" WidgetBottomRightY="0">
-          <img id="u2686p001_img" class="img " src="images/axion_地址与类型系统的关系/u253p001.png"/>
+        <div id="u2683p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.25" WidgetTopRightX="50.5" WidgetTopRightY="-0.25" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="50.5" WidgetBottomRightY="0">
+          <img id="u2683p001_img" class="img " src="images/axion_地址与类型系统的关系/u250p001.png"/>
         </div>
-        <div id="u2686p002" class="ax_vector_shape" WidgetTopLeftX="9.09090909090909" WidgetTopLeftY="0.05" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0.05" WidgetBottomLeftX="9.09090909090909" WidgetBottomLeftY="0" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="0">
-          <img id="u2686p002_img" class="img " src="images/c指针_的局限性/u139p001.png"/>
+        <div id="u2683p002" class="ax_vector_shape" WidgetTopLeftX="9.09090909090909" WidgetTopLeftY="0.05" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0.05" WidgetBottomLeftX="9.09090909090909" WidgetBottomLeftY="0" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="0">
+          <img id="u2683p002_img" class="img " src="images/c指针_的局限性/u136p001.png"/>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2687" class="ax_default paragraph">
-        <div id="u2687_div" class=""></div>
-        <div id="u2687_text" class="text ">
+      <div id="u2684" class="ax_default paragraph">
+        <div id="u2684_div" class=""></div>
+        <div id="u2684_text" class="text ">
           <p><span>小明/这个人的属性</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2688" class="ax_default box_1">
-        <div id="u2688_div" class=""></div>
+      <div id="u2685" class="ax_default box_1">
+        <div id="u2685_div" class=""></div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2689" class="ax_default paragraph">
-        <div id="u2689_div" class=""></div>
-        <div id="u2689_text" class="text ">
+      <div id="u2686" class="ax_default paragraph">
+        <div id="u2686_div" class=""></div>
+        <div id="u2686_text" class="text ">
           <p><span>地球</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Shape) -->
+      <div id="u2687" class="ax_default icon">
+        <img id="u2687_img" class="img " src="images/object-property/u1834.png"/>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u2688" class="ax_default icon">
+        <img id="u2688_img" class="img " src="images/何为“属性”？/u2448.png"/>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u2689" class="ax_default icon">
+        <img id="u2689_img" class="img " src="images/何为“属性”？/u2449.png"/>
+      </div>
+
+      <!-- Unnamed (Shape) -->
       <div id="u2690" class="ax_default icon">
-        <img id="u2690_img" class="img " src="images/object-property/u1837.png"/>
+        <img id="u2690_img" class="img " src="images/何为“属性”？/u2449.png"/>
       </div>
 
       <!-- Unnamed (Shape) -->
       <div id="u2691" class="ax_default icon">
-        <img id="u2691_img" class="img " src="images/何为“属性”？/u2451.png"/>
+        <img id="u2691_img" class="img " src="images/何为“属性”？/u2449.png"/>
       </div>
 
       <!-- Unnamed (Shape) -->
       <div id="u2692" class="ax_default icon">
-        <img id="u2692_img" class="img " src="images/何为“属性”？/u2452.png"/>
+        <img id="u2692_img" class="img " src="images/何为“属性”？/u2449.png"/>
       </div>
 
       <!-- Unnamed (Shape) -->
       <div id="u2693" class="ax_default icon">
-        <img id="u2693_img" class="img " src="images/何为“属性”？/u2452.png"/>
+        <img id="u2693_img" class="img " src="images/何为“属性”？/u2449.png"/>
       </div>
 
       <!-- Unnamed (Shape) -->
       <div id="u2694" class="ax_default icon">
-        <img id="u2694_img" class="img " src="images/何为“属性”？/u2452.png"/>
+        <img id="u2694_img" class="img " src="images/何为“属性”？/u2449.png"/>
       </div>
 
       <!-- Unnamed (Shape) -->
       <div id="u2695" class="ax_default icon">
-        <img id="u2695_img" class="img " src="images/何为“属性”？/u2452.png"/>
+        <img id="u2695_img" class="img " src="images/何为“属性”？/u2448.png"/>
       </div>
 
       <!-- Unnamed (Shape) -->
       <div id="u2696" class="ax_default icon">
-        <img id="u2696_img" class="img " src="images/何为“属性”？/u2452.png"/>
-      </div>
-
-      <!-- Unnamed (Shape) -->
-      <div id="u2697" class="ax_default icon">
-        <img id="u2697_img" class="img " src="images/何为“属性”？/u2452.png"/>
-      </div>
-
-      <!-- Unnamed (Shape) -->
-      <div id="u2698" class="ax_default icon">
-        <img id="u2698_img" class="img " src="images/何为“属性”？/u2451.png"/>
-      </div>
-
-      <!-- Unnamed (Shape) -->
-      <div id="u2699" class="ax_default icon">
-        <img id="u2699_img" class="img " src="images/何为“属性”？/u2451.png"/>
+        <img id="u2696_img" class="img " src="images/何为“属性”？/u2448.png"/>
       </div>
 
       <!-- Unnamed (SVG) -->
-      <div id="u2700" class="ax_default image">
-        <img id="u2700_img" class="img " src="images/何为“属性”？/u2465.png"/>
+      <div id="u2697" class="ax_default image">
+        <img id="u2697_img" class="img " src="images/何为“属性”？/u2462.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2701" class="ax_default heading_3">
-        <div id="u2701_div" class=""></div>
-        <div id="u2701_text" class="text ">
+      <div id="u2698" class="ax_default heading_3">
+        <div id="u2698_div" class=""></div>
+        <div id="u2698_text" class="text ">
           <p><span>对象属性</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2702" class="ax_default box_1">
-        <div id="u2702_div" class=""></div>
-        <div id="u2702_text" class="text ">
+      <div id="u2699" class="ax_default box_1">
+        <div id="u2699_div" class=""></div>
+        <div id="u2699_text" class="text ">
           <p><span>姓名</span></p><p><span>性别</span></p><p><span>年龄</span></p><p><span>天空下</span></p><p><span>树林边</span></p><p><span>....</span></p><p><span>getCONTEXT( ) </span></p><p><span><br></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u2703" class="ax_default line">
-        <img id="u2703_img" class="img " src="images/何为“属性”？/u2636.png"/>
+      <div id="u2700" class="ax_default line">
+        <img id="u2700_img" class="img " src="images/何为“属性”？/u2633.png"/>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u2704" class="ax_default line">
-        <img id="u2704_img" class="img " src="images/何为“属性”？/u2636.png"/>
+      <div id="u2701" class="ax_default line">
+        <img id="u2701_img" class="img " src="images/何为“属性”？/u2633.png"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u2702" class="compound ax_default line" WidgetHeight="1" WidgetWidth="203" CompoundMode="true">
+        <img id="u2702_img" class="singleImg img " src="images/何为“句柄”？/u2683.png"/>
+        <div id="u2702p000" class="ax_vector_shape" WidgetTopLeftX="-0.485576923076923" WidgetTopLeftY="0" WidgetTopRightX="0.490384615384615" WidgetTopRightY="0" WidgetBottomLeftX="-0.485576923076923" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.490384615384615" WidgetBottomRightY="0.166666666666667">
+          <img id="u2702p000_img" class="img " src="images/何为“句柄”？/u2683p000.png"/>
+        </div>
+        <div id="u2702p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.25" WidgetTopRightX="50.5" WidgetTopRightY="-0.25" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="50.5" WidgetBottomRightY="0">
+          <img id="u2702p001_img" class="img " src="images/axion_地址与类型系统的关系/u250p001.png"/>
+        </div>
+        <div id="u2702p002" class="ax_vector_shape" WidgetTopLeftX="9.09090909090909" WidgetTopLeftY="0.05" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0.05" WidgetBottomLeftX="9.09090909090909" WidgetBottomLeftY="0" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="0">
+          <img id="u2702p002_img" class="img " src="images/c指针_的局限性/u136p001.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2703" class="ax_default paragraph">
+        <div id="u2703_div" class=""></div>
+        <div id="u2703_text" class="text ">
+          <p><span>小明/这个人的属性</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2704" class="ax_default heading_3">
+        <div id="u2704_div" class=""></div>
+        <div id="u2704_text" class="text ">
+          <p><span>Person a :</span></p>
+        </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
       <div id="u2705" class="compound ax_default line" WidgetHeight="1" WidgetWidth="203" CompoundMode="true">
-        <img id="u2705_img" class="singleImg img " src="images/何为“句柄”？/u2686.png"/>
-        <div id="u2705p000" class="ax_vector_shape" WidgetTopLeftX="-0.485576923076923" WidgetTopLeftY="0" WidgetTopRightX="0.490384615384615" WidgetTopRightY="0" WidgetBottomLeftX="-0.485576923076923" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.490384615384615" WidgetBottomRightY="0.166666666666667">
-          <img id="u2705p000_img" class="img " src="images/何为“句柄”？/u2686p000.png"/>
+        <img id="u2705_img" class="singleImg img " src="images/何为“句柄”？/u2683.png"/>
+        <div id="u2705p000" class="ax_vector_shape" WidgetTopLeftX="-0.485576923076923" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.490384615384615" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.485576923076923" WidgetBottomLeftY="0" WidgetBottomRightX="0.490384615384615" WidgetBottomRightY="0">
+          <img id="u2705p000_img" class="img " src="images/何为“句柄”？/u2705p000.png"/>
         </div>
-        <div id="u2705p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.25" WidgetTopRightX="50.5" WidgetTopRightY="-0.25" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="50.5" WidgetBottomRightY="0">
-          <img id="u2705p001_img" class="img " src="images/axion_地址与类型系统的关系/u253p001.png"/>
+        <div id="u2705p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.5" WidgetTopRightX="50.5" WidgetTopRightY="-0.5" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="50.5" WidgetBottomRightY="0">
+          <img id="u2705p001_img" class="img " src="images/axion_地址与类型系统的关系/u246p001.png"/>
         </div>
-        <div id="u2705p002" class="ax_vector_shape" WidgetTopLeftX="9.09090909090909" WidgetTopLeftY="0.05" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0.05" WidgetBottomLeftX="9.09090909090909" WidgetBottomLeftY="0" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="0">
-          <img id="u2705p002_img" class="img " src="images/c指针_的局限性/u139p001.png"/>
+        <div id="u2705p002" class="ax_vector_shape" WidgetTopLeftX="9.09090909090909" WidgetTopLeftY="0" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0" WidgetBottomLeftX="9.09090909090909" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="-0.05">
+          <img id="u2705p002_img" class="img " src="images/c指针_的局限性/u136p002.png"/>
         </div>
       </div>
 
@@ -390,101 +420,95 @@
       <div id="u2706" class="ax_default paragraph">
         <div id="u2706_div" class=""></div>
         <div id="u2706_text" class="text ">
-          <p><span>小明/这个人的属性</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2707" class="ax_default heading_3">
-        <div id="u2707_div" class=""></div>
-        <div id="u2707_text" class="text ">
-          <p><span>Person a :</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Horizontal Line) -->
-      <div id="u2708" class="compound ax_default line" WidgetHeight="1" WidgetWidth="203" CompoundMode="true">
-        <img id="u2708_img" class="singleImg img " src="images/何为“句柄”？/u2686.png"/>
-        <div id="u2708p000" class="ax_vector_shape" WidgetTopLeftX="-0.485576923076923" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.490384615384615" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.485576923076923" WidgetBottomLeftY="0" WidgetBottomRightX="0.490384615384615" WidgetBottomRightY="0">
-          <img id="u2708p000_img" class="img " src="images/何为“句柄”？/u2708p000.png"/>
-        </div>
-        <div id="u2708p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.5" WidgetTopRightX="50.5" WidgetTopRightY="-0.5" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="50.5" WidgetBottomRightY="0">
-          <img id="u2708p001_img" class="img " src="images/axion_地址与类型系统的关系/u249p001.png"/>
-        </div>
-        <div id="u2708p002" class="ax_vector_shape" WidgetTopLeftX="9.09090909090909" WidgetTopLeftY="0" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0" WidgetBottomLeftX="9.09090909090909" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="-0.05">
-          <img id="u2708p002_img" class="img " src="images/c指针_的局限性/u139p002.png"/>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2709" class="ax_default paragraph">
-        <div id="u2709_div" class=""></div>
-        <div id="u2709_text" class="text ">
           <p><span>a对象的属性</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u2710" class="compound ax_default line" WidgetHeight="1" WidgetWidth="143" CompoundMode="true">
-        <img id="u2710_img" class="singleImg img " src="images/何为“句柄”？/u2710.png"/>
-        <div id="u2710p000" class="ax_vector_shape" WidgetTopLeftX="-0.486486486486487" WidgetTopLeftY="0" WidgetTopRightX="0.47972972972973" WidgetTopRightY="0" WidgetBottomLeftX="-0.486486486486487" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.47972972972973" WidgetBottomRightY="0.166666666666667">
-          <img id="u2710p000_img" class="img " src="images/何为“句柄”？/u2710p000.png"/>
+      <div id="u2707" class="compound ax_default line" WidgetHeight="1" WidgetWidth="143" CompoundMode="true">
+        <img id="u2707_img" class="singleImg img " src="images/何为“句柄”？/u2707.png"/>
+        <div id="u2707p000" class="ax_vector_shape" WidgetTopLeftX="-0.486486486486487" WidgetTopLeftY="0" WidgetTopRightX="0.47972972972973" WidgetTopRightY="0" WidgetBottomLeftX="-0.486486486486487" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.47972972972973" WidgetBottomRightY="0.166666666666667">
+          <img id="u2707p000_img" class="img " src="images/何为“句柄”？/u2707p000.png"/>
         </div>
-        <div id="u2710p001" class="ax_vector_shape" WidgetTopLeftX="0" WidgetTopLeftY="-0.25" WidgetTopRightX="0" WidgetTopRightY="35.5" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="-0.25" WidgetBottomRightX="-0.25" WidgetBottomRightY="35.5">
-          <img id="u2710p001_img" class="img " src="images/何为“句柄”？/u2710p001.png"/>
+        <div id="u2707p001" class="ax_vector_shape" WidgetTopLeftX="0" WidgetTopLeftY="-0.25" WidgetTopRightX="0" WidgetTopRightY="35.5" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="-0.25" WidgetBottomRightX="-0.25" WidgetBottomRightY="35.5">
+          <img id="u2707p001_img" class="img " src="images/何为“句柄”？/u2707p001.png"/>
         </div>
-        <div id="u2710p002" class="ax_vector_shape" WidgetTopLeftX="6.31818181818182" WidgetTopLeftY="0.05" WidgetTopRightX="-0.181818181818182" WidgetTopRightY="0.05" WidgetBottomLeftX="6.31818181818182" WidgetBottomLeftY="0" WidgetBottomRightX="-0.181818181818182" WidgetBottomRightY="0">
-          <img id="u2710p002_img" class="img " src="images/类型-_函数_-对象_关系错综复杂/u1583p002.png"/>
+        <div id="u2707p002" class="ax_vector_shape" WidgetTopLeftX="6.31818181818182" WidgetTopLeftY="0.05" WidgetTopRightX="-0.181818181818182" WidgetTopRightY="0.05" WidgetBottomLeftX="6.31818181818182" WidgetBottomLeftY="0" WidgetBottomRightX="-0.181818181818182" WidgetBottomRightY="0">
+          <img id="u2707p002_img" class="img " src="images/类型-_函数_-对象_关系错综复杂/u1580p002.png"/>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2711" class="ax_default paragraph">
-        <div id="u2711_div" class=""></div>
-        <div id="u2711_text" class="text ">
+      <div id="u2708" class="ax_default paragraph">
+        <div id="u2708_div" class=""></div>
+        <div id="u2708_text" class="text ">
           <p><span>&nbsp;b 的属性</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2712" class="ax_default heading_3">
-        <div id="u2712_div" class=""></div>
-        <div id="u2712_text" class="text ">
+      <div id="u2709" class="ax_default heading_3">
+        <div id="u2709_div" class=""></div>
+        <div id="u2709_text" class="text ">
           <p><span>对象属性</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2713" class="ax_default box_1">
-        <div id="u2713_div" class=""></div>
-        <div id="u2713_text" class="text ">
+      <div id="u2710" class="ax_default box_1">
+        <div id="u2710_div" class=""></div>
+        <div id="u2710_text" class="text ">
           <p><span>姓名</span></p><p><span>性别</span></p><p><span>年龄</span></p><p><span>天空下</span></p><p><span>树林边</span></p><p><span>....</span></p><p><span>getCONTEXT( ) </span></p><p><span><br></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u2714" class="ax_default line">
-        <img id="u2714_img" class="img " src="images/何为“属性”？/u2636.png"/>
+      <div id="u2711" class="ax_default line">
+        <img id="u2711_img" class="img " src="images/何为“属性”？/u2633.png"/>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u2715" class="ax_default line">
-        <img id="u2715_img" class="img " src="images/何为“属性”？/u2636.png"/>
+      <div id="u2712" class="ax_default line">
+        <img id="u2712_img" class="img " src="images/何为“属性”？/u2633.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2713" class="ax_default heading_3">
+        <div id="u2713_div" class=""></div>
+        <div id="u2713_text" class="text ">
+          <p><span>句柄属性</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2714" class="ax_default box_1">
+        <div id="u2714_div" class=""></div>
+        <div id="u2714_text" class="text ">
+          <p><span>addr</span></p><p><span>version</span></p><p><span>update（）</span></p><p><span>只读</span></p><p><span>...</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2715" class="ax_default heading_3">
+        <div id="u2715_div" class=""></div>
+        <div id="u2715_text" class="text ">
+          <p><span>--同时回答【句柄属性】+【对象属性】</span></p>
+        </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u2716" class="ax_default heading_3">
         <div id="u2716_div" class=""></div>
         <div id="u2716_text" class="text ">
-          <p><span>句柄属性</span></p>
+          <p><span style="color:#008000;">--</span><span style="color:#0000FF;">只回答</span><span>【对象属性】</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2717" class="ax_default box_1">
+      <div id="u2717" class="ax_default heading_3">
         <div id="u2717_div" class=""></div>
         <div id="u2717_text" class="text ">
-          <p><span>addr</span></p><p><span>version</span></p><p><span>update（）</span></p><p><span>只读</span></p><p><span>...</span></p><p><span><br></span></p>
+          <p><span>--除了addr之外，没有额外的句柄属性，不过我们可以自己随便加几个</span></p>
         </div>
       </div>
 
@@ -492,7 +516,7 @@
       <div id="u2718" class="ax_default heading_3">
         <div id="u2718_div" class=""></div>
         <div id="u2718_text" class="text ">
-          <p><span>--同时回答【句柄属性】+【对象属性】</span></p>
+          <p><span style="color:#008000;">--</span><span style="color:#0000FF;">只有</span><span>【对象属性】</span></p>
         </div>
       </div>
 
@@ -500,41 +524,38 @@
       <div id="u2719" class="ax_default heading_3">
         <div id="u2719_div" class=""></div>
         <div id="u2719_text" class="text ">
-          <p><span style="color:#008000;">--</span><span style="color:#0000FF;">只回答</span><span>【对象属性】</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2720" class="ax_default heading_3">
-        <div id="u2720_div" class=""></div>
-        <div id="u2720_text" class="text ">
-          <p><span>--除了addr之外，没有额外的句柄属性，不过我们可以自己随便加几个</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2721" class="ax_default heading_3">
-        <div id="u2721_div" class=""></div>
-        <div id="u2721_text" class="text ">
-          <p><span style="color:#008000;">--</span><span style="color:#0000FF;">只有</span><span>【对象属性】</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2722" class="ax_default heading_3">
-        <div id="u2722_div" class=""></div>
-        <div id="u2722_text" class="text ">
           <p><span>Person b </span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u2723" class="ax_default connector">
-        <img id="u2723_seg0" class="img " src="images/何为“句柄”？/u2723_seg0.png" alt="u2723_seg0"/>
-        <img id="u2723_seg1" class="img " src="images/axion_指针的语义与实现/u846_seg1.png" alt="u2723_seg1"/>
-        <img id="u2723_seg2" class="img " src="images/何为“句柄”？/u2723_seg2.png" alt="u2723_seg2"/>
-        <div id="u2723_text" class="text " style="display:none; visibility: hidden">
+      <div id="u2720" class="ax_default connector">
+        <img id="u2720_seg0" class="img " src="images/何为“句柄”？/u2720_seg0.png" alt="u2720_seg0"/>
+        <img id="u2720_seg1" class="img " src="images/axion_指针的语义与实现/u843_seg1.png" alt="u2720_seg1"/>
+        <img id="u2720_seg2" class="img " src="images/何为“句柄”？/u2720_seg2.png" alt="u2720_seg2"/>
+        <div id="u2720_text" class="text " style="display:none; visibility: hidden">
           <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2721" class="ax_default box_1">
+        <img id="u2721_img" class="img " src="images/何为“句柄”？/u2721.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2722" class="ax_default paragraph">
+        <div id="u2722_div" class=""></div>
+        <div id="u2722_text" class="text ">
+          <p><span>A的属性 = 句柄属性 + 对象属性</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2723" class="ax_default heading_3">
+        <div id="u2723_div" class=""></div>
+        <div id="u2723_text" class="text ">
+          <p><span>-- AXION里的任何一个逻辑都是这样经过一系列严格的逻辑推理与分析得到的，背后都可溯源至一整套逻辑链路和方法论；</span></p><p><span>它是无关乎设计者主观偏好，是一门纯粹服务于【人类认知与建模】的底层科学；</span></p>
         </div>
       </div>
 
@@ -547,99 +568,102 @@
       <div id="u2725" class="ax_default paragraph">
         <div id="u2725_div" class=""></div>
         <div id="u2725_text" class="text ">
-          <p><span>A的属性 = 句柄属性 + 对象属性</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2726" class="ax_default heading_3">
-        <div id="u2726_div" class=""></div>
-        <div id="u2726_text" class="text ">
-          <p><span>-- AXION里的任何一个逻辑都是这样经过一系列严格的逻辑推理与分析得到的，背后都可溯源至一整套逻辑链路和方法论；</span></p><p><span>它是无关乎设计者主观偏好，是一门纯粹服务于【人类认知与建模】的底层科学；</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2727" class="ax_default box_1">
-        <img id="u2727_img" class="img " src="images/何为“句柄”？/u2727.png"/>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2728" class="ax_default paragraph">
-        <div id="u2728_div" class=""></div>
-        <div id="u2728_text" class="text ">
           <p><span style="font-family:'微软雅黑';font-weight:400;">更深层次的含义是：如果人主观上选择</span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">不维护</span><span style="font-family:'微软雅黑';font-weight:400;">，那么这个【客观上的特性与关系】将</span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">不会成为【属性】</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2729" class="ax_default paragraph">
-        <div id="u2729_div" class=""></div>
-        <div id="u2729_text" class="text ">
+      <div id="u2726" class="ax_default paragraph">
+        <div id="u2726_div" class=""></div>
+        <div id="u2726_text" class="text ">
           <p><span>属性</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2730" class="ax_default paragraph">
-        <div id="u2730_div" class=""></div>
-        <div id="u2730_text" class="text ">
+      <div id="u2727" class="ax_default paragraph">
+        <div id="u2727_div" class=""></div>
+        <div id="u2727_text" class="text ">
           <p><span style="font-family:'微软雅黑';font-weight:400;">不是客观上的特性与关系，而是需人主动维护、承担“对客观世界认知”职能的【</span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">数据与接口</span><span style="font-family:'微软雅黑';font-weight:400;">】</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2731" class="ax_default heading_3">
-        <div id="u2731_div" class=""></div>
-        <div id="u2731_text" class="text ">
+      <div id="u2728" class="ax_default heading_3">
+        <div id="u2728_div" class=""></div>
+        <div id="u2728_text" class="text ">
           <p><span>一、属性定义</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2732" class="ax_default heading_3">
-        <div id="u2732_div" class=""></div>
-        <div id="u2732_text" class="text ">
+      <div id="u2729" class="ax_default heading_3">
+        <div id="u2729_div" class=""></div>
+        <div id="u2729_text" class="text ">
           <p><span>二、属性架构</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2733" class="ax_default label">
-        <div id="u2733_div" class=""></div>
-        <div id="u2733_text" class="text ">
+      <div id="u2730" class="ax_default label">
+        <div id="u2730_div" class=""></div>
+        <div id="u2730_text" class="text ">
           <p><span>【句柄】本质上是对【对象】在主观上的进一步包装</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u2734" class="ax_default line">
-        <img id="u2734_img" class="img " src="images/c指针_语法复杂/u85.png"/>
+      <div id="u2731" class="ax_default line">
+        <img id="u2731_img" class="img " src="images/c指针_语法复杂/u82.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2735" class="ax_default box_1">
-        <div id="u2735_div" class=""></div>
-        <div id="u2735_text" class="text ">
+      <div id="u2732" class="ax_default box_1">
+        <div id="u2732_div" class=""></div>
+        <div id="u2732_text" class="text ">
           <p><span>姓名</span></p><p><span>性别</span></p><p><span>年龄</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2736" class="ax_default box_1">
-        <div id="u2736_div" class=""></div>
+      <div id="u2733" class="ax_default box_1">
+        <div id="u2733_div" class=""></div>
       </div>
 
       <!-- Unnamed (Shape) -->
-      <div id="u2737" class="ax_default icon">
-        <img id="u2737_img" class="img " src="images/object-property/u1837.png"/>
+      <div id="u2734" class="ax_default icon">
+        <img id="u2734_img" class="img " src="images/object-property/u1834.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2738" class="ax_default paragraph">
+      <div id="u2735" class="ax_default paragraph">
+        <div id="u2735_div" class=""></div>
+        <div id="u2735_text" class="text ">
+          <p><span>addr</span></p><p><span>version</span></p><p><span>update（）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2736" class="ax_default heading_3">
+        <div id="u2736_div" class=""></div>
+        <div id="u2736_text" class="text ">
+          <p><span>A</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2737" class="ax_default heading_3">
+        <div id="u2737_div" class=""></div>
+        <div id="u2737_text" class="text ">
+          <p><span>Object</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2738" class="ax_default heading_3">
         <div id="u2738_div" class=""></div>
         <div id="u2738_text" class="text ">
-          <p><span>addr</span></p><p><span>version</span></p><p><span>update（）</span></p>
+          <p><span>所以在问“A的属性”时，才会同时包含 【句柄属性】+【对象属性】</span></p>
         </div>
       </div>
 
@@ -647,7 +671,7 @@
       <div id="u2739" class="ax_default heading_3">
         <div id="u2739_div" class=""></div>
         <div id="u2739_text" class="text ">
-          <p><span>A</span></p>
+          <p><span>现在，我们能更深刻的回答之前的问题了——</span><span style="text-decoration:underline;color:#0000FF;">那为什么不像传统编程那样直接叫“变量”？</span></p>
         </div>
       </div>
 
@@ -655,7 +679,7 @@
       <div id="u2740" class="ax_default heading_3">
         <div id="u2740_div" class=""></div>
         <div id="u2740_text" class="text ">
-          <p><span>Object</span></p>
+          <p><span>-- 点击跳转</span></p>
         </div>
       </div>
 
@@ -663,7 +687,7 @@
       <div id="u2741" class="ax_default heading_3">
         <div id="u2741_div" class=""></div>
         <div id="u2741_text" class="text ">
-          <p><span>所以在问“A的属性”时，才会同时包含 【句柄属性】+【对象属性】</span></p>
+          <p><span>传统编程里的【变量】：只是在强调一个【可变的对象】，本质还是【对象】</span></p>
         </div>
       </div>
 
@@ -671,58 +695,34 @@
       <div id="u2742" class="ax_default heading_3">
         <div id="u2742_div" class=""></div>
         <div id="u2742_text" class="text ">
-          <p><span>现在，我们能更深刻的回答之前的问题了——</span><span style="text-decoration:underline;color:#0000FF;">那为什么不像传统编程那样直接叫“变量”？</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2743" class="ax_default heading_3">
-        <div id="u2743_div" class=""></div>
-        <div id="u2743_text" class="text ">
-          <p><span>-- 点击跳转</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2744" class="ax_default heading_3">
-        <div id="u2744_div" class=""></div>
-        <div id="u2744_text" class="text ">
-          <p><span>传统编程里的【变量】：只是在强调一个【可变的对象】，本质还是【对象】</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2745" class="ax_default heading_3">
-        <div id="u2745_div" class=""></div>
-        <div id="u2745_text" class="text ">
           <p><span>AXION的【句柄】：是对【对象】的进一步封装，可在对象之外叠加额外属性</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2746" class="ax_default label">
-        <div id="u2746_div" class=""></div>
-        <div id="u2746_text" class="text ">
+      <div id="u2743" class="ax_default label">
+        <div id="u2743_div" class=""></div>
+        <div id="u2743_text" class="text ">
           <p><span>结论</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u2747" class="ax_default line">
-        <img id="u2747_img" class="img " src="images/c指针_语法复杂/u85.png"/>
+      <div id="u2744" class="ax_default line">
+        <img id="u2744_img" class="img " src="images/c指针_语法复杂/u82.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2748" class="ax_default paragraph">
-        <div id="u2748_div" class=""></div>
-        <div id="u2748_text" class="text ">
+      <div id="u2745" class="ax_default paragraph">
+        <div id="u2745_div" class=""></div>
+        <div id="u2745_text" class="text ">
           <p><span>A的对象属性 = 对象属性</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2749" class="ax_default box_1">
-        <div id="u2749_div" class=""></div>
+      <div id="u2746" class="ax_default box_1">
+        <div id="u2746_div" class=""></div>
       </div>
     </div>
   </body>
