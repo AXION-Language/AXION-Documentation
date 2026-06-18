@@ -1,0 +1,730 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>传统“预编译宏”的问题</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/传统“预编译宏”的问题/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/传统“预编译宏”的问题/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3318" class="ax_default label">
+        <div id="u3318_div" class=""></div>
+        <div id="u3318_text" class="text ">
+          <p><span>传统“预编译宏”是预编译阶段纯粹的文本替换</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u3319" class="ax_default line">
+        <img id="u3319_img" class="img " src="images/c指针_语法复杂/u82.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3320" class="ax_default heading_3">
+        <div id="u3320_div" class=""></div>
+        <div id="u3320_text" class="text ">
+          <p><span>它们确实很像，所以 C 开发者在刚接触到AXION的【解释符】时，很容易和【预编译宏#define】联系在一起，这无可厚非</span></p><p><span>—— 但实际上，【AXION解释型句柄】和【C预编译宏】的设计理念、实现原理、能力范围 的差异都很大</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3321" class="ax_default heading_3">
+        <div id="u3321_div" class=""></div>
+        <div id="u3321_text" class="text ">
+          <p><span>C/C++的宏：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3322" class="ax_default box_1">
+        <div id="u3322_div" class=""></div>
+        <div id="u3322_text" class="text ">
+          <p><span>#define PI 3.14159</span></p><p><span>#define MAX 100</span></p><p><span><br></span></p><p><span>float area = PI * r * r;&nbsp; // 展开为: float area = 3.14159 * r * r;</span></p><p><span>int arr[MAX];&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // 展开为: int arr[100];</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3323" class="ax_default box_1">
+        <div id="u3323_div" class=""></div>
+        <div id="u3323_text" class="text ">
+          <p><span>#define b a</span></p><p><span><br></span></p><p><span>int a=10</span></p><p><span>print(&quot;%d&quot;,b)&nbsp; &nbsp; &nbsp;&nbsp; // 展开为: print(&quot;%d&quot;,a)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u3324" class="compound ax_default line" WidgetHeight="1" WidgetWidth="190" CompoundMode="true">
+        <img id="u3324_img" class="singleImg img " src="images/传统“预编译宏”的问题/u3324.png"/>
+        <div id="u3324p000" class="ax_vector_shape" WidgetTopLeftX="-0.489690721649485" WidgetTopLeftY="0" WidgetTopRightX="0.489690721649485" WidgetTopRightY="0" WidgetBottomLeftX="-0.489690721649485" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.489690721649485" WidgetBottomRightY="0.166666666666667">
+          <img id="u3324p000_img" class="img " src="images/传统“预编译宏”的问题/u3324p000.png"/>
+        </div>
+        <div id="u3324p001" class="ax_vector_shape" WidgetTopLeftX="0" WidgetTopLeftY="-0.25" WidgetTopRightX="47.5" WidgetTopRightY="-0.25" WidgetBottomLeftX="0" WidgetBottomLeftY="0" WidgetBottomRightX="47.5" WidgetBottomRightY="0">
+          <img id="u3324p001_img" class="img " src="images/axion_指针的语义与实现/u795p001.png"/>
+        </div>
+        <div id="u3324p002" class="ax_vector_shape" WidgetTopLeftX="8.5" WidgetTopLeftY="0.05" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0.05" WidgetBottomLeftX="8.5" WidgetBottomLeftY="0" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="0">
+          <img id="u3324p002_img" class="img " src="images/c指针_的局限性/u136p001.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u3325" class="compound ax_default line" WidgetHeight="1" WidgetWidth="190" CompoundMode="true">
+        <img id="u3325_img" class="singleImg img " src="images/传统“预编译宏”的问题/u3324.png"/>
+        <div id="u3325p000" class="ax_vector_shape" WidgetTopLeftX="-0.489690721649485" WidgetTopLeftY="0" WidgetTopRightX="0.489690721649485" WidgetTopRightY="0" WidgetBottomLeftX="-0.489690721649485" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.489690721649485" WidgetBottomRightY="0.166666666666667">
+          <img id="u3325p000_img" class="img " src="images/传统“预编译宏”的问题/u3324p000.png"/>
+        </div>
+        <div id="u3325p001" class="ax_vector_shape" WidgetTopLeftX="0" WidgetTopLeftY="-0.25" WidgetTopRightX="47.5" WidgetTopRightY="-0.25" WidgetBottomLeftX="0" WidgetBottomLeftY="0" WidgetBottomRightX="47.5" WidgetBottomRightY="0">
+          <img id="u3325p001_img" class="img " src="images/axion_指针的语义与实现/u795p001.png"/>
+        </div>
+        <div id="u3325p002" class="ax_vector_shape" WidgetTopLeftX="8.5" WidgetTopLeftY="0.05" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0.05" WidgetBottomLeftX="8.5" WidgetBottomLeftY="0" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="0">
+          <img id="u3325p002_img" class="img " src="images/c指针_的局限性/u136p001.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3326" class="ax_default paragraph">
+        <div id="u3326_div" class=""></div>
+        <div id="u3326_text" class="text ">
+          <p><span>查找：MAX 替换为:100</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3327" class="ax_default paragraph">
+        <div id="u3327_div" class=""></div>
+        <div id="u3327_text" class="text ">
+          <p><span>查找：PI&nbsp; 替换为 : 3.14159</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3328" class="ax_default box_1">
+        <div id="u3328_div" class=""></div>
+        <div id="u3328_text" class="text ">
+          <p><span>float area = 3.14159 * r * r;</span></p><p><span>int arr[100];</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u3329" class="ax_default image">
+        <img id="u3329_img" class="img " src="images/传统“预编译宏”的问题/u3329.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3330" class="ax_default paragraph">
+        <div id="u3330_div" class=""></div>
+        <div id="u3330_text" class="text ">
+          <p><span>#define逻辑上完全等价于你自己在编辑器里手动Ctrl+F 、输入关键词、 查找+替换 、确定</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3331" class="ax_default box_1">
+        <div id="u3331_div" class=""></div>
+        <div id="u3331_text" class="text ">
+          <p><span>int a=10</span></p><p><span>print(&quot;%d&quot;,a)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3332" class="ax_default paragraph">
+        <div id="u3332_div" class=""></div>
+        <div id="u3332_text" class="text ">
+          <p><span>查找:b 替换为: a</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3333" class="ax_default box_1">
+        <div id="u3333_div" class=""></div>
+        <div id="u3333_text" class="text ">
+          <p><span>int a = 10</span></p><p><span>int b -&gt; a</span></p><p><span>print b+5</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3334" class="ax_default box_1">
+        <div id="u3334_div" class=""></div>
+        <div id="u3334_text" class="text ">
+          <p><span>int a : 10</span></p><p><span><br></span></p><p><span># ~int addr&nbsp; :&nbsp; ~a</span></p><p><span>int c&nbsp; </span><span style="color:#0000FF;">::</span><span> </span><span style="color:#0000FF;"> #addr~</span></p><p><span style="color:#0000FF;"><br></span></p><p><span>print c+5</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3335" class="ax_default paragraph">
+        <div id="u3335_div" class=""></div>
+        <div id="u3335_text" class="text ">
+          <p><span>之前我们学的AXION 指针</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3336" class="ax_default paragraph">
+        <div id="u3336_div" class=""></div>
+        <div id="u3336_text" class="text ">
+          <p><span>C/C++ 预编译宏</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3337" class="ax_default box_1">
+        <div id="u3337_div" class=""></div>
+        <div id="u3337_text" class="text ">
+          <p><span>#define c *c_ptr</span></p><p><span><br></span></p><p><span>int a = 10;</span></p><p><span>int* c_ptr = &amp;a;</span></p><p><span><br></span></p><p><span>printf(&quot;%d&quot;,c+5)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3338" class="ax_default paragraph">
+        <div id="u3338_div" class=""></div>
+        <div id="u3338_text" class="text ">
+          <p><span>它凌驾于一切语言契约，无视任何运算符、作用域、类型系统.......</span></p><p><span>仅仅是纯文本的查找与替换（哪怕是一串毫无意义的乱码符号）</span></p><p><span>看似在编程，实则只是 文本批量脚本，正在侵入式地污染编程逻辑</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3339" class="ax_default paragraph">
+        <div id="u3339_div" class=""></div>
+        <div id="u3339_text" class="text ">
+          <p><span>运算优先级错误</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3340" class="ax_default box_1">
+        <div id="u3340_div" class=""></div>
+        <div id="u3340_text" class="text ">
+          <p><span>#define DOUBLE(x) x + x</span></p><p><span>10 * DOUBLE(5)&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3341" class="ax_default box_1">
+        <div id="u3341_div" class=""></div>
+        <div id="u3341_text" class="text ">
+          <p><span>10 * 5+5</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u3342" class="compound ax_default line" WidgetHeight="1" WidgetWidth="103" CompoundMode="true">
+        <img id="u3342_img" class="singleImg img " src="images/传统“预编译宏”的问题/u3342.png"/>
+        <div id="u3342p000" class="ax_vector_shape" WidgetTopLeftX="-0.472222222222222" WidgetTopLeftY="0" WidgetTopRightX="0.481481481481481" WidgetTopRightY="0" WidgetBottomLeftX="-0.472222222222222" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.481481481481481" WidgetBottomRightY="0.166666666666667">
+          <img id="u3342p000_img" class="img " src="images/传统“预编译宏”的问题/u3342p000.png"/>
+        </div>
+        <div id="u3342p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.25" WidgetTopRightX="25.5" WidgetTopRightY="-0.25" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="25.5" WidgetBottomRightY="0">
+          <img id="u3342p001_img" class="img " src="images/axion_地址与类型系统的关系/u250p001.png"/>
+        </div>
+        <div id="u3342p002" class="ax_vector_shape" WidgetTopLeftX="4.54545454545455" WidgetTopLeftY="0.05" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0.05" WidgetBottomLeftX="4.54545454545455" WidgetBottomLeftY="0" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="0">
+          <img id="u3342p002_img" class="img " src="images/c指针_的局限性/u136p001.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3343" class="ax_default paragraph">
+        <div id="u3343_div" class=""></div>
+        <div id="u3343_text" class="text ">
+          <p><span>宏展开</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3344" class="ax_default heading_3">
+        <div id="u3344_div" class=""></div>
+        <div id="u3344_text" class="text ">
+          <p><span>-- 预期结果100</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3345" class="ax_default heading_3">
+        <div id="u3345_div" class=""></div>
+        <div id="u3345_text" class="text ">
+          <p><span>-- 实际结果55 ❌️</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3346" class="ax_default box_1">
+        <div id="u3346_div" class=""></div>
+        <div id="u3346_text" class="text ">
+          <p><span>#define SQUAR(x) (x * x)</span></p><p><span>SQUAR(3+5)&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3347" class="ax_default box_1">
+        <div id="u3347_div" class=""></div>
+        <div id="u3347_text" class="text ">
+          <p><span>3+5*3+5</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u3348" class="compound ax_default line" WidgetHeight="1" WidgetWidth="103" CompoundMode="true">
+        <img id="u3348_img" class="singleImg img " src="images/传统“预编译宏”的问题/u3342.png"/>
+        <div id="u3348p000" class="ax_vector_shape" WidgetTopLeftX="-0.472222222222222" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.481481481481481" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.472222222222222" WidgetBottomLeftY="0" WidgetBottomRightX="0.481481481481481" WidgetBottomRightY="0">
+          <img id="u3348p000_img" class="img " src="images/传统“预编译宏”的问题/u3348p000.png"/>
+        </div>
+        <div id="u3348p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.5" WidgetTopRightX="25.5" WidgetTopRightY="-0.5" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="25.5" WidgetBottomRightY="0">
+          <img id="u3348p001_img" class="img " src="images/axion_地址与类型系统的关系/u246p001.png"/>
+        </div>
+        <div id="u3348p002" class="ax_vector_shape" WidgetTopLeftX="4.54545454545455" WidgetTopLeftY="0" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0" WidgetBottomLeftX="4.54545454545455" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="-0.05">
+          <img id="u3348p002_img" class="img " src="images/c指针_的局限性/u136p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3349" class="ax_default paragraph">
+        <div id="u3349_div" class=""></div>
+        <div id="u3349_text" class="text ">
+          <p><span>宏展开</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3350" class="ax_default heading_3">
+        <div id="u3350_div" class=""></div>
+        <div id="u3350_text" class="text ">
+          <p><span>-- 预期结果64</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3351" class="ax_default heading_3">
+        <div id="u3351_div" class=""></div>
+        <div id="u3351_text" class="text ">
+          <p><span>-- 实际结果23 ❌️</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3352" class="ax_default paragraph">
+        <div id="u3352_div" class=""></div>
+        <div id="u3352_text" class="text ">
+          <p><span>于是你会想，那我给（x+x）加个括号不就行了？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3353" class="ax_default paragraph">
+        <div id="u3353_div" class=""></div>
+        <div id="u3353_text" class="text ">
+          <p><span>要想彻底保护优先级，必须多重括号全方位保护，但显然是太麻烦了——精力全被投入到如何避免优先级错误上了，没法专注于业务逻辑</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3354" class="ax_default box_1">
+        <div id="u3354_div" class=""></div>
+        <div id="u3354_text" class="text ">
+          <p><span>#define SQUAR(x) ((x) * (x))</span></p><p><span>SQUAR(3+5)&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3355" class="ax_default box_1">
+        <div id="u3355_div" class=""></div>
+        <div id="u3355_text" class="text ">
+          <p><span>(3+5)*(3+5)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u3356" class="compound ax_default line" WidgetHeight="1" WidgetWidth="103" CompoundMode="true">
+        <img id="u3356_img" class="singleImg img " src="images/传统“预编译宏”的问题/u3342.png"/>
+        <div id="u3356p000" class="ax_vector_shape" WidgetTopLeftX="-0.472222222222222" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.481481481481481" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.472222222222222" WidgetBottomLeftY="0" WidgetBottomRightX="0.481481481481481" WidgetBottomRightY="0">
+          <img id="u3356p000_img" class="img " src="images/传统“预编译宏”的问题/u3348p000.png"/>
+        </div>
+        <div id="u3356p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.5" WidgetTopRightX="25.5" WidgetTopRightY="-0.5" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="25.5" WidgetBottomRightY="0">
+          <img id="u3356p001_img" class="img " src="images/axion_地址与类型系统的关系/u246p001.png"/>
+        </div>
+        <div id="u3356p002" class="ax_vector_shape" WidgetTopLeftX="4.54545454545455" WidgetTopLeftY="0" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0" WidgetBottomLeftX="4.54545454545455" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="-0.05">
+          <img id="u3356p002_img" class="img " src="images/c指针_的局限性/u136p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3357" class="ax_default paragraph">
+        <div id="u3357_div" class=""></div>
+        <div id="u3357_text" class="text ">
+          <p><span>宏展开</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3358" class="ax_default heading_3">
+        <div id="u3358_div" class=""></div>
+        <div id="u3358_text" class="text ">
+          <p><span>-- 预期结果64</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3359" class="ax_default heading_3">
+        <div id="u3359_div" class=""></div>
+        <div id="u3359_text" class="text ">
+          <p><span>-- 实际结果64 ✔️</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3360" class="ax_default paragraph">
+        <div id="u3360_div" class=""></div>
+        <div id="u3360_text" class="text ">
+          <p><span>完全无视类型系统(不安全)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3361" class="ax_default box_1">
+        <div id="u3361_div" class=""></div>
+        <div id="u3361_text" class="text ">
+          <p><span>#define SUB5(x) x - 5</span></p><p><span><br></span></p><p><span>int main() {</span></p><p><span>&nbsp;&nbsp;&nbsp; </span><span style="color:#0000FF;">int money = 100</span><span>;</span></p><p><span>&nbsp;&nbsp;&nbsp; int result = SUB(money);</span></p><p><span>&nbsp;&nbsp;&nbsp; printf(&quot;%d\n&quot;, result);&nbsp; </span></p><p><span>&nbsp;&nbsp;&nbsp; </span></p><p><span>&nbsp;&nbsp;&nbsp; // 误传字符串时：</span></p><p><span>&nbsp;&nbsp;&nbsp; </span><span style="color:#0000FF;">char* money_str = &quot;100&quot;;</span></p><p><span>&nbsp;&nbsp;&nbsp; int result2 = SUB(money_str);</span></p><p><span>&nbsp;&nbsp;&nbsp; printf(&quot;%d\n&quot;, result2);&nbsp; </span></p><p><span>&nbsp;&nbsp;&nbsp; return 0;</span></p><p><span>}</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3362" class="ax_default heading_3">
+        <div id="u3362_div" class=""></div>
+        <div id="u3362_text" class="text ">
+          <p><span>-- 预期 95，实际95 ✔️</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3363" class="ax_default paragraph">
+        <div id="u3363_div" class=""></div>
+        <div id="u3363_text" class="text ">
+          <p><span>其他还有难以调试等各种各样的问题，大型项目里的很容易埋下难以排查的安全隐患</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3364" class="ax_default paragraph">
+        <div id="u3364_div" class=""></div>
+        <div id="u3364_text" class="text ">
+          <p><span>这一切的根源都在于#define是纯文本替换，严格意义上它不属于编程语言的一部分，脱离了编译规则</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3365" class="ax_default label">
+        <div id="u3365_div" class=""></div>
+        <div id="u3365_text" class="text ">
+          <p><span>传统“预编译宏”的根本问题：不含语义</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u3366" class="ax_default line">
+        <img id="u3366_img" class="img " src="images/c指针_语法复杂/u82.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3367" class="ax_default heading_3">
+        <div id="u3367_div" class=""></div>
+        <div id="u3367_text" class="text ">
+          <p><span>-- 程序完美运行，没有任何报错，于是开开心心提交代码、下班</span></p><p><span>然后金额变成了 21472697....❌️</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3368" class="ax_default box_1">
+        <div id="u3368_div" class=""></div>
+        <div id="u3368_text" class="text ">
+          <p><span>#define DOUBLE(x) (x + x)</span></p><p><span>10 * DOUBLE(5)&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u3369" class="compound ax_default line" WidgetHeight="1" WidgetWidth="103" CompoundMode="true">
+        <img id="u3369_img" class="singleImg img " src="images/传统“预编译宏”的问题/u3342.png"/>
+        <div id="u3369p000" class="ax_vector_shape" WidgetTopLeftX="-0.472222222222222" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.481481481481481" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.472222222222222" WidgetBottomLeftY="0" WidgetBottomRightX="0.481481481481481" WidgetBottomRightY="0">
+          <img id="u3369p000_img" class="img " src="images/传统“预编译宏”的问题/u3348p000.png"/>
+        </div>
+        <div id="u3369p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.5" WidgetTopRightX="25.5" WidgetTopRightY="-0.5" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="25.5" WidgetBottomRightY="0">
+          <img id="u3369p001_img" class="img " src="images/axion_地址与类型系统的关系/u246p001.png"/>
+        </div>
+        <div id="u3369p002" class="ax_vector_shape" WidgetTopLeftX="4.54545454545455" WidgetTopLeftY="0" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0" WidgetBottomLeftX="4.54545454545455" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="-0.05">
+          <img id="u3369p002_img" class="img " src="images/c指针_的局限性/u136p002.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3370" class="ax_default paragraph">
+        <div id="u3370_div" class=""></div>
+        <div id="u3370_text" class="text ">
+          <p><span>宏展开</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3371" class="ax_default heading_3">
+        <div id="u3371_div" class=""></div>
+        <div id="u3371_text" class="text ">
+          <p><span>-- 预期结果100</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3372" class="ax_default box_1">
+        <div id="u3372_div" class=""></div>
+        <div id="u3372_text" class="text ">
+          <p><span>10 * (5+5)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3373" class="ax_default heading_3">
+        <div id="u3373_div" class=""></div>
+        <div id="u3373_text" class="text ">
+          <p><span>-- 实际结果100 ✔️</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3374" class="ax_default paragraph">
+        <div id="u3374_div" class=""></div>
+        <div id="u3374_text" class="text ">
+          <p><span>但这只是刚好碰巧正确，换个情况又出问题了</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3375" class="ax_default label">
+        <div id="u3375_div" class=""></div>
+        <div id="u3375_text" class="text ">
+          <p><span>简单的案例，快速体验 AXION【解释型句柄】的能力</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u3376" class="ax_default line">
+        <img id="u3376_img" class="img " src="images/c指针_语法复杂/u82.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3377" class="ax_default paragraph">
+        <div id="u3377_div" class=""></div>
+        <div id="u3377_text" class="text ">
+          <p><span>本质上只是AXION【解释型句柄】的语法糖</span></p><p><span>完整写法是：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3378" class="ax_default paragraph">
+        <div id="u3378_div" class=""></div>
+        <div id="u3378_text" class="text ">
+          <p><span>--手动定义一个int的引用，存储a的引用</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3379" class="ax_default paragraph">
+        <div id="u3379_div" class=""></div>
+        <div id="u3379_text" class="text ">
+          <p><span>-- 手动把c解释为 #addr的解引用</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3380" class="ax_default paragraph">
+        <div id="u3380_div" class=""></div>
+        <div id="u3380_text" class="text ">
+          <p><span style="color:#008000;">-- 会被编译器理解为&nbsp; </span><span style="color:#0000FF;">c#addr~</span><span style="color:#008000;">&nbsp; +&nbsp; 5 ，输出15</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3381" class="ax_default paragraph">
+        <div id="u3381_div" class=""></div>
+        <div id="u3381_text" class="text ">
+          <p><span>-- 15</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3382" class="ax_default box_1">
+        <div id="u3382_div" class=""></div>
+        <div id="u3382_text" class="text ">
+          <p><span>10</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3383" class="ax_default box_1">
+        <div id="u3383_div" class=""></div>
+        <div id="u3383_text" class="text ">
+          <p><span>0x1000</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3384" class="ax_default heading_3">
+        <div id="u3384_div" class=""></div>
+        <div id="u3384_text" class="text ">
+          <p><span>0x1000</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3385" class="ax_default heading_3">
+        <div id="u3385_div" class=""></div>
+        <div id="u3385_text" class="text ">
+          <p><span>0x1004</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3386" class="ax_default heading_3">
+        <div id="u3386_div" class=""></div>
+        <div id="u3386_text" class="text ">
+          <p><span>a</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3387" class="ax_default heading_3">
+        <div id="u3387_div" class=""></div>
+        <div id="u3387_text" class="text ">
+          <p><span>b#addr</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3388" class="ax_default heading_3">
+        <div id="u3388_div" class=""></div>
+        <div id="u3388_text" class="text ">
+          <p><span>b</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3389" class="ax_default heading_3">
+        <div id="u3389_div" class=""></div>
+        <div id="u3389_text" class="text ">
+          <p><span>符号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3390" class="ax_default heading_3">
+        <div id="u3390_div" class=""></div>
+        <div id="u3390_text" class="text ">
+          <p><span>运行时 内存</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u3391" class="ax_default connector">
+        <img id="u3391_seg0" class="img " src="images/传统“预编译宏”的问题/u3391_seg0.png" alt="u3391_seg0"/>
+        <img id="u3391_seg1" class="img " src="images/传统“预编译宏”的问题/u3391_seg1.png" alt="u3391_seg1"/>
+        <div id="u3391_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u3392" class="ax_default connector">
+        <img id="u3392_seg0" class="img " src="images/传统“预编译宏”的问题/u3392_seg0.png" alt="u3392_seg0"/>
+        <img id="u3392_seg1" class="img " src="images/传统“预编译宏”的问题/u3391_seg1.png" alt="u3392_seg1"/>
+        <div id="u3392_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u3393" class="ax_default connector">
+        <img id="u3393_seg0" class="img " src="images/传统“预编译宏”的问题/u3393_seg0.png" alt="u3393_seg0"/>
+        <img id="u3393_seg1" class="img " src="images/传统“预编译宏”的问题/u3393_seg1.png" alt="u3393_seg1"/>
+        <img id="u3393_seg2" class="img " src="images/传统“预编译宏”的问题/u3393_seg2.png" alt="u3393_seg2"/>
+        <div id="u3393_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3394" class="ax_default heading_3">
+        <div id="u3394_div" class=""></div>
+        <div id="u3394_text" class="text ">
+          <p><span>-- 画成虚线是想表示：编译器并不会直接静态地把 b 指向 10 这个数据</span></p><p><span>而是会根据 b#addr 在运行时动态计算</span></p><p><span>现在b#addr存的是0x1000的地址，所以通过b 即可直接访问10这个数据</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3395" class="ax_default paragraph">
+        <div id="u3395_div" class=""></div>
+        <div id="u3395_text" class="text ">
+          <p><span>--定义一个宏，把c替换为&nbsp; *c_ptr</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3396" class="ax_default paragraph">
+        <div id="u3396_div" class=""></div>
+        <div id="u3396_text" class="text ">
+          <p><span>--定义c_ptr是int指针，存储a的地址</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3397" class="ax_default paragraph">
+        <div id="u3397_div" class=""></div>
+        <div id="u3397_text" class="text ">
+          <p><span>-- c 会被替换为 *c_ptr，输出15</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3398" class="ax_default paragraph">
+        <div id="u3398_div" class=""></div>
+        <div id="u3398_text" class="text ">
+          <p><span>即，从技术上说只需【实例型句柄 : 】 和 【解释型句柄 ::】就够了</span></p><p><span>【指针型句柄 -&gt;】不是必要的</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3399" class="ax_default label">
+        <div id="u3399_div" class=""></div>
+        <div id="u3399_text" class="text ">
+          <p><span>利用C系列的【预编译宏】，也能模拟上述效果</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u3400" class="ax_default line">
+        <img id="u3400_img" class="img " src="images/c指针_语法复杂/u82.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3401" class="ax_default paragraph">
+        <div id="u3401_div" class=""></div>
+        <div id="u3401_text" class="text ">
+          <p><span>--语法糖‌（Syntactic Sugar）</span></p><p><span>指编程语言中，为了提升代码可读性或简洁性而设计的便捷写法</span></p><p><span>其底层逻辑不变、不提供新功能，但能让代码更好写、更好看</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3402" class="ax_default box_1">
+        <div id="u3402_div" class=""></div>
+      </div>
+    </div>
+  </body>
+</html>

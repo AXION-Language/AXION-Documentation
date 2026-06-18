@@ -137,7 +137,7 @@
       <div id="u1238" class="ax_default paragraph">
         <div id="u1238_div" class=""></div>
         <div id="u1238_text" class="text ">
-          <p><span style="font-family:'微软雅黑';font-weight:400;color:#1E1E1E;">当时在指针这里，我们就已经用初步体会到“句柄这个概念的价值”了 </span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#1E1E1E;">-&gt; 是修改指针，改变的是“</span><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">c所代表的对象</span><span style="font-family:'微软雅黑';font-weight:400;color:#1E1E1E;">”——所以是【句柄操作符】 </span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#1E1E1E;">=&nbsp; 是修改</span><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">“对象本身的值</span><span style="font-family:'微软雅黑';font-weight:400;color:#1E1E1E;">”——所以是【对象操作符】</span><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;color:#1E1E1E;"> </span></p><p><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;color:#1E1E1E;">通过这种区分，避免了C++引用操作的歧义</span></p>
+          <p><span style="font-family:'微软雅黑';font-weight:400;color:#1E1E1E;">当时在指针这里，我们就已经用初步体会到“句柄这个概念的价值”了 </span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#1E1E1E;">-&gt; 是修改指针，改变的是“</span><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">c所代表的对象</span><span style="font-family:'微软雅黑';font-weight:400;color:#1E1E1E;">”——所以是【句柄操作符】 </span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#1E1E1E;">=&nbsp; 是修改</span><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">“对象本身的值</span><span style="font-family:'微软雅黑';font-weight:400;color:#1E1E1E;">”——所以是【对象操作符】</span><span style="font-family:'微软雅黑';font-weight:400;color:#1E1E1E;"> </span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#1E1E1E;">通过这种区分，避免了C++引用操作的歧义</span></p>
         </div>
       </div>
 
@@ -355,7 +355,7 @@
       <div id="u1267" class="ax_default">
 
         <!-- Unnamed (Table Cell) -->
-        <div id="u1268" class="ax_default table_cell">
+        <div id="u1268" class="ax_default">
           <img id="u1268_img" class="img " src="images/句柄操作_vs_对象操作/u1268.png"/>
           <div id="u1268_text" class="text ">
             <p><span>句柄操作符</span></p>
@@ -363,10 +363,10 @@
         </div>
 
         <!-- Unnamed (Table Cell) -->
-        <div id="u1269" class="ax_default table_cell">
+        <div id="u1269" class="ax_default">
           <img id="u1269_img" class="img " src="images/句柄操作_vs_对象操作/u1269.png"/>
           <div id="u1269_text" class="text ">
-            <p><span>对象操作符</span></p>
+            <p><span>：定义与修改【实例型句柄】 </span></p><p><span>-&gt;定义与修改【指针型句柄】</span></p>
           </div>
         </div>
 
@@ -374,7 +374,7 @@
         <div id="u1270" class="ax_default">
           <img id="u1270_img" class="img " src="images/句柄操作_vs_对象操作/u1270.png"/>
           <div id="u1270_text" class="text ">
-            <p><span style="font-family:'微软雅黑';font-weight:400;">：定义【实例型句柄】/ 更换 对象实例</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑';font-weight:400;">-&gt;定义【指针型句柄】/ 更换 指针</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#008000;">...更多新的操作符，如即将学到的【解释型句柄 ::】</span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#008000;"><br></span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#008000;"><br></span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#008000;">句柄操作符</span><span style="font-family:'微软雅黑';font-weight:400;color:#008000;">肩负 核心语法框架 的职责</span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#008000;">是基于人类最底层的认知模式而设计的，与具体对象无关，一定是</span><span style="font-family:'微软雅黑';font-weight:400;color:#008000;">稳定的、少量的</span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#008000;">任何一点调整都涉及到对其他几十个模块、数百个场景的全盘演算</span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#008000;">（每个句柄操作都可能会影响到整套编译逻辑，甚至影响整个语言世界观）</span></p>
+            <p><span style="font-family:'微软雅黑';font-weight:400;">肩负 核心语法框架 的职责</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">基于人类最底层的认知模式而设计，与具体对象无关</span></p>
           </div>
         </div>
 
@@ -382,51 +382,99 @@
         <div id="u1271" class="ax_default">
           <img id="u1271_img" class="img " src="images/句柄操作_vs_对象操作/u1271.png"/>
           <div id="u1271_text" class="text ">
-            <p><span>=&nbsp; 修改对象的值</span></p><p><span><br></span></p><p><span>~ 取引用 与 解引用</span></p><p><span><br></span></p><p><span>+ - × ÷ ....这些基本运算也顺理成章被归为【对象操作符】</span></p><p><span><br></span></p><p><span style="color:#008000;">...更多新的操作符</span></p><p><span style="color:#008000;"><br></span></p><p><span style="color:#008000;">AXION允许你自由定义各种对象类型（抽象的、具体的、切片性质的....），对象操作符可任意拓展</span></p><p><span style="color:#008000;">就像日语片假名一样，这种不影响语法框架的，怎么方便怎么来，只要自己内部不冲突就行</span></p><p><span style="color:#008000;">（对象操作 最终无非就映射到一个代理函数上，非常简单与自由）</span></p>
+            <p><span>对象操作符</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u1272" class="ax_default">
+          <img id="u1272_img" class="img " src="images/句柄操作_vs_对象操作/u1272.png"/>
+          <div id="u1272_text" class="text ">
+            <p><span>=&nbsp; 修改对象的值</span></p><p><span>~ 取引用 与 解引用</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u1273" class="ax_default">
+          <img id="u1273_img" class="img " src="images/句柄操作_vs_对象操作/u1273.png"/>
+          <div id="u1273_text" class="text ">
+            <p><span>AXION允许你自由定义各种抽象的、具体的、切片性质的....对象类型</span></p><p><span>所以对象操作符可自由拓展，只要自己不冲突就行</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u1274" class="ax_default">
+          <img id="u1274_img" class="img " src="images/句柄操作_vs_对象操作/u1274.png"/>
+          <div id="u1274_text" class="text ">
+            <p><span>运算符</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u1275" class="ax_default">
+          <img id="u1275_img" class="img " src="images/句柄操作_vs_对象操作/u1275.png"/>
+          <div id="u1275_text" class="text ">
+            <p><span>+ - × ÷ ....这些是运算符，不是操作符</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u1276" class="ax_default">
+          <img id="u1276_img" class="img " src="images/句柄操作_vs_对象操作/u1276.png"/>
+          <div id="u1276_text" class="text ">
+            <p><span>【值】可以参与【运算】，但不能参与 【对象与句柄操作】</span></p><p><span>10 + a ✔️&nbsp; &nbsp; &nbsp;&nbsp; 10 ：a ❌️&nbsp; &nbsp; &nbsp; 10 = a ❌️&nbsp;&nbsp; </span></p>
           </div>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u1272" class="ax_default paragraph">
-        <div id="u1272_div" class=""></div>
-        <div id="u1272_text" class="text ">
-          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">这是有着革命意义的理论框架，打开了新世界的大门——</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">它将人类的思维 从传统编程那种 基于变量与值、只有=赋值&nbsp; 的死板框架里解放出来；</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">并允许你用根据直觉与喜好、放飞灵感与想象，定义属于自己的【操作准则】，满足你的任何象认知需求</span></p>
+      <div id="u1277" class="ax_default paragraph">
+        <div id="u1277_div" class=""></div>
+        <div id="u1277_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;color:#0000FF;">这无疑是具有革命意义的理论框架，打开了新世界的大门——</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">它将你的思维 从传统编程那种“基于变量与值、只有=赋值”的死板框架里解放出来；</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">根据该框架，你能明确知道每个领域的边界，因此就能放心地在领域内自由定义属于自己的操作准则 —— 有框架才能有自由</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u1273" class="ax_default paragraph">
-        <div id="u1273_div" class=""></div>
-        <div id="u1273_text" class="text ">
+      <div id="u1278" class="ax_default paragraph">
+        <div id="u1278_div" class=""></div>
+        <div id="u1278_text" class="text ">
           <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">此时尚存的疑问是：对“a:10 替换对象&nbsp; &nbsp; a=10 修改对象”这个逻辑没有实感——因为最终a的值都是10，似乎没差别？</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">尤其是按传统编程的世界观来看，int 就应该是值类型，是不可变的 ，那就更无法理解了</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">——这就是我们接下来要讨论的了</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u1274" class="ax_default heading_3">
-        <div id="u1274_div" class=""></div>
-        <div id="u1274_text" class="text ">
+      <div id="u1279" class="ax_default heading_3">
+        <div id="u1279_div" class=""></div>
+        <div id="u1279_text" class="text ">
           <p><span>-- 另外</span></p><p><span>GO的:= 与 = 和上述理论看似符号有类似，但实际差别非常大，根本不是同个东西</span></p><p><span>GO的：本质上就是类似var/def 的、用于标记“是首次声明”</span></p><p><span>例如全局变量必须用 var a = 123，而不能用还不能用&nbsp; a := 123 （var和：功能类似，二选一） </span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u1275" class="ax_default paragraph">
-        <div id="u1275_div" class=""></div>
-        <div id="u1275_text" class="text ">
-          <p><span>--在之后学习的【解释型句柄】里，想象力能提升到一个更高的层次</span></p>
+      <div id="u1280" class="ax_default paragraph">
+        <div id="u1280_div" class=""></div>
+        <div id="u1280_text" class="text ">
+          <p><span>--在之后学习【解释符】后，自由度能再提升一个层次</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u1276" class="ax_default box_1">
-        <div id="u1276_div" class=""></div>
+      <div id="u1281" class="ax_default box_1">
+        <div id="u1281_div" class=""></div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u1277" class="ax_default paragraph">
-        <div id="u1277_div" class=""></div>
+      <div id="u1282" class="ax_default paragraph">
+        <div id="u1282_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1283" class="ax_default paragraph">
+        <div id="u1283_div" class=""></div>
+        <div id="u1283_text" class="text ">
+          <p><span>--就像日语片假名一样，这种不影响语法框架的，怎么方便怎么来</span></p><p><span>（最终无非就映射到一个代理函数上，非常简单与自由）</span></p>
+        </div>
       </div>
     </div>
   </body>
