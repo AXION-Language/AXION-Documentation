@@ -25,18 +25,10 @@
     <div id="base" class="">
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u268" class="ax_default box_1">
-        <div id="u268_div" class=""></div>
-        <div id="u268_text" class="text ">
-          <p><span>int a=10</span></p><p><span>int b-&gt;a;</span></p><p><span>int x-&gt;b;</span></p><p><span><br></span></p><p><span>print x </span></p><p><span>print x+5</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u269" class="ax_default paragraph">
+      <div id="u269" class="ax_default box_1">
         <div id="u269_div" class=""></div>
         <div id="u269_text" class="text ">
-          <p><span>指针关系会一路传递到最终对象处</span></p>
+          <p><span>int a=10</span></p><p><span>int b-&gt;a;</span></p><p><span>int x-&gt;b;</span></p><p><span><br></span></p><p><span>print x </span></p><p><span>print x+5</span></p>
         </div>
       </div>
 
@@ -44,7 +36,7 @@
       <div id="u270" class="ax_default paragraph">
         <div id="u270_div" class=""></div>
         <div id="u270_text" class="text ">
-          <p><span>--x-&gt;b，b-&gt;a、合并后就变成了 x-&gt;a ——x仍然遵守int这个类型签名，你可以大胆把x当成int使用</span></p>
+          <p><span>指针关系会一路传递到最终对象处</span></p>
         </div>
       </div>
 
@@ -52,7 +44,7 @@
       <div id="u271" class="ax_default paragraph">
         <div id="u271_div" class=""></div>
         <div id="u271_text" class="text ">
-          <p><span>--输出11 ✔️</span></p>
+          <p><span>--x-&gt;b，b-&gt;a、合并后就变成了 x-&gt;a ——x仍然遵守int这个类型签名，你可以大胆把x当成int使用</span></p>
         </div>
       </div>
 
@@ -60,7 +52,7 @@
       <div id="u272" class="ax_default paragraph">
         <div id="u272_div" class=""></div>
         <div id="u272_text" class="text ">
-          <p><span>--输出15 ✔️</span></p>
+          <p><span>--输出11 ✔️</span></p>
         </div>
       </div>
 
@@ -68,7 +60,7 @@
       <div id="u273" class="ax_default paragraph">
         <div id="u273_div" class=""></div>
         <div id="u273_text" class="text ">
-          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">【AXION指针传递性】是一个非常方便的特性</span></p><p><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">尤其是将指针传递给子函数对源目标进行修改时，指针始终指向目标对象</span></p><p><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">无论有多少级指针嵌套 x-&gt;.....-&gt;c-&gt;b-&gt;a，你都可以通过x直接修改到源对象a，而不用担心“多级指针”所带来的复杂度</span></p><p><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;color:#0000FF;">类型签名“int x-&gt;” 已充分说明了这一点：符号x一定会直接指向目标int （一次解引用）</span></p>
+          <p><span>--输出15 ✔️</span></p>
         </div>
       </div>
 
@@ -76,28 +68,28 @@
       <div id="u274" class="ax_default paragraph">
         <div id="u274_div" class=""></div>
         <div id="u274_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">【AXION指针传递性】是一个非常方便的特性</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">尤其是将指针传递给子函数对源目标进行修改时，指针始终指向目标对象</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">无论有多少级指针嵌套 x-&gt;.....-&gt;c-&gt;b-&gt;a，你都可以通过x直接修改到源对象a，而不用担心“多级指针”所带来的复杂度</span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">类型签名“int x-&gt;” 已充分说明了这一点：符号x一定会直接指向目标int （一次解引用）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u275" class="ax_default paragraph">
+        <div id="u275_div" class=""></div>
+        <div id="u275_text" class="text ">
           <p><span>指针传递性</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u275" class="ax_default line">
-        <img id="u275_img" class="img " src="images/c指针_语法复杂/u84.png"/>
+      <div id="u276" class="ax_default line">
+        <img id="u276_img" class="img " src="images/c指针_语法复杂/u85.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u276" class="ax_default box_1">
-        <div id="u276_div" class=""></div>
-        <div id="u276_text" class="text ">
-          <p><span>int a =10</span></p><p><span>int b = 15</span></p><p><span>int c -&gt; a;</span></p><p><span>int d -&gt; c;</span></p><p><span><br></span></p><p><span>print d </span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u277" class="ax_default paragraph">
+      <div id="u277" class="ax_default box_1">
         <div id="u277_div" class=""></div>
         <div id="u277_text" class="text ">
-          <p><span>--根据指针传递性，最终d-&gt;a </span></p>
+          <p><span>int a =10</span></p><p><span>int b = 15</span></p><p><span>int c -&gt; a;</span></p><p><span>int d -&gt; c;</span></p><p><span><br></span></p><p><span>print d </span></p>
         </div>
       </div>
 
@@ -105,36 +97,36 @@
       <div id="u278" class="ax_default paragraph">
         <div id="u278_div" class=""></div>
         <div id="u278_text" class="text ">
+          <p><span>--根据指针传递性，最终d-&gt;a </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u279" class="ax_default paragraph">
+        <div id="u279_div" class=""></div>
+        <div id="u279_text" class="text ">
           <p><span>--输出10 ,就是a的值</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u279" class="ax_default heading_3">
-        <div id="u279_div" class=""></div>
+      <div id="u280" class="ax_default heading_3">
+        <div id="u280_div" class=""></div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u280" class="ax_default heading_3">
-        <div id="u280_div" class=""></div>
-        <div id="u280_text" class="text ">
+      <div id="u281" class="ax_default heading_3">
+        <div id="u281_div" class=""></div>
+        <div id="u281_text" class="text ">
           <p><span>但之后修改c指针的会怎样？d的值会变吗？</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u281" class="ax_default box_1">
-        <div id="u281_div" class=""></div>
-        <div id="u281_text" class="text ">
-          <p><span>c -&gt; b&nbsp; </span></p><p><span><br></span></p><p><span>print d </span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u282" class="ax_default paragraph">
+      <div id="u282" class="ax_default box_1">
         <div id="u282_div" class=""></div>
         <div id="u282_text" class="text ">
-          <p><span>--暂未用到</span></p>
+          <p><span>c -&gt; b&nbsp; </span></p><p><span><br></span></p><p><span>print d </span></p>
         </div>
       </div>
 
@@ -142,7 +134,7 @@
       <div id="u283" class="ax_default paragraph">
         <div id="u283_div" class=""></div>
         <div id="u283_text" class="text ">
-          <p><span>--从指向a改成指向b</span></p>
+          <p><span>--暂未用到</span></p>
         </div>
       </div>
 
@@ -150,15 +142,15 @@
       <div id="u284" class="ax_default paragraph">
         <div id="u284_div" class=""></div>
         <div id="u284_text" class="text ">
-          <p><span>--不变，还是输出a里的10，而不是b里的15 </span></p>
+          <p><span>--从指向a改成指向b</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u285" class="ax_default heading_3">
+      <div id="u285" class="ax_default paragraph">
         <div id="u285_div" class=""></div>
         <div id="u285_text" class="text ">
-          <p><span>c</span></p>
+          <p><span>--不变，还是输出a里的10，而不是b里的15 </span></p>
         </div>
       </div>
 
@@ -166,7 +158,7 @@
       <div id="u286" class="ax_default heading_3">
         <div id="u286_div" class=""></div>
         <div id="u286_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>c</span></p>
         </div>
       </div>
 
@@ -174,25 +166,25 @@
       <div id="u287" class="ax_default heading_3">
         <div id="u287_div" class=""></div>
         <div id="u287_text" class="text ">
+          <p><span>b</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u288" class="ax_default heading_3">
+        <div id="u288_div" class=""></div>
+        <div id="u288_text" class="text ">
           <p><span>a</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u288" class="ax_default connector">
-        <img id="u288_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg0.png" alt="u288_seg0"/>
-        <img id="u288_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg1.png" alt="u288_seg1"/>
-        <img id="u288_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg2.png" alt="u288_seg2"/>
-        <div id="u288_text" class="text " style="display:none; visibility: hidden">
+      <div id="u289" class="ax_default connector">
+        <img id="u289_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg0.png" alt="u289_seg0"/>
+        <img id="u289_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg1.png" alt="u289_seg1"/>
+        <img id="u289_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg2.png" alt="u289_seg2"/>
+        <div id="u289_text" class="text " style="display:none; visibility: hidden">
           <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u289" class="ax_default box_1">
-        <div id="u289_div" class=""></div>
-        <div id="u289_text" class="text ">
-          <p><span>10</span></p>
         </div>
       </div>
 
@@ -200,44 +192,44 @@
       <div id="u290" class="ax_default box_1">
         <div id="u290_div" class=""></div>
         <div id="u290_text" class="text ">
+          <p><span>10</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u291" class="ax_default box_1">
+        <div id="u291_div" class=""></div>
+        <div id="u291_text" class="text ">
           <p><span>15</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u291" class="ax_default paragraph">
-        <div id="u291_div" class=""></div>
-        <div id="u291_text" class="text ">
+      <div id="u292" class="ax_default paragraph">
+        <div id="u292_div" class=""></div>
+        <div id="u292_text" class="text ">
           <p><span>错误理解</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u292" class="ax_default line">
-        <img id="u292_img" class="img " src="images/c指针_语法复杂/u84.png"/>
+      <div id="u293" class="ax_default line">
+        <img id="u293_img" class="img " src="images/c指针_语法复杂/u85.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u293" class="ax_default heading_3">
-        <div id="u293_div" class=""></div>
-        <div id="u293_text" class="text ">
+      <div id="u294" class="ax_default heading_3">
+        <div id="u294_div" class=""></div>
+        <div id="u294_text" class="text ">
           <p><span>这种理解本身是客观存在的——这是【单纯的、静态的 符号替换】，关系在编译时就固定，运行时完全不需要地址/指针进行重定向，之后在【解释型句柄】里我们会给出关于它的方案</span></p><p><span><br></span></p><p><span>但【AXION的指针】并不是服务于这种场景的</span></p><p><span>【AXION的指针】被设计为依赖运行时地址，是一种【运行时的动态指针】——为了和传统编程的指针变量对应上</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u294" class="ax_default box_1">
-        <div id="u294_div" class=""></div>
-        <div id="u294_text" class="text ">
-          <p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">int a = 10</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">int b = 15</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">c 指向 a </span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">d 指向 c </span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">第一次print d：</span><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">编译器看到d就改成c，看到c就改成a，a对象在0x1000</span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">最终输出：10</span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">c 指向 b</span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">第二次print d：</span><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">编译器看到d就改成c，看到c就改成b，b对象在0x1004</span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;color:#0000FF;">最终输出：15</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u295" class="ax_default heading_3">
+      <div id="u295" class="ax_default box_1">
         <div id="u295_div" class=""></div>
         <div id="u295_text" class="text ">
-          <p><span>d</span></p>
+          <p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">int a = 10</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">int b = 15</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">c 指向 a </span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">d 指向 c </span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">第一次print d：</span><span style="font-family:'微软雅黑';font-weight:400;">编译器看到d就改成c，看到c就改成a，a对象在0x1000</span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;">最终输出：10</span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;">c 指向 b</span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">第二次print d：</span><span style="font-family:'微软雅黑';font-weight:400;">编译器看到d就改成c，看到c就改成b，b对象在0x1004</span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">最终输出：15</span></p>
         </div>
       </div>
 
@@ -245,7 +237,7 @@
       <div id="u296" class="ax_default heading_3">
         <div id="u296_div" class=""></div>
         <div id="u296_text" class="text ">
-          <p><span>c</span></p>
+          <p><span>d</span></p>
         </div>
       </div>
 
@@ -253,7 +245,7 @@
       <div id="u297" class="ax_default heading_3">
         <div id="u297_div" class=""></div>
         <div id="u297_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>c</span></p>
         </div>
       </div>
 
@@ -261,35 +253,35 @@
       <div id="u298" class="ax_default heading_3">
         <div id="u298_div" class=""></div>
         <div id="u298_text" class="text ">
+          <p><span>b</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u299" class="ax_default heading_3">
+        <div id="u299_div" class=""></div>
+        <div id="u299_text" class="text ">
           <p><span>a</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u299" class="ax_default connector">
-        <img id="u299_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u299_seg0.png" alt="u299_seg0"/>
-        <img id="u299_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg1.png" alt="u299_seg1"/>
-        <img id="u299_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u299_seg2.png" alt="u299_seg2"/>
-        <div id="u299_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Connector) -->
       <div id="u300" class="ax_default connector">
-        <img id="u300_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg0.png" alt="u300_seg0"/>
-        <img id="u300_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg1.png" alt="u300_seg1"/>
-        <img id="u300_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg2.png" alt="u300_seg2"/>
+        <img id="u300_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u300_seg0.png" alt="u300_seg0"/>
+        <img id="u300_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg1.png" alt="u300_seg1"/>
+        <img id="u300_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u300_seg2.png" alt="u300_seg2"/>
         <div id="u300_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u301" class="ax_default box_1">
-        <div id="u301_div" class=""></div>
-        <div id="u301_text" class="text ">
-          <p><span>10</span></p>
+      <!-- Unnamed (Connector) -->
+      <div id="u301" class="ax_default connector">
+        <img id="u301_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg0.png" alt="u301_seg0"/>
+        <img id="u301_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg1.png" alt="u301_seg1"/>
+        <img id="u301_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg2.png" alt="u301_seg2"/>
+        <div id="u301_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
         </div>
       </div>
 
@@ -297,33 +289,33 @@
       <div id="u302" class="ax_default box_1">
         <div id="u302_div" class=""></div>
         <div id="u302_text" class="text ">
+          <p><span>10</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u303" class="ax_default box_1">
+        <div id="u303_div" class=""></div>
+        <div id="u303_text" class="text ">
           <p><span>15</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u303" class="ax_default line">
-        <img id="u303_img" class="img " src="images/axion指针传递性_vs_多级指针/u303.png"/>
+      <div id="u304" class="ax_default line">
+        <img id="u304_img" class="img " src="images/axion指针传递性_vs_多级指针/u304.png"/>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u304" class="ax_default line">
-        <img id="u304_img" class="img " src="images/axion指针传递性_vs_多级指针/u303.png"/>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u305" class="ax_default heading_3">
-        <div id="u305_div" class=""></div>
-        <div id="u305_text" class="text ">
-          <p><span>d</span></p>
-        </div>
+      <div id="u305" class="ax_default line">
+        <img id="u305_img" class="img " src="images/axion指针传递性_vs_多级指针/u304.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u306" class="ax_default heading_3">
         <div id="u306_div" class=""></div>
         <div id="u306_text" class="text ">
-          <p><span>c</span></p>
+          <p><span>d</span></p>
         </div>
       </div>
 
@@ -331,7 +323,7 @@
       <div id="u307" class="ax_default heading_3">
         <div id="u307_div" class=""></div>
         <div id="u307_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>c</span></p>
         </div>
       </div>
 
@@ -339,35 +331,35 @@
       <div id="u308" class="ax_default heading_3">
         <div id="u308_div" class=""></div>
         <div id="u308_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Connector) -->
-      <div id="u309" class="ax_default connector">
-        <img id="u309_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u309_seg0.png" alt="u309_seg0"/>
-        <img id="u309_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg1.png" alt="u309_seg1"/>
-        <img id="u309_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u299_seg2.png" alt="u309_seg2"/>
-        <div id="u309_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u309" class="ax_default heading_3">
+        <div id="u309_div" class=""></div>
+        <div id="u309_text" class="text ">
+          <p><span>a</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
       <div id="u310" class="ax_default connector">
         <img id="u310_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u310_seg0.png" alt="u310_seg0"/>
-        <img id="u310_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u310_seg1.png" alt="u310_seg1"/>
-        <img id="u310_seg2" class="img " src="images/axion_地址与类型系统的关系/u227_seg2.png" alt="u310_seg2"/>
+        <img id="u310_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg1.png" alt="u310_seg1"/>
+        <img id="u310_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u300_seg2.png" alt="u310_seg2"/>
         <div id="u310_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u311" class="ax_default box_1">
-        <div id="u311_div" class=""></div>
-        <div id="u311_text" class="text ">
-          <p><span>10</span></p>
+      <!-- Unnamed (Connector) -->
+      <div id="u311" class="ax_default connector">
+        <img id="u311_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u311_seg0.png" alt="u311_seg0"/>
+        <img id="u311_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u311_seg1.png" alt="u311_seg1"/>
+        <img id="u311_seg2" class="img " src="images/axion_地址与类型系统的关系/u228_seg2.png" alt="u311_seg2"/>
+        <div id="u311_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
         </div>
       </div>
 
@@ -375,15 +367,15 @@
       <div id="u312" class="ax_default box_1">
         <div id="u312_div" class=""></div>
         <div id="u312_text" class="text ">
-          <p><span>15</span></p>
+          <p><span>10</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u313" class="ax_default paragraph">
+      <div id="u313" class="ax_default box_1">
         <div id="u313_div" class=""></div>
         <div id="u313_text" class="text ">
-          <p><span>0x1000</span></p>
+          <p><span>15</span></p>
         </div>
       </div>
 
@@ -391,7 +383,7 @@
       <div id="u314" class="ax_default paragraph">
         <div id="u314_div" class=""></div>
         <div id="u314_text" class="text ">
-          <p><span>0x1004</span></p>
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
@@ -399,7 +391,7 @@
       <div id="u315" class="ax_default paragraph">
         <div id="u315_div" class=""></div>
         <div id="u315_text" class="text ">
-          <p><span>0x1000</span></p>
+          <p><span>0x1004</span></p>
         </div>
       </div>
 
@@ -407,7 +399,7 @@
       <div id="u316" class="ax_default paragraph">
         <div id="u316_div" class=""></div>
         <div id="u316_text" class="text ">
-          <p><span>0x1004</span></p>
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
@@ -415,7 +407,7 @@
       <div id="u317" class="ax_default paragraph">
         <div id="u317_div" class=""></div>
         <div id="u317_text" class="text ">
-          <p><span>0x1000</span></p>
+          <p><span>0x1004</span></p>
         </div>
       </div>
 
@@ -423,36 +415,36 @@
       <div id="u318" class="ax_default paragraph">
         <div id="u318_div" class=""></div>
         <div id="u318_text" class="text ">
-          <p><span>0x1004</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u319" class="ax_default box_1">
-        <div id="u319_div" class=""></div>
-        <div id="u319_text" class="text ">
-          <p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">int a = 10</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">int b = 15</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">int c -&gt; a</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">int d -&gt; c</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">print d：d对象是d_addr(0x1000)所指的内存数据</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">最终输出：10</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">c -&gt; b</span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">print d：d对象是d_addr(0x1000)所指的内存数据</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;color:#0000FF;">最终输出：还是10</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;color:#0000FF;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">仅当你直接修改指针d时，d的值才会真正发生改变，例如</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">d -&gt; c&nbsp; </span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">&nbsp;&nbsp; &nbsp; 或</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">d -&gt; b</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;color:#0000FF;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;color:#0000FF;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;color:#0000FF;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">print d：d对象是d_addr(0x1000)所指的内存数据</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;color:#0000FF;">最终输出：15</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Horizontal Line) -->
-      <div id="u320" class="ax_default line">
-        <img id="u320_img" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u147.png"/>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u321" class="ax_default paragraph">
-        <div id="u321_div" class=""></div>
-        <div id="u321_text" class="text ">
           <p><span>0x1000</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u322" class="ax_default heading_3">
+      <div id="u319" class="ax_default paragraph">
+        <div id="u319_div" class=""></div>
+        <div id="u319_text" class="text ">
+          <p><span>0x1004</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u320" class="ax_default box_1">
+        <div id="u320_div" class=""></div>
+        <div id="u320_text" class="text ">
+          <p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">int a = 10</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">int b = 15</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">int c -&gt; a</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">int d -&gt; c</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">print d：d对象是d_addr(0x1000)所指的内存数据</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">最终输出：10</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;">c -&gt; b</span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">print d：d对象是d_addr(0x1000)所指的内存数据</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;color:#0000FF;">最终输出：还是10</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">仅当你直接修改指针d时，d的值才会真正发生改变，例如</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">d -&gt; c&nbsp; </span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">&nbsp;&nbsp; &nbsp; 或</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">d -&gt; b</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">print d：d对象是d_addr(0x1000)所指的内存数据</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;color:#0000FF;">最终输出：15</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u321" class="ax_default line">
+        <img id="u321_img" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u148.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u322" class="ax_default paragraph">
         <div id="u322_div" class=""></div>
         <div id="u322_text" class="text ">
-          <p><span>c</span></p>
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
@@ -460,7 +452,7 @@
       <div id="u323" class="ax_default heading_3">
         <div id="u323_div" class=""></div>
         <div id="u323_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>c</span></p>
         </div>
       </div>
 
@@ -468,25 +460,25 @@
       <div id="u324" class="ax_default heading_3">
         <div id="u324_div" class=""></div>
         <div id="u324_text" class="text ">
+          <p><span>b</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u325" class="ax_default heading_3">
+        <div id="u325_div" class=""></div>
+        <div id="u325_text" class="text ">
           <p><span>a</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u325" class="ax_default connector">
-        <img id="u325_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u325_seg0.png" alt="u325_seg0"/>
-        <img id="u325_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg1.png" alt="u325_seg1"/>
-        <img id="u325_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg2.png" alt="u325_seg2"/>
-        <div id="u325_text" class="text ">
-          <p><span>c_ADDR</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u326" class="ax_default box_1">
-        <div id="u326_div" class=""></div>
+      <div id="u326" class="ax_default connector">
+        <img id="u326_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u326_seg0.png" alt="u326_seg0"/>
+        <img id="u326_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg1.png" alt="u326_seg1"/>
+        <img id="u326_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg2.png" alt="u326_seg2"/>
         <div id="u326_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>c_ADDR</span></p>
         </div>
       </div>
 
@@ -494,23 +486,23 @@
       <div id="u327" class="ax_default box_1">
         <div id="u327_div" class=""></div>
         <div id="u327_text" class="text ">
+          <p><span>10</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u328" class="ax_default box_1">
+        <div id="u328_div" class=""></div>
+        <div id="u328_text" class="text ">
           <p><span>15</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u328" class="ax_default paragraph">
-        <div id="u328_div" class=""></div>
-        <div id="u328_text" class="text ">
-          <p><span>0x1000</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u329" class="ax_default heading_3">
+      <div id="u329" class="ax_default paragraph">
         <div id="u329_div" class=""></div>
         <div id="u329_text" class="text ">
-          <p><span>d</span></p>
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
@@ -518,7 +510,7 @@
       <div id="u330" class="ax_default heading_3">
         <div id="u330_div" class=""></div>
         <div id="u330_text" class="text ">
-          <p><span>c</span></p>
+          <p><span>d</span></p>
         </div>
       </div>
 
@@ -526,7 +518,7 @@
       <div id="u331" class="ax_default heading_3">
         <div id="u331_div" class=""></div>
         <div id="u331_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>c</span></p>
         </div>
       </div>
 
@@ -534,35 +526,35 @@
       <div id="u332" class="ax_default heading_3">
         <div id="u332_div" class=""></div>
         <div id="u332_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Connector) -->
-      <div id="u333" class="ax_default connector">
-        <img id="u333_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u333_seg0.png" alt="u333_seg0"/>
-        <img id="u333_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg1.png" alt="u333_seg1"/>
-        <img id="u333_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u333_seg2.png" alt="u333_seg2"/>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u333" class="ax_default heading_3">
+        <div id="u333_div" class=""></div>
         <div id="u333_text" class="text ">
-          <p><span>d_ADDR</span></p>
+          <p><span>a</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
       <div id="u334" class="ax_default connector">
         <img id="u334_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u334_seg0.png" alt="u334_seg0"/>
-        <img id="u334_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg1.png" alt="u334_seg1"/>
-        <img id="u334_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg2.png" alt="u334_seg2"/>
+        <img id="u334_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg1.png" alt="u334_seg1"/>
+        <img id="u334_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u334_seg2.png" alt="u334_seg2"/>
         <div id="u334_text" class="text ">
-          <p><span>c_ADDR</span></p>
+          <p><span>d_ADDR</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u335" class="ax_default box_1">
-        <div id="u335_div" class=""></div>
+      <!-- Unnamed (Connector) -->
+      <div id="u335" class="ax_default connector">
+        <img id="u335_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u335_seg0.png" alt="u335_seg0"/>
+        <img id="u335_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg1.png" alt="u335_seg1"/>
+        <img id="u335_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg2.png" alt="u335_seg2"/>
         <div id="u335_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>c_ADDR</span></p>
         </div>
       </div>
 
@@ -570,15 +562,15 @@
       <div id="u336" class="ax_default box_1">
         <div id="u336_div" class=""></div>
         <div id="u336_text" class="text ">
-          <p><span>15</span></p>
+          <p><span>10</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u337" class="ax_default paragraph">
+      <div id="u337" class="ax_default box_1">
         <div id="u337_div" class=""></div>
         <div id="u337_text" class="text ">
-          <p><span>0x1004</span></p>
+          <p><span>15</span></p>
         </div>
       </div>
 
@@ -590,29 +582,29 @@
         </div>
       </div>
 
-      <!-- Unnamed (Horizontal Line) -->
-      <div id="u339" class="ax_default line">
-        <img id="u339_img" class="img " src="images/axion指针传递性_vs_多级指针/u339.png"/>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u339" class="ax_default paragraph">
+        <div id="u339_div" class=""></div>
+        <div id="u339_text" class="text ">
+          <p><span>0x1004</span></p>
+        </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
       <div id="u340" class="ax_default line">
-        <img id="u340_img" class="img " src="images/axion指针传递性_vs_多级指针/u339.png"/>
+        <img id="u340_img" class="img " src="images/axion指针传递性_vs_多级指针/u340.png"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u341" class="ax_default line">
+        <img id="u341_img" class="img " src="images/axion指针传递性_vs_多级指针/u340.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u341" class="ax_default paragraph">
-        <div id="u341_div" class=""></div>
-        <div id="u341_text" class="text ">
-          <p><span>0x1000</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u342" class="ax_default heading_3">
+      <div id="u342" class="ax_default paragraph">
         <div id="u342_div" class=""></div>
         <div id="u342_text" class="text ">
-          <p><span>d</span></p>
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
@@ -620,7 +612,7 @@
       <div id="u343" class="ax_default heading_3">
         <div id="u343_div" class=""></div>
         <div id="u343_text" class="text ">
-          <p><span>c</span></p>
+          <p><span>d</span></p>
         </div>
       </div>
 
@@ -628,7 +620,7 @@
       <div id="u344" class="ax_default heading_3">
         <div id="u344_div" class=""></div>
         <div id="u344_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>c</span></p>
         </div>
       </div>
 
@@ -636,35 +628,35 @@
       <div id="u345" class="ax_default heading_3">
         <div id="u345_div" class=""></div>
         <div id="u345_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Connector) -->
-      <div id="u346" class="ax_default connector">
-        <img id="u346_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u346_seg0.png" alt="u346_seg0"/>
-        <img id="u346_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg1.png" alt="u346_seg1"/>
-        <img id="u346_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u333_seg2.png" alt="u346_seg2"/>
-        <div id="u346_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u346" class="ax_default heading_3">
+        <div id="u346_div" class=""></div>
+        <div id="u346_text" class="text ">
+          <p><span>a</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
       <div id="u347" class="ax_default connector">
         <img id="u347_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u347_seg0.png" alt="u347_seg0"/>
-        <img id="u347_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u347_seg1.png" alt="u347_seg1"/>
-        <img id="u347_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u333_seg2.png" alt="u347_seg2"/>
-        <div id="u347_text" class="text ">
-          <p><span>c/d_ADDR</span></p>
+        <img id="u347_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg1.png" alt="u347_seg1"/>
+        <img id="u347_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u334_seg2.png" alt="u347_seg2"/>
+        <div id="u347_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u348" class="ax_default box_1">
-        <div id="u348_div" class=""></div>
+      <!-- Unnamed (Connector) -->
+      <div id="u348" class="ax_default connector">
+        <img id="u348_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u348_seg0.png" alt="u348_seg0"/>
+        <img id="u348_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u348_seg1.png" alt="u348_seg1"/>
+        <img id="u348_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u334_seg2.png" alt="u348_seg2"/>
         <div id="u348_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>c/d_ADDR</span></p>
         </div>
       </div>
 
@@ -672,36 +664,36 @@
       <div id="u349" class="ax_default box_1">
         <div id="u349_div" class=""></div>
         <div id="u349_text" class="text ">
+          <p><span>10</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u350" class="ax_default box_1">
+        <div id="u350_div" class=""></div>
+        <div id="u350_text" class="text ">
           <p><span>15</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u350" class="ax_default paragraph">
-        <div id="u350_div" class=""></div>
-        <div id="u350_text" class="text ">
+      <div id="u351" class="ax_default paragraph">
+        <div id="u351_div" class=""></div>
+        <div id="u351_text" class="text ">
           <p><span>0x1004</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u351" class="ax_default line">
-        <img id="u351_img" class="img " src="images/axion指针传递性_vs_多级指针/u351.png"/>
+      <div id="u352" class="ax_default line">
+        <img id="u352_img" class="img " src="images/axion指针传递性_vs_多级指针/u352.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u352" class="ax_default paragraph">
-        <div id="u352_div" class=""></div>
-        <div id="u352_text" class="text ">
-          <p><span>0x1000</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u353" class="ax_default heading_3">
+      <div id="u353" class="ax_default paragraph">
         <div id="u353_div" class=""></div>
         <div id="u353_text" class="text ">
-          <p><span>d</span></p>
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
@@ -709,7 +701,7 @@
       <div id="u354" class="ax_default heading_3">
         <div id="u354_div" class=""></div>
         <div id="u354_text" class="text ">
-          <p><span>c</span></p>
+          <p><span>d</span></p>
         </div>
       </div>
 
@@ -717,7 +709,7 @@
       <div id="u355" class="ax_default heading_3">
         <div id="u355_div" class=""></div>
         <div id="u355_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>c</span></p>
         </div>
       </div>
 
@@ -725,35 +717,35 @@
       <div id="u356" class="ax_default heading_3">
         <div id="u356_div" class=""></div>
         <div id="u356_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Connector) -->
-      <div id="u357" class="ax_default connector">
-        <img id="u357_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u357_seg0.png" alt="u357_seg0"/>
-        <img id="u357_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg1.png" alt="u357_seg1"/>
-        <img id="u357_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg2.png" alt="u357_seg2"/>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u357" class="ax_default heading_3">
+        <div id="u357_div" class=""></div>
         <div id="u357_text" class="text ">
-          <p><span>d_ADDR</span></p>
+          <p><span>a</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
       <div id="u358" class="ax_default connector">
         <img id="u358_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u358_seg0.png" alt="u358_seg0"/>
-        <img id="u358_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u347_seg1.png" alt="u358_seg1"/>
-        <img id="u358_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u333_seg2.png" alt="u358_seg2"/>
+        <img id="u358_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg1.png" alt="u358_seg1"/>
+        <img id="u358_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg2.png" alt="u358_seg2"/>
         <div id="u358_text" class="text ">
-          <p><span>c_ADDR</span></p>
+          <p><span>d_ADDR</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u359" class="ax_default box_1">
-        <div id="u359_div" class=""></div>
+      <!-- Unnamed (Connector) -->
+      <div id="u359" class="ax_default connector">
+        <img id="u359_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u359_seg0.png" alt="u359_seg0"/>
+        <img id="u359_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u348_seg1.png" alt="u359_seg1"/>
+        <img id="u359_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u334_seg2.png" alt="u359_seg2"/>
         <div id="u359_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>c_ADDR</span></p>
         </div>
       </div>
 
@@ -761,15 +753,15 @@
       <div id="u360" class="ax_default box_1">
         <div id="u360_div" class=""></div>
         <div id="u360_text" class="text ">
-          <p><span>15</span></p>
+          <p><span>10</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u361" class="ax_default paragraph">
+      <div id="u361" class="ax_default box_1">
         <div id="u361_div" class=""></div>
         <div id="u361_text" class="text ">
-          <p><span>0x1004</span></p>
+          <p><span>15</span></p>
         </div>
       </div>
 
@@ -777,41 +769,41 @@
       <div id="u362" class="ax_default paragraph">
         <div id="u362_div" class=""></div>
         <div id="u362_text" class="text ">
+          <p><span>0x1004</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u363" class="ax_default paragraph">
+        <div id="u363_div" class=""></div>
+        <div id="u363_text" class="text ">
           <p><span>但当链路中的某个指针突然改变指向时，则要注意：</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u363" class="ax_default heading_3">
-        <div id="u363_div" class=""></div>
-        <div id="u363_text" class="text ">
+      <div id="u364" class="ax_default heading_3">
+        <div id="u364_div" class=""></div>
+        <div id="u364_text" class="text ">
           <p><span>下面我们将详细解释为什么</span></p><p><span>下面各种所谓的“错误理解”，并非真正的错误——这些理解本身是客观存在且合理的，之后我们很快会说到，它们都有自己对应的解决方案，但不是指针&quot;-&gt;&quot;</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u364" class="ax_default paragraph">
-        <div id="u364_div" class=""></div>
-        <div id="u364_text" class="text ">
+      <div id="u365" class="ax_default paragraph">
+        <div id="u365_div" class=""></div>
+        <div id="u365_text" class="text ">
           <p><span>正确理解: AXION指针是指向对象的，而不是指向句柄的</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u365" class="ax_default connector">
-        <img id="u365_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u365_seg0.png" alt="u365_seg0"/>
-        <img id="u365_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u365_seg1.png" alt="u365_seg1"/>
-        <img id="u365_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u365_seg2.png" alt="u365_seg2"/>
-        <div id="u365_text" class="text ">
-          <p><span>箭头具象化为地址对象</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u366" class="ax_default heading_3">
-        <div id="u366_div" class=""></div>
+      <div id="u366" class="ax_default connector">
+        <img id="u366_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u366_seg0.png" alt="u366_seg0"/>
+        <img id="u366_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u366_seg1.png" alt="u366_seg1"/>
+        <img id="u366_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u366_seg2.png" alt="u366_seg2"/>
         <div id="u366_text" class="text ">
-          <p><span>画法1</span></p>
+          <p><span>箭头具象化为地址对象</span></p>
         </div>
       </div>
 
@@ -819,7 +811,7 @@
       <div id="u367" class="ax_default heading_3">
         <div id="u367_div" class=""></div>
         <div id="u367_text" class="text ">
-          <p><span>画法2</span></p>
+          <p><span>画法1</span></p>
         </div>
       </div>
 
@@ -827,7 +819,7 @@
       <div id="u368" class="ax_default heading_3">
         <div id="u368_div" class=""></div>
         <div id="u368_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>画法2</span></p>
         </div>
       </div>
 
@@ -835,15 +827,15 @@
       <div id="u369" class="ax_default heading_3">
         <div id="u369_div" class=""></div>
         <div id="u369_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u370" class="ax_default box_1">
+      <div id="u370" class="ax_default heading_3">
         <div id="u370_div" class=""></div>
         <div id="u370_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>a</span></p>
         </div>
       </div>
 
@@ -851,15 +843,15 @@
       <div id="u371" class="ax_default box_1">
         <div id="u371_div" class=""></div>
         <div id="u371_text" class="text ">
-          <p><span>15</span></p>
+          <p><span>10</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u372" class="ax_default paragraph">
+      <div id="u372" class="ax_default box_1">
         <div id="u372_div" class=""></div>
         <div id="u372_text" class="text ">
-          <p><span>0x1000</span></p>
+          <p><span>15</span></p>
         </div>
       </div>
 
@@ -867,39 +859,39 @@
       <div id="u373" class="ax_default paragraph">
         <div id="u373_div" class=""></div>
         <div id="u373_text" class="text ">
-          <p><span>0x1004</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u374" class="ax_default heading_3">
-        <div id="u374_div" class=""></div>
-        <div id="u374_text" class="text ">
-          <p><span>c_ADDR</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u375" class="ax_default box_1">
-        <div id="u375_div" class=""></div>
-        <div id="u375_text" class="text ">
           <p><span>0x1000</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u376" class="ax_default paragraph">
-        <div id="u376_div" class=""></div>
-        <div id="u376_text" class="text ">
-          <p><span>0x1008</span></p>
+      <div id="u374" class="ax_default paragraph">
+        <div id="u374_div" class=""></div>
+        <div id="u374_text" class="text ">
+          <p><span>0x1004</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u377" class="ax_default heading_3">
+      <div id="u375" class="ax_default heading_3">
+        <div id="u375_div" class=""></div>
+        <div id="u375_text" class="text ">
+          <p><span>c_ADDR</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u376" class="ax_default box_1">
+        <div id="u376_div" class=""></div>
+        <div id="u376_text" class="text ">
+          <p><span>0x1000</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u377" class="ax_default paragraph">
         <div id="u377_div" class=""></div>
         <div id="u377_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>0x1008</span></p>
         </div>
       </div>
 
@@ -907,15 +899,15 @@
       <div id="u378" class="ax_default heading_3">
         <div id="u378_div" class=""></div>
         <div id="u378_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u379" class="ax_default box_1">
+      <div id="u379" class="ax_default heading_3">
         <div id="u379_div" class=""></div>
         <div id="u379_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>a</span></p>
         </div>
       </div>
 
@@ -923,15 +915,15 @@
       <div id="u380" class="ax_default box_1">
         <div id="u380_div" class=""></div>
         <div id="u380_text" class="text ">
-          <p><span>15</span></p>
+          <p><span>10</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u381" class="ax_default paragraph">
+      <div id="u381" class="ax_default box_1">
         <div id="u381_div" class=""></div>
         <div id="u381_text" class="text ">
-          <p><span>0x1000</span></p>
+          <p><span>15</span></p>
         </div>
       </div>
 
@@ -939,47 +931,47 @@
       <div id="u382" class="ax_default paragraph">
         <div id="u382_div" class=""></div>
         <div id="u382_text" class="text ">
+          <p><span>0x1000</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u383" class="ax_default paragraph">
+        <div id="u383_div" class=""></div>
+        <div id="u383_text" class="text ">
           <p><span>0x1004</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u383" class="ax_default heading_3">
-        <div id="u383_div" class=""></div>
-        <div id="u383_text" class="text ">
+      <div id="u384" class="ax_default heading_3">
+        <div id="u384_div" class=""></div>
+        <div id="u384_text" class="text ">
           <p><span>c_ADDR</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u384" class="ax_default box_1">
-        <div id="u384_div" class=""></div>
-        <div id="u384_text" class="text ">
+      <div id="u385" class="ax_default box_1">
+        <div id="u385_div" class=""></div>
+        <div id="u385_text" class="text ">
           <p><span>0x1000</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u385" class="ax_default heading_3">
-        <div id="u385_div" class=""></div>
-        <div id="u385_text" class="text ">
+      <div id="u386" class="ax_default heading_3">
+        <div id="u386_div" class=""></div>
+        <div id="u386_text" class="text ">
           <p><span>d_ADDR</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u386" class="ax_default box_1">
-        <div id="u386_div" class=""></div>
-        <div id="u386_text" class="text ">
-          <p><span>0x1000</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u387" class="ax_default paragraph">
+      <div id="u387" class="ax_default box_1">
         <div id="u387_div" class=""></div>
         <div id="u387_text" class="text ">
-          <p><span>0x1008</span></p>
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
@@ -987,15 +979,15 @@
       <div id="u388" class="ax_default paragraph">
         <div id="u388_div" class=""></div>
         <div id="u388_text" class="text ">
-          <p><span>0x101C</span></p>
+          <p><span>0x1008</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u389" class="ax_default heading_3">
+      <div id="u389" class="ax_default paragraph">
         <div id="u389_div" class=""></div>
         <div id="u389_text" class="text ">
-          <p><span>此时符号a、c、d都代表10这个对象</span></p>
+          <p><span>0x101C</span></p>
         </div>
       </div>
 
@@ -1003,7 +995,7 @@
       <div id="u390" class="ax_default heading_3">
         <div id="u390_div" class=""></div>
         <div id="u390_text" class="text ">
-          <p><span>c_addr = ~a</span></p>
+          <p><span>此时符号a、c、d都代表10这个对象</span></p>
         </div>
       </div>
 
@@ -1011,7 +1003,7 @@
       <div id="u391" class="ax_default heading_3">
         <div id="u391_div" class=""></div>
         <div id="u391_text" class="text ">
-          <p><span>d 指向 c所代表的对象</span></p><p><span>c是指针，所以c代表的对象是 c_addr~ </span></p><p><span>所以最终结果是 d_addr = c_addr </span></p>
+          <p><span>c_addr = ~a</span></p>
         </div>
       </div>
 
@@ -1019,7 +1011,7 @@
       <div id="u392" class="ax_default heading_3">
         <div id="u392_div" class=""></div>
         <div id="u392_text" class="text ">
-          <p><span>c_addr = ~b</span></p>
+          <p><span>d 指向 c所代表的对象</span></p><p><span>c是指针，所以c代表的对象是 c_addr~ </span></p><p><span>所以最终结果是 d_addr = c_addr </span></p>
         </div>
       </div>
 
@@ -1027,7 +1019,7 @@
       <div id="u393" class="ax_default heading_3">
         <div id="u393_div" class=""></div>
         <div id="u393_text" class="text ">
-          <p><span>print&nbsp; d_addr~</span></p>
+          <p><span>c_addr = ~b</span></p>
         </div>
       </div>
 
@@ -1035,7 +1027,7 @@
       <div id="u394" class="ax_default heading_3">
         <div id="u394_div" class=""></div>
         <div id="u394_text" class="text ">
-          <p><span>对于ab这种【实例型句柄】，符号【所代表的对象】就是指定位置的内存，例如a是0x1000这块数据，b是0x1004这块数据</span></p><p><span>对于cd这种【指针型句柄】，符号【所代表的对象】是由_addr的解引用决定的，例如c_addr~ 和 d_addr~ </span></p><p><span>——</span><span style="color:#0000FF;">AXION的指针之所以能有那么多远超C指针和C++引用的优势，归根到底是区分了【句柄 vs 对象】以及真正解释清楚了【符号所代表的对象】这件事</span></p>
+          <p><span>print&nbsp; d_addr~</span></p>
         </div>
       </div>
 
@@ -1043,7 +1035,7 @@
       <div id="u395" class="ax_default heading_3">
         <div id="u395_div" class=""></div>
         <div id="u395_text" class="text ">
-          <p><span>print&nbsp; d_addr~</span></p>
+          <p><span>对于ab这种【实例型句柄】，符号【所代表的对象】就是指定位置的内存，例如a是0x1000这块数据，b是0x1004这块数据</span></p><p><span>对于cd这种【指针型句柄】，符号【所代表的对象】是由_addr的解引用决定的，例如c_addr~ 和 d_addr~ </span></p><p><span>——</span><span style="color:#0000FF;">AXION的指针之所以能有那么多远超C指针和C++引用的优势，归根到底是区分了【句柄 vs 对象】以及真正解释清楚了【符号所代表的对象】这件事</span></p>
         </div>
       </div>
 
@@ -1051,7 +1043,7 @@
       <div id="u396" class="ax_default heading_3">
         <div id="u396_div" class=""></div>
         <div id="u396_text" class="text ">
-          <p><span>这只是改c_addr，d不受影响</span></p>
+          <p><span>print&nbsp; d_addr~</span></p>
         </div>
       </div>
 
@@ -1059,7 +1051,7 @@
       <div id="u397" class="ax_default heading_3">
         <div id="u397_div" class=""></div>
         <div id="u397_text" class="text ">
-          <p><span>d_addr = c_addr (0x1004)</span></p>
+          <p><span>这只是改c_addr，d不受影响</span></p>
         </div>
       </div>
 
@@ -1067,7 +1059,7 @@
       <div id="u398" class="ax_default heading_3">
         <div id="u398_div" class=""></div>
         <div id="u398_text" class="text ">
-          <p><span>d_addr = ~b (0x1004)</span></p>
+          <p><span>d_addr = c_addr (0x1004)</span></p>
         </div>
       </div>
 
@@ -1075,7 +1067,7 @@
       <div id="u399" class="ax_default heading_3">
         <div id="u399_div" class=""></div>
         <div id="u399_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>d_addr = ~b (0x1004)</span></p>
         </div>
       </div>
 
@@ -1083,15 +1075,15 @@
       <div id="u400" class="ax_default heading_3">
         <div id="u400_div" class=""></div>
         <div id="u400_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u401" class="ax_default box_1">
+      <div id="u401" class="ax_default heading_3">
         <div id="u401_div" class=""></div>
         <div id="u401_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>a</span></p>
         </div>
       </div>
 
@@ -1099,15 +1091,15 @@
       <div id="u402" class="ax_default box_1">
         <div id="u402_div" class=""></div>
         <div id="u402_text" class="text ">
-          <p><span>15</span></p>
+          <p><span>10</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u403" class="ax_default paragraph">
+      <div id="u403" class="ax_default box_1">
         <div id="u403_div" class=""></div>
         <div id="u403_text" class="text ">
-          <p><span>0x1000</span></p>
+          <p><span>15</span></p>
         </div>
       </div>
 
@@ -1115,47 +1107,47 @@
       <div id="u404" class="ax_default paragraph">
         <div id="u404_div" class=""></div>
         <div id="u404_text" class="text ">
-          <p><span>0x1004</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u405" class="ax_default heading_3">
-        <div id="u405_div" class=""></div>
-        <div id="u405_text" class="text ">
-          <p><span>c_ADDR</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u406" class="ax_default box_1">
-        <div id="u406_div" class=""></div>
-        <div id="u406_text" class="text ">
-          <p><span>0x1004</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u407" class="ax_default heading_3">
-        <div id="u407_div" class=""></div>
-        <div id="u407_text" class="text ">
-          <p><span>d_ADDR</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u408" class="ax_default box_1">
-        <div id="u408_div" class=""></div>
-        <div id="u408_text" class="text ">
           <p><span>0x1000</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u409" class="ax_default paragraph">
+      <div id="u405" class="ax_default paragraph">
+        <div id="u405_div" class=""></div>
+        <div id="u405_text" class="text ">
+          <p><span>0x1004</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u406" class="ax_default heading_3">
+        <div id="u406_div" class=""></div>
+        <div id="u406_text" class="text ">
+          <p><span>c_ADDR</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u407" class="ax_default box_1">
+        <div id="u407_div" class=""></div>
+        <div id="u407_text" class="text ">
+          <p><span>0x1004</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u408" class="ax_default heading_3">
+        <div id="u408_div" class=""></div>
+        <div id="u408_text" class="text ">
+          <p><span>d_ADDR</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u409" class="ax_default box_1">
         <div id="u409_div" class=""></div>
         <div id="u409_text" class="text ">
-          <p><span>0x1008</span></p>
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
@@ -1163,15 +1155,15 @@
       <div id="u410" class="ax_default paragraph">
         <div id="u410_div" class=""></div>
         <div id="u410_text" class="text ">
-          <p><span>0x101C</span></p>
+          <p><span>0x1008</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u411" class="ax_default heading_3">
+      <div id="u411" class="ax_default paragraph">
         <div id="u411_div" class=""></div>
         <div id="u411_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>0x101C</span></p>
         </div>
       </div>
 
@@ -1179,15 +1171,15 @@
       <div id="u412" class="ax_default heading_3">
         <div id="u412_div" class=""></div>
         <div id="u412_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u413" class="ax_default box_1">
+      <div id="u413" class="ax_default heading_3">
         <div id="u413_div" class=""></div>
         <div id="u413_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>a</span></p>
         </div>
       </div>
 
@@ -1195,15 +1187,15 @@
       <div id="u414" class="ax_default box_1">
         <div id="u414_div" class=""></div>
         <div id="u414_text" class="text ">
-          <p><span>15</span></p>
+          <p><span>10</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u415" class="ax_default paragraph">
+      <div id="u415" class="ax_default box_1">
         <div id="u415_div" class=""></div>
         <div id="u415_text" class="text ">
-          <p><span>0x1000</span></p>
+          <p><span>15</span></p>
         </div>
       </div>
 
@@ -1211,47 +1203,47 @@
       <div id="u416" class="ax_default paragraph">
         <div id="u416_div" class=""></div>
         <div id="u416_text" class="text ">
-          <p><span>0x1004</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u417" class="ax_default heading_3">
-        <div id="u417_div" class=""></div>
-        <div id="u417_text" class="text ">
-          <p><span>c_ADDR</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u418" class="ax_default box_1">
-        <div id="u418_div" class=""></div>
-        <div id="u418_text" class="text ">
-          <p><span>0x1004</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u419" class="ax_default heading_3">
-        <div id="u419_div" class=""></div>
-        <div id="u419_text" class="text ">
-          <p><span>d_ADDR</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u420" class="ax_default box_1">
-        <div id="u420_div" class=""></div>
-        <div id="u420_text" class="text ">
           <p><span>0x1000</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u421" class="ax_default paragraph">
+      <div id="u417" class="ax_default paragraph">
+        <div id="u417_div" class=""></div>
+        <div id="u417_text" class="text ">
+          <p><span>0x1004</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u418" class="ax_default heading_3">
+        <div id="u418_div" class=""></div>
+        <div id="u418_text" class="text ">
+          <p><span>c_ADDR</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u419" class="ax_default box_1">
+        <div id="u419_div" class=""></div>
+        <div id="u419_text" class="text ">
+          <p><span>0x1004</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u420" class="ax_default heading_3">
+        <div id="u420_div" class=""></div>
+        <div id="u420_text" class="text ">
+          <p><span>d_ADDR</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u421" class="ax_default box_1">
         <div id="u421_div" class=""></div>
         <div id="u421_text" class="text ">
-          <p><span>0x1008</span></p>
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
@@ -1259,28 +1251,28 @@
       <div id="u422" class="ax_default paragraph">
         <div id="u422_div" class=""></div>
         <div id="u422_text" class="text ">
+          <p><span>0x1008</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u423" class="ax_default paragraph">
+        <div id="u423_div" class=""></div>
+        <div id="u423_text" class="text ">
           <p><span>0x101C</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u423" class="ax_default line">
-        <img id="u423_img" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u147.png"/>
+      <div id="u424" class="ax_default line">
+        <img id="u424_img" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u148.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u424" class="ax_default label">
-        <div id="u424_div" class=""></div>
-        <div id="u424_text" class="text ">
-          <p><span>多级指针</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u425" class="ax_default heading_3">
+      <div id="u425" class="ax_default label">
         <div id="u425_div" class=""></div>
         <div id="u425_text" class="text ">
-          <p><span>-&gt;代表单次解引用，所以注定不会出现多级指针</span></p>
+          <p><span>多级指针</span></p>
         </div>
       </div>
 
@@ -1288,31 +1280,31 @@
       <div id="u426" class="ax_default heading_3">
         <div id="u426_div" class=""></div>
         <div id="u426_text" class="text ">
+          <p><span>-&gt;代表单次解引用，所以注定不会出现多级指针</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u427" class="ax_default heading_3">
+        <div id="u427_div" class=""></div>
+        <div id="u427_text" class="text ">
           <p><span>例如 int c -&gt;&nbsp;&nbsp; 和&nbsp; int d -&gt; 都只有单箭头，意味着 c_addr~ 和 d_addr~ 一次解引用就能获得int，而不会出现多级指针 </span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u427" class="ax_default box_1">
-        <div id="u427_div" class=""></div>
-        <div id="u427_text" class="text ">
-          <p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">int a = 10</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">int b = 15</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">int c -&gt; a</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;color:#0000FF;">int d -&gt;&gt; c</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">print d：</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">最终输出：10</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">c -&gt; b</span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">print d：</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;color:#0000FF;">最终输出：15</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;color:#0000FF;"><br></span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u428" class="ax_default paragraph">
+      <div id="u428" class="ax_default box_1">
         <div id="u428_div" class=""></div>
         <div id="u428_text" class="text ">
-          <p><span>0x1000</span></p>
+          <p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">int a = 10</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">int b = 15</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">int c -&gt; a</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">int d -&gt;&gt; c</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">print d：</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">最终输出：10</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;">c -&gt; b</span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">print d：</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;color:#0000FF;">最终输出：15</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;"><br></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u429" class="ax_default heading_3">
+      <div id="u429" class="ax_default paragraph">
         <div id="u429_div" class=""></div>
         <div id="u429_text" class="text ">
-          <p><span>c</span></p>
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
@@ -1320,7 +1312,7 @@
       <div id="u430" class="ax_default heading_3">
         <div id="u430_div" class=""></div>
         <div id="u430_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>c</span></p>
         </div>
       </div>
 
@@ -1328,25 +1320,25 @@
       <div id="u431" class="ax_default heading_3">
         <div id="u431_div" class=""></div>
         <div id="u431_text" class="text ">
+          <p><span>b</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u432" class="ax_default heading_3">
+        <div id="u432_div" class=""></div>
+        <div id="u432_text" class="text ">
           <p><span>a</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u432" class="ax_default connector">
-        <img id="u432_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u432_seg0.png" alt="u432_seg0"/>
-        <img id="u432_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg1.png" alt="u432_seg1"/>
-        <img id="u432_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg2.png" alt="u432_seg2"/>
-        <div id="u432_text" class="text ">
-          <p><span>c_ADDR</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u433" class="ax_default box_1">
-        <div id="u433_div" class=""></div>
+      <div id="u433" class="ax_default connector">
+        <img id="u433_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u433_seg0.png" alt="u433_seg0"/>
+        <img id="u433_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg1.png" alt="u433_seg1"/>
+        <img id="u433_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg2.png" alt="u433_seg2"/>
         <div id="u433_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>c_ADDR</span></p>
         </div>
       </div>
 
@@ -1354,23 +1346,23 @@
       <div id="u434" class="ax_default box_1">
         <div id="u434_div" class=""></div>
         <div id="u434_text" class="text ">
+          <p><span>10</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u435" class="ax_default box_1">
+        <div id="u435_div" class=""></div>
+        <div id="u435_text" class="text ">
           <p><span>15</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u435" class="ax_default paragraph">
-        <div id="u435_div" class=""></div>
-        <div id="u435_text" class="text ">
-          <p><span>0x1000</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u436" class="ax_default heading_3">
+      <div id="u436" class="ax_default paragraph">
         <div id="u436_div" class=""></div>
         <div id="u436_text" class="text ">
-          <p><span>d</span></p>
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
@@ -1378,7 +1370,7 @@
       <div id="u437" class="ax_default heading_3">
         <div id="u437_div" class=""></div>
         <div id="u437_text" class="text ">
-          <p><span>c</span></p>
+          <p><span>d</span></p>
         </div>
       </div>
 
@@ -1386,7 +1378,7 @@
       <div id="u438" class="ax_default heading_3">
         <div id="u438_div" class=""></div>
         <div id="u438_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>c</span></p>
         </div>
       </div>
 
@@ -1394,35 +1386,35 @@
       <div id="u439" class="ax_default heading_3">
         <div id="u439_div" class=""></div>
         <div id="u439_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Connector) -->
-      <div id="u440" class="ax_default connector">
-        <img id="u440_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u440_seg0.png" alt="u440_seg0"/>
-        <img id="u440_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg1.png" alt="u440_seg1"/>
-        <img id="u440_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u299_seg2.png" alt="u440_seg2"/>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u440" class="ax_default heading_3">
+        <div id="u440_div" class=""></div>
         <div id="u440_text" class="text ">
-          <p><span>d_ADDR</span></p>
+          <p><span>a</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
       <div id="u441" class="ax_default connector">
         <img id="u441_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u441_seg0.png" alt="u441_seg0"/>
-        <img id="u441_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg1.png" alt="u441_seg1"/>
-        <img id="u441_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg2.png" alt="u441_seg2"/>
+        <img id="u441_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg1.png" alt="u441_seg1"/>
+        <img id="u441_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u300_seg2.png" alt="u441_seg2"/>
         <div id="u441_text" class="text ">
-          <p><span>c_ADDR</span></p>
+          <p><span>d_ADDR</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u442" class="ax_default box_1">
-        <div id="u442_div" class=""></div>
+      <!-- Unnamed (Connector) -->
+      <div id="u442" class="ax_default connector">
+        <img id="u442_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u442_seg0.png" alt="u442_seg0"/>
+        <img id="u442_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg1.png" alt="u442_seg1"/>
+        <img id="u442_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg2.png" alt="u442_seg2"/>
         <div id="u442_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>c_ADDR</span></p>
         </div>
       </div>
 
@@ -1430,15 +1422,15 @@
       <div id="u443" class="ax_default box_1">
         <div id="u443_div" class=""></div>
         <div id="u443_text" class="text ">
-          <p><span>15</span></p>
+          <p><span>10</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u444" class="ax_default paragraph">
+      <div id="u444" class="ax_default box_1">
         <div id="u444_div" class=""></div>
         <div id="u444_text" class="text ">
-          <p><span>0x1004</span></p>
+          <p><span>15</span></p>
         </div>
       </div>
 
@@ -1450,29 +1442,29 @@
         </div>
       </div>
 
-      <!-- Unnamed (Horizontal Line) -->
-      <div id="u446" class="ax_default line">
-        <img id="u446_img" class="img " src="images/axion指针传递性_vs_多级指针/u339.png"/>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u446" class="ax_default paragraph">
+        <div id="u446_div" class=""></div>
+        <div id="u446_text" class="text ">
+          <p><span>0x1004</span></p>
+        </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
       <div id="u447" class="ax_default line">
-        <img id="u447_img" class="img " src="images/axion指针传递性_vs_多级指针/u339.png"/>
+        <img id="u447_img" class="img " src="images/axion指针传递性_vs_多级指针/u340.png"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u448" class="ax_default line">
+        <img id="u448_img" class="img " src="images/axion指针传递性_vs_多级指针/u340.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u448" class="ax_default paragraph">
-        <div id="u448_div" class=""></div>
-        <div id="u448_text" class="text ">
-          <p><span>0x1000</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u449" class="ax_default heading_3">
+      <div id="u449" class="ax_default paragraph">
         <div id="u449_div" class=""></div>
         <div id="u449_text" class="text ">
-          <p><span>d</span></p>
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
@@ -1480,7 +1472,7 @@
       <div id="u450" class="ax_default heading_3">
         <div id="u450_div" class=""></div>
         <div id="u450_text" class="text ">
-          <p><span>c</span></p>
+          <p><span>d</span></p>
         </div>
       </div>
 
@@ -1488,7 +1480,7 @@
       <div id="u451" class="ax_default heading_3">
         <div id="u451_div" class=""></div>
         <div id="u451_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>c</span></p>
         </div>
       </div>
 
@@ -1496,35 +1488,35 @@
       <div id="u452" class="ax_default heading_3">
         <div id="u452_div" class=""></div>
         <div id="u452_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Connector) -->
-      <div id="u453" class="ax_default connector">
-        <img id="u453_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u453_seg0.png" alt="u453_seg0"/>
-        <img id="u453_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg1.png" alt="u453_seg1"/>
-        <img id="u453_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u299_seg2.png" alt="u453_seg2"/>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u453" class="ax_default heading_3">
+        <div id="u453_div" class=""></div>
         <div id="u453_text" class="text ">
-          <p><span>d_ADDR</span></p>
+          <p><span>a</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
       <div id="u454" class="ax_default connector">
         <img id="u454_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u454_seg0.png" alt="u454_seg0"/>
-        <img id="u454_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u347_seg1.png" alt="u454_seg1"/>
-        <img id="u454_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u333_seg2.png" alt="u454_seg2"/>
+        <img id="u454_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg1.png" alt="u454_seg1"/>
+        <img id="u454_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u300_seg2.png" alt="u454_seg2"/>
         <div id="u454_text" class="text ">
-          <p><span>c_ADDR</span></p>
+          <p><span>d_ADDR</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u455" class="ax_default box_1">
-        <div id="u455_div" class=""></div>
+      <!-- Unnamed (Connector) -->
+      <div id="u455" class="ax_default connector">
+        <img id="u455_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u455_seg0.png" alt="u455_seg0"/>
+        <img id="u455_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u348_seg1.png" alt="u455_seg1"/>
+        <img id="u455_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u334_seg2.png" alt="u455_seg2"/>
         <div id="u455_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>c_ADDR</span></p>
         </div>
       </div>
 
@@ -1532,38 +1524,38 @@
       <div id="u456" class="ax_default box_1">
         <div id="u456_div" class=""></div>
         <div id="u456_text" class="text ">
+          <p><span>10</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u457" class="ax_default box_1">
+        <div id="u457_div" class=""></div>
+        <div id="u457_text" class="text ">
           <p><span>15</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u457" class="ax_default paragraph">
-        <div id="u457_div" class=""></div>
-        <div id="u457_text" class="text ">
+      <div id="u458" class="ax_default paragraph">
+        <div id="u458_div" class=""></div>
+        <div id="u458_text" class="text ">
           <p><span>0x1004</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u458" class="ax_default line">
-        <img id="u458_img" class="img " src="images/axion指针传递性_vs_多级指针/u351.png"/>
+      <div id="u459" class="ax_default line">
+        <img id="u459_img" class="img " src="images/axion指针传递性_vs_多级指针/u352.png"/>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u459" class="ax_default connector">
-        <img id="u459_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u459_seg0.png" alt="u459_seg0"/>
-        <img id="u459_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u365_seg1.png" alt="u459_seg1"/>
-        <img id="u459_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u365_seg2.png" alt="u459_seg2"/>
-        <div id="u459_text" class="text ">
-          <p><span>箭头具象化为地址对象</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u460" class="ax_default heading_3">
-        <div id="u460_div" class=""></div>
+      <div id="u460" class="ax_default connector">
+        <img id="u460_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u460_seg0.png" alt="u460_seg0"/>
+        <img id="u460_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u366_seg1.png" alt="u460_seg1"/>
+        <img id="u460_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u366_seg2.png" alt="u460_seg2"/>
         <div id="u460_text" class="text ">
-          <p><span>画法1</span></p>
+          <p><span>箭头具象化为地址对象</span></p>
         </div>
       </div>
 
@@ -1571,7 +1563,7 @@
       <div id="u461" class="ax_default heading_3">
         <div id="u461_div" class=""></div>
         <div id="u461_text" class="text ">
-          <p><span>画法2</span></p>
+          <p><span>画法1</span></p>
         </div>
       </div>
 
@@ -1579,7 +1571,7 @@
       <div id="u462" class="ax_default heading_3">
         <div id="u462_div" class=""></div>
         <div id="u462_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>画法2</span></p>
         </div>
       </div>
 
@@ -1587,15 +1579,15 @@
       <div id="u463" class="ax_default heading_3">
         <div id="u463_div" class=""></div>
         <div id="u463_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u464" class="ax_default box_1">
+      <div id="u464" class="ax_default heading_3">
         <div id="u464_div" class=""></div>
         <div id="u464_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>a</span></p>
         </div>
       </div>
 
@@ -1603,15 +1595,15 @@
       <div id="u465" class="ax_default box_1">
         <div id="u465_div" class=""></div>
         <div id="u465_text" class="text ">
-          <p><span>15</span></p>
+          <p><span>10</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u466" class="ax_default paragraph">
+      <div id="u466" class="ax_default box_1">
         <div id="u466_div" class=""></div>
         <div id="u466_text" class="text ">
-          <p><span>0x1000</span></p>
+          <p><span>15</span></p>
         </div>
       </div>
 
@@ -1619,39 +1611,39 @@
       <div id="u467" class="ax_default paragraph">
         <div id="u467_div" class=""></div>
         <div id="u467_text" class="text ">
-          <p><span>0x1004</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u468" class="ax_default heading_3">
-        <div id="u468_div" class=""></div>
-        <div id="u468_text" class="text ">
-          <p><span>c_ADDR</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u469" class="ax_default box_1">
-        <div id="u469_div" class=""></div>
-        <div id="u469_text" class="text ">
           <p><span>0x1000</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u470" class="ax_default paragraph">
-        <div id="u470_div" class=""></div>
-        <div id="u470_text" class="text ">
-          <p><span>0x1008</span></p>
+      <div id="u468" class="ax_default paragraph">
+        <div id="u468_div" class=""></div>
+        <div id="u468_text" class="text ">
+          <p><span>0x1004</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u471" class="ax_default heading_3">
+      <div id="u469" class="ax_default heading_3">
+        <div id="u469_div" class=""></div>
+        <div id="u469_text" class="text ">
+          <p><span>c_ADDR</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u470" class="ax_default box_1">
+        <div id="u470_div" class=""></div>
+        <div id="u470_text" class="text ">
+          <p><span>0x1000</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u471" class="ax_default paragraph">
         <div id="u471_div" class=""></div>
         <div id="u471_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>0x1008</span></p>
         </div>
       </div>
 
@@ -1659,15 +1651,15 @@
       <div id="u472" class="ax_default heading_3">
         <div id="u472_div" class=""></div>
         <div id="u472_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u473" class="ax_default box_1">
+      <div id="u473" class="ax_default heading_3">
         <div id="u473_div" class=""></div>
         <div id="u473_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>a</span></p>
         </div>
       </div>
 
@@ -1675,15 +1667,15 @@
       <div id="u474" class="ax_default box_1">
         <div id="u474_div" class=""></div>
         <div id="u474_text" class="text ">
-          <p><span>15</span></p>
+          <p><span>10</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u475" class="ax_default paragraph">
+      <div id="u475" class="ax_default box_1">
         <div id="u475_div" class=""></div>
         <div id="u475_text" class="text ">
-          <p><span>0x1000</span></p>
+          <p><span>15</span></p>
         </div>
       </div>
 
@@ -1691,44 +1683,44 @@
       <div id="u476" class="ax_default paragraph">
         <div id="u476_div" class=""></div>
         <div id="u476_text" class="text ">
-          <p><span>0x1004</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u477" class="ax_default heading_3">
-        <div id="u477_div" class=""></div>
-        <div id="u477_text" class="text ">
-          <p><span>c_ADDR</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u478" class="ax_default box_1">
-        <div id="u478_div" class=""></div>
-        <div id="u478_text" class="text ">
           <p><span>0x1000</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u479" class="ax_default heading_3">
+      <div id="u477" class="ax_default paragraph">
+        <div id="u477_div" class=""></div>
+        <div id="u477_text" class="text ">
+          <p><span>0x1004</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u478" class="ax_default heading_3">
+        <div id="u478_div" class=""></div>
+        <div id="u478_text" class="text ">
+          <p><span>c_ADDR</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u479" class="ax_default box_1">
         <div id="u479_div" class=""></div>
         <div id="u479_text" class="text ">
+          <p><span>0x1000</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u480" class="ax_default heading_3">
+        <div id="u480_div" class=""></div>
+        <div id="u480_text" class="text ">
           <p><span>d_ADDR</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u480" class="ax_default box_1">
-        <div id="u480_div" class=""></div>
-        <div id="u480_text" class="text ">
-          <p><span>0x1008</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u481" class="ax_default paragraph">
+      <div id="u481" class="ax_default box_1">
         <div id="u481_div" class=""></div>
         <div id="u481_text" class="text ">
           <p><span>0x1008</span></p>
@@ -1739,15 +1731,15 @@
       <div id="u482" class="ax_default paragraph">
         <div id="u482_div" class=""></div>
         <div id="u482_text" class="text ">
-          <p><span>0x101C</span></p>
+          <p><span>0x1008</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u483" class="ax_default heading_3">
+      <div id="u483" class="ax_default paragraph">
         <div id="u483_div" class=""></div>
         <div id="u483_text" class="text ">
-          <p><span>c_addr = ~a</span></p>
+          <p><span>0x101C</span></p>
         </div>
       </div>
 
@@ -1755,7 +1747,7 @@
       <div id="u484" class="ax_default heading_3">
         <div id="u484_div" class=""></div>
         <div id="u484_text" class="text ">
-          <p><span>两个箭头&gt;&gt;表示要“两次解引用”才能获得int</span></p><p><span>所以得编译为 d_addr = ~c_addr</span></p>
+          <p><span>c_addr = ~a</span></p>
         </div>
       </div>
 
@@ -1763,7 +1755,7 @@
       <div id="u485" class="ax_default heading_3">
         <div id="u485_div" class=""></div>
         <div id="u485_text" class="text ">
-          <p><span>c_addr = ~b</span></p>
+          <p><span>两个箭头&gt;&gt;表示要“两次解引用”才能获得int</span></p><p><span>所以得编译为 d_addr = ~c_addr</span></p>
         </div>
       </div>
 
@@ -1771,7 +1763,7 @@
       <div id="u486" class="ax_default heading_3">
         <div id="u486_div" class=""></div>
         <div id="u486_text" class="text ">
-          <p><span>print&nbsp; d_addr~~</span></p>
+          <p><span>c_addr = ~b</span></p>
         </div>
       </div>
 
@@ -1787,7 +1779,7 @@
       <div id="u488" class="ax_default heading_3">
         <div id="u488_div" class=""></div>
         <div id="u488_text" class="text ">
-          <p><span>d现在会依赖c_addr的值</span></p><p><span>所以修改c的指向后，d也会改变</span></p>
+          <p><span>print&nbsp; d_addr~~</span></p>
         </div>
       </div>
 
@@ -1795,7 +1787,7 @@
       <div id="u489" class="ax_default heading_3">
         <div id="u489_div" class=""></div>
         <div id="u489_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>d现在会依赖c_addr的值</span></p><p><span>所以修改c的指向后，d也会改变</span></p>
         </div>
       </div>
 
@@ -1803,15 +1795,15 @@
       <div id="u490" class="ax_default heading_3">
         <div id="u490_div" class=""></div>
         <div id="u490_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u491" class="ax_default box_1">
+      <div id="u491" class="ax_default heading_3">
         <div id="u491_div" class=""></div>
         <div id="u491_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>a</span></p>
         </div>
       </div>
 
@@ -1819,15 +1811,15 @@
       <div id="u492" class="ax_default box_1">
         <div id="u492_div" class=""></div>
         <div id="u492_text" class="text ">
-          <p><span>15</span></p>
+          <p><span>10</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u493" class="ax_default paragraph">
+      <div id="u493" class="ax_default box_1">
         <div id="u493_div" class=""></div>
         <div id="u493_text" class="text ">
-          <p><span>0x1000</span></p>
+          <p><span>15</span></p>
         </div>
       </div>
 
@@ -1835,44 +1827,44 @@
       <div id="u494" class="ax_default paragraph">
         <div id="u494_div" class=""></div>
         <div id="u494_text" class="text ">
+          <p><span>0x1000</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u495" class="ax_default paragraph">
+        <div id="u495_div" class=""></div>
+        <div id="u495_text" class="text ">
           <p><span>0x1004</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u495" class="ax_default heading_3">
-        <div id="u495_div" class=""></div>
-        <div id="u495_text" class="text ">
+      <div id="u496" class="ax_default heading_3">
+        <div id="u496_div" class=""></div>
+        <div id="u496_text" class="text ">
           <p><span>c_ADDR</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u496" class="ax_default box_1">
-        <div id="u496_div" class=""></div>
-        <div id="u496_text" class="text ">
+      <div id="u497" class="ax_default box_1">
+        <div id="u497_div" class=""></div>
+        <div id="u497_text" class="text ">
           <p><span>0x1004</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u497" class="ax_default heading_3">
-        <div id="u497_div" class=""></div>
-        <div id="u497_text" class="text ">
+      <div id="u498" class="ax_default heading_3">
+        <div id="u498_div" class=""></div>
+        <div id="u498_text" class="text ">
           <p><span>d_ADDR</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u498" class="ax_default box_1">
-        <div id="u498_div" class=""></div>
-        <div id="u498_text" class="text ">
-          <p><span>0x1008</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u499" class="ax_default paragraph">
+      <div id="u499" class="ax_default box_1">
         <div id="u499_div" class=""></div>
         <div id="u499_text" class="text ">
           <p><span>0x1008</span></p>
@@ -1883,15 +1875,15 @@
       <div id="u500" class="ax_default paragraph">
         <div id="u500_div" class=""></div>
         <div id="u500_text" class="text ">
-          <p><span>0x101C</span></p>
+          <p><span>0x1008</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u501" class="ax_default heading_3">
+      <div id="u501" class="ax_default paragraph">
         <div id="u501_div" class=""></div>
         <div id="u501_text" class="text ">
-          <p><span>--c_addr的地址</span></p>
+          <p><span>0x101C</span></p>
         </div>
       </div>
 
@@ -1907,7 +1899,7 @@
       <div id="u503" class="ax_default heading_3">
         <div id="u503_div" class=""></div>
         <div id="u503_text" class="text ">
-          <p><span>本质上是把传统编程里“使用时临场手动解引用”的负担转移到 “定义时”</span></p>
+          <p><span>--c_addr的地址</span></p>
         </div>
       </div>
 
@@ -1915,23 +1907,23 @@
       <div id="u504" class="ax_default heading_3">
         <div id="u504_div" class=""></div>
         <div id="u504_text" class="text ">
+          <p><span>本质上是把传统编程里“使用时临场手动解引用”的负担转移到 “定义时”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u505" class="ax_default heading_3">
+        <div id="u505_div" class=""></div>
+        <div id="u505_text" class="text ">
           <p><span>int d -&gt; c 是单次解引用</span></p><p><span>int d -&gt;&gt; c 是两次解引用</span></p><p><span>假如之后有 int e -&gt;&gt;&gt;d 就是三次解引用</span><span style="color:#0000FF;">——总之你在定义时就定好解引用次数，编译器会自动编译为符合要求的指令</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u505" class="ax_default paragraph">
-        <div id="u505_div" class=""></div>
-        <div id="u505_text" class="text ">
-          <p><span>0x1000</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u506" class="ax_default heading_3">
+      <div id="u506" class="ax_default paragraph">
         <div id="u506_div" class=""></div>
         <div id="u506_text" class="text ">
-          <p><span>d</span></p>
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
@@ -1939,7 +1931,7 @@
       <div id="u507" class="ax_default heading_3">
         <div id="u507_div" class=""></div>
         <div id="u507_text" class="text ">
-          <p><span>c</span></p>
+          <p><span>d</span></p>
         </div>
       </div>
 
@@ -1947,7 +1939,7 @@
       <div id="u508" class="ax_default heading_3">
         <div id="u508_div" class=""></div>
         <div id="u508_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>c</span></p>
         </div>
       </div>
 
@@ -1955,35 +1947,35 @@
       <div id="u509" class="ax_default heading_3">
         <div id="u509_div" class=""></div>
         <div id="u509_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Connector) -->
-      <div id="u510" class="ax_default connector">
-        <img id="u510_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u510_seg0.png" alt="u510_seg0"/>
-        <img id="u510_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg1.png" alt="u510_seg1"/>
-        <img id="u510_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u510_seg2.png" alt="u510_seg2"/>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u510" class="ax_default heading_3">
+        <div id="u510_div" class=""></div>
         <div id="u510_text" class="text ">
-          <p><span>d_ADDR</span></p>
+          <p><span>a</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
       <div id="u511" class="ax_default connector">
         <img id="u511_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u511_seg0.png" alt="u511_seg0"/>
-        <img id="u511_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u511_seg1.png" alt="u511_seg1"/>
-        <img id="u511_seg2" class="img " src="images/axion_地址与类型系统的关系/u265_seg2.png" alt="u511_seg2"/>
+        <img id="u511_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg1.png" alt="u511_seg1"/>
+        <img id="u511_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u511_seg2.png" alt="u511_seg2"/>
         <div id="u511_text" class="text ">
-          <p><span>c_ADDR</span></p>
+          <p><span>d_ADDR</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u512" class="ax_default box_1">
-        <div id="u512_div" class=""></div>
+      <!-- Unnamed (Connector) -->
+      <div id="u512" class="ax_default connector">
+        <img id="u512_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u512_seg0.png" alt="u512_seg0"/>
+        <img id="u512_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u512_seg1.png" alt="u512_seg1"/>
+        <img id="u512_seg2" class="img " src="images/axion_地址与类型系统的关系/u266_seg2.png" alt="u512_seg2"/>
         <div id="u512_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>c_ADDR</span></p>
         </div>
       </div>
 
@@ -1991,23 +1983,23 @@
       <div id="u513" class="ax_default box_1">
         <div id="u513_div" class=""></div>
         <div id="u513_text" class="text ">
+          <p><span>10</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u514" class="ax_default box_1">
+        <div id="u514_div" class=""></div>
+        <div id="u514_text" class="text ">
           <p><span>15</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u514" class="ax_default paragraph">
-        <div id="u514_div" class=""></div>
-        <div id="u514_text" class="text ">
-          <p><span>0x1004</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u515" class="ax_default heading_3">
+      <div id="u515" class="ax_default paragraph">
         <div id="u515_div" class=""></div>
         <div id="u515_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>0x1004</span></p>
         </div>
       </div>
 
@@ -2015,15 +2007,15 @@
       <div id="u516" class="ax_default heading_3">
         <div id="u516_div" class=""></div>
         <div id="u516_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u517" class="ax_default box_1">
+      <div id="u517" class="ax_default heading_3">
         <div id="u517_div" class=""></div>
         <div id="u517_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>a</span></p>
         </div>
       </div>
 
@@ -2031,15 +2023,15 @@
       <div id="u518" class="ax_default box_1">
         <div id="u518_div" class=""></div>
         <div id="u518_text" class="text ">
-          <p><span>15</span></p>
+          <p><span>10</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u519" class="ax_default paragraph">
+      <div id="u519" class="ax_default box_1">
         <div id="u519_div" class=""></div>
         <div id="u519_text" class="text ">
-          <p><span>0x1000</span></p>
+          <p><span>15</span></p>
         </div>
       </div>
 
@@ -2047,44 +2039,44 @@
       <div id="u520" class="ax_default paragraph">
         <div id="u520_div" class=""></div>
         <div id="u520_text" class="text ">
+          <p><span>0x1000</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u521" class="ax_default paragraph">
+        <div id="u521_div" class=""></div>
+        <div id="u521_text" class="text ">
           <p><span>0x1004</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u521" class="ax_default heading_3">
-        <div id="u521_div" class=""></div>
-        <div id="u521_text" class="text ">
+      <div id="u522" class="ax_default heading_3">
+        <div id="u522_div" class=""></div>
+        <div id="u522_text" class="text ">
           <p><span>c_ADDR</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u522" class="ax_default box_1">
-        <div id="u522_div" class=""></div>
-        <div id="u522_text" class="text ">
+      <div id="u523" class="ax_default box_1">
+        <div id="u523_div" class=""></div>
+        <div id="u523_text" class="text ">
           <p><span>0x1004</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u523" class="ax_default heading_3">
-        <div id="u523_div" class=""></div>
-        <div id="u523_text" class="text ">
+      <div id="u524" class="ax_default heading_3">
+        <div id="u524_div" class=""></div>
+        <div id="u524_text" class="text ">
           <p><span>d_ADDR</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u524" class="ax_default box_1">
-        <div id="u524_div" class=""></div>
-        <div id="u524_text" class="text ">
-          <p><span>0x1008</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u525" class="ax_default paragraph">
+      <div id="u525" class="ax_default box_1">
         <div id="u525_div" class=""></div>
         <div id="u525_text" class="text ">
           <p><span>0x1008</span></p>
@@ -2095,73 +2087,73 @@
       <div id="u526" class="ax_default paragraph">
         <div id="u526_div" class=""></div>
         <div id="u526_text" class="text ">
+          <p><span>0x1008</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u527" class="ax_default paragraph">
+        <div id="u527_div" class=""></div>
+        <div id="u527_text" class="text ">
           <p><span>0x101C</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u527" class="ax_default heading_3">
-        <div id="u527_div" class=""></div>
-        <div id="u527_text" class="text ">
+      <div id="u528" class="ax_default heading_3">
+        <div id="u528_div" class=""></div>
+        <div id="u528_text" class="text ">
           <p><span>--b的地址</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u528" class="ax_default paragraph">
-        <div id="u528_div" class=""></div>
-        <div id="u528_text" class="text ">
+      <div id="u529" class="ax_default paragraph">
+        <div id="u529_div" class=""></div>
+        <div id="u529_text" class="text ">
           <p><span>当然你也可以定义 int&nbsp; e-&gt;&gt;d&nbsp;&nbsp; 或是 int e，</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u529" class="ax_default heading_3">
-        <div id="u529_div" class=""></div>
-        <div id="u529_text" class="text ">
+      <div id="u530" class="ax_default heading_3">
+        <div id="u530_div" class=""></div>
+        <div id="u530_text" class="text ">
           <p><span>e</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u530" class="ax_default connector">
-        <img id="u530_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u530_seg0.png" alt="u530_seg0"/>
-        <img id="u530_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg1.png" alt="u530_seg1"/>
-        <img id="u530_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u510_seg2.png" alt="u530_seg2"/>
-        <div id="u530_text" class="text ">
-          <p><span>e_ADDR</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u531" class="ax_default heading_3">
-        <div id="u531_div" class=""></div>
+      <div id="u531" class="ax_default connector">
+        <img id="u531_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u531_seg0.png" alt="u531_seg0"/>
+        <img id="u531_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg1.png" alt="u531_seg1"/>
+        <img id="u531_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u511_seg2.png" alt="u531_seg2"/>
         <div id="u531_text" class="text ">
           <p><span>e_ADDR</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u532" class="ax_default box_1">
+      <div id="u532" class="ax_default heading_3">
         <div id="u532_div" class=""></div>
         <div id="u532_text" class="text ">
+          <p><span>e_ADDR</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u533" class="ax_default box_1">
+        <div id="u533_div" class=""></div>
+        <div id="u533_text" class="text ">
           <p><span>0x101C</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u533" class="ax_default paragraph">
-        <div id="u533_div" class=""></div>
-        <div id="u533_text" class="text ">
-          <p><span>0x1020</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u534" class="ax_default heading_3">
+      <div id="u534" class="ax_default paragraph">
         <div id="u534_div" class=""></div>
         <div id="u534_text" class="text ">
-          <p><span>此时符号bcde都代表15这个数据</span></p><p><span>只是解引用次数不同</span></p>
+          <p><span>0x1020</span></p>
         </div>
       </div>
 
@@ -2169,7 +2161,7 @@
       <div id="u535" class="ax_default heading_3">
         <div id="u535_div" class=""></div>
         <div id="u535_text" class="text ">
-          <p><span>--c_addr的地址</span></p>
+          <p><span>此时符号bcde都代表15这个数据</span></p><p><span>只是解引用次数不同</span></p>
         </div>
       </div>
 
@@ -2177,25 +2169,25 @@
       <div id="u536" class="ax_default heading_3">
         <div id="u536_div" class=""></div>
         <div id="u536_text" class="text ">
+          <p><span>--c_addr的地址</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u537" class="ax_default heading_3">
+        <div id="u537_div" class=""></div>
+        <div id="u537_text" class="text ">
           <p><span>--d_addr的地址</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u537" class="ax_default connector">
-        <img id="u537_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u537_seg0.png" alt="u537_seg0"/>
-        <img id="u537_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u365_seg1.png" alt="u537_seg1"/>
-        <img id="u537_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u537_seg2.png" alt="u537_seg2"/>
-        <div id="u537_text" class="text ">
-          <p><span>箭头具象化为地址对象</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u538" class="ax_default heading_3">
-        <div id="u538_div" class=""></div>
+      <div id="u538" class="ax_default connector">
+        <img id="u538_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u538_seg0.png" alt="u538_seg0"/>
+        <img id="u538_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u366_seg1.png" alt="u538_seg1"/>
+        <img id="u538_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u538_seg2.png" alt="u538_seg2"/>
         <div id="u538_text" class="text ">
-          <p><span>画法1</span></p>
+          <p><span>箭头具象化为地址对象</span></p>
         </div>
       </div>
 
@@ -2203,23 +2195,23 @@
       <div id="u539" class="ax_default heading_3">
         <div id="u539_div" class=""></div>
         <div id="u539_text" class="text ">
+          <p><span>画法1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u540" class="ax_default heading_3">
+        <div id="u540_div" class=""></div>
+        <div id="u540_text" class="text ">
           <p><span>画法2</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u540" class="ax_default paragraph">
-        <div id="u540_div" class=""></div>
-        <div id="u540_text" class="text ">
-          <p><span>0x1000</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u541" class="ax_default heading_3">
+      <div id="u541" class="ax_default paragraph">
         <div id="u541_div" class=""></div>
         <div id="u541_text" class="text ">
-          <p><span>d</span></p>
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
@@ -2227,7 +2219,7 @@
       <div id="u542" class="ax_default heading_3">
         <div id="u542_div" class=""></div>
         <div id="u542_text" class="text ">
-          <p><span>c</span></p>
+          <p><span>d</span></p>
         </div>
       </div>
 
@@ -2235,7 +2227,7 @@
       <div id="u543" class="ax_default heading_3">
         <div id="u543_div" class=""></div>
         <div id="u543_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>c</span></p>
         </div>
       </div>
 
@@ -2243,35 +2235,35 @@
       <div id="u544" class="ax_default heading_3">
         <div id="u544_div" class=""></div>
         <div id="u544_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Connector) -->
-      <div id="u545" class="ax_default connector">
-        <img id="u545_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u545_seg0.png" alt="u545_seg0"/>
-        <img id="u545_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u288_seg1.png" alt="u545_seg1"/>
-        <img id="u545_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u299_seg2.png" alt="u545_seg2"/>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u545" class="ax_default heading_3">
+        <div id="u545_div" class=""></div>
         <div id="u545_text" class="text ">
-          <p><span>d_ADDR</span></p>
+          <p><span>a</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
       <div id="u546" class="ax_default connector">
         <img id="u546_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u546_seg0.png" alt="u546_seg0"/>
-        <img id="u546_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u511_seg1.png" alt="u546_seg1"/>
-        <img id="u546_seg2" class="img " src="images/axion_地址与类型系统的关系/u265_seg2.png" alt="u546_seg2"/>
+        <img id="u546_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u289_seg1.png" alt="u546_seg1"/>
+        <img id="u546_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u300_seg2.png" alt="u546_seg2"/>
         <div id="u546_text" class="text ">
-          <p><span>c_ADDR</span></p>
+          <p><span>d_ADDR</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u547" class="ax_default box_1">
-        <div id="u547_div" class=""></div>
+      <!-- Unnamed (Connector) -->
+      <div id="u547" class="ax_default connector">
+        <img id="u547_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u547_seg0.png" alt="u547_seg0"/>
+        <img id="u547_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u512_seg1.png" alt="u547_seg1"/>
+        <img id="u547_seg2" class="img " src="images/axion_地址与类型系统的关系/u266_seg2.png" alt="u547_seg2"/>
         <div id="u547_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>c_ADDR</span></p>
         </div>
       </div>
 
@@ -2279,23 +2271,23 @@
       <div id="u548" class="ax_default box_1">
         <div id="u548_div" class=""></div>
         <div id="u548_text" class="text ">
+          <p><span>10</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u549" class="ax_default box_1">
+        <div id="u549_div" class=""></div>
+        <div id="u549_text" class="text ">
           <p><span>15</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u549" class="ax_default paragraph">
-        <div id="u549_div" class=""></div>
-        <div id="u549_text" class="text ">
-          <p><span>0x1004</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u550" class="ax_default heading_3">
+      <div id="u550" class="ax_default paragraph">
         <div id="u550_div" class=""></div>
         <div id="u550_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>0x1004</span></p>
         </div>
       </div>
 
@@ -2303,15 +2295,15 @@
       <div id="u551" class="ax_default heading_3">
         <div id="u551_div" class=""></div>
         <div id="u551_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u552" class="ax_default box_1">
+      <div id="u552" class="ax_default heading_3">
         <div id="u552_div" class=""></div>
         <div id="u552_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>a</span></p>
         </div>
       </div>
 
@@ -2319,15 +2311,15 @@
       <div id="u553" class="ax_default box_1">
         <div id="u553_div" class=""></div>
         <div id="u553_text" class="text ">
-          <p><span>15</span></p>
+          <p><span>10</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u554" class="ax_default paragraph">
+      <div id="u554" class="ax_default box_1">
         <div id="u554_div" class=""></div>
         <div id="u554_text" class="text ">
-          <p><span>0x1000</span></p>
+          <p><span>15</span></p>
         </div>
       </div>
 
@@ -2335,44 +2327,44 @@
       <div id="u555" class="ax_default paragraph">
         <div id="u555_div" class=""></div>
         <div id="u555_text" class="text ">
+          <p><span>0x1000</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u556" class="ax_default paragraph">
+        <div id="u556_div" class=""></div>
+        <div id="u556_text" class="text ">
           <p><span>0x1004</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u556" class="ax_default heading_3">
-        <div id="u556_div" class=""></div>
-        <div id="u556_text" class="text ">
+      <div id="u557" class="ax_default heading_3">
+        <div id="u557_div" class=""></div>
+        <div id="u557_text" class="text ">
           <p><span>c_ADDR</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u557" class="ax_default box_1">
-        <div id="u557_div" class=""></div>
-        <div id="u557_text" class="text ">
+      <div id="u558" class="ax_default box_1">
+        <div id="u558_div" class=""></div>
+        <div id="u558_text" class="text ">
           <p><span>0x1004</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u558" class="ax_default heading_3">
-        <div id="u558_div" class=""></div>
-        <div id="u558_text" class="text ">
+      <div id="u559" class="ax_default heading_3">
+        <div id="u559_div" class=""></div>
+        <div id="u559_text" class="text ">
           <p><span>d_ADDR</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u559" class="ax_default box_1">
-        <div id="u559_div" class=""></div>
-        <div id="u559_text" class="text ">
-          <p><span>0x1008</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u560" class="ax_default paragraph">
+      <div id="u560" class="ax_default box_1">
         <div id="u560_div" class=""></div>
         <div id="u560_text" class="text ">
           <p><span>0x1008</span></p>
@@ -2383,15 +2375,15 @@
       <div id="u561" class="ax_default paragraph">
         <div id="u561_div" class=""></div>
         <div id="u561_text" class="text ">
-          <p><span>0x101C</span></p>
+          <p><span>0x1008</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u562" class="ax_default heading_3">
+      <div id="u562" class="ax_default paragraph">
         <div id="u562_div" class=""></div>
         <div id="u562_text" class="text ">
-          <p><span>--b的地址</span></p>
+          <p><span>0x101C</span></p>
         </div>
       </div>
 
@@ -2399,50 +2391,50 @@
       <div id="u563" class="ax_default heading_3">
         <div id="u563_div" class=""></div>
         <div id="u563_text" class="text ">
+          <p><span>--b的地址</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u564" class="ax_default heading_3">
+        <div id="u564_div" class=""></div>
+        <div id="u564_text" class="text ">
           <p><span>e</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u564" class="ax_default connector">
-        <img id="u564_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u564_seg0.png" alt="u564_seg0"/>
-        <img id="u564_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u564_seg1.png" alt="u564_seg1"/>
-        <img id="u564_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u564_seg2.png" alt="u564_seg2"/>
-        <img id="u564_seg3" class="img " src="images/axion指针传递性_vs_多级指针/u564_seg3.png" alt="u564_seg3"/>
-        <div id="u564_text" class="text ">
-          <p><span>e_ADDR</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u565" class="ax_default heading_3">
-        <div id="u565_div" class=""></div>
+      <div id="u565" class="ax_default connector">
+        <img id="u565_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u565_seg0.png" alt="u565_seg0"/>
+        <img id="u565_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u565_seg1.png" alt="u565_seg1"/>
+        <img id="u565_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u565_seg2.png" alt="u565_seg2"/>
+        <img id="u565_seg3" class="img " src="images/axion指针传递性_vs_多级指针/u565_seg3.png" alt="u565_seg3"/>
         <div id="u565_text" class="text ">
           <p><span>e_ADDR</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u566" class="ax_default box_1">
+      <div id="u566" class="ax_default heading_3">
         <div id="u566_div" class=""></div>
         <div id="u566_text" class="text ">
+          <p><span>e_ADDR</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u567" class="ax_default box_1">
+        <div id="u567_div" class=""></div>
+        <div id="u567_text" class="text ">
           <p><span>0x101C</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u567" class="ax_default paragraph">
-        <div id="u567_div" class=""></div>
-        <div id="u567_text" class="text ">
-          <p><span>0x1020</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u568" class="ax_default heading_3">
+      <div id="u568" class="ax_default paragraph">
         <div id="u568_div" class=""></div>
         <div id="u568_text" class="text ">
-          <p><span>此时符号bcde都代表15这个数据</span></p><p><span>只是解引用次数不同</span></p>
+          <p><span>0x1020</span></p>
         </div>
       </div>
 
@@ -2450,7 +2442,7 @@
       <div id="u569" class="ax_default heading_3">
         <div id="u569_div" class=""></div>
         <div id="u569_text" class="text ">
-          <p><span>--c_addr的地址</span></p>
+          <p><span>此时符号bcde都代表15这个数据</span></p><p><span>只是解引用次数不同</span></p>
         </div>
       </div>
 
@@ -2462,21 +2454,21 @@
         </div>
       </div>
 
-      <!-- Unnamed (Connector) -->
-      <div id="u571" class="ax_default connector">
-        <img id="u571_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u571_seg0.png" alt="u571_seg0"/>
-        <img id="u571_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u365_seg1.png" alt="u571_seg1"/>
-        <img id="u571_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u537_seg2.png" alt="u571_seg2"/>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u571" class="ax_default heading_3">
+        <div id="u571_div" class=""></div>
         <div id="u571_text" class="text ">
-          <p><span>箭头具象化为地址对象</span></p>
+          <p><span>--c_addr的地址</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u572" class="ax_default heading_3">
-        <div id="u572_div" class=""></div>
+      <!-- Unnamed (Connector) -->
+      <div id="u572" class="ax_default connector">
+        <img id="u572_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u572_seg0.png" alt="u572_seg0"/>
+        <img id="u572_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u366_seg1.png" alt="u572_seg1"/>
+        <img id="u572_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u538_seg2.png" alt="u572_seg2"/>
         <div id="u572_text" class="text ">
-          <p><span>画法1</span></p>
+          <p><span>箭头具象化为地址对象</span></p>
         </div>
       </div>
 
@@ -2484,7 +2476,7 @@
       <div id="u573" class="ax_default heading_3">
         <div id="u573_div" class=""></div>
         <div id="u573_text" class="text ">
-          <p><span>画法2</span></p>
+          <p><span>画法1</span></p>
         </div>
       </div>
 
@@ -2492,7 +2484,7 @@
       <div id="u574" class="ax_default heading_3">
         <div id="u574_div" class=""></div>
         <div id="u574_text" class="text ">
-          <p><span>要想满足2次解引用获得int的需求，所以编译器会输出为</span></p><p><span>&nbsp;e_ADDR = c_ADDR&nbsp; </span></p>
+          <p><span>画法2</span></p>
         </div>
       </div>
 
@@ -2500,7 +2492,7 @@
       <div id="u575" class="ax_default heading_3">
         <div id="u575_div" class=""></div>
         <div id="u575_text" class="text ">
-          <p><span>3次解引用</span></p>
+          <p><span>要想满足2次解引用获得int的需求，所以编译器会输出为</span></p><p><span>&nbsp;e_ADDR = c_ADDR&nbsp; </span></p>
         </div>
       </div>
 
@@ -2508,7 +2500,7 @@
       <div id="u576" class="ax_default heading_3">
         <div id="u576_div" class=""></div>
         <div id="u576_text" class="text ">
-          <p><span>2次解引用</span></p>
+          <p><span>3次解引用</span></p>
         </div>
       </div>
 
@@ -2516,36 +2508,36 @@
       <div id="u577" class="ax_default heading_3">
         <div id="u577_div" class=""></div>
         <div id="u577_text" class="text ">
+          <p><span>2次解引用</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u578" class="ax_default heading_3">
+        <div id="u578_div" class=""></div>
+        <div id="u578_text" class="text ">
           <p><span>1次解引用</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u578" class="ax_default line">
-        <img id="u578_img" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u147.png"/>
+      <div id="u579" class="ax_default line">
+        <img id="u579_img" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u148.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u579" class="ax_default paragraph">
-        <div id="u579_div" class=""></div>
-        <div id="u579_text" class="text ">
+      <div id="u580" class="ax_default paragraph">
+        <div id="u580_div" class=""></div>
+        <div id="u580_text" class="text ">
           <p><span>当然，AXION也支持像传统编程那样手动解引用的写法风格</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u580" class="ax_default box_1">
-        <div id="u580_div" class=""></div>
-        <div id="u580_text" class="text ">
-          <p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">int a = 10</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">int b = 15</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">~int c = ~a</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;color:#0000FF;">~~int d = ~c </span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">print c</span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">print c~</span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑 Regular', '微软雅黑';font-weight:400;">print d </span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;">print d~</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">print d~~</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u581" class="ax_default heading_3">
+      <div id="u581" class="ax_default box_1">
         <div id="u581_div" class=""></div>
         <div id="u581_text" class="text ">
-          <p><span>-- c是个地址(传统编程的指针变量)，保存着a的地址</span></p>
+          <p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">int a = 10</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">int b = 15</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">~int c = ~a</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">~~int d = ~c </span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;">print c</span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;">print c~</span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;">print d </span></p><p style="line-height:28px;"><span style="font-family:'微软雅黑';font-weight:400;">print d~</span></p><p style="line-height:24px;"><span style="font-family:'微软雅黑';font-weight:400;">print d~~</span></p>
         </div>
       </div>
 
@@ -2553,7 +2545,7 @@
       <div id="u582" class="ax_default heading_3">
         <div id="u582_div" class=""></div>
         <div id="u582_text" class="text ">
-          <p><span>-- d是个地址对象，保存着c的地址</span></p>
+          <p><span>-- c是个地址(传统编程的指针变量)，保存着a的地址</span></p>
         </div>
       </div>
 
@@ -2561,7 +2553,7 @@
       <div id="u583" class="ax_default heading_3">
         <div id="u583_div" class=""></div>
         <div id="u583_text" class="text ">
-          <p><span>-- 输出a的地址 0x1000</span></p>
+          <p><span>-- d是个地址对象，保存着c的地址</span></p>
         </div>
       </div>
 
@@ -2569,7 +2561,7 @@
       <div id="u584" class="ax_default heading_3">
         <div id="u584_div" class=""></div>
         <div id="u584_text" class="text ">
-          <p><span>-- 需手动解引用，输出10</span></p>
+          <p><span>-- 输出a的地址 0x1000</span></p>
         </div>
       </div>
 
@@ -2577,7 +2569,7 @@
       <div id="u585" class="ax_default heading_3">
         <div id="u585_div" class=""></div>
         <div id="u585_text" class="text ">
-          <p><span>-- d的值，输出0x1008</span></p>
+          <p><span>-- 需手动解引用，输出10</span></p>
         </div>
       </div>
 
@@ -2585,7 +2577,7 @@
       <div id="u586" class="ax_default heading_3">
         <div id="u586_div" class=""></div>
         <div id="u586_text" class="text ">
-          <p><span>-- d(0x1008)的解引用，输出0x1004</span></p>
+          <p><span>-- d的值，输出0x1008</span></p>
         </div>
       </div>
 
@@ -2593,7 +2585,7 @@
       <div id="u587" class="ax_default heading_3">
         <div id="u587_div" class=""></div>
         <div id="u587_text" class="text ">
-          <p><span>-- d(0x1008)解引用的解引用，输出10</span></p>
+          <p><span>-- d(0x1008)的解引用，输出0x1004</span></p>
         </div>
       </div>
 
@@ -2601,7 +2593,7 @@
       <div id="u588" class="ax_default heading_3">
         <div id="u588_div" class=""></div>
         <div id="u588_text" class="text ">
-          <p><span>b</span></p>
+          <p><span>-- d(0x1008)解引用的解引用，输出10</span></p>
         </div>
       </div>
 
@@ -2609,15 +2601,15 @@
       <div id="u589" class="ax_default heading_3">
         <div id="u589_div" class=""></div>
         <div id="u589_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>b</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u590" class="ax_default box_1">
+      <div id="u590" class="ax_default heading_3">
         <div id="u590_div" class=""></div>
         <div id="u590_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>a</span></p>
         </div>
       </div>
 
@@ -2625,15 +2617,15 @@
       <div id="u591" class="ax_default box_1">
         <div id="u591_div" class=""></div>
         <div id="u591_text" class="text ">
-          <p><span>15</span></p>
+          <p><span>10</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u592" class="ax_default paragraph">
+      <div id="u592" class="ax_default box_1">
         <div id="u592_div" class=""></div>
         <div id="u592_text" class="text ">
-          <p><span>0x1000</span></p>
+          <p><span>15</span></p>
         </div>
       </div>
 
@@ -2641,15 +2633,15 @@
       <div id="u593" class="ax_default paragraph">
         <div id="u593_div" class=""></div>
         <div id="u593_text" class="text ">
-          <p><span>0x1008</span></p>
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u594" class="ax_default heading_3">
+      <div id="u594" class="ax_default paragraph">
         <div id="u594_div" class=""></div>
         <div id="u594_text" class="text ">
-          <p><span>--b的地址</span></p>
+          <p><span>0x1008</span></p>
         </div>
       </div>
 
@@ -2657,7 +2649,7 @@
       <div id="u595" class="ax_default heading_3">
         <div id="u595_div" class=""></div>
         <div id="u595_text" class="text ">
-          <p><span>--c 的地址</span></p>
+          <p><span>--b的地址</span></p>
         </div>
       </div>
 
@@ -2665,39 +2657,39 @@
       <div id="u596" class="ax_default heading_3">
         <div id="u596_div" class=""></div>
         <div id="u596_text" class="text ">
+          <p><span>--c 的地址</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u597" class="ax_default heading_3">
+        <div id="u597_div" class=""></div>
+        <div id="u597_text" class="text ">
           <p><span>c</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u597" class="ax_default box_1">
-        <div id="u597_div" class=""></div>
-        <div id="u597_text" class="text ">
+      <div id="u598" class="ax_default box_1">
+        <div id="u598_div" class=""></div>
+        <div id="u598_text" class="text ">
           <p><span>0x1004</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u598" class="ax_default heading_3">
-        <div id="u598_div" class=""></div>
-        <div id="u598_text" class="text ">
+      <div id="u599" class="ax_default heading_3">
+        <div id="u599_div" class=""></div>
+        <div id="u599_text" class="text ">
           <p><span>d</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u599" class="ax_default box_1">
-        <div id="u599_div" class=""></div>
-        <div id="u599_text" class="text ">
-          <p><span>0x1008</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u600" class="ax_default paragraph">
+      <div id="u600" class="ax_default box_1">
         <div id="u600_div" class=""></div>
         <div id="u600_text" class="text ">
-          <p><span>0x1004</span></p>
+          <p><span>0x1008</span></p>
         </div>
       </div>
 
@@ -2705,15 +2697,15 @@
       <div id="u601" class="ax_default paragraph">
         <div id="u601_div" class=""></div>
         <div id="u601_text" class="text ">
-          <p><span>0x101C</span></p>
+          <p><span>0x1004</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u602" class="ax_default heading_3">
+      <div id="u602" class="ax_default paragraph">
         <div id="u602_div" class=""></div>
         <div id="u602_text" class="text ">
-          <p><span>和之前不同的是，c和d在语义上已经不再是int对象，而是个单纯的地址对象 —— </span><span style="color:#0000FF;">类型签名已经不再是int了，c是~int、d是~~int 这说明它们现在只是个地址</span></p><p><span>你需要手动解引用才能访问目标对象(不能像上面那样直接print c 、print d了)</span></p>
+          <p><span>0x101C</span></p>
         </div>
       </div>
 
@@ -2721,7 +2713,7 @@
       <div id="u603" class="ax_default heading_3">
         <div id="u603_div" class=""></div>
         <div id="u603_text" class="text ">
-          <p><span>上文 无论是单级指针，还是多级指针，符号abcd的类型签名都是int，这意味着它们直接代表最终的int对象</span></p><p><span>你可以用c=c+1 、print c 等方式直接操作目标对象，而无需手动解引用</span></p>
+          <p><span>和之前不同的是，c和d在语义上已经不再是int对象，而是个单纯的地址对象 —— </span><span style="color:#0000FF;">类型签名已经不再是int了，c是~int、d是~~int 这说明它们现在只是个地址</span></p><p><span>你需要手动解引用才能访问目标对象(不能像上面那样直接print c 、print d了)</span></p>
         </div>
       </div>
 
@@ -2729,13 +2721,21 @@
       <div id="u604" class="ax_default heading_3">
         <div id="u604_div" class=""></div>
         <div id="u604_text" class="text ">
+          <p><span>上文 无论是单级指针，还是多级指针，符号abcd的类型签名都是int，这意味着它们直接代表最终的int对象</span></p><p><span>你可以用c=c+1 、print c 等方式直接操作目标对象，而无需手动解引用</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u605" class="ax_default heading_3">
+        <div id="u605_div" class=""></div>
+        <div id="u605_text" class="text ">
           <p><span>所以，若只是为了访问与操作目标对象，那肯定是直接用指针语法-&gt;更方便——</span><span style="color:#0000FF;">直接操作源对象是最普遍、最常用的场景</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u605" class="ax_default box_1">
-        <div id="u605_div" class=""></div>
+      <div id="u606" class="ax_default box_1">
+        <div id="u606_div" class=""></div>
       </div>
     </div>
   </body>

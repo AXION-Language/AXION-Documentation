@@ -25,76 +25,68 @@
     <div id="base" class="">
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u184" class="ax_default line">
-        <img id="u184_img" class="img " src="images/axion_地址与类型系统的关系/u184.png"/>
+      <div id="u185" class="ax_default line">
+        <img id="u185_img" class="img " src="images/axion_地址与类型系统的关系/u185.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u185" class="ax_default paragraph">
-        <div id="u185_div" class=""></div>
-        <div id="u185_text" class="text ">
+      <div id="u186" class="ax_default paragraph">
+        <div id="u186_div" class=""></div>
+        <div id="u186_text" class="text ">
           <p><span>地址 与 对象类型解耦，指针运算比C语言更纯净、更便捷、更优雅</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u186" class="ax_default box_1">
-        <div id="u186_div" class=""></div>
-        <div id="u186_text" class="text ">
+      <div id="u187" class="ax_default box_1">
+        <div id="u187_div" class=""></div>
+        <div id="u187_text" class="text ">
           <p><span>print&nbsp; b_ADDR+1&nbsp; </span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u187" class="ax_default line">
-        <img id="u187_img" class="img " src="images/axion_地址与类型系统的关系/u187.png"/>
+      <div id="u188" class="ax_default line">
+        <img id="u188_img" class="img " src="images/axion_地址与类型系统的关系/u188.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u188" class="ax_default paragraph">
-        <div id="u188_div" class=""></div>
-        <div id="u188_text" class="text ">
+      <div id="u189" class="ax_default paragraph">
+        <div id="u189_div" class=""></div>
+        <div id="u189_text" class="text ">
           <p><span style="color:#0000FF;">如果是 int* p=0x1000&nbsp; </span></p><p><span style="color:#0000FF;">则 p+1 = 0x1004</span></p><p><span><br></span></p><p><span>如果 double* p=0x1000</span></p><p><span>则 p+1 = 0x1008</span></p><p><span><br></span></p><p><span style="color:#0000FF;">只有当 char* p=0x1000 时</span></p><p><span style="color:#0000FF;">p+1 才=0x1001</span></p><p><span><br></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u189" class="ax_default heading_3">
-        <div id="u189_div" class=""></div>
-        <div id="u189_text" class="text ">
+      <div id="u190" class="ax_default heading_3">
+        <div id="u190_div" class=""></div>
+        <div id="u190_text" class="text ">
           <p><span>//回顾《C语言指针问题》</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u190" class="ax_default paragraph">
-        <div id="u190_div" class=""></div>
-        <div id="u190_text" class="text ">
+      <div id="u191" class="ax_default paragraph">
+        <div id="u191_div" class=""></div>
+        <div id="u191_text" class="text ">
           <p><span>1、除非指针直接指向char类型，否则无法进行“步长=1字节”的最细粒度的指针操作</span></p><p><span>2、你可以手动转型，但转型并非万能，因为它又与char、int...等类型的编码规则强耦合，有隐患且不利于拓展</span></p><p><span>3、语义不清晰、转型语句一大堆，非常混淆视觉，难以维护</span></p><p><span>...</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u191" class="ax_default box_1">
-        <div id="u191_div" class=""></div>
-        <div id="u191_text" class="text ">
+      <div id="u192" class="ax_default box_1">
+        <div id="u192_div" class=""></div>
+        <div id="u192_text" class="text ">
           <p><span>int a = 10</span></p><p><span>int b -&gt; a</span></p><p><span><br></span></p><p><span><br></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u192" class="ax_default paragraph">
-        <div id="u192_div" class=""></div>
-        <div id="u192_text" class="text ">
-          <p><span>编译器自动生成b_ADDR，但不是直接生成在源码里，而是生成在编译器运行时的符号表里</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u193" class="ax_default box_1">
+      <div id="u193" class="ax_default paragraph">
         <div id="u193_div" class=""></div>
         <div id="u193_text" class="text ">
-          <p><span>符号：&quot;a&quot;</span></p><p><span>对象类型：int</span></p><p><span>句柄类型：实例型</span></p><p><span>偏移：0</span></p>
+          <p><span>编译器自动生成b_ADDR，但不是直接生成在源码里，而是生成在编译器运行时的符号表里</span></p>
         </div>
       </div>
 
@@ -102,15 +94,15 @@
       <div id="u194" class="ax_default box_1">
         <div id="u194_div" class=""></div>
         <div id="u194_text" class="text ">
-          <p><span>符号：&quot;b&quot;</span></p><p><span>对象类型：int</span></p><p><span>句柄类型：指针型</span></p>
+          <p><span>符号：&quot;a&quot;</span></p><p><span>对象类型：int</span></p><p><span>句柄类型：实例型</span></p><p><span>偏移：0</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u195" class="ax_default paragraph">
+      <div id="u195" class="ax_default box_1">
         <div id="u195_div" class=""></div>
         <div id="u195_text" class="text ">
-          <p><span>这意味着你可以直接在代码里使用 b_ADDR&nbsp; (即便你未曾手动定义它)</span></p>
+          <p><span>符号：&quot;b&quot;</span></p><p><span>对象类型：int</span></p><p><span>句柄类型：指针型</span></p>
         </div>
       </div>
 
@@ -118,7 +110,7 @@
       <div id="u196" class="ax_default paragraph">
         <div id="u196_div" class=""></div>
         <div id="u196_text" class="text ">
-          <p><span>--假设a的地址0x1000</span></p>
+          <p><span>这意味着你可以直接在代码里使用 b_ADDR&nbsp; (即便你未曾手动定义它)</span></p>
         </div>
       </div>
 
@@ -126,7 +118,7 @@
       <div id="u197" class="ax_default paragraph">
         <div id="u197_div" class=""></div>
         <div id="u197_text" class="text ">
-          <p><span>--输出0x1001 ✔️，而非0x1004</span></p>
+          <p><span>--假设a的地址0x1000</span></p>
         </div>
       </div>
 
@@ -134,49 +126,49 @@
       <div id="u198" class="ax_default paragraph">
         <div id="u198_div" class=""></div>
         <div id="u198_text" class="text ">
+          <p><span>--输出0x1001 ✔️，而非0x1004</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u199" class="ax_default paragraph">
+        <div id="u199_div" class=""></div>
+        <div id="u199_text" class="text ">
           <p><span>回顾传统编程，指针 与 目标对象的类型是强耦合的，导致难以进行步长为1的指针运算</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u199" class="ax_default line">
-        <img id="u199_img" class="img " src="images/axion_地址与类型系统的关系/u187.png"/>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u200" class="ax_default paragraph">
-        <div id="u200_div" class=""></div>
-        <div id="u200_text" class="text ">
-          <p><span>AXION的【地址运算】完全遵循【数学规则】，【类型系统】不会介入</span></p>
-        </div>
+      <div id="u200" class="ax_default line">
+        <img id="u200_img" class="img " src="images/axion_地址与类型系统的关系/u188.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u201" class="ax_default paragraph">
         <div id="u201_div" class=""></div>
         <div id="u201_text" class="text ">
+          <p><span>AXION的【地址运算】完全遵循【数学规则】，【类型系统】不会介入</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u202" class="ax_default paragraph">
+        <div id="u202_div" class=""></div>
+        <div id="u202_text" class="text ">
           <p><span style="font-family:'微软雅黑';font-weight:400;">AXION类型系统 </span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">不会介入</span><span style="font-family:'微软雅黑';font-weight:400;"> 地址运算</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">虽然b_ADDR是~int类型，但地址运算时不会像C那样给你自动乘个4（int的长度），还得靠我手动转char*来实现1步长</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u202" class="ax_default line">
-        <img id="u202_img" class="img " src="images/axion_地址与类型系统的关系/u187.png"/>
+      <div id="u203" class="ax_default line">
+        <img id="u203_img" class="img " src="images/axion_地址与类型系统的关系/u188.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u203" class="ax_default box_1">
-        <div id="u203_div" class=""></div>
-        <div id="u203_text" class="text ">
-          <p><span>int a = 65</span></p><p><span>char b =&quot;A&quot;</span></p><p><span><br></span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u204" class="ax_default paragraph">
+      <div id="u204" class="ax_default box_1">
         <div id="u204_div" class=""></div>
         <div id="u204_text" class="text ">
-          <p><span>传统编程：解引用类型 与 目标类型强绑定</span></p>
+          <p><span>int a = 65</span></p><p><span>char b =&quot;A&quot;</span></p><p><span><br></span></p>
         </div>
       </div>
 
@@ -184,23 +176,23 @@
       <div id="u205" class="ax_default paragraph">
         <div id="u205_div" class=""></div>
         <div id="u205_text" class="text ">
+          <p><span>传统编程：解引用类型 与 目标类型强绑定</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u206" class="ax_default paragraph">
+        <div id="u206_div" class=""></div>
+        <div id="u206_text" class="text ">
           <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">这不是在强行搞特殊化，其背后遵循一套严格的方法论</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">接下来我们将详细解释其背后的设计哲学</span><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">——AXION【地址/引用】与【类型系统】的关系，与传统编程理论完全不同</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u206" class="ax_default box_1">
-        <div id="u206_div" class=""></div>
-        <div id="u206_text" class="text ">
-          <p><span>int a = 65</span></p><p><span>char a =&quot;A&quot;</span></p><p><span><br></span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u207" class="ax_default paragraph">
+      <div id="u207" class="ax_default box_1">
         <div id="u207_div" class=""></div>
         <div id="u207_text" class="text ">
-          <p><span>AXION：解引用类型 与 目标类型无关，结果是纯净地址 ~ </span></p>
+          <p><span>int a = 65</span></p><p><span>char a =&quot;A&quot;</span></p><p><span><br></span></p>
         </div>
       </div>
 
@@ -208,7 +200,7 @@
       <div id="u208" class="ax_default paragraph">
         <div id="u208_div" class=""></div>
         <div id="u208_text" class="text ">
-          <p><span>&amp;a 类型是 int* </span></p>
+          <p><span>AXION：解引用类型 与 目标类型无关，结果是纯净地址 ~ </span></p>
         </div>
       </div>
 
@@ -216,7 +208,7 @@
       <div id="u209" class="ax_default paragraph">
         <div id="u209_div" class=""></div>
         <div id="u209_text" class="text ">
-          <p><span>&amp;a 类型是 char* </span></p>
+          <p><span>&amp;a 类型是 int* </span></p>
         </div>
       </div>
 
@@ -224,7 +216,7 @@
       <div id="u210" class="ax_default paragraph">
         <div id="u210_div" class=""></div>
         <div id="u210_text" class="text ">
-          <p><span>~a 类型是 ~(或写成ADDR) ，&nbsp; 而不是 ~int</span></p>
+          <p><span>&amp;a 类型是 char* </span></p>
         </div>
       </div>
 
@@ -232,31 +224,31 @@
       <div id="u211" class="ax_default paragraph">
         <div id="u211_div" class=""></div>
         <div id="u211_text" class="text ">
+          <p><span>~a 类型是 ~(或写成ADDR) ，&nbsp; 而不是 ~int</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u212" class="ax_default paragraph">
+        <div id="u212_div" class=""></div>
+        <div id="u212_text" class="text ">
           <p><span>~a 类型是 ~(或写成ADDR) ，而不是 ~char</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u212" class="ax_default heading_3">
-        <div id="u212_div" class=""></div>
-        <div id="u212_text" class="text ">
+      <div id="u213" class="ax_default heading_3">
+        <div id="u213_div" class=""></div>
+        <div id="u213_text" class="text ">
           <p><span>-- 这一小节先快速介绍AXION的处理方式，下一节再详细解释为什么</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u213" class="ax_default box_1">
-        <div id="u213_div" class=""></div>
-        <div id="u213_text" class="text ">
-          <p><span>int* p = &amp;a </span></p><p><span>int* p = &amp;b </span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u214" class="ax_default paragraph">
+      <div id="u214" class="ax_default box_1">
         <div id="u214_div" class=""></div>
         <div id="u214_text" class="text ">
-          <p><span>传统编程：【地址类型】和【对象类型】耦合了</span></p>
+          <p><span>int* p = &amp;a </span></p><p><span>int* p = &amp;b </span></p>
         </div>
       </div>
 
@@ -264,7 +256,7 @@
       <div id="u215" class="ax_default paragraph">
         <div id="u215_div" class=""></div>
         <div id="u215_text" class="text ">
-          <p><span>左边p是int*类型；右边 &amp;a 是int* 类型，编译通过✔️ </span></p>
+          <p><span>传统编程：【地址类型】和【对象类型】耦合了</span></p>
         </div>
       </div>
 
@@ -272,23 +264,23 @@
       <div id="u216" class="ax_default paragraph">
         <div id="u216_div" class=""></div>
         <div id="u216_text" class="text ">
+          <p><span>左边p是int*类型；右边 &amp;a 是int* 类型，编译通过✔️ </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u217" class="ax_default paragraph">
+        <div id="u217_div" class=""></div>
+        <div id="u217_text" class="text ">
           <p><span>左边p是int*类型；右边 &amp;a 是char* 类型，编译错误❌️ </span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u217" class="ax_default box_1">
-        <div id="u217_div" class=""></div>
-        <div id="u217_text" class="text ">
-          <p><span>~int addr = ~a </span></p><p><span>~int addr = ~b</span></p><p><span><br></span></p><p><span><br></span></p><p><span><br></span></p><p><span>~int addr = a</span></p><p><span><br></span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u218" class="ax_default paragraph">
+      <div id="u218" class="ax_default box_1">
         <div id="u218_div" class=""></div>
         <div id="u218_text" class="text ">
-          <p><span>只要求 “右值是地址类型~”即可</span></p>
+          <p><span>~int addr = ~a </span></p><p><span>~int addr = ~b</span></p><p><span><br></span></p><p><span><br></span></p><p><span><br></span></p><p><span>~int addr = a</span></p><p><span><br></span></p>
         </div>
       </div>
 
@@ -296,44 +288,44 @@
       <div id="u219" class="ax_default paragraph">
         <div id="u219_div" class=""></div>
         <div id="u219_text" class="text ">
+          <p><span>只要求 “右值是地址类型~”即可</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u220" class="ax_default paragraph">
+        <div id="u220_div" class=""></div>
+        <div id="u220_text" class="text ">
           <p><span>右边确实都是地址类型 ~ ,所以编译通过✔️</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u220" class="ax_default heading_3">
-        <div id="u220_div" class=""></div>
-        <div id="u220_text" class="text ">
+      <div id="u221" class="ax_default heading_3">
+        <div id="u221_div" class=""></div>
+        <div id="u221_text" class="text ">
           <p><span>--视版本不同，编译器这里可能也会放过，也可能会自动转型</span></p><p><span>但从设计逻辑上是违规的，例如如果不是char类型，而是某种自定义的结构体类型T，编译器就报错了</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u221" class="ax_default box_1">
-        <img id="u221_img" class="img " src="images/axion_地址与类型系统的关系/u221.png"/>
+      <div id="u222" class="ax_default box_1">
+        <img id="u222_img" class="img " src="images/axion_地址与类型系统的关系/u222.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u222" class="ax_default box_1">
-        <div id="u222_div" class=""></div>
-        <div id="u222_text" class="text ">
+      <div id="u223" class="ax_default box_1">
+        <div id="u223_div" class=""></div>
+        <div id="u223_text" class="text ">
           <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">【方法论】</span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">AXION的设计理念是：</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">我【取引用】的目的不是为了【解引用】，而只是为了【获得地址】</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">而【地址】本身和原对象是什么类型根本毫无关系 </span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">跳出计算机编程，这其实很好理解：</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">我只是想获得某个对象的空间坐标例如（23,45,67），这个（23,45,67）本身就是纯粹的坐标，坐标本身和原对象是猫是狗还是火箭毫无关系</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">——这个例子应该能让你有点feel了，但却不一定能真正get这个逻辑的本质，下面开始剖析本质</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">【取引用】是对 【a】而言的，而不是对【int a】这个组合逻辑而言的</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u223" class="ax_default paragraph">
-        <div id="u223_div" class=""></div>
-        <div id="u223_text" class="text ">
-          <p><span>AXION【取引用】得到的是纯净地址，与目标类型无关</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u224" class="ax_default heading_3">
+      <div id="u224" class="ax_default paragraph">
         <div id="u224_div" class=""></div>
         <div id="u224_text" class="text ">
-          <p><span>传统编程的【取引用】的结果是int*，那么反推回去将得到：</span></p><p><span>它是对[int a]这个整体逻辑同时取引用的</span></p>
+          <p><span>AXION【取引用】得到的是纯净地址，与目标类型无关</span></p>
         </div>
       </div>
 
@@ -341,115 +333,115 @@
       <div id="u225" class="ax_default heading_3">
         <div id="u225_div" class=""></div>
         <div id="u225_text" class="text ">
+          <p><span>传统编程的【取引用】的结果是int*，那么反推回去将得到：</span></p><p><span>它是对[int a]这个整体逻辑同时取引用的</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u226" class="ax_default heading_3">
+        <div id="u226_div" class=""></div>
+        <div id="u226_text" class="text ">
           <p><span>int&nbsp; &nbsp; a</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u226" class="ax_default box_1">
-        <img id="u226_img" class="img " src="images/axion_地址与类型系统的关系/u226.png"/>
+      <div id="u227" class="ax_default box_1">
+        <img id="u227_img" class="img " src="images/axion_地址与类型系统的关系/u227.png"/>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u227" class="ax_default connector">
-        <img id="u227_seg0" class="img " src="images/axion_地址与类型系统的关系/u227_seg0.png" alt="u227_seg0"/>
-        <img id="u227_seg1" class="img " src="images/axion_地址与类型系统的关系/u227_seg1.png" alt="u227_seg1"/>
-        <img id="u227_seg2" class="img " src="images/axion_地址与类型系统的关系/u227_seg2.png" alt="u227_seg2"/>
-        <div id="u227_text" class="text " style="display:none; visibility: hidden">
+      <div id="u228" class="ax_default connector">
+        <img id="u228_seg0" class="img " src="images/axion_地址与类型系统的关系/u228_seg0.png" alt="u228_seg0"/>
+        <img id="u228_seg1" class="img " src="images/axion_地址与类型系统的关系/u228_seg1.png" alt="u228_seg1"/>
+        <img id="u228_seg2" class="img " src="images/axion_地址与类型系统的关系/u228_seg2.png" alt="u228_seg2"/>
+        <div id="u228_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u228" class="ax_default paragraph">
-        <div id="u228_div" class=""></div>
-        <div id="u228_text" class="text ">
+      <div id="u229" class="ax_default paragraph">
+        <div id="u229_div" class=""></div>
+        <div id="u229_text" class="text ">
           <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">真正搞特殊化的不是AXION，而是传统编程</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">AXION永远是遵循最客观的事实、人类最底层的世界观来设计语义——这是AXION最根本的方针和理念，任何决策的背后都一定遵循一套严格方法论</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">而传统编程由于缺乏科学、统一的方法论，反而会出现不少违和</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u229" class="ax_default box_1">
-        <img id="u229_img" class="img " src="images/axion_地址与类型系统的关系/u229.png"/>
+      <div id="u230" class="ax_default box_1">
+        <img id="u230_img" class="img " src="images/axion_地址与类型系统的关系/u230.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u230" class="ax_default paragraph">
-        <div id="u230_div" class=""></div>
-        <div id="u230_text" class="text ">
+      <div id="u231" class="ax_default paragraph">
+        <div id="u231_div" class=""></div>
+        <div id="u231_text" class="text ">
           <p><span>这不是很怪吗？明明我写的是 &amp;a ，怎么变成了&amp;[int a]——语义被篡改了❌️</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u231" class="ax_default heading_3">
-        <div id="u231_div" class=""></div>
-        <div id="u231_text" class="text ">
+      <div id="u232" class="ax_default heading_3">
+        <div id="u232_div" class=""></div>
+        <div id="u232_text" class="text ">
           <p><span>而AXION里~a就是最纯粹的语义——就是对a取引用，所以你将获得纯净的地址✔️</span></p><p><span>与左边是int还是char还是T...毫无关系</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u232" class="ax_default connector">
-        <img id="u232_seg0" class="img " src="images/axion_地址与类型系统的关系/u232_seg0.png" alt="u232_seg0"/>
-        <img id="u232_seg1" class="img " src="images/axion_地址与类型系统的关系/u232_seg1.png" alt="u232_seg1"/>
-        <img id="u232_seg2" class="img " src="images/axion_地址与类型系统的关系/u232_seg2.png" alt="u232_seg2"/>
-        <div id="u232_text" class="text " style="display:none; visibility: hidden">
+      <div id="u233" class="ax_default connector">
+        <img id="u233_seg0" class="img " src="images/axion_地址与类型系统的关系/u233_seg0.png" alt="u233_seg0"/>
+        <img id="u233_seg1" class="img " src="images/axion_地址与类型系统的关系/u233_seg1.png" alt="u233_seg1"/>
+        <img id="u233_seg2" class="img " src="images/axion_地址与类型系统的关系/u233_seg2.png" alt="u233_seg2"/>
+        <div id="u233_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u233" class="ax_default line">
-        <img id="u233_img" class="img " src="images/axion_地址与类型系统的关系/u187.png"/>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u234" class="ax_default paragraph">
-        <div id="u234_div" class=""></div>
-        <div id="u234_text" class="text ">
-          <p><span>AXION定义【引用/地址】时，只检查“是否是地址”，只要是“地址类型~”就通过</span></p>
-        </div>
+      <div id="u234" class="ax_default line">
+        <img id="u234_img" class="img " src="images/axion_地址与类型系统的关系/u188.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u235" class="ax_default paragraph">
         <div id="u235_div" class=""></div>
         <div id="u235_text" class="text ">
+          <p><span>AXION定义【引用/地址】时，只检查“是否是地址”，只要是“地址类型~”就通过</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u236" class="ax_default paragraph">
+        <div id="u236_div" class=""></div>
+        <div id="u236_text" class="text ">
           <p><span>AXION 在定义【地址】时，只校验“值类型是不是地址”而不会校验“解引用后的类型是不是int”</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u236" class="ax_default box_1">
-        <img id="u236_img" class="img " src="images/axion_地址与类型系统的关系/u236.png"/>
-      </div>
-
-      <!-- Unnamed (Connector) -->
-      <div id="u237" class="ax_default connector">
-        <img id="u237_seg0" class="img " src="images/axion_地址与类型系统的关系/u237_seg0.png" alt="u237_seg0"/>
-        <img id="u237_seg1" class="img " src="images/axion_地址与类型系统的关系/u237_seg1.png" alt="u237_seg1"/>
-        <img id="u237_seg2" class="img " src="images/axion_地址与类型系统的关系/u237_seg2.png" alt="u237_seg2"/>
-        <div id="u237_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
+      <div id="u237" class="ax_default box_1">
+        <img id="u237_img" class="img " src="images/axion_地址与类型系统的关系/u237.png"/>
       </div>
 
       <!-- Unnamed (Connector) -->
       <div id="u238" class="ax_default connector">
         <img id="u238_seg0" class="img " src="images/axion_地址与类型系统的关系/u238_seg0.png" alt="u238_seg0"/>
-        <img id="u238_seg1" class="img " src="images/axion_地址与类型系统的关系/u232_seg1.png" alt="u238_seg1"/>
-        <img id="u238_seg2" class="img " src="images/axion_地址与类型系统的关系/u232_seg2.png" alt="u238_seg2"/>
+        <img id="u238_seg1" class="img " src="images/axion_地址与类型系统的关系/u238_seg1.png" alt="u238_seg1"/>
+        <img id="u238_seg2" class="img " src="images/axion_地址与类型系统的关系/u238_seg2.png" alt="u238_seg2"/>
         <div id="u238_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u239" class="ax_default paragraph">
-        <div id="u239_div" class=""></div>
-        <div id="u239_text" class="text ">
-          <p><span>编译错误❌️：a是int类型，不是地址类型~</span></p>
+      <!-- Unnamed (Connector) -->
+      <div id="u239" class="ax_default connector">
+        <img id="u239_seg0" class="img " src="images/axion_地址与类型系统的关系/u239_seg0.png" alt="u239_seg0"/>
+        <img id="u239_seg1" class="img " src="images/axion_地址与类型系统的关系/u233_seg1.png" alt="u239_seg1"/>
+        <img id="u239_seg2" class="img " src="images/axion_地址与类型系统的关系/u233_seg2.png" alt="u239_seg2"/>
+        <div id="u239_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
         </div>
       </div>
 
@@ -457,23 +449,23 @@
       <div id="u240" class="ax_default paragraph">
         <div id="u240_div" class=""></div>
         <div id="u240_text" class="text ">
+          <p><span>编译错误❌️：a是int类型，不是地址类型~</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u241" class="ax_default paragraph">
+        <div id="u241_div" class=""></div>
+        <div id="u241_text" class="text ">
           <p><span>Q：那类型签名【~int】里的这个【int】是有啥意义？</span></p><p><span>A：那是给【解引用】的，告诉编译器 addr~ 是个int</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u241" class="ax_default box_1">
-        <div id="u241_div" class=""></div>
-        <div id="u241_text" class="text ">
-          <p><span>~int addr = ~a </span></p><p><span>print addr~</span></p><p><span><br></span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u242" class="ax_default paragraph">
+      <div id="u242" class="ax_default box_1">
         <div id="u242_div" class=""></div>
         <div id="u242_text" class="text ">
-          <p><span>输出65 （int类型）</span></p>
+          <p><span>~int addr = ~a </span></p><p><span>print addr~</span></p><p><span><br></span></p>
         </div>
       </div>
 
@@ -481,31 +473,31 @@
       <div id="u243" class="ax_default paragraph">
         <div id="u243_div" class=""></div>
         <div id="u243_text" class="text ">
+          <p><span>输出65 （int类型）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u244" class="ax_default paragraph">
+        <div id="u244_div" class=""></div>
+        <div id="u244_text" class="text ">
           <p><span>【解引用时】按照int类型处理</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u244" class="ax_default heading_3">
-        <div id="u244_div" class=""></div>
-        <div id="u244_text" class="text ">
+      <div id="u245" class="ax_default heading_3">
+        <div id="u245_div" class=""></div>
+        <div id="u245_text" class="text ">
           <p><span>之所以感觉有点怪的根源出在“int”这三个字母身上，接下来我们写清楚“int代表什么”就很清楚了</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u245" class="ax_default box_1">
-        <div id="u245_div" class=""></div>
-        <div id="u245_text" class="text ">
-          <p><span>int a =65</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u246" class="ax_default heading_3">
+      <div id="u246" class="ax_default box_1">
         <div id="u246_div" class=""></div>
         <div id="u246_text" class="text ">
-          <p><span>--这点本身不是问题，遵循左右类型一致是合理的编程范式</span></p>
+          <p><span>int a =65</span></p>
         </div>
       </div>
 
@@ -513,29 +505,29 @@
       <div id="u247" class="ax_default heading_3">
         <div id="u247_div" class=""></div>
         <div id="u247_text" class="text ">
+          <p><span>--这点本身不是问题，遵循左右类型一致是合理的编程范式</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u248" class="ax_default heading_3">
+        <div id="u248_div" class=""></div>
+        <div id="u248_text" class="text ">
           <p><span>定义int时</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u248" class="compound ax_default line" WidgetHeight="1" WidgetWidth="123" CompoundMode="true">
-        <img id="u248_img" class="singleImg img " src="images/axion_地址与类型系统的关系/u248.png"/>
-        <div id="u248p000" class="ax_vector_shape" WidgetTopLeftX="-0.4765625" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.484375" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.4765625" WidgetBottomLeftY="0" WidgetBottomRightX="0.484375" WidgetBottomRightY="0">
-          <img id="u248p000_img" class="img " src="images/axion_地址与类型系统的关系/u248p000.png"/>
+      <div id="u249" class="compound ax_default line" WidgetHeight="1" WidgetWidth="123" CompoundMode="true">
+        <img id="u249_img" class="singleImg img " src="images/axion_地址与类型系统的关系/u249.png"/>
+        <div id="u249p000" class="ax_vector_shape" WidgetTopLeftX="-0.4765625" WidgetTopLeftY="-0.166666666666667" WidgetTopRightX="0.484375" WidgetTopRightY="-0.166666666666667" WidgetBottomLeftX="-0.4765625" WidgetBottomLeftY="0" WidgetBottomRightX="0.484375" WidgetBottomRightY="0">
+          <img id="u249p000_img" class="img " src="images/axion_地址与类型系统的关系/u249p000.png"/>
         </div>
-        <div id="u248p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.5" WidgetTopRightX="30.5" WidgetTopRightY="-0.5" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="30.5" WidgetBottomRightY="0">
-          <img id="u248p001_img" class="img " src="images/axion_地址与类型系统的关系/u248p001.png"/>
+        <div id="u249p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.5" WidgetTopRightX="30.5" WidgetTopRightY="-0.5" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="30.5" WidgetBottomRightY="0">
+          <img id="u249p001_img" class="img " src="images/axion_地址与类型系统的关系/u249p001.png"/>
         </div>
-        <div id="u248p002" class="ax_vector_shape" WidgetTopLeftX="5.45454545454545" WidgetTopLeftY="0" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0" WidgetBottomLeftX="5.45454545454545" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="-0.05">
-          <img id="u248p002_img" class="img " src="images/c指针_的局限性/u138p002.png"/>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u249" class="ax_default box_1">
-        <div id="u249_div" class=""></div>
-        <div id="u249_text" class="text ">
-          <p><span style="color:#0000FF;">右侧对象类型必须是：int</span><span> </span></p><p><span>符号：a</span></p><p><span><br></span></p><p><span>右值类型：int</span></p><p><span>右值：65</span></p>
+        <div id="u249p002" class="ax_vector_shape" WidgetTopLeftX="5.45454545454545" WidgetTopLeftY="0" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0" WidgetBottomLeftX="5.45454545454545" WidgetBottomLeftY="-0.05" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="-0.05">
+          <img id="u249p002_img" class="img " src="images/c指针_的局限性/u139p002.png"/>
         </div>
       </div>
 
@@ -543,45 +535,45 @@
       <div id="u250" class="ax_default box_1">
         <div id="u250_div" class=""></div>
         <div id="u250_text" class="text ">
+          <p><span style="color:#0000FF;">右侧对象类型必须是：int</span><span> </span></p><p><span>符号：a</span></p><p><span><br></span></p><p><span>右值类型：int</span></p><p><span>右值：65</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u251" class="ax_default box_1">
+        <div id="u251_div" class=""></div>
+        <div id="u251_text" class="text ">
           <p><span>~int addr = ~a</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u251" class="ax_default heading_3">
-        <div id="u251_div" class=""></div>
-        <div id="u251_text" class="text ">
+      <div id="u252" class="ax_default heading_3">
+        <div id="u252_div" class=""></div>
+        <div id="u252_text" class="text ">
           <p><span>定义~int时</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u252" class="compound ax_default line" WidgetHeight="1" WidgetWidth="123" CompoundMode="true">
-        <img id="u252_img" class="singleImg img " src="images/axion_地址与类型系统的关系/u248.png"/>
-        <div id="u252p000" class="ax_vector_shape" WidgetTopLeftX="-0.4765625" WidgetTopLeftY="0" WidgetTopRightX="0.484375" WidgetTopRightY="0" WidgetBottomLeftX="-0.4765625" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.484375" WidgetBottomRightY="0.166666666666667">
-          <img id="u252p000_img" class="img " src="images/axion_地址与类型系统的关系/u252p000.png"/>
+      <div id="u253" class="compound ax_default line" WidgetHeight="1" WidgetWidth="123" CompoundMode="true">
+        <img id="u253_img" class="singleImg img " src="images/axion_地址与类型系统的关系/u249.png"/>
+        <div id="u253p000" class="ax_vector_shape" WidgetTopLeftX="-0.4765625" WidgetTopLeftY="0" WidgetTopRightX="0.484375" WidgetTopRightY="0" WidgetBottomLeftX="-0.4765625" WidgetBottomLeftY="0.166666666666667" WidgetBottomRightX="0.484375" WidgetBottomRightY="0.166666666666667">
+          <img id="u253p000_img" class="img " src="images/axion_地址与类型系统的关系/u253p000.png"/>
         </div>
-        <div id="u252p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.25" WidgetTopRightX="30.5" WidgetTopRightY="-0.25" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="30.5" WidgetBottomRightY="0">
-          <img id="u252p001_img" class="img " src="images/axion_地址与类型系统的关系/u252p001.png"/>
+        <div id="u253p001" class="ax_vector_shape" WidgetTopLeftX="-0.25" WidgetTopLeftY="-0.25" WidgetTopRightX="30.5" WidgetTopRightY="-0.25" WidgetBottomLeftX="-0.25" WidgetBottomLeftY="0" WidgetBottomRightX="30.5" WidgetBottomRightY="0">
+          <img id="u253p001_img" class="img " src="images/axion_地址与类型系统的关系/u253p001.png"/>
         </div>
-        <div id="u252p002" class="ax_vector_shape" WidgetTopLeftX="5.45454545454545" WidgetTopLeftY="0.05" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0.05" WidgetBottomLeftX="5.45454545454545" WidgetBottomLeftY="0" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="0">
-          <img id="u252p002_img" class="img " src="images/c指针_的局限性/u138p001.png"/>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u253" class="ax_default box_1">
-        <div id="u253_div" class=""></div>
-        <div id="u253_text" class="text ">
-          <p><span>右侧对象类型必须是：~</span></p><p><span style="color:#0000FF;">解引用后是啥类型：int</span></p><p><span>符号：addr</span></p><p><span><br></span></p><p><span>右值类型：~</span></p><p><span>右值：a的地址</span></p>
+        <div id="u253p002" class="ax_vector_shape" WidgetTopLeftX="5.45454545454545" WidgetTopLeftY="0.05" WidgetTopRightX="-0.136363636363636" WidgetTopRightY="0.05" WidgetBottomLeftX="5.45454545454545" WidgetBottomLeftY="0" WidgetBottomRightX="-0.136363636363636" WidgetBottomRightY="0">
+          <img id="u253p002_img" class="img " src="images/c指针_的局限性/u139p001.png"/>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u254" class="ax_default heading_3">
+      <div id="u254" class="ax_default box_1">
         <div id="u254_div" class=""></div>
         <div id="u254_text" class="text ">
-          <p><span>语义结构化</span></p>
+          <p><span>右侧对象类型必须是：~</span></p><p><span style="color:#0000FF;">解引用后是啥类型：int</span></p><p><span>符号：addr</span></p><p><span><br></span></p><p><span>右值类型：~</span></p><p><span>右值：a的地址</span></p>
         </div>
       </div>
 
@@ -597,7 +589,7 @@
       <div id="u256" class="ax_default heading_3">
         <div id="u256_div" class=""></div>
         <div id="u256_text" class="text ">
-          <p><span>--此处“int”三个字母是拿来限定右侧对象类型的，所以一旦右侧提供的不是int，就会报错</span></p>
+          <p><span>语义结构化</span></p>
         </div>
       </div>
 
@@ -605,7 +597,7 @@
       <div id="u257" class="ax_default heading_3">
         <div id="u257_div" class=""></div>
         <div id="u257_text" class="text ">
-          <p><span>--这里的“int”三个字母只是拿来服务于【解引用】这个应用场景的</span></p><p><span>--而非是在定义时给右边做类型检查的！</span></p>
+          <p><span>--此处“int”三个字母是拿来限定右侧对象类型的，所以一旦右侧提供的不是int，就会报错</span></p>
         </div>
       </div>
 
@@ -613,7 +605,7 @@
       <div id="u258" class="ax_default heading_3">
         <div id="u258_div" class=""></div>
         <div id="u258_text" class="text ">
-          <p><span>--此处“~”对标上面“int”，它们都是拿来在定义时，检查右侧对象类型的，所以一旦右侧提供的不是ADDR，就会报错</span></p>
+          <p><span>--这里的“int”三个字母只是拿来服务于【解引用】这个应用场景的</span></p><p><span>--而非是在定义时给右边做类型检查的！</span></p>
         </div>
       </div>
 
@@ -621,65 +613,73 @@
       <div id="u259" class="ax_default heading_3">
         <div id="u259_div" class=""></div>
         <div id="u259_text" class="text ">
+          <p><span>--此处“~”对标上面“int”，它们都是拿来在定义时，检查右侧对象类型的，所以一旦右侧提供的不是ADDR，就会报错</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u260" class="ax_default heading_3">
+        <div id="u260_div" class=""></div>
+        <div id="u260_text" class="text ">
           <p><span>结构体里，我们能用key明确描述两个int的职责不同</span></p><p><span>但源码里实在不方便写那么一大串“key”，所以最终采用了 ~int 这种写法</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u260" class="ax_default box_1">
-        <div id="u260_div" class=""></div>
-        <div id="u260_text" class="text ">
+      <div id="u261" class="ax_default box_1">
+        <div id="u261_div" class=""></div>
+        <div id="u261_text" class="text ">
           <p><span>~int addr = ~a </span></p><p><span>print addr~</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u261" class="ax_default heading_3">
-        <div id="u261_div" class=""></div>
-        <div id="u261_text" class="text ">
+      <div id="u262" class="ax_default heading_3">
+        <div id="u262_div" class=""></div>
+        <div id="u262_text" class="text ">
           <p><span>--好处是，对“addr~” 和“~int&quot; 两边同时解引用就能得到“ addr~ = int” 这样明确的语义</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u262" class="ax_default line">
-        <img id="u262_img" class="img " src="images/axion_地址与类型系统的关系/u187.png"/>
+      <div id="u263" class="ax_default line">
+        <img id="u263_img" class="img " src="images/axion_地址与类型系统的关系/u188.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u263" class="ax_default paragraph">
-        <div id="u263_div" class=""></div>
-        <div id="u263_text" class="text ">
+      <div id="u264" class="ax_default paragraph">
+        <div id="u264_div" class=""></div>
+        <div id="u264_text" class="text ">
           <p><span>AXION 在【解引用】时，会根据&quot;~T&quot;里的&quot;T&quot;来处理</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Curly Bracket) -->
-      <div id="u264" class="ax_default box_1">
-        <img id="u264_img" class="img " src="images/axion_地址与类型系统的关系/u264.png"/>
+      <div id="u265" class="ax_default box_1">
+        <img id="u265_img" class="img " src="images/axion_地址与类型系统的关系/u265.png"/>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u265" class="ax_default connector">
-        <img id="u265_seg0" class="img " src="images/axion_地址与类型系统的关系/u265_seg0.png" alt="u265_seg0"/>
-        <img id="u265_seg1" class="img " src="images/axion_地址与类型系统的关系/u265_seg1.png" alt="u265_seg1"/>
-        <img id="u265_seg2" class="img " src="images/axion_地址与类型系统的关系/u265_seg2.png" alt="u265_seg2"/>
-        <div id="u265_text" class="text " style="display:none; visibility: hidden">
+      <div id="u266" class="ax_default connector">
+        <img id="u266_seg0" class="img " src="images/axion_地址与类型系统的关系/u266_seg0.png" alt="u266_seg0"/>
+        <img id="u266_seg1" class="img " src="images/axion_地址与类型系统的关系/u266_seg1.png" alt="u266_seg1"/>
+        <img id="u266_seg2" class="img " src="images/axion_地址与类型系统的关系/u266_seg2.png" alt="u266_seg2"/>
+        <div id="u266_text" class="text " style="display:none; visibility: hidden">
           <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u266" class="ax_default box_1">
-        <div id="u266_div" class=""></div>
-        <div id="u266_text" class="text ">
-          <p><span style="color:#0000FF;">符号：&quot;b_ADDR&quot;</span></p><p><span>对象类型：ADDR</span></p><p><span>解引用类型：int</span></p><p><span>句柄类型：实例型</span></p><p><span>偏移：4</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u267" class="ax_default box_1">
         <div id="u267_div" class=""></div>
+        <div id="u267_text" class="text ">
+          <p><span style="color:#0000FF;">符号：&quot;b_ADDR&quot;</span></p><p><span>对象类型：ADDR</span></p><p><span>解引用类型：int</span></p><p><span>句柄类型：实例型</span></p><p><span>偏移：4</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u268" class="ax_default box_1">
+        <div id="u268_div" class=""></div>
       </div>
     </div>
   </body>
