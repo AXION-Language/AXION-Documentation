@@ -25,63 +25,10 @@
     <div id="base" class="">
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3828" class="ax_default label">
-        <div id="u3828_div" class=""></div>
-        <div id="u3828_text" class="text ">
-          <p><span>【指针型句柄 -&gt;】 与 【解释型句柄 :: 或 =&gt;】的对比</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3829" class="ax_default heading_3">
-        <div id="u3829_div" class=""></div>
-        <div id="u3829_text" class="text ">
-          <p><span>【指针型句柄】虽有addr的内存成本 + 间接寻址的指令成本，但好处是支持动态修改</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3830" class="ax_default box_1">
-        <div id="u3830_div" class=""></div>
-        <div id="u3830_text" class="text ">
-          <p><span>int a :10</span></p><p><span>int </span><span style="color:#0000FF;">b -&gt; a</span></p><p><span>int c : </span><span style="color:#0000FF;">b + 5</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3831" class="ax_default box_1">
-        <div id="u3831_div" class=""></div>
-        <div id="u3831_text" class="text ">
-          <p><span>10</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3832" class="ax_default heading_3">
-        <div id="u3832_div" class=""></div>
-        <div id="u3832_text" class="text ">
-          <p><span>数据段 section .data | 页权限RW</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3833" class="ax_default box_1">
-        <div id="u3833_div" class=""></div>
-        <div id="u3833_text" class="text ">
-          <p><span>...</span></p><p><span>mov eax, </span><span style="color:#0000FF;">[0x2004]</span></p><p><span style="color:#0000FF;">mov eax, [eax]</span></p><p><span>add eax, 5</span></p><p><span>mov </span><span style="color:#0000FF;">[0x2008] </span><span>, eax</span></p><p><span>...</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Horizontal Line) -->
-      <div id="u3834" class="ax_default line">
-        <img id="u3834_img" class="img " src="images/解释型句柄_与_内存/u3713.png"/>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3835" class="ax_default heading_3">
+      <div id="u3835" class="ax_default label">
         <div id="u3835_div" class=""></div>
         <div id="u3835_text" class="text ">
-          <p><span>代码段 section .text&nbsp; | 页权限RX</span></p>
+          <p><span>【指针型句柄 -&gt;】 与 【解释型句柄 :: 或 =&gt;】的对比</span></p>
         </div>
       </div>
 
@@ -89,7 +36,7 @@
       <div id="u3836" class="ax_default heading_3">
         <div id="u3836_div" class=""></div>
         <div id="u3836_text" class="text ">
-          <p><span>0x2000</span></p>
+          <p><span>【指针型句柄】虽有addr的内存成本 + 间接寻址的指令成本，但好处是支持动态修改</span></p>
         </div>
       </div>
 
@@ -97,23 +44,23 @@
       <div id="u3837" class="ax_default box_1">
         <div id="u3837_div" class=""></div>
         <div id="u3837_text" class="text ">
-          <p><span>0x2000</span></p>
+          <p><span>int a :10</span></p><p><span>int </span><span style="color:#0000FF;">b -&gt; a</span></p><p><span>int c : </span><span style="color:#0000FF;">b + 5</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3838" class="ax_default heading_3">
+      <div id="u3838" class="ax_default box_1">
         <div id="u3838_div" class=""></div>
         <div id="u3838_text" class="text ">
-          <p><span>0x2004</span></p>
+          <p><span>10</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3839" class="ax_default paragraph">
+      <div id="u3839" class="ax_default heading_3">
         <div id="u3839_div" class=""></div>
         <div id="u3839_text" class="text ">
-          <p><span>编译时 </span></p>
+          <p><span>数据段 section .data | 页权限RW</span></p>
         </div>
       </div>
 
@@ -121,43 +68,36 @@
       <div id="u3840" class="ax_default box_1">
         <div id="u3840_div" class=""></div>
         <div id="u3840_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>...</span></p><p><span>mov eax, </span><span style="color:#0000FF;">[0x2004]</span></p><p><span style="color:#0000FF;">mov eax, [eax]</span></p><p><span>add eax, 5</span></p><p><span>mov </span><span style="color:#0000FF;">[0x2008] </span><span>, eax</span></p><p><span>...</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3841" class="ax_default box_1">
-        <div id="u3841_div" class=""></div>
-        <div id="u3841_text" class="text ">
-          <p><span>b</span></p>
-        </div>
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u3841" class="ax_default line">
+        <img id="u3841_img" class="img " src="images/解释型句柄_与_内存/u3720.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3842" class="ax_default box_1">
+      <div id="u3842" class="ax_default heading_3">
         <div id="u3842_div" class=""></div>
         <div id="u3842_text" class="text ">
-          <p><span>c</span></p>
+          <p><span>代码段 section .text&nbsp; | 页权限RX</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Connector) -->
-      <div id="u3843" class="ax_default connector">
-        <img id="u3843_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3843_seg0.png" alt="u3843_seg0"/>
-        <img id="u3843_seg1" class="img " src="images/类型-_函数_-对象_关系错综复杂/u1670_seg1.png" alt="u3843_seg1"/>
-        <img id="u3843_seg2" class="img " src="images/解释型句柄_与_内存/u3724_seg2.png" alt="u3843_seg2"/>
-        <div id="u3843_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3843" class="ax_default heading_3">
+        <div id="u3843_div" class=""></div>
+        <div id="u3843_text" class="text ">
+          <p><span>0x2000</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Connector) -->
-      <div id="u3844" class="ax_default connector">
-        <img id="u3844_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3844_seg0.png" alt="u3844_seg0"/>
-        <img id="u3844_seg1" class="img " src="images/其他语言_值类型_引用类型的问题/u981_seg1.png" alt="u3844_seg1"/>
-        <img id="u3844_seg2" class="img " src="images/其他语言_值类型_引用类型的问题/u981_seg2.png" alt="u3844_seg2"/>
-        <div id="u3844_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3844" class="ax_default box_1">
+        <div id="u3844_div" class=""></div>
+        <div id="u3844_text" class="text ">
+          <p><span>0x2000</span></p>
         </div>
       </div>
 
@@ -165,15 +105,15 @@
       <div id="u3845" class="ax_default heading_3">
         <div id="u3845_div" class=""></div>
         <div id="u3845_text" class="text ">
-          <p><span>c ：b + 5 </span></p>
+          <p><span>0x2004</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3846" class="ax_default heading_3">
+      <div id="u3846" class="ax_default paragraph">
         <div id="u3846_div" class=""></div>
         <div id="u3846_text" class="text ">
-          <p><span>若是【指针型句柄】</span></p>
+          <p><span>编译时 </span></p>
         </div>
       </div>
 
@@ -181,135 +121,137 @@
       <div id="u3847" class="ax_default box_1">
         <div id="u3847_div" class=""></div>
         <div id="u3847_text" class="text ">
+          <p><span>a</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3848" class="ax_default box_1">
+        <div id="u3848_div" class=""></div>
+        <div id="u3848_text" class="text ">
+          <p><span>b</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3849" class="ax_default box_1">
+        <div id="u3849_div" class=""></div>
+        <div id="u3849_text" class="text ">
+          <p><span>c</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u3850" class="ax_default connector">
+        <img id="u3850_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3850_seg0.png" alt="u3850_seg0"/>
+        <img id="u3850_seg1" class="img " src="images/类型-_函数_-对象_关系错综复杂/u1677_seg1.png" alt="u3850_seg1"/>
+        <img id="u3850_seg2" class="img " src="images/解释型句柄_与_内存/u3731_seg2.png" alt="u3850_seg2"/>
+        <div id="u3850_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u3851" class="ax_default connector">
+        <img id="u3851_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3851_seg0.png" alt="u3851_seg0"/>
+        <img id="u3851_seg1" class="img " src="images/其他语言_值类型_引用类型的问题/u988_seg1.png" alt="u3851_seg1"/>
+        <img id="u3851_seg2" class="img " src="images/其他语言_值类型_引用类型的问题/u988_seg2.png" alt="u3851_seg2"/>
+        <div id="u3851_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3852" class="ax_default heading_3">
+        <div id="u3852_div" class=""></div>
+        <div id="u3852_text" class="text ">
+          <p><span>c ：b + 5 </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3853" class="ax_default heading_3">
+        <div id="u3853_div" class=""></div>
+        <div id="u3853_text" class="text ">
+          <p><span>若是【指针型句柄】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3854" class="ax_default box_1">
+        <div id="u3854_div" class=""></div>
+        <div id="u3854_text" class="text ">
           <p><span>15</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3848" class="ax_default heading_3">
-        <div id="u3848_div" class=""></div>
-        <div id="u3848_text" class="text ">
+      <div id="u3855" class="ax_default heading_3">
+        <div id="u3855_div" class=""></div>
+        <div id="u3855_text" class="text ">
           <p><span>符号表</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u3849" class="ax_default connector">
-        <img id="u3849_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3849_seg0.png" alt="u3849_seg0"/>
-        <img id="u3849_seg1" class="img " src="images/解释型句柄_与_内存/u3733_seg1.png" alt="u3849_seg1"/>
-        <img id="u3849_seg2" class="img " src="images/类型-_函数_-对象_关系错综复杂/u1670_seg2.png" alt="u3849_seg2"/>
-        <div id="u3849_text" class="text " style="display:none; visibility: hidden">
+      <div id="u3856" class="ax_default connector">
+        <img id="u3856_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3856_seg0.png" alt="u3856_seg0"/>
+        <img id="u3856_seg1" class="img " src="images/解释型句柄_与_内存/u3740_seg1.png" alt="u3856_seg1"/>
+        <img id="u3856_seg2" class="img " src="images/类型-_函数_-对象_关系错综复杂/u1677_seg2.png" alt="u3856_seg2"/>
+        <div id="u3856_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3850" class="ax_default heading_3">
-        <div id="u3850_div" class=""></div>
-        <div id="u3850_text" class="text ">
+      <div id="u3857" class="ax_default heading_3">
+        <div id="u3857_div" class=""></div>
+        <div id="u3857_text" class="text ">
           <p><span>0x2008</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3851" class="ax_default paragraph">
-        <div id="u3851_div" class=""></div>
-        <div id="u3851_text" class="text ">
+      <div id="u3858" class="ax_default paragraph">
+        <div id="u3858_div" class=""></div>
+        <div id="u3858_text" class="text ">
           <p><span>运行时</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3852" class="ax_default paragraph">
-        <div id="u3852_div" class=""></div>
-        <div id="u3852_text" class="text ">
+      <div id="u3859" class="ax_default paragraph">
+        <div id="u3859_div" class=""></div>
+        <div id="u3859_text" class="text ">
           <p><span>内存</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3853" class="ax_default box_1">
-        <div id="u3853_div" class=""></div>
-        <div id="u3853_text" class="text ">
+      <div id="u3860" class="ax_default box_1">
+        <div id="u3860_div" class=""></div>
+        <div id="u3860_text" class="text ">
           <p><span>b#addr</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u3854" class="ax_default connector">
-        <img id="u3854_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3854_seg0.png" alt="u3854_seg0"/>
-        <img id="u3854_seg1" class="img " src="images/句柄相关的写法和画法/u2962_seg1.png" alt="u3854_seg1"/>
-        <img id="u3854_seg2" class="img " src="images/axion_指针的语义与实现/u768_seg2.png" alt="u3854_seg2"/>
-        <div id="u3854_text" class="text " style="display:none; visibility: hidden">
+      <div id="u3861" class="ax_default connector">
+        <img id="u3861_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3861_seg0.png" alt="u3861_seg0"/>
+        <img id="u3861_seg1" class="img " src="images/句柄相关的写法和画法/u2969_seg1.png" alt="u3861_seg1"/>
+        <img id="u3861_seg2" class="img " src="images/axion_指针的语义与实现/u775_seg2.png" alt="u3861_seg2"/>
+        <div id="u3861_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u3855" class="ax_default connector">
-        <img id="u3855_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3855_seg0.png" alt="u3855_seg0"/>
-        <img id="u3855_seg1" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3855_seg1.png" alt="u3855_seg1"/>
-        <img id="u3855_seg2" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3855_seg2.png" alt="u3855_seg2"/>
-        <div id="u3855_text" class="text " style="display:none; visibility: hidden">
+      <div id="u3862" class="ax_default connector">
+        <img id="u3862_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3862_seg0.png" alt="u3862_seg0"/>
+        <img id="u3862_seg1" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3862_seg1.png" alt="u3862_seg1"/>
+        <img id="u3862_seg2" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3862_seg2.png" alt="u3862_seg2"/>
+        <div id="u3862_text" class="text " style="display:none; visibility: hidden">
           <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3856" class="ax_default heading_3">
-        <div id="u3856_div" class=""></div>
-        <div id="u3856_text" class="text ">
-          <p><span>b#addr~</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3857" class="ax_default paragraph">
-        <div id="u3857_div" class=""></div>
-        <div id="u3857_text" class="text ">
-          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">AST</span><span style="font-family:'微软雅黑';font-weight:400;"> </span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3858" class="ax_default box_1">
-        <div id="u3858_div" class=""></div>
-        <div id="u3858_text" class="text ">
-          <p><span>...</span></p><p><span>mov eax, </span><span style="color:#0000FF;">0x2000</span></p><p><span>mov </span><span style="color:#0000FF;">[0x2004] </span><span>, eax</span></p><p><span>...</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3859" class="ax_default heading_3">
-        <div id="u3859_div" class=""></div>
-        <div id="u3859_text" class="text ">
-          <p><span>b -&gt; a</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Connector) -->
-      <div id="u3860" class="ax_default connector">
-        <img id="u3860_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3860_seg0.png" alt="u3860_seg0"/>
-        <img id="u3860_seg1" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u175_seg1.png" alt="u3860_seg1"/>
-        <img id="u3860_seg2" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u175_seg2.png" alt="u3860_seg2"/>
-        <div id="u3860_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3861" class="ax_default heading_3">
-        <div id="u3861_div" class=""></div>
-        <div id="u3861_text" class="text ">
-          <p><span>等价于b#addr : ~a</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3862" class="ax_default box_1">
-        <div id="u3862_div" class=""></div>
-        <div id="u3862_text" class="text ">
-          <p><span><br></span></p><p><span>b -&gt; x</span></p><p><span><br></span></p><p><span>b#addr ：~x</span></p><p><span>b#addr ：0x4000</span></p><p><span><br></span></p>
         </div>
       </div>
 
@@ -317,15 +259,15 @@
       <div id="u3863" class="ax_default heading_3">
         <div id="u3863_div" class=""></div>
         <div id="u3863_text" class="text ">
-          <p><span>-- 改指针指向其他对象</span></p>
+          <p><span>b#addr~</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3864" class="ax_default heading_3">
+      <div id="u3864" class="ax_default paragraph">
         <div id="u3864_div" class=""></div>
         <div id="u3864_text" class="text ">
-          <p><span>-- 或直接改addr</span></p>
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">AST</span><span style="font-family:'微软雅黑';font-weight:400;"> </span></p>
         </div>
       </div>
 
@@ -333,44 +275,49 @@
       <div id="u3865" class="ax_default box_1">
         <div id="u3865_div" class=""></div>
         <div id="u3865_text" class="text ">
-          <p><span>int a : 10</span></p><p><span>int </span><span style="color:#0000FF;">b : : a</span></p><p><span>int c : </span><span style="color:#0000FF;">b + 5</span></p>
+          <p><span>...</span></p><p><span>mov eax, </span><span style="color:#0000FF;">0x2000</span></p><p><span>mov </span><span style="color:#0000FF;">[0x2004] </span><span>, eax</span></p><p><span>...</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3866" class="ax_default box_1">
+      <div id="u3866" class="ax_default heading_3">
         <div id="u3866_div" class=""></div>
         <div id="u3866_text" class="text ">
-          <p><span>10</span></p>
+          <p><span>b -&gt; a</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u3867" class="ax_default connector">
+        <img id="u3867_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3867_seg0.png" alt="u3867_seg0"/>
+        <img id="u3867_seg1" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u182_seg1.png" alt="u3867_seg1"/>
+        <img id="u3867_seg2" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u182_seg2.png" alt="u3867_seg2"/>
+        <div id="u3867_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3867" class="ax_default box_1">
-        <div id="u3867_div" class=""></div>
-        <div id="u3867_text" class="text ">
-          <p><span>...</span></p><p><span>mov eax, </span><span>[0x2000]</span></p><p><span>add eax, 5</span></p><p><span>mov </span><span>[0x2004] </span><span>, eax</span></p><p><span>...</span></p>
+      <div id="u3868" class="ax_default heading_3">
+        <div id="u3868_div" class=""></div>
+        <div id="u3868_text" class="text ">
+          <p><span>等价于b#addr : ~a</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Horizontal Line) -->
-      <div id="u3868" class="ax_default line">
-        <img id="u3868_img" class="img " src="images/解释型句柄_与_内存/u3740.png"/>
-      </div>
-
       <!-- Unnamed (Rectangle) -->
-      <div id="u3869" class="ax_default heading_3">
+      <div id="u3869" class="ax_default box_1">
         <div id="u3869_div" class=""></div>
         <div id="u3869_text" class="text ">
-          <p><span>0x2000</span></p>
+          <p><span><br></span></p><p><span>b -&gt; x</span></p><p><span><br></span></p><p><span>b#addr ：~x</span></p><p><span>b#addr ：0x4000</span></p><p><span><br></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3870" class="ax_default box_1">
+      <div id="u3870" class="ax_default heading_3">
         <div id="u3870_div" class=""></div>
         <div id="u3870_text" class="text ">
-          <p><span>15</span></p>
+          <p><span>-- 改指针指向其他对象</span></p>
         </div>
       </div>
 
@@ -378,23 +325,23 @@
       <div id="u3871" class="ax_default heading_3">
         <div id="u3871_div" class=""></div>
         <div id="u3871_text" class="text ">
-          <p><span>0x2004</span></p>
+          <p><span>-- 或直接改addr</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3872" class="ax_default heading_3">
+      <div id="u3872" class="ax_default box_1">
         <div id="u3872_div" class=""></div>
         <div id="u3872_text" class="text ">
-          <p><span>0x1000</span></p>
+          <p><span>int a : 10</span></p><p><span>int </span><span style="color:#0000FF;">b : : a</span></p><p><span>int c : </span><span style="color:#0000FF;">b + 5</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3873" class="ax_default heading_3">
+      <div id="u3873" class="ax_default box_1">
         <div id="u3873_div" class=""></div>
         <div id="u3873_text" class="text ">
-          <p><span>0x100C</span></p>
+          <p><span>10</span></p>
         </div>
       </div>
 
@@ -402,53 +349,44 @@
       <div id="u3874" class="ax_default box_1">
         <div id="u3874_div" class=""></div>
         <div id="u3874_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>...</span></p><p><span>mov eax, </span><span>[0x2000]</span></p><p><span>add eax, 5</span></p><p><span>mov </span><span>[0x2004] </span><span>, eax</span></p><p><span>...</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3875" class="ax_default box_1">
-        <div id="u3875_div" class=""></div>
-        <div id="u3875_text" class="text ">
-          <p><span>b</span></p>
-        </div>
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u3875" class="ax_default line">
+        <img id="u3875_img" class="img " src="images/解释型句柄_与_内存/u3747.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3876" class="ax_default box_1">
+      <div id="u3876" class="ax_default heading_3">
         <div id="u3876_div" class=""></div>
         <div id="u3876_text" class="text ">
-          <p><span>c</span></p>
+          <p><span>0x2000</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Connector) -->
-      <div id="u3877" class="ax_default connector">
-        <img id="u3877_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3877_seg0.png" alt="u3877_seg0"/>
-        <img id="u3877_seg1" class="img " src="images/类型-_函数_-对象_关系错综复杂/u1670_seg1.png" alt="u3877_seg1"/>
-        <img id="u3877_seg2" class="img " src="images/解释型句柄_与_内存/u3724_seg2.png" alt="u3877_seg2"/>
-        <div id="u3877_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3877" class="ax_default box_1">
+        <div id="u3877_div" class=""></div>
+        <div id="u3877_text" class="text ">
+          <p><span>15</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Connector) -->
-      <div id="u3878" class="ax_default connector">
-        <img id="u3878_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3878_seg0.png" alt="u3878_seg0"/>
-        <img id="u3878_seg1" class="img " src="images/axion指针的使用/u687_seg1.png" alt="u3878_seg1"/>
-        <img id="u3878_seg2" class="img " src="images/axion指针的使用/u687_seg2.png" alt="u3878_seg2"/>
-        <div id="u3878_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3878" class="ax_default heading_3">
+        <div id="u3878_div" class=""></div>
+        <div id="u3878_text" class="text ">
+          <p><span>0x2004</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Connector) -->
-      <div id="u3879" class="ax_default connector">
-        <img id="u3879_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3879_seg0.png" alt="u3879_seg0"/>
-        <img id="u3879_seg1" class="img " src="images/句柄相关的写法和画法/u2962_seg1.png" alt="u3879_seg1"/>
-        <img id="u3879_seg2" class="img " src="images/axion_指针的语义与实现/u768_seg2.png" alt="u3879_seg2"/>
-        <div id="u3879_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3879" class="ax_default heading_3">
+        <div id="u3879_div" class=""></div>
+        <div id="u3879_text" class="text ">
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
@@ -456,57 +394,61 @@
       <div id="u3880" class="ax_default heading_3">
         <div id="u3880_div" class=""></div>
         <div id="u3880_text" class="text ">
-          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">AST</span><span style="font-family:'微软雅黑';font-weight:400;"> </span></p><p><span style="font-family:'微软雅黑';font-weight:400;">c ：b + 5 对应的指令</span></p>
+          <p><span>0x100C</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3881" class="ax_default heading_3">
+      <div id="u3881" class="ax_default box_1">
         <div id="u3881_div" class=""></div>
         <div id="u3881_text" class="text ">
-          <p><span>符号表</span></p>
+          <p><span>a</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3882" class="ax_default box_1">
+        <div id="u3882_div" class=""></div>
+        <div id="u3882_text" class="text ">
+          <p><span>b</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3883" class="ax_default box_1">
+        <div id="u3883_div" class=""></div>
+        <div id="u3883_text" class="text ">
+          <p><span>c</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
-      <div id="u3882" class="ax_default connector">
-        <img id="u3882_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3882_seg0.png" alt="u3882_seg0"/>
-        <img id="u3882_seg1" class="img " src="images/解释型句柄_与_内存/u3733_seg1.png" alt="u3882_seg1"/>
-        <img id="u3882_seg2" class="img " src="images/类型-_函数_-对象_关系错综复杂/u1670_seg2.png" alt="u3882_seg2"/>
-        <div id="u3882_text" class="text " style="display:none; visibility: hidden">
+      <div id="u3884" class="ax_default connector">
+        <img id="u3884_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3884_seg0.png" alt="u3884_seg0"/>
+        <img id="u3884_seg1" class="img " src="images/类型-_函数_-对象_关系错综复杂/u1677_seg1.png" alt="u3884_seg1"/>
+        <img id="u3884_seg2" class="img " src="images/解释型句柄_与_内存/u3731_seg2.png" alt="u3884_seg2"/>
+        <div id="u3884_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3883" class="ax_default heading_3">
-        <div id="u3883_div" class=""></div>
-        <div id="u3883_text" class="text ">
-          <p><span>0x100D</span></p>
+      <!-- Unnamed (Connector) -->
+      <div id="u3885" class="ax_default connector">
+        <img id="u3885_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3885_seg0.png" alt="u3885_seg0"/>
+        <img id="u3885_seg1" class="img " src="images/axion指针的使用/u694_seg1.png" alt="u3885_seg1"/>
+        <img id="u3885_seg2" class="img " src="images/axion指针的使用/u694_seg2.png" alt="u3885_seg2"/>
+        <div id="u3885_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3884" class="ax_default heading_3">
-        <div id="u3884_div" class=""></div>
-        <div id="u3884_text" class="text ">
-          <p><span>数据段 section .data | 页权限RW</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3885" class="ax_default heading_3">
-        <div id="u3885_div" class=""></div>
-        <div id="u3885_text" class="text ">
-          <p><span>代码段 section .text&nbsp; | 页权限RX</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3886" class="ax_default heading_3">
-        <div id="u3886_div" class=""></div>
-        <div id="u3886_text" class="text ">
-          <p><span>-- b就是a！</span></p>
+      <!-- Unnamed (Connector) -->
+      <div id="u3886" class="ax_default connector">
+        <img id="u3886_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3886_seg0.png" alt="u3886_seg0"/>
+        <img id="u3886_seg1" class="img " src="images/句柄相关的写法和画法/u2969_seg1.png" alt="u3886_seg1"/>
+        <img id="u3886_seg2" class="img " src="images/axion_指针的语义与实现/u775_seg2.png" alt="u3886_seg2"/>
+        <div id="u3886_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
         </div>
       </div>
 
@@ -514,31 +456,33 @@
       <div id="u3887" class="ax_default heading_3">
         <div id="u3887_div" class=""></div>
         <div id="u3887_text" class="text ">
-          <p><span>实线，表示静态指向</span></p>
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">AST</span><span style="font-family:'微软雅黑';font-weight:400;"> </span></p><p><span style="font-family:'微软雅黑';font-weight:400;">c ：b + 5 对应的指令</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3888" class="ax_default paragraph">
+      <div id="u3888" class="ax_default heading_3">
         <div id="u3888_div" class=""></div>
         <div id="u3888_text" class="text ">
-          <p><span>运行时</span></p>
+          <p><span>符号表</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u3889" class="ax_default connector">
+        <img id="u3889_seg0" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3889_seg0.png" alt="u3889_seg0"/>
+        <img id="u3889_seg1" class="img " src="images/解释型句柄_与_内存/u3740_seg1.png" alt="u3889_seg1"/>
+        <img id="u3889_seg2" class="img " src="images/类型-_函数_-对象_关系错综复杂/u1677_seg2.png" alt="u3889_seg2"/>
+        <div id="u3889_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3889" class="ax_default paragraph">
-        <div id="u3889_div" class=""></div>
-        <div id="u3889_text" class="text ">
-          <p><span>编译时 </span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u3890" class="ax_default paragraph">
+      <div id="u3890" class="ax_default heading_3">
         <div id="u3890_div" class=""></div>
         <div id="u3890_text" class="text ">
-          <p><span>内存</span></p>
+          <p><span>0x100D</span></p>
         </div>
       </div>
 
@@ -546,15 +490,15 @@
       <div id="u3891" class="ax_default heading_3">
         <div id="u3891_div" class=""></div>
         <div id="u3891_text" class="text ">
-          <p><span>【解释型句柄】完全是编译期被处理掉的静态逻辑，运行时0成本，但也意味着它一般不支持动态修改（至少是不建议）</span></p>
+          <p><span>数据段 section .data | 页权限RW</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3892" class="ax_default box_1">
+      <div id="u3892" class="ax_default heading_3">
         <div id="u3892_div" class=""></div>
         <div id="u3892_text" class="text ">
-          <p><span>b ::&nbsp; x</span></p>
+          <p><span>代码段 section .text&nbsp; | 页权限RX</span></p>
         </div>
       </div>
 
@@ -562,7 +506,7 @@
       <div id="u3893" class="ax_default heading_3">
         <div id="u3893_div" class=""></div>
         <div id="u3893_text" class="text ">
-          <p><span>-- 一般默认会警告，但具体取决于规范</span></p>
+          <p><span>-- b就是a！</span></p>
         </div>
       </div>
 
@@ -570,47 +514,103 @@
       <div id="u3894" class="ax_default heading_3">
         <div id="u3894_div" class=""></div>
         <div id="u3894_text" class="text ">
+          <p><span>实线，表示静态指向</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3895" class="ax_default paragraph">
+        <div id="u3895_div" class=""></div>
+        <div id="u3895_text" class="text ">
+          <p><span>运行时</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3896" class="ax_default paragraph">
+        <div id="u3896_div" class=""></div>
+        <div id="u3896_text" class="text ">
+          <p><span>编译时 </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3897" class="ax_default paragraph">
+        <div id="u3897_div" class=""></div>
+        <div id="u3897_text" class="text ">
+          <p><span>内存</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3898" class="ax_default heading_3">
+        <div id="u3898_div" class=""></div>
+        <div id="u3898_text" class="text ">
+          <p><span>【解释型句柄】完全是编译期被处理掉的静态逻辑，运行时0成本，但也意味着它一般不支持动态修改（至少是不建议）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3899" class="ax_default box_1">
+        <div id="u3899_div" class=""></div>
+        <div id="u3899_text" class="text ">
+          <p><span>b ::&nbsp; x</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3900" class="ax_default heading_3">
+        <div id="u3900_div" class=""></div>
+        <div id="u3900_text" class="text ">
+          <p><span>-- 一般默认会警告，但具体取决于规范</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3901" class="ax_default heading_3">
+        <div id="u3901_div" class=""></div>
+        <div id="u3901_text" class="text ">
           <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">技术层面上说是可以支持【动态解释】的，其本身不会直接导致编译错误</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">因为说到底编译期在读到【b :: x】时，就跟首次读到【b :: a】一样，把从符号表里把x的offset写到b里即可（覆盖掉原本存的 a的offset）</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">在此之后 b和x 公用同一个内存</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3895" class="ax_default heading_3">
-        <div id="u3895_div" class=""></div>
-        <div id="u3895_text" class="text ">
+      <div id="u3902" class="ax_default heading_3">
+        <div id="u3902_div" class=""></div>
+        <div id="u3902_text" class="text ">
           <p><span>但AXION默认禁止【动态解释】，【动态解释】必须要在特定规范下进行</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3896" class="ax_default heading_3">
-        <div id="u3896_div" class=""></div>
-        <div id="u3896_text" class="text ">
+      <div id="u3903" class="ax_default heading_3">
+        <div id="u3903_div" class=""></div>
+        <div id="u3903_text" class="text ">
           <p><span>这里涉及到的问题太多了：作用域、编译型 or 解释型、就算是解释型是否要重新编译函数、静态or动态、全局or局部、字面量\表达式和对象的行为不同......</span></p><p><span>这里不详细展开，具体见Documentation</span></p><p><span>总之绝大多数时候都建议认为【解释型句柄】必须是静态、不可修改的 —— 这已经涵盖了绝大多数需求了</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u3897" class="ax_default line">
-        <img id="u3897_img" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3897.png"/>
+      <div id="u3904" class="ax_default line">
+        <img id="u3904_img" class="img " src="images/解释型句柄_与_指针型句柄_对比/u3904.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3898" class="ax_default label">
-        <div id="u3898_div" class=""></div>
-        <div id="u3898_text" class="text ">
+      <div id="u3905" class="ax_default label">
+        <div id="u3905_div" class=""></div>
+        <div id="u3905_text" class="text ">
           <p><span>若是【解释型句柄】</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u3899" class="ax_default line">
-        <img id="u3899_img" class="img " src="images/c指针_语法复杂/u85.png"/>
+      <div id="u3906" class="ax_default line">
+        <img id="u3906_img" class="img " src="images/c指针_语法复杂/u92.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u3900" class="ax_default box_1">
-        <div id="u3900_div" class=""></div>
+      <div id="u3907" class="ax_default box_1">
+        <div id="u3907_div" class=""></div>
       </div>
     </div>
   </body>

@@ -8,7 +8,6 @@
 AXION不仅是编程范式，更是对“人类如何认知世界”这一根本问题的回答  
 它将成为你思维的起点，成为你理解与表达世界的轴线 —— 这便是AXION的命名由来
 
----
 <img width="1029" height="269" alt="360截图20260620210132729" src="https://github.com/user-attachments/assets/dd537e71-46b6-441d-a710-f8dde6537cfd" />
 
 <br><br><br>
