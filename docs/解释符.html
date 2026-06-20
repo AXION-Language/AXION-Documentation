@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>解释符</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/解释符/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/解释符/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3341" class="ax_default heading_3">
+        <div id="u3341_div" class=""></div>
+        <div id="u3341_text" class="text ">
+          <p><span>用&nbsp; ::&nbsp;&nbsp; 或&nbsp; =&gt; 当做【解释符】， 或自己随便编一个</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u3342" class="ax_default line">
+        <img id="u3342_img" class="img " src="images/axion解释的哲学/u3181.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3343" class="ax_default heading_3">
+        <div id="u3343_div" class=""></div>
+        <div id="u3343_text" class="text ">
+          <p><span>一开始设计时，是用=&gt;当解释符的，因为当时想着是和 指针-&gt; 对应起来</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3344" class="ax_default heading_3">
+        <div id="u3344_div" class=""></div>
+        <div id="u3344_text" class="text ">
+          <p><span>AXION不约束表示层语法，自己怎么喜欢怎么来，只要逻辑正确就行</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3345" class="ax_default box_1">
+        <div id="u3345_div" class=""></div>
+        <div id="u3345_text" class="text ">
+          <p><span>int a ：10</span></p><p><span>int b -&gt; a</span></p><p><span>int c =&gt; a </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3346" class="ax_default heading_3">
+        <div id="u3346_div" class=""></div>
+        <div id="u3346_text" class="text ">
+          <p><span>-- 指针有#addr的内存成本 + 运行时动态转发的指令成本</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3347" class="ax_default heading_3">
+        <div id="u3347_div" class=""></div>
+        <div id="u3347_text" class="text ">
+          <p><span>-- 解释是编译期的静态转发，运行时0成本</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3348" class="ax_default heading_3">
+        <div id="u3348_div" class=""></div>
+        <div id="u3348_text" class="text ">
+          <p><span>但后来还是改成了&nbsp; :: ，因为是想着和 实例型句柄：对应起来</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3349" class="ax_default box_1">
+        <div id="u3349_div" class=""></div>
+        <div id="u3349_text" class="text ">
+          <p><span>int a ：10</span></p><p><span>int b :: 10</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3350" class="ax_default heading_3">
+        <div id="u3350_div" class=""></div>
+        <div id="u3350_text" class="text ">
+          <p><span>-- a是个初值为10的int变量，因此这个int对象需长期占用内存，长期维护</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3351" class="ax_default heading_3">
+        <div id="u3351_div" class=""></div>
+        <div id="u3351_text" class="text ">
+          <p><span>-- a就是10这个值！不占用固定内存，只在诸如 b+5 这种过程指令里被当做操作数</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3352" class="ax_default heading_3">
+        <div id="u3352_div" class=""></div>
+        <div id="u3352_text" class="text ">
+          <p><span>总之，AXION目前默认使用 双冒号 :: 当做【解释符】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3353" class="ax_default heading_3">
+        <div id="u3353_div" class=""></div>
+        <div id="u3353_text" class="text ">
+          <p><span>&nbsp;:: 这个符号在AHK里也是有类似“解释”的含义</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3354" class="ax_default box_1">
+        <div id="u3354_div" class=""></div>
+        <div id="u3354_text" class="text ">
+          <p><span>F5 </span><span style="color:#0000FF;">::</span><span> Reload</span></p><p><span>F4 </span><span style="color:#0000FF;">::</span><span> Suspend Toggle</span></p><p><span>LButton </span><span style="color:#0000FF;">::</span></p><p><span>&nbsp;&nbsp;&nbsp; send,{LButton}</span></p><p><span>&nbsp;&nbsp;&nbsp; Sleep, 300</span></p><p><span>&nbsp;&nbsp;&nbsp; send,{WheelUp}</span></p><p><span>Return</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3355" class="ax_default heading_3">
+        <div id="u3355_div" class=""></div>
+        <div id="u3355_text" class="text ">
+          <p><span>-- 我个人经常用AHK，所以 :: 在我心中的权重更高一些</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3356" class="ax_default box_1">
+        <div id="u3356_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3357" class="ax_default box_1">
+        <div id="u3357_div" class=""></div>
+      </div>
+    </div>
+  </body>
+</html>
