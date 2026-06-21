@@ -25,31 +25,23 @@
     <div id="base" class="">
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u155" class="ax_default line">
-        <img id="u155_img" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u155.png"/>
+      <div id="u156" class="ax_default line">
+        <img id="u156_img" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u156.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u156" class="ax_default paragraph">
-        <div id="u156_div" class=""></div>
-        <div id="u156_text" class="text ">
+      <div id="u157" class="ax_default paragraph">
+        <div id="u157_div" class=""></div>
+        <div id="u157_text" class="text ">
           <p><span>案例对比：同一个需求，“传统编程多级指针” vs&nbsp; “AXION单级指针”</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u157" class="ax_default box_1">
-        <div id="u157_div" class=""></div>
-        <div id="u157_text" class="text ">
-          <p><span>void alloc(</span><span style="color:#0000FF;">void** ptr</span><span>, int size) {</span></p><p><span>&nbsp;&nbsp;&nbsp; </span><span style="color:#0000FF;">*ptr</span><span> = malloc(size);&nbsp; </span></p><p><span>}</span></p><p><span><br></span></p><p><span style="color:#0000FF;">int* buf</span><span> = NULL;</span></p><p><span>alloc(</span><span style="color:#0000FF;">(void**)&amp;</span><span>buf, 4);</span></p><p><span><br></span></p><p><span><br></span></p><p><span style="color:#0000FF;">*</span><span>buf = 10</span></p><p><span>print *buf</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u158" class="ax_default heading_3">
+      <div id="u158" class="ax_default box_1">
         <div id="u158_div" class=""></div>
         <div id="u158_text" class="text ">
-          <p><span>举例传统编程里，比较典型的“二级指针”的场景</span></p>
+          <p><span>void alloc(</span><span style="color:#0000FF;">void** ptr</span><span>, int size) {</span></p><p><span>&nbsp;&nbsp;&nbsp; </span><span style="color:#0000FF;">*ptr</span><span> = malloc(size);&nbsp; </span></p><p><span>}</span></p><p><span><br></span></p><p><span style="color:#0000FF;">int* buf</span><span> = NULL;</span></p><p><span>alloc(</span><span style="color:#0000FF;">(void**)&amp;</span><span>buf, 4);</span></p><p><span><br></span></p><p><span><br></span></p><p><span style="color:#0000FF;">*</span><span>buf = 10</span></p><p><span>print *buf</span></p>
         </div>
       </div>
 
@@ -57,23 +49,23 @@
       <div id="u159" class="ax_default heading_3">
         <div id="u159_div" class=""></div>
         <div id="u159_text" class="text ">
+          <p><span>举例传统编程里，比较典型的“二级指针”的场景</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u160" class="ax_default heading_3">
+        <div id="u160_div" class=""></div>
+        <div id="u160_text" class="text ">
           <p><span>然而同样的功能逻辑，在AXION里，无论是思路、还是写法、还是对buf对象的使用.....都更简单，一级指针即可完成</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u160" class="ax_default box_1">
-        <div id="u160_div" class=""></div>
-        <div id="u160_text" class="text ">
-          <p><span>void alloc(</span><span style="color:#0000FF;">~</span><span> addr-&gt; , int size) {</span></p><p><span>&nbsp;&nbsp;&nbsp; addr = malloc(size);&nbsp; </span></p><p><span>}</span></p><p><span><br></span></p><p><span>int </span><span style="color:#0000FF;">buf -&gt;</span><span> NULL</span></p><p><span>alloc(buf_ADDR, 4);</span></p><p><span><br></span></p><p><span>buf = 10</span></p><p><span>print buf</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u161" class="ax_default heading_3">
+      <div id="u161" class="ax_default box_1">
         <div id="u161_div" class=""></div>
         <div id="u161_text" class="text ">
-          <p><span>--buf是个指针，我们的目的是：在堆上申请分配一段内存，将堆内存地址填入buf——即修改buf本身</span></p>
+          <p><span>void alloc(</span><span style="color:#0000FF;">~</span><span> addr-&gt; , int size) {</span></p><p><span>&nbsp;&nbsp;&nbsp; addr = malloc(size);&nbsp; </span></p><p><span>}</span></p><p><span><br></span></p><p><span>int </span><span style="color:#0000FF;">buf -&gt;</span><span> NULL</span></p><p><span>alloc(buf_ADDR, 4);</span></p><p><span><br></span></p><p><span>buf = 10</span></p><p><span>print buf</span></p>
         </div>
       </div>
 
@@ -81,7 +73,7 @@
       <div id="u162" class="ax_default heading_3">
         <div id="u162_div" class=""></div>
         <div id="u162_text" class="text ">
-          <p><span>-- 传入buf的地址(因为我们要让alloc修改它) + 所需申请的内存量4字节</span></p><p><span>--为了匹配参数ptr的类型签名，这里需要手动转型成void**</span></p>
+          <p><span>--buf是个指针，我们的目的是：在堆上申请分配一段内存，将堆内存地址填入buf——即修改buf本身</span></p>
         </div>
       </div>
 
@@ -89,7 +81,7 @@
       <div id="u163" class="ax_default heading_3">
         <div id="u163_div" class=""></div>
         <div id="u163_text" class="text ">
-          <p><span>-- 需要用ptr来修改源对象，所以ptr得是个指针</span></p><p><span>-- 但因为参数buf又是一个指针，所以最终导致ptr得是个二级指针，所以签名是void** ptr</span></p>
+          <p><span>-- 传入buf的地址(因为我们要让alloc修改它) + 所需申请的内存量4字节</span></p><p><span>--为了匹配参数ptr的类型签名，这里需要手动转型成void**</span></p>
         </div>
       </div>
 
@@ -97,7 +89,7 @@
       <div id="u164" class="ax_default heading_3">
         <div id="u164_div" class=""></div>
         <div id="u164_text" class="text ">
-          <p><span>-- 需手动解引用，输出10</span></p>
+          <p><span>-- 需要用ptr来修改源对象，所以ptr得是个指针</span></p><p><span>-- 但因为参数buf又是一个指针，所以最终导致ptr得是个二级指针，所以签名是void** ptr</span></p>
         </div>
       </div>
 
@@ -105,7 +97,7 @@
       <div id="u165" class="ax_default heading_3">
         <div id="u165_div" class=""></div>
         <div id="u165_text" class="text ">
-          <p><span>-- 需手动解引用，来为buf指向的堆内存赋值</span></p>
+          <p><span>-- 需手动解引用，输出10</span></p>
         </div>
       </div>
 
@@ -113,7 +105,7 @@
       <div id="u166" class="ax_default heading_3">
         <div id="u166_div" class=""></div>
         <div id="u166_text" class="text ">
-          <p><span>-- buf的语义就是最终的数据对象，具体指向哪块内存由buf_ADDR决定</span></p>
+          <p><span>-- 需手动解引用，来为buf指向的堆内存赋值</span></p>
         </div>
       </div>
 
@@ -121,7 +113,7 @@
       <div id="u167" class="ax_default heading_3">
         <div id="u167_div" class=""></div>
         <div id="u167_text" class="text ">
-          <p><span>-- 直接把buf_ADDR 传给alloc让它帮我改，无需手动&amp;取地址、**解引用、再转型成void**&nbsp; 这一大堆乱七八糟的事</span></p>
+          <p><span>-- buf的语义就是最终的数据对象，具体指向哪块内存由buf_ADDR决定</span></p>
         </div>
       </div>
 
@@ -129,7 +121,7 @@
       <div id="u168" class="ax_default heading_3">
         <div id="u168_div" class=""></div>
         <div id="u168_text" class="text ">
-          <p><span>为了能通过addr直接改buf_ADDR，所以addr得是个地址类型的指针，调用时相当于 addr -&gt; buf_ADDR——单纯的地址运算，根本无需依赖void**这些奇怪的类型</span></p><p><span>所以改addr就是改buf_addr</span></p>
+          <p><span>-- 直接把buf_ADDR 传给alloc让它帮我改，无需手动&amp;取地址、**解引用、再转型成void**&nbsp; 这一大堆乱七八糟的事</span></p>
         </div>
       </div>
 
@@ -137,15 +129,15 @@
       <div id="u169" class="ax_default heading_3">
         <div id="u169_div" class=""></div>
         <div id="u169_text" class="text ">
-          <p><span>-- 直接写buf就行，无需手动解引用</span></p>
+          <p><span>为了能通过addr直接改buf_ADDR，所以addr得是个地址类型的指针，调用时相当于 addr -&gt; buf_ADDR——单纯的地址运算，根本无需依赖void**这些奇怪的类型</span></p><p><span>所以改addr就是改buf_addr</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u170" class="ax_default box_1">
+      <div id="u170" class="ax_default heading_3">
         <div id="u170_div" class=""></div>
         <div id="u170_text" class="text ">
-          <p><span>0x1000</span></p>
+          <p><span>-- 直接写buf就行，无需手动解引用</span></p>
         </div>
       </div>
 
@@ -160,6 +152,9 @@
       <!-- Unnamed (Rectangle) -->
       <div id="u172" class="ax_default box_1">
         <div id="u172_div" class=""></div>
+        <div id="u172_text" class="text ">
+          <p><span>0x1000</span></p>
+        </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
@@ -198,46 +193,43 @@
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u180" class="ax_default heading_3">
+      <div id="u180" class="ax_default box_1">
         <div id="u180_div" class=""></div>
-        <div id="u180_text" class="text ">
-          <p><span>buf</span></p>
-        </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u181" class="ax_default heading_3">
         <div id="u181_div" class=""></div>
         <div id="u181_text" class="text ">
-          <p><span>buf_ADDR</span></p>
+          <p><span>buf</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Connector) -->
-      <div id="u182" class="ax_default connector">
-        <img id="u182_seg0" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u182_seg0.png" alt="u182_seg0"/>
-        <img id="u182_seg1" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u182_seg1.png" alt="u182_seg1"/>
-        <img id="u182_seg2" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u182_seg2.png" alt="u182_seg2"/>
-        <div id="u182_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
+      <!-- Unnamed (Rectangle) -->
+      <div id="u182" class="ax_default heading_3">
+        <div id="u182_div" class=""></div>
+        <div id="u182_text" class="text ">
+          <p><span>buf_ADDR</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Connector) -->
       <div id="u183" class="ax_default connector">
         <img id="u183_seg0" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u183_seg0.png" alt="u183_seg0"/>
-        <img id="u183_seg1" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u182_seg1.png" alt="u183_seg1"/>
-        <img id="u183_seg2" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u182_seg2.png" alt="u183_seg2"/>
+        <img id="u183_seg1" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u183_seg1.png" alt="u183_seg1"/>
+        <img id="u183_seg2" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u183_seg2.png" alt="u183_seg2"/>
         <div id="u183_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u184" class="ax_default paragraph">
-        <div id="u184_div" class=""></div>
-        <div id="u184_text" class="text ">
-          <p><span>0x1000</span></p>
+      <!-- Unnamed (Connector) -->
+      <div id="u184" class="ax_default connector">
+        <img id="u184_seg0" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u184_seg0.png" alt="u184_seg0"/>
+        <img id="u184_seg1" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u183_seg1.png" alt="u184_seg1"/>
+        <img id="u184_seg2" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u183_seg2.png" alt="u184_seg2"/>
+        <div id="u184_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
         </div>
       </div>
 
@@ -250,10 +242,10 @@
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u186" class="ax_default heading_3">
+      <div id="u186" class="ax_default paragraph">
         <div id="u186_div" class=""></div>
         <div id="u186_text" class="text ">
-          <p><span>buf的语义是这个地址</span></p>
+          <p><span>0x1000</span></p>
         </div>
       </div>
 
@@ -261,34 +253,42 @@
       <div id="u187" class="ax_default heading_3">
         <div id="u187_div" class=""></div>
         <div id="u187_text" class="text ">
+          <p><span>buf的语义是这个地址</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u188" class="ax_default heading_3">
+        <div id="u188_div" class=""></div>
+        <div id="u188_text" class="text ">
           <p><span>buf的语义直接就是目标数据</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u188" class="ax_default box_1">
-        <img id="u188_img" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u188.png"/>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u189" class="ax_default heading_3">
-        <div id="u189_div" class=""></div>
-        <div id="u189_text" class="text ">
-          <p><span>所以虽然AXION支持多级指针，但实际应用场景很少，大部分时候单级指针足够了</span></p><p><span style="color:#0000FF;">多级指针的场景更多时候只是为了修改地址本身（例如动态的内存分配），而不是修改目标数据</span></p><p><span>而在这种需求场下，</span><span style="color:#0000FF;">传统编程的多级指针则能被AXION降级为单级指针，进一步降低了复杂度</span></p>
-        </div>
+      <div id="u189" class="ax_default box_1">
+        <img id="u189_img" class="img " src="images/对比：“传统编程多级指针”_vs__“axion单级指针”/u189.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u190" class="ax_default heading_3">
         <div id="u190_div" class=""></div>
         <div id="u190_text" class="text ">
+          <p><span>所以虽然AXION支持多级指针，但实际应用场景很少，大部分时候单级指针足够了</span></p><p><span style="color:#0000FF;">多级指针的场景更多时候只是为了修改地址本身（例如动态的内存分配），而不是修改目标数据</span></p><p><span>而在这种需求场下，</span><span style="color:#0000FF;">传统编程的多级指针则能被AXION降级为单级指针，进一步降低了复杂度</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u191" class="ax_default heading_3">
+        <div id="u191_div" class=""></div>
+        <div id="u191_text" class="text ">
           <p><span>-- 10</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u191" class="ax_default box_1">
-        <div id="u191_div" class=""></div>
+      <div id="u192" class="ax_default box_1">
+        <div id="u192_div" class=""></div>
       </div>
     </div>
   </body>
