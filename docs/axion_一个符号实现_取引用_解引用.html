@@ -25,63 +25,55 @@
     <div id="base" class="">
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u712" class="ax_default box_1">
-        <div id="u712_div" class=""></div>
-        <div id="u712_text" class="text ">
+      <div id="u713" class="ax_default box_1">
+        <div id="u713_div" class=""></div>
+        <div id="u713_text" class="text ">
           <p><span>int a = 10;&nbsp; &nbsp; &nbsp; </span></p><p><span>int</span><span style="color:#0000FF;">*</span><span> addr = </span><span style="color:#0000FF;">&amp;</span><span>a&nbsp; </span></p><p><span><br></span></p><p><span style="color:#0000FF;">*addr</span><span>= </span><span style="color:#0000FF;">*addr</span><span>+5&nbsp; &nbsp; </span></p><p><span>addrrint </span><span style="color:#0000FF;">*addr</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u713" class="ax_default paragraph">
-        <div id="u713_div" class=""></div>
-        <div id="u713_text" class="text ">
+      <div id="u714" class="ax_default paragraph">
+        <div id="u714_div" class=""></div>
+        <div id="u714_text" class="text ">
           <p><span>取地址 &amp;a</span></p><p><span>解引用 *a</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u714" class="ax_default heading_3">
-        <div id="u714_div" class=""></div>
-        <div id="u714_text" class="text ">
+      <div id="u715" class="ax_default heading_3">
+        <div id="u715_div" class=""></div>
+        <div id="u715_text" class="text ">
           <p><span>Q: 一个符号能同时支持两个语义？这是如何做到的？</span></p><p><span>A: 利用前后位置来区分</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Curly Bracket) -->
-      <div id="u715" class="ax_default box_1">
-        <img id="u715_img" class="img " src="images/axion_一个符号实现_取引用_解引用/u715.png"/>
+      <div id="u716" class="ax_default box_1">
+        <img id="u716_img" class="img " src="images/axion_一个符号实现_取引用_解引用/u716.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u716" class="ax_default heading_3">
-        <div id="u716_div" class=""></div>
-        <div id="u716_text" class="text ">
+      <div id="u717" class="ax_default heading_3">
+        <div id="u717_div" class=""></div>
+        <div id="u717_text" class="text ">
           <p><span>容易和乘法*、逻辑与&amp;&amp;、位运算&amp;....搞混</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u717" class="ax_default box_1">
-        <div id="u717_div" class=""></div>
-        <div id="u717_text" class="text ">
+      <div id="u718" class="ax_default box_1">
+        <div id="u718_div" class=""></div>
+        <div id="u718_text" class="text ">
           <p><span>&nbsp;&nbsp; int a = 10;&nbsp; &nbsp; &nbsp; </span></p><p><span style="color:#0000FF;">~int</span><span> addr = </span><span style="color:#0000FF;">~a</span><span>&nbsp;&nbsp; </span></p><p><span>&nbsp;</span></p><p><span style="color:#0000FF;">addr~</span><span> = </span><span style="color:#0000FF;">addr~</span><span> + 5&nbsp; </span></p><p><span>print a</span></p><p><span>print </span><span style="color:#0000FF;">addr~</span><span>&nbsp;&nbsp; </span></p><p><span><br></span></p><p><span>addr = addr+5</span></p><p><span>addrrint addr</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u718" class="ax_default heading_3">
-        <div id="u718_div" class=""></div>
-        <div id="u718_text" class="text ">
-          <p><span>抛开指针-&gt;这种上层语法不谈，AXION本身也是支持对底层“内存地址”的定义与操控，只是在从语法、抽象程度上对传统编程进行了优化</span></p><p><span>虽说只是看似小小的变化，但在世界观、语义层面却是一大步，能减轻不少编程负担</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u719" class="ax_default paragraph">
+      <div id="u719" class="ax_default heading_3">
         <div id="u719_div" class=""></div>
         <div id="u719_text" class="text ">
-          <p><span>-- addr的解引用+5</span></p>
+          <p><span>抛开指针-&gt;这种上层语法不谈，AXION本身也是支持对底层“内存地址”的定义与操控，只是在从语法、抽象程度上对传统编程进行了优化</span></p><p><span>虽说只是看似小小的变化，但在世界观、语义层面却是一大步，能减轻不少编程负担</span></p>
         </div>
       </div>
 
@@ -89,23 +81,23 @@
       <div id="u720" class="ax_default paragraph">
         <div id="u720_div" class=""></div>
         <div id="u720_text" class="text ">
+          <p><span>-- addr的解引用+5</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u721" class="ax_default paragraph">
+        <div id="u721_div" class=""></div>
+        <div id="u721_text" class="text ">
           <p><span>&nbsp;--addr所引用的对象 + 5，也就是a+5，所以是15&nbsp; &nbsp;&nbsp; </span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u721" class="ax_default heading_3">
-        <div id="u721_div" class=""></div>
-        <div id="u721_text" class="text ">
-          <p><span>符号简单、逻辑对称、 符合直觉</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u722" class="ax_default paragraph">
+      <div id="u722" class="ax_default heading_3">
         <div id="u722_div" class=""></div>
         <div id="u722_text" class="text ">
-          <p><span>-- 类型签名里用* ，但右值又得用&amp;，很容易搞混搞反（反正我自己每隔一段时间就得搞混一次）</span></p>
+          <p><span>符号简单、逻辑对称、 符合直觉</span></p>
         </div>
       </div>
 
@@ -113,7 +105,7 @@
       <div id="u723" class="ax_default paragraph">
         <div id="u723_div" class=""></div>
         <div id="u723_text" class="text ">
-          <p><span>&nbsp;--addr本身也直接进行地址运算，上文也说过：AXION的指针运算是与类型解耦的，所以不会像C系列那样自动×size）</span></p>
+          <p><span>-- 类型签名里用* ，但右值又得用&amp;，很容易搞混搞反（反正我自己每隔一段时间就得搞混一次）</span></p>
         </div>
       </div>
 
@@ -121,60 +113,60 @@
       <div id="u724" class="ax_default paragraph">
         <div id="u724_div" class=""></div>
         <div id="u724_text" class="text ">
+          <p><span>&nbsp;--addr本身也直接进行地址运算，上文也说过：AXION的指针运算是与类型解耦的，所以不会像C系列那样自动×size）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u725" class="ax_default paragraph">
+        <div id="u725_div" class=""></div>
+        <div id="u725_text" class="text ">
           <p><span>回顾C 和 C++的写法</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u725" class="ax_default line">
-        <img id="u725_img" class="img " src="images/c指针_语法复杂/u93.png"/>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u726" class="ax_default paragraph">
-        <div id="u726_div" class=""></div>
-        <div id="u726_text" class="text ">
-          <p><span>-- 我个人连&amp;和*都很容易搞混，每次都得想半天... </span></p>
-        </div>
+      <div id="u726" class="ax_default line">
+        <img id="u726_img" class="img " src="images/c指针_语法复杂/u94.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u727" class="ax_default paragraph">
         <div id="u727_div" class=""></div>
         <div id="u727_text" class="text ">
+          <p><span>-- 我个人连&amp;和*都很容易搞混，每次都得想半天... </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u728" class="ax_default paragraph">
+        <div id="u728_div" class=""></div>
+        <div id="u728_text" class="text ">
           <p><span>AXION里只有一个引用符~，即可同时承载“取引用”“解引用”两个逻辑</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u728" class="ax_default line">
-        <img id="u728_img" class="img " src="images/c指针_语法复杂/u93.png"/>
+      <div id="u729" class="ax_default line">
+        <img id="u729_img" class="img " src="images/c指针_语法复杂/u94.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u729" class="ax_default paragraph">
-        <div id="u729_div" class=""></div>
-        <div id="u729_text" class="text ">
+      <div id="u730" class="ax_default paragraph">
+        <div id="u730_div" class=""></div>
+        <div id="u730_text" class="text ">
           <p><span>-- addr = a的引用，即0x1000；只有一个符号~ ，优雅</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Table) -->
-      <div id="u730" class="ax_default">
-
-        <!-- Unnamed (Table Cell) -->
-        <div id="u731" class="ax_default table_cell">
-          <img id="u731_img" class="img " src="images/axion_一个符号实现_取引用_解引用/u731.png"/>
-          <div id="u731_text" class="text ">
-            <p><span>任何对象</span></p>
-          </div>
-        </div>
+      <div id="u731" class="ax_default">
 
         <!-- Unnamed (Table Cell) -->
         <div id="u732" class="ax_default table_cell">
           <img id="u732_img" class="img " src="images/axion_一个符号实现_取引用_解引用/u732.png"/>
           <div id="u732_text" class="text ">
-            <p><span>~a </span></p>
+            <p><span>任何对象</span></p>
           </div>
         </div>
 
@@ -182,15 +174,15 @@
         <div id="u733" class="ax_default table_cell">
           <img id="u733_img" class="img " src="images/axion_一个符号实现_取引用_解引用/u733.png"/>
           <div id="u733_text" class="text ">
-            <p><span>a的引用</span></p>
+            <p><span>~a </span></p>
           </div>
         </div>
 
         <!-- Unnamed (Table Cell) -->
-        <div id="u734" class="ax_default">
+        <div id="u734" class="ax_default table_cell">
           <img id="u734_img" class="img " src="images/axion_一个符号实现_取引用_解引用/u734.png"/>
           <div id="u734_text" class="text ">
-            <p><span>仅地址(ADDR)可用</span></p>
+            <p><span>a的引用</span></p>
           </div>
         </div>
 
@@ -198,7 +190,7 @@
         <div id="u735" class="ax_default">
           <img id="u735_img" class="img " src="images/axion_一个符号实现_取引用_解引用/u735.png"/>
           <div id="u735_text" class="text ">
-            <p><span>a~ </span></p>
+            <p><span>仅地址(ADDR)可用</span></p>
           </div>
         </div>
 
@@ -206,29 +198,29 @@
         <div id="u736" class="ax_default">
           <img id="u736_img" class="img " src="images/axion_一个符号实现_取引用_解引用/u736.png"/>
           <div id="u736_text" class="text ">
+            <p><span>a~ </span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u737" class="ax_default">
+          <img id="u737_img" class="img " src="images/axion_一个符号实现_取引用_解引用/u737.png"/>
+          <div id="u737_text" class="text ">
             <p><span>a 所引用的对象、a的解引用；</span></p><p><span><br></span></p><p><span>例如 ~int addr=~a&nbsp; ，现在addr= a的引用&nbsp; </span></p><p><span>那么只需</span><span style="color:#0000FF;">“两边同时解引用”</span><span>就能获得&nbsp; addr~ = a 的语义</span></p><p><span>(addr的解引用就是a、addr所引用的对象就是a)&nbsp; </span></p>
           </div>
         </div>
       </div>
 
       <!-- Unnamed (Curly Bracket) -->
-      <div id="u737" class="ax_default box_1">
-        <img id="u737_img" class="img " src="images/axion_一个符号实现_取引用_解引用/u737.png"/>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
       <div id="u738" class="ax_default box_1">
-        <div id="u738_div" class=""></div>
-        <div id="u738_text" class="text ">
-          <p><span>方法论：</span></p><p><span>抽象了【引用】这个概念为“地址——对象”这样的两点一线模型</span></p><p><span>此时，【取引用、解引用】就变成了“同一个事实的两个切面”——将两种语义统一进同一个意识形态里</span></p><p><span>因此，“连线 + 某一端”即可表示两种语义</span></p>
-        </div>
+        <img id="u738_img" class="img " src="images/axion_一个符号实现_取引用_解引用/u738.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u739" class="ax_default paragraph">
+      <div id="u739" class="ax_default box_1">
         <div id="u739_div" class=""></div>
         <div id="u739_text" class="text ">
-          <p><span>&nbsp;--输出 15&nbsp; </span></p>
+          <p><span>方法论：</span></p><p><span>抽象了【引用】这个概念为“地址——对象”这样的两点一线模型</span></p><p><span>此时，【取引用、解引用】就变成了“同一个事实的两个切面”——将两种语义统一进同一个意识形态里</span></p><p><span>因此，“连线 + 某一端”即可表示两种语义</span></p>
         </div>
       </div>
 
@@ -236,7 +228,7 @@
       <div id="u740" class="ax_default paragraph">
         <div id="u740_div" class=""></div>
         <div id="u740_text" class="text ">
-          <p><span>&nbsp;--所以输出 0x1005 ✔️</span></p>
+          <p><span>&nbsp;--输出 15&nbsp; </span></p>
         </div>
       </div>
 
@@ -244,7 +236,7 @@
       <div id="u741" class="ax_default paragraph">
         <div id="u741_div" class=""></div>
         <div id="u741_text" class="text ">
-          <p><span>-- 输出15 ✔️&nbsp; &nbsp; </span></p>
+          <p><span>&nbsp;--所以输出 0x1005 ✔️</span></p>
         </div>
       </div>
 
@@ -252,7 +244,7 @@
       <div id="u742" class="ax_default paragraph">
         <div id="u742_div" class=""></div>
         <div id="u742_text" class="text ">
-          <p><span>-- 逻辑越复杂，AXION为你减轻的“来自传统编程的心智负担”越大，例如之后的章节“多级指针”里有提到</span></p>
+          <p><span>-- 输出15 ✔️&nbsp; &nbsp; </span></p>
         </div>
       </div>
 
@@ -260,13 +252,21 @@
       <div id="u743" class="ax_default paragraph">
         <div id="u743_div" class=""></div>
         <div id="u743_text" class="text ">
+          <p><span>-- 逻辑越复杂，AXION为你减轻的“来自传统编程的心智负担”越大，例如之后的章节“多级指针”里有提到</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u744" class="ax_default paragraph">
+        <div id="u744_div" class=""></div>
+        <div id="u744_text" class="text ">
           <p><span>&nbsp;--输出 15 ✔️&nbsp; </span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u744" class="ax_default box_1">
-        <div id="u744_div" class=""></div>
+      <div id="u745" class="ax_default box_1">
+        <div id="u745_div" class=""></div>
       </div>
     </div>
   </body>
