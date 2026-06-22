@@ -25,81 +25,97 @@
     <div id="base" class="">
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u4117" class="ax_default paragraph">
-        <div id="u4117_div" class=""></div>
-        <div id="u4117_text" class="text ">
+      <div id="u4115" class="ax_default paragraph">
+        <div id="u4115_div" class=""></div>
+        <div id="u4115_text" class="text ">
           <p style="font-size:14px;"><span>可以看到，AXION里一切，都是有底层世界观和方法论支持的，是透明的、公开的逻辑</span></p><p style="font-size:18px;"><span style="font-size:14px;">更重要的是与用户“</span><span>认知对齐</span><span style="font-size:14px;">”的（每个语义都精准对应认知）</span></p><p style="font-size:14px;"><span>所以你可以大胆相信、并把一切托付给它，放心地基于它构筑更高级别的应用</span></p><p style="font-size:14px;"><span><br></span></p><p style="font-size:14px;"><span>而不是像传统编程里那种搞出一大堆“值类型”“引用类型”“对象类型”...莫名其妙的概念</span></p><p style="font-size:14px;"><span>再去强制规定某些对象是&quot;不可变对象&quot;、无法原地修改、只能另外申请内存......... ——脱离人类底层的认知模型，完全是设计者的擅作主张的逻辑噪音</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u4118" class="ax_default label">
-        <div id="u4118_div" class=""></div>
-        <div id="u4118_text" class="text ">
+      <div id="u4116" class="ax_default label">
+        <div id="u4116_div" class=""></div>
+        <div id="u4116_text" class="text ">
           <p><span>对比传统编程的CONST</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u4119" class="ax_default line">
-        <img id="u4119_img" class="img " src="images/c指针_语法复杂/u94.png"/>
+      <div id="u4117" class="ax_default line">
+        <img id="u4117_img" class="img " src="images/c指针_语法复杂/u94.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u4120" class="ax_default heading_3">
-        <div id="u4120_div" class=""></div>
-        <div id="u4120_text" class="text ">
+      <div id="u4118" class="ax_default heading_3">
+        <div id="u4118_div" class=""></div>
+        <div id="u4118_text" class="text ">
           <p><span>几乎所有传统编程里，都有CONST这个关键字，用来定义一个常量，例如常见的：</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u4121" class="ax_default box_1">
-        <div id="u4121_div" class=""></div>
-        <div id="u4121_text" class="text ">
+      <div id="u4119" class="ax_default box_1">
+        <div id="u4119_div" class=""></div>
+        <div id="u4119_text" class="text ">
           <p><span>const int MAX = 100;</span></p><p><span><br></span></p><p><span>Java：</span></p><p><span>final int MAX = 100;（关键字不同，含义相同）</span></p><p><span><br></span></p><p><span>C#：</span></p><p><span>const int MAX = 100;</span></p><p><span><br></span></p><p><span>JavaScript：</span></p><p><span>const MAX = 100;</span></p><p><span><br></span></p><p><span>Rust：</span></p><p><span>const MAX: i32 = 100;</span></p><p><span><br></span></p><p><span>Go：</span></p><p><span>const MAX = 100</span></p><p><span><br></span></p><p><span>Python（无 const，惯例全大写表示常量）：</span></p><p><span>MAX = 100</span></p><p><span><br></span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u4122" class="ax_default paragraph">
-        <div id="u4122_div" class=""></div>
-        <div id="u4122_text" class="text ">
+      <div id="u4120" class="ax_default paragraph">
+        <div id="u4120_div" class=""></div>
+        <div id="u4120_text" class="text ">
           <p><span>传统编程语言这样做的理由是：</span></p>
         </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4121" class="ax_default paragraph">
+        <div id="u4121_div" class=""></div>
+        <div id="u4121_text" class="text ">
+          <p><span style="color:#1E1E1E;">告诉编译器/解释器：这个值不会变，</span><span style="color:#0000FF;">可以优化（如编译期替换）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Vertical Line) -->
+      <div id="u4122" class="ax_default line">
+        <img id="u4122_img" class="img " src="images/包装-人类最基本的认知模式/u2677.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
       <div id="u4123" class="ax_default paragraph">
         <div id="u4123_div" class=""></div>
         <div id="u4123_text" class="text ">
-          <p><span style="color:#1E1E1E;">告诉编译器/解释器：这个值不会变，</span><span style="color:#0000FF;">可以优化（如编译期替换）</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Vertical Line) -->
-      <div id="u4124" class="ax_default line">
-        <img id="u4124_img" class="img " src="images/包装-人类最基本的认知模式/u2679.png"/>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4125" class="ax_default paragraph">
-        <div id="u4125_div" class=""></div>
-        <div id="u4125_text" class="text ">
           <p><span>告诉其他程序员：这玩意是固定的，别乱改</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Vertical Line) -->
-      <div id="u4126" class="ax_default line">
-        <img id="u4126_img" class="img " src="images/包装-人类最基本的认知模式/u2679.png"/>
+      <div id="u4124" class="ax_default line">
+        <img id="u4124_img" class="img " src="images/包装-人类最基本的认知模式/u2677.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u4127" class="ax_default heading_3">
+      <div id="u4125" class="ax_default heading_3">
+        <div id="u4125_div" class=""></div>
+        <div id="u4125_text" class="text ">
+          <p><span>在此之前你可能不觉得COSNT有任何问题</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4126" class="ax_default heading_3">
+        <div id="u4126_div" class=""></div>
+        <div id="u4126_text" class="text ">
+          <p><span>但现在，AXION用解释符告诉你更好的解决方案——</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4127" class="ax_default box_1">
         <div id="u4127_div" class=""></div>
         <div id="u4127_text" class="text ">
-          <p><span>在此之前你可能不觉得COSNT有任何问题</span></p>
+          <p><span>int max :: 100</span></p>
         </div>
       </div>
 
@@ -107,23 +123,20 @@
       <div id="u4128" class="ax_default heading_3">
         <div id="u4128_div" class=""></div>
         <div id="u4128_text" class="text ">
-          <p><span>但现在，AXION用解释符告诉你更好的解决方案——</span></p>
+          <p><span>天然不占独立内存，节约访存成本</span></p><p><span>而传统编程的CONST是要在数据段分配独立内存的，每次都得访存才能获得值，有额外的指令开销</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4129" class="ax_default box_1">
-        <div id="u4129_div" class=""></div>
-        <div id="u4129_text" class="text ">
-          <p><span>int max :: 100</span></p>
-        </div>
+      <!-- Unnamed (Vertical Line) -->
+      <div id="u4129" class="ax_default line">
+        <img id="u4129_img" class="img " src="images/解释值_与_传统const的区别/u4129.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u4130" class="ax_default heading_3">
+      <div id="u4130" class="ax_default paragraph">
         <div id="u4130_div" class=""></div>
         <div id="u4130_text" class="text ">
-          <p><span>天然不占独立内存，节约访存成本</span></p><p><span>而传统编程的CONST是要在数据段分配独立内存的，每次都得访存才能获得值，有额外的指令开销</span></p>
+          <p><span>天然就是内联指令，无需额外优化</span></p><p><span>而不是像传统编程那样，编译器在背后偷偷给你搞什么“优化、编译期替换”</span></p>
         </div>
       </div>
 
@@ -132,53 +145,40 @@
         <img id="u4131_img" class="img " src="images/解释值_与_传统const的区别/u4131.png"/>
       </div>
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4132" class="ax_default paragraph">
-        <div id="u4132_div" class=""></div>
-        <div id="u4132_text" class="text ">
-          <p><span>天然就是内联指令，无需额外优化</span></p><p><span>而不是像传统编程那样，编译器在背后偷偷给你搞什么“优化、编译期替换”</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Vertical Line) -->
-      <div id="u4133" class="ax_default line">
-        <img id="u4133_img" class="img " src="images/解释值_与_传统const的区别/u4133.png"/>
-      </div>
-
       <!-- Unnamed (Connector) -->
-      <div id="u4134" class="ax_default connector">
-        <img id="u4134_seg0" class="img " src="images/解释值_与_传统const的区别/u4134_seg0.png" alt="u4134_seg0"/>
-        <img id="u4134_seg1" class="img " src="images/解释值_与_传统const的区别/u4134_seg1.png" alt="u4134_seg1"/>
-        <img id="u4134_seg2" class="img " src="images/axion_指针的语义与实现/u851_seg2.png" alt="u4134_seg2"/>
-        <div id="u4134_text" class="text " style="display:none; visibility: hidden">
+      <div id="u4132" class="ax_default connector">
+        <img id="u4132_seg0" class="img " src="images/解释值_与_传统const的区别/u4132_seg0.png" alt="u4132_seg0"/>
+        <img id="u4132_seg1" class="img " src="images/解释值_与_传统const的区别/u4132_seg1.png" alt="u4132_seg1"/>
+        <img id="u4132_seg2" class="img " src="images/总结：传统编程的指针缺陷/u937_seg2.png" alt="u4132_seg2"/>
+        <div id="u4132_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u4135" class="ax_default heading_3">
-        <div id="u4135_div" class=""></div>
-        <div id="u4135_text" class="text ">
+      <div id="u4133" class="ax_default heading_3">
+        <div id="u4133_div" class=""></div>
+        <div id="u4133_text" class="text ">
           <p><span>天然不可变，AXION里的“值不可变”是物理层面真的没得改</span></p><p><span>而不是像传统编程那样故意拦着你：明明有独立地址，但编译器故意不允许你改，来营造出一种“值不可变”的假象</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Vertical Line) -->
-      <div id="u4136" class="ax_default line">
-        <img id="u4136_img" class="img " src="images/解释值_与_传统const的区别/u4136.png"/>
+      <div id="u4134" class="ax_default line">
+        <img id="u4134_img" class="img " src="images/解释值_与_传统const的区别/u4134.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u4137" class="ax_default paragraph">
-        <div id="u4137_div" class=""></div>
-        <div id="u4137_text" class="text ">
+      <div id="u4135" class="ax_default paragraph">
+        <div id="u4135_div" class=""></div>
+        <div id="u4135_text" class="text ">
           <p><span>--不是“max是一个初值为100的变量” 而是“max就是100！”</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u4138" class="ax_default box_1">
-        <div id="u4138_div" class=""></div>
+      <div id="u4136" class="ax_default box_1">
+        <div id="u4136_div" class=""></div>
       </div>
     </div>
   </body>
