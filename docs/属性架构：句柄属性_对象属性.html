@@ -1,0 +1,990 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>属性架构：句柄属性+对象属性</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/属性架构：句柄属性_对象属性/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/属性架构：句柄属性_对象属性/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4485" class="ax_default box_1">
+        <div id="u4485_div" class=""></div>
+        <div id="u4485_text" class="text ">
+          <p><span>身份证</span></p><p><span>爱好</span></p><p><span>职业</span></p><p><span>....</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4486" class="ax_default box_1">
+        <div id="u4486_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4487" class="ax_default box_1">
+        <div id="u4487_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4488" class="ax_default paragraph">
+        <div id="u4488_div" class=""></div>
+        <div id="u4488_text" class="text ">
+          <p><span>不要瞎想，直接从“提问里”寻找答案 ——“ 这个人有哪些属性？”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4489" class="ax_default paragraph">
+        <div id="u4489_div" class=""></div>
+        <div id="u4489_text" class="text ">
+          <p><span>根本区别 ：</span></p><p><span>架构级分类：“这些属性所处的架构地位”是存在哪、处在哪的问题，是长期稳定的</span></p><p><span>应用级分类：“这些属性是用来描述什么的” 是一个应用层面、业务场景的问题，千奇百怪的属性太多，分类是分不完的</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u4490" class="ax_default line">
+        <img id="u4490_img" class="img " src="images/c指针_语法复杂/u94.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4491" class="ax_default label">
+        <div id="u4491_div" class=""></div>
+        <div id="u4491_text" class="text ">
+          <p><span>首先，需区分【架构级分类】vs【应用级分类】——先确定这种方向性的逻辑</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4492" class="ax_default heading_3">
+        <div id="u4492_div" class=""></div>
+        <div id="u4492_text" class="text ">
+          <p><span>文件类型： PE 和 EXE的区别</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4493" class="ax_default box_1">
+        <div id="u4493_div" class=""></div>
+        <div id="u4493_text" class="text ">
+          <p><span>普通用户平时看到的可执行程序，都是.exe后缀的，你可以说它的文件类型是 exe 类型</span></p><p><span>但实际在最底层的工具链里，程序是打包成&nbsp; &quot;Linux的ELF\windows的PE&quot;&nbsp; 格式的，也可以说是 ELF\PE类型的文件</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4494" class="ax_default paragraph">
+        <div id="u4494_div" class=""></div>
+        <div id="u4494_text" class="text ">
+          <p><span>Linux的ELF\ Windows 的PE 是格式标准 —— 架构级</span></p><p><span>.exe是具体文件的类型 —— 应用级</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4495" class="ax_default paragraph">
+        <div id="u4495_div" class=""></div>
+        <div id="u4495_text" class="text ">
+          <p><span>它们是一对多的关系，例如</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4496" class="ax_default paragraph">
+        <div id="u4496_div" class=""></div>
+        <div id="u4496_text" class="text ">
+          <p><span>PE 格式的文件，可承载多个文件类型：.exe 可执行程序、.dll 动态链接库、.sys 驱动程序、.scr 屏幕保护程序、.ocx ActiveX 控件、.cpl控制面板扩展、.efi UEFI 固件程序.......</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4497" class="ax_default paragraph">
+        <div id="u4497_div" class=""></div>
+        <div id="u4497_text" class="text ">
+          <p><span>所有上面这些文件，打开来看内部结构都是一样的 PE 格式，区别只在于“后缀名 或 文件类型字段”告诉系统&quot;怎么用这个文件&quot; ——双击运行还是加载成驱动</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Table) -->
+      <div id="u4498" class="ax_default">
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u4499" class="ax_default table_cell">
+          <img id="u4499_img" class="img " src="images/属性架构：句柄属性_对象属性/u4499.png"/>
+          <div id="u4499_text" class="text ">
+            <p><span>事务类型</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u4500" class="ax_default table_cell">
+          <img id="u4500_img" class="img " src="images/属性架构：句柄属性_对象属性/u4500.png"/>
+          <div id="u4500_text" class="text ">
+            <p><span>请假/场地租借/调班....</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u4501" class="ax_default">
+          <img id="u4501_img" class="img " src="images/属性架构：句柄属性_对象属性/u4499.png"/>
+          <div id="u4501_text" class="text ">
+            <p><span>时间</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u4502" class="ax_default">
+          <img id="u4502_img" class="img " src="images/属性架构：句柄属性_对象属性/u4500.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u4503" class="ax_default">
+          <img id="u4503_img" class="img " src="images/属性架构：句柄属性_对象属性/u4499.png"/>
+          <div id="u4503_text" class="text ">
+            <p><span>申请人</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u4504" class="ax_default">
+          <img id="u4504_img" class="img " src="images/属性架构：句柄属性_对象属性/u4500.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u4505" class="ax_default">
+          <img id="u4505_img" class="img " src="images/属性架构：句柄属性_对象属性/u4499.png"/>
+          <div id="u4505_text" class="text ">
+            <p><span>详细说明</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u4506" class="ax_default">
+          <img id="u4506_img" class="img " src="images/属性架构：句柄属性_对象属性/u4500.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u4507" class="ax_default">
+          <img id="u4507_img" class="img " src="images/属性架构：句柄属性_对象属性/u4507.png"/>
+          <div id="u4507_text" class="text ">
+            <p><span>审批结果</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u4508" class="ax_default">
+          <img id="u4508_img" class="img " src="images/属性架构：句柄属性_对象属性/u4508.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4509" class="ax_default heading_3">
+        <div id="u4509_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4510" class="ax_default heading_3">
+        <div id="u4510_div" class=""></div>
+        <div id="u4510_text" class="text ">
+          <p><span>同样一个单据类型，能用来存储多种具体事务类型：请假、调班、场地.....</span></p><p><span>相当于.exe .dll .sys.....</span></p><p><span>相当于 姓名、年龄...这些所谓的【固有属性/个体属性】；或是 天空下、树林边...这些所谓的【上下文属性/环境属性】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u4511" class="ax_default connector">
+        <img id="u4511_seg0" class="img " src="images/属性架构：句柄属性_对象属性/u4511_seg0.png" alt="u4511_seg0"/>
+        <img id="u4511_seg1" class="img " src="images/属性架构：句柄属性_对象属性/u4511_seg1.png" alt="u4511_seg1"/>
+        <img id="u4511_seg2" class="img " src="images/解释符的_多种场景_与_区分/u3288_seg2.png" alt="u4511_seg2"/>
+        <div id="u4511_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4512" class="ax_default heading_3">
+        <div id="u4512_div" class=""></div>
+        <div id="u4512_text" class="text ">
+          <p><span>XX公司 行政业务单</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u4513" class="ax_default connector">
+        <img id="u4513_seg0" class="img " src="images/属性架构：句柄属性_对象属性/u4513_seg0.png" alt="u4513_seg0"/>
+        <img id="u4513_seg1" class="img " src="images/axion_指针的语义与实现/u773_seg1.png" alt="u4513_seg1"/>
+        <img id="u4513_seg2" class="img " src="images/对象类型_与_对象属性/u2365_seg2.png" alt="u4513_seg2"/>
+        <div id="u4513_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4514" class="ax_default paragraph">
+        <div id="u4514_div" class=""></div>
+        <div id="u4514_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">【行政业务单】是表单的本身的结构类型</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">相当于PE/ELF的地位</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">相当于我们真正需要的、架构层面的那个【XX属性】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4515" class="ax_default heading_3">
+        <div id="u4515_div" class=""></div>
+        <div id="u4515_text" class="text ">
+          <p><span>也就是说，迄今为止，一切关于属性分类想法都是在同一框架内打转</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4516" class="ax_default paragraph">
+        <div id="u4516_div" class=""></div>
+        <div id="u4516_text" class="text ">
+          <p><span style="font-family:'微软雅黑';font-weight:400;">固有属性、上下文属性、环境属性、类型属性、个体属性、或是其他花里胡哨的命名....</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">它们 就像.exe .dll .sys....就像请假、场地、调班.....一样， 无非只是在解释“这个属性是用来描述什么的”—— </span><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">它们的唯一区别仅仅是“描述内容不同”，架构地位完全一致</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4517" class="ax_default heading_3">
+        <div id="u4517_div" class=""></div>
+        <div id="u4517_text" class="text ">
+          <p><span>若不改变思路，在这个方向上无论多么绞尽脑汁地去归纳与抽象，都是无意义的 </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4518" class="ax_default heading_3">
+        <div id="u4518_div" class=""></div>
+        <div id="u4518_text" class="text ">
+          <p><span>但这个区别直接解释还是过于抽象，我们先从两个常见案例中体会差别</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4519" class="ax_default heading_3">
+        <div id="u4519_div" class=""></div>
+        <div id="u4519_text" class="text ">
+          <p><span>业务类型： 表单 与 事务的区别</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4520" class="ax_default heading_3">
+        <div id="u4520_div" class=""></div>
+        <div id="u4520_text" class="text ">
+          <p><span>行政业务单 —— 架构级</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4521" class="ax_default heading_3">
+        <div id="u4521_div" class=""></div>
+        <div id="u4521_text" class="text ">
+          <p><span>请假、场地、调班......——应用级</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4522" class="ax_default paragraph">
+        <div id="u4522_div" class=""></div>
+        <div id="u4522_text" class="text ">
+          <p><span style="font-family:'微软雅黑';font-weight:400;">设想一下：</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">1、首先你需要艰难地从“</span><span style="font-family:'微软雅黑';font-weight:400;">固有属性、上下文属性、类型属性、个体属性</span><span style="font-family:'微软雅黑';font-weight:400;">...”这些命名里选出几个最合适的，这完全就是没任何实际意义的文字游戏</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">2、未来难保不会出现新的观察视角、新的属性类型，那难道又得对【底层架构】动刀吗? ——底层架构经不起这种频繁修改</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4523" class="ax_default paragraph">
+        <div id="u4523_div" class=""></div>
+        <div id="u4523_text" class="text ">
+          <p><span>这个&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4524" class="ax_default paragraph">
+        <div id="u4524_div" class=""></div>
+        <div id="u4524_text" class="text ">
+          <p><span>人&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4525" class="ax_default heading_3">
+        <div id="u4525_div" class=""></div>
+        <div id="u4525_text" class="text ">
+          <p><span>依附于【人】这个Object的， 命名为【对象属性】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4526" class="ax_default heading_3">
+        <div id="u4526_div" class=""></div>
+        <div id="u4526_text" class="text ">
+          <p><span>依附于【这个/the/this】句柄的，命名为【句柄属性】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u4527" class="ax_default connector">
+        <img id="u4527_seg0" class="img " src="images/属性架构：句柄属性_对象属性/u4527_seg0.png" alt="u4527_seg0"/>
+        <img id="u4527_seg1" class="img " src="images/属性架构：句柄属性_对象属性/u4527_seg1.png" alt="u4527_seg1"/>
+        <img id="u4527_seg2" class="img " src="images/从解释传递，再看值与对象/u3694_seg2.png" alt="u4527_seg2"/>
+        <div id="u4527_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u4528" class="ax_default connector">
+        <img id="u4528_seg0" class="img " src="images/属性架构：句柄属性_对象属性/u4528_seg0.png" alt="u4528_seg0"/>
+        <img id="u4528_seg1" class="img " src="images/句柄属性的用法示例/u2101_seg1.png" alt="u4528_seg1"/>
+        <img id="u4528_seg2" class="img " src="images/axion_指针的语义与实现/u769_seg2.png" alt="u4528_seg2"/>
+        <div id="u4528_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4529" class="ax_default box_1">
+        <div id="u4529_div" class=""></div>
+        <div id="u4529_text" class="text ">
+          <p><span>姓名</span></p><p><span>性别</span></p><p><span>年龄</span></p><p><span>身份证</span></p><p><span>爱好</span></p><p><span>职业</span></p><p><span>...</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4530" class="ax_default label">
+        <div id="u4530_div" class=""></div>
+        <div id="u4530_text" class="text ">
+          <p><span>探索【属性架构】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u4531" class="ax_default line">
+        <img id="u4531_img" class="img " src="images/c指针_语法复杂/u94.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4532" class="ax_default heading_3">
+        <div id="u4532_div" class=""></div>
+        <div id="u4532_text" class="text ">
+          <p><span>有哪些属性？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4533" class="ax_default paragraph">
+        <div id="u4533_div" class=""></div>
+        <div id="u4533_text" class="text ">
+          <p><span>The</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4534" class="ax_default paragraph">
+        <div id="u4534_div" class=""></div>
+        <div id="u4534_text" class="text ">
+          <p><span>Person</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u4535" class="ax_default line">
+        <img id="u4535_img" class="img " src="images/属性架构：句柄属性_对象属性/u4535.png"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u4536" class="ax_default line">
+        <img id="u4536_img" class="img " src="images/属性架构：句柄属性_对象属性/u4536.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4537" class="ax_default paragraph">
+        <div id="u4537_div" class=""></div>
+        <div id="u4537_text" class="text ">
+          <p><span>最关键、最难、最易混淆的问题来了</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4538" class="ax_default paragraph">
+        <div id="u4538_div" class=""></div>
+        <div id="u4538_text" class="text ">
+          <p><span style="font-family:'微软雅黑';font-weight:400;">我们从</span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">不承诺</span><span style="font-family:'微软雅黑';font-weight:400;"> Type Person 里，一定包含：姓名、年龄、性别； 或一定不包含：坐标位置 、上下文.....</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4539" class="ax_default paragraph">
+        <div id="u4539_div" class=""></div>
+        <div id="u4539_text" class="text ">
+          <p><span>到这一步，你可能都觉得我在说废话 : &quot;一个the 一个 person那么明显的逻辑——我不比你懂？&quot; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4540" class="ax_default heading_3">
+        <div id="u4540_div" class=""></div>
+        <div id="u4540_text" class="text ">
+          <p><span>那你有没有想过，为什么我不直接这样写？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4541" class="ax_default paragraph">
+        <div id="u4541_div" class=""></div>
+        <div id="u4541_text" class="text ">
+          <p><span>这个&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4542" class="ax_default paragraph">
+        <div id="u4542_div" class=""></div>
+        <div id="u4542_text" class="text ">
+          <p><span>人&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4543" class="ax_default heading_3">
+        <div id="u4543_div" class=""></div>
+        <div id="u4543_text" class="text ">
+          <p><span>依附于【人】这个Object的， 命名为【对象属性】</span></p><p><span>例如：姓名、年龄、性别....</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4544" class="ax_default heading_3">
+        <div id="u4544_div" class=""></div>
+        <div id="u4544_text" class="text ">
+          <p><span>依附于【这个/the/this】句柄的，命名为【句柄属性】</span></p><p><span>例如：天空下、树林边、地球上坐标...</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u4545" class="ax_default connector">
+        <img id="u4545_seg0" class="img " src="images/属性架构：句柄属性_对象属性/u4545_seg0.png" alt="u4545_seg0"/>
+        <img id="u4545_seg1" class="img " src="images/改对象_or_改值/u1350_seg1.png" alt="u4545_seg1"/>
+        <img id="u4545_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u343_seg2.png" alt="u4545_seg2"/>
+        <div id="u4545_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u4546" class="ax_default connector">
+        <img id="u4546_seg0" class="img " src="images/属性架构：句柄属性_对象属性/u4546_seg0.png" alt="u4546_seg0"/>
+        <img id="u4546_seg1" class="img " src="images/属性架构：句柄属性_对象属性/u4546_seg1.png" alt="u4546_seg1"/>
+        <img id="u4546_seg2" class="img " src="images/解释型句柄_与_内存/u3363_seg2.png" alt="u4546_seg2"/>
+        <div id="u4546_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4547" class="ax_default heading_3">
+        <div id="u4547_div" class=""></div>
+        <div id="u4547_text" class="text ">
+          <p><span>有哪些属性？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4548" class="ax_default paragraph">
+        <div id="u4548_div" class=""></div>
+        <div id="u4548_text" class="text ">
+          <p><span>The</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4549" class="ax_default paragraph">
+        <div id="u4549_div" class=""></div>
+        <div id="u4549_text" class="text ">
+          <p><span>Person</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u4550" class="ax_default line">
+        <img id="u4550_img" class="img " src="images/属性架构：句柄属性_对象属性/u4535.png"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u4551" class="ax_default line">
+        <img id="u4551_img" class="img " src="images/属性架构：句柄属性_对象属性/u4536.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4552" class="ax_default paragraph">
+        <div id="u4552_div" class=""></div>
+        <div id="u4552_text" class="text ">
+          <p><span>因为姓名、年龄、性别、坐标 、上下文.....都是客观事实，没区别啊 —— 我们现在是在建模，你光回答问题、陈述客观事实是没有意义的</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4553" class="ax_default paragraph">
+        <div id="u4553_div" class=""></div>
+        <div id="u4553_text" class="text ">
+          <p><span style="font-family:'微软雅黑';font-weight:400;">反过来说：如果人主观上选择</span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">不维护</span><span style="font-family:'微软雅黑';font-weight:400;">，那么这个【客观上的特性与关系】将</span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">不会成为【属性】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4554" class="ax_default label">
+        <div id="u4554_div" class=""></div>
+        <div id="u4554_text" class="text ">
+          <p><span>属性 Property</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u4555" class="ax_default line">
+        <img id="u4555_img" class="img " src="images/c指针_语法复杂/u94.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4556" class="ax_default paragraph">
+        <div id="u4556_div" class=""></div>
+        <div id="u4556_text" class="text ">
+          <p><span style="font-family:'微软雅黑';font-weight:400;">不是客观上的特性与关系，而是需人主动维护的【</span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">数据与接口</span><span style="font-family:'微软雅黑';font-weight:400;">】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4557" class="ax_default box_1">
+        <div id="u4557_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4558" class="ax_default paragraph">
+        <div id="u4558_div" class=""></div>
+        <div id="u4558_text" class="text ">
+          <p><span>现在在回头看之前的属性定义</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4559" class="ax_default heading_3">
+        <div id="u4559_div" class=""></div>
+        <div id="u4559_text" class="text ">
+          <p><span>这个定义告诉我们：既然属性是主观维护的，那我甚至可以把【上下文属性】存进【对象属性】内</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4560" class="ax_default paragraph">
+        <div id="u4560_div" class=""></div>
+        <div id="u4560_text" class="text ">
+          <p><span>—— 这个属性定义，正是我们解决【属性架构】的 Key </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4561" class="ax_default box_1">
+        <div id="u4561_div" class=""></div>
+        <div id="u4561_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">Property</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">姓名</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">性别</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">年龄</span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">天空下</span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">树林边</span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">....</span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">getCONTEXT( ) </span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Curly Bracket) -->
+      <div id="u4562" class="ax_default box_1">
+        <img id="u4562_img" class="img " src="images/属性架构：句柄属性_对象属性/u4562.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4563" class="ax_default heading_3">
+        <div id="u4563_div" class=""></div>
+        <div id="u4563_text" class="text ">
+          <p><span>用于描述 这个人本身特征的，也可取名叫&quot;固有属性、个体属性&quot;.....都不重要，名字随便编</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Curly Bracket) -->
+      <div id="u4564" class="ax_default box_1">
+        <img id="u4564_img" class="img " src="images/属性架构：句柄属性_对象属性/u4564.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4565" class="ax_default heading_3">
+        <div id="u4565_div" class=""></div>
+        <div id="u4565_text" class="text ">
+          <p><span>用于描述 环境与上下文的，也可以取名为“环境属性/上下文属性&quot;， 这是你的自由</span></p><p><span>虽然客观上有3个关系，但我主观上只想维护两个，所以那就只有2个上下文属性</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Curly Bracket) -->
+      <div id="u4566" class="ax_default box_1">
+        <img id="u4566_img" class="img " src="images/属性架构：句柄属性_对象属性/u4564.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4567" class="ax_default heading_3">
+        <div id="u4567_div" class=""></div>
+        <div id="u4567_text" class="text ">
+          <p><span>也可以用 getCONTEXT( ) 接口动态获取上下文（因为人的位置会随时改变）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4568" class="ax_default heading_3">
+        <div id="u4568_div" class=""></div>
+        <div id="u4568_text" class="text ">
+          <p><span>Type Person</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4569" class="ax_default paragraph">
+        <div id="u4569_div" class=""></div>
+        <div id="u4569_text" class="text ">
+          <p><span>——这一下是不是把你从之前的思维黑洞里拉出来？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4570" class="ax_default paragraph">
+        <div id="u4570_div" class=""></div>
+        <div id="u4570_text" class="text ">
+          <p><span>类比上文的PE/exe；表单/事务，具体应用级的分类是没有任何意义的 —— 因为它们在架构层面都只属于【对象属性】而已</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4571" class="ax_default box_1">
+        <div id="u4571_div" class=""></div>
+        <div id="u4571_text" class="text ">
+          <p><span>在游戏开发里</span></p><p><span>实际上很多时候我们就是直接把 posX，posY 直接存在 player内部的，它们都是player的【对象属性】，只是用来描述位置坐标</span></p><p><span>你要是按“固有属性、上下文属性”这种架构抽象，那就简单问题复杂化、自讨苦吃了....</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4572" class="ax_default heading_3">
+        <div id="u4572_div" class=""></div>
+        <div id="u4572_text" class="text ">
+          <p><span>同理，除了Type Person，你也可以把这些属性都存到句柄【这个/the/this】里</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4573" class="ax_default heading_3">
+        <div id="u4573_div" class=""></div>
+        <div id="u4573_text" class="text ">
+          <p><span>这种世界观就相当于：你认为Person是基本类，本身只是对客观事实的映射</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u4574" class="ax_default icon">
+        <img id="u4574_img" class="img " src="images/object-property/u1876.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4575" class="ax_default heading_3">
+        <div id="u4575_div" class=""></div>
+        <div id="u4575_text" class="text ">
+          <p><span>payload</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4576" class="ax_default heading_3">
+        <div id="u4576_div" class=""></div>
+        <div id="u4576_text" class="text ">
+          <p><span>所以回答问题时，压根不用考虑Type Person本身的定义，它是个人/东西/物体都无所谓了</span></p><p><span>而是在【这个/the/this】这个句柄上，自由包装任何能想到的属性就行了</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u4577" class="ax_default icon">
+        <img id="u4577_img" class="img " src="images/object-property/u1876.png"/>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u4578" class="ax_default icon">
+        <img id="u4578_img" class="img " src="images/object-property/u1876.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4579" class="ax_default paragraph">
+        <div id="u4579_div" class=""></div>
+        <div id="u4579_text" class="text ">
+          <p><span>Type Person</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4580" class="ax_default paragraph">
+        <div id="u4580_div" class=""></div>
+        <div id="u4580_text" class="text ">
+          <p><span>payload</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4581" class="ax_default heading_3">
+        <div id="u4581_div" class=""></div>
+        <div id="u4581_text" class="text ">
+          <p><span>日常生活中的不假思索的回答，对应的正是这个模型：</span></p><p><span>我们压根就没去纠结Person是怎么定义的（只知道是眼前这个人形物体）</span></p><p><span>所有属性都是自由的添加的，想到什么就说什么，没有限制；</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4582" class="ax_default label">
+        <div id="u4582_div" class=""></div>
+        <div id="u4582_text" class="text ">
+          <p><span>AXION 属性架构 = 句柄属性 + 对象属性</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u4583" class="ax_default line">
+        <img id="u4583_img" class="img " src="images/c指针_语法复杂/u94.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4584" class="ax_default box_1">
+        <div id="u4584_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4585" class="ax_default paragraph">
+        <div id="u4585_div" class=""></div>
+        <div id="u4585_text" class="text ">
+          <p><span>这个&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4586" class="ax_default paragraph">
+        <div id="u4586_div" class=""></div>
+        <div id="u4586_text" class="text ">
+          <p><span>人&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4587" class="ax_default heading_3">
+        <div id="u4587_div" class=""></div>
+        <div id="u4587_text" class="text ">
+          <p><span>依附于【人】这个Object的， 命名为【对象属性】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4588" class="ax_default heading_3">
+        <div id="u4588_div" class=""></div>
+        <div id="u4588_text" class="text ">
+          <p><span>依附于【这个/the】句柄的，命名为【句柄属性】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u4589" class="ax_default connector">
+        <img id="u4589_seg0" class="img " src="images/属性架构：句柄属性_对象属性/u4589_seg0.png" alt="u4589_seg0"/>
+        <img id="u4589_seg1" class="img " src="images/属性架构：句柄属性_对象属性/u4527_seg1.png" alt="u4589_seg1"/>
+        <img id="u4589_seg2" class="img " src="images/从解释传递，再看值与对象/u3694_seg2.png" alt="u4589_seg2"/>
+        <div id="u4589_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u4590" class="ax_default connector">
+        <img id="u4590_seg0" class="img " src="images/axion指针传递性_vs_多级指针/u298_seg0.png" alt="u4590_seg0"/>
+        <img id="u4590_seg1" class="img " src="images/解释型句柄_与_内存/u3372_seg1.png" alt="u4590_seg1"/>
+        <img id="u4590_seg2" class="img " src="images/axion指针传递性_vs_多级指针/u298_seg2.png" alt="u4590_seg2"/>
+        <div id="u4590_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4591" class="ax_default heading_3">
+        <div id="u4591_div" class=""></div>
+        <div id="u4591_text" class="text ">
+          <p><span>有哪些属性？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4592" class="ax_default paragraph">
+        <div id="u4592_div" class=""></div>
+        <div id="u4592_text" class="text ">
+          <p><span>The</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4593" class="ax_default paragraph">
+        <div id="u4593_div" class=""></div>
+        <div id="u4593_text" class="text ">
+          <p><span>Person</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u4594" class="ax_default line">
+        <img id="u4594_img" class="img " src="images/属性架构：句柄属性_对象属性/u4535.png"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u4595" class="ax_default line">
+        <img id="u4595_img" class="img " src="images/属性架构：句柄属性_对象属性/u4536.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4596" class="ax_default heading_3">
+        <div id="u4596_div" class=""></div>
+        <div id="u4596_text" class="text ">
+          <p><span>注意不要重蹈覆辙：</span></p><p><span>架构考虑的是“属性存在哪”的问题，而不是“属性用来描述什么”的问题——“用于描述上下文的属性”也可以存在【对象属性】里</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4597" class="ax_default box_1">
+        <div id="u4597_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4598" class="ax_default paragraph">
+        <div id="u4598_div" class=""></div>
+        <div id="u4598_text" class="text ">
+          <p><span>Property</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4599" class="ax_default paragraph">
+        <div id="u4599_div" class=""></div>
+        <div id="u4599_text" class="text ">
+          <p><span>姓名</span></p><p><span>性别</span></p><p><span>年龄</span></p><p><span>坐标</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4600" class="ax_default heading_3">
+        <div id="u4600_div" class=""></div>
+        <div id="u4600_text" class="text ">
+          <p><span>当然，也有可能均匀分布：对象属性里一部分，句柄属性里一部分</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u4601" class="ax_default icon">
+        <img id="u4601_img" class="img " src="images/object-property/u1876.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4602" class="ax_default heading_3">
+        <div id="u4602_div" class=""></div>
+        <div id="u4602_text" class="text ">
+          <p><span>此时回答问题时就得同时考虑【句柄属性】【对象属性】了</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4603" class="ax_default box_1">
+        <div id="u4603_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u4604" class="ax_default icon">
+        <img id="u4604_img" class="img " src="images/object-property/u1876.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4605" class="ax_default paragraph">
+        <div id="u4605_div" class=""></div>
+        <div id="u4605_text" class="text ">
+          <p><span>Property</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4606" class="ax_default paragraph">
+        <div id="u4606_div" class=""></div>
+        <div id="u4606_text" class="text ">
+          <p><span>姓名</span></p><p><span>性别</span></p><p><span>年龄</span></p><p><span>坐标</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4607" class="ax_default paragraph">
+        <div id="u4607_div" class=""></div>
+        <div id="u4607_text" class="text ">
+          <p><span>Payload</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4608" class="ax_default heading_3">
+        <div id="u4608_div" class=""></div>
+        <div id="u4608_text" class="text ">
+          <p><span>the Person -&gt;</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4609" class="ax_default heading_3">
+        <div id="u4609_div" class=""></div>
+        <div id="u4609_text" class="text ">
+          <p><span>the Person -&gt;</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4610" class="ax_default heading_3">
+        <div id="u4610_div" class=""></div>
+        <div id="u4610_text" class="text ">
+          <p><span>句柄属性：自由包装</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4611" class="ax_default heading_3">
+        <div id="u4611_div" class=""></div>
+        <div id="u4611_text" class="text ">
+          <p><span>对象属性：取决于Type Person的定义</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4612" class="ax_default heading_3">
+        <div id="u4612_div" class=""></div>
+        <div id="u4612_text" class="text ">
+          <p><span>句柄属性：自由包装</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4613" class="ax_default heading_3">
+        <div id="u4613_div" class=""></div>
+        <div id="u4613_text" class="text ">
+          <p><span>例如我认为眼前这个人形物体就是 Person，除此之外不附加任何属性</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4614" class="ax_default box_1">
+        <div id="u4614_div" class=""></div>
+      </div>
+    </div>
+  </body>
+</html>

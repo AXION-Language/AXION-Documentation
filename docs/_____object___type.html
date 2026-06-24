@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>定义对象 Object 与 Type</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/_____object___type/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/_____object___type/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u4290" class="ax_default line">
+        <img id="u4290_img" class="img " src="images/c指针_语法复杂/u94.png"/>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u4291" class="ax_default icon">
+        <img id="u4291_img" class="img " src="images/object-property/u1876.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4292" class="ax_default paragraph">
+        <div id="u4292_div" class=""></div>
+        <div id="u4292_text" class="text ">
+          <p><span>姓名:&nbsp; 张三</span></p><p><span>年龄：25</span></p><p><span>身份证：xxxxx</span></p><p><span>爱好：唱跳RAP</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Curly Bracket) -->
+      <div id="u4293" class="ax_default box_1">
+        <img id="u4293_img" class="img " src="images/任何属性都是向内查找/u2587.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4294" class="ax_default paragraph">
+        <div id="u4294_div" class=""></div>
+        <div id="u4294_text" class="text ">
+          <p><span>Object</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4295" class="ax_default paragraph">
+        <div id="u4295_div" class=""></div>
+        <div id="u4295_text" class="text ">
+          <p><span>Property</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4296" class="ax_default heading_3">
+        <div id="u4296_div" class=""></div>
+        <div id="u4296_text" class="text ">
+          <p><span>于是，所有人都会认为 Property是Object 之外的东西， 给你一种“向外查找”的错觉</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4297" class="ax_default paragraph">
+        <div id="u4297_div" class=""></div>
+        <div id="u4297_text" class="text ">
+          <p><span style="font-family:'微软雅黑';font-weight:400;color:#008000;">--不把这个问题搞清楚，想直接去定义Object是几乎不可能的；</span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#008000;">最后一定会绕进“万物皆对象，对象都有属性”这种文字游戏里</span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#008000;"><br></span></p><p><span style="font-family:'微软雅黑';font-weight:400;color:#008000;">-- 实际在建模层面，</span><span style="font-family:'微软雅黑';font-weight:400;color:#0000FF;">所有属性都是“向内查找”的</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4298" class="ax_default heading_3">
+        <div id="u4298_div" class=""></div>
+        <div id="u4298_text" class="text ">
+          <p><span>迄今为止，Object是缺乏科学定义的</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4299" class="ax_default heading_3">
+        <div id="u4299_div" class=""></div>
+        <div id="u4299_text" class="text ">
+          <p><span>传统编程里：虚假的口号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4300" class="ax_default paragraph">
+        <div id="u4300_div" class=""></div>
+        <div id="u4300_text" class="text ">
+          <p><span style="font-family:'微软雅黑';font-weight:400;">所谓“万物皆对象”只是虚假的口号，只是继承自顶层一个故意取名叫class Object的东西，纯文字游戏</span></p><p><span style="font-family:'微软雅黑';font-weight:400;"><br></span></p><p><span style="font-family:'微软雅黑';font-weight:400;">当然有些人会反驳</span><span style="font-family:'微软雅黑';font-weight:400;">：”必须Object类型才能有属性，这不就是Object数据类型的价值吗？怎么能算文字游戏呢？”</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">但这不就是“脱裤子放屁”吗？自己划一道界限说：object、array、struct...算对象，int、string....不算对象.....那肯定是有差异啊</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4301" class="ax_default heading_3">
+        <div id="u4301_div" class=""></div>
+        <div id="u4301_text" class="text ">
+          <p><span>哲学里：模糊的表达，错误的误导</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4302" class="ax_default paragraph">
+        <div id="u4302_div" class=""></div>
+        <div id="u4302_text" class="text ">
+          <p><span>谁都知道 对象是“作为研究目标的人或事物”“有属性”.... </span></p><p><span>但没有意义啊，只是一句大家都知道的“正确的废话”根本无法拿来建模，只能拿来回答问题，例如这张图 ——</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4303" class="ax_default paragraph">
+        <div id="u4303_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4304" class="ax_default paragraph">
+        <div id="u4304_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4305" class="ax_default paragraph">
+        <div id="u4305_div" class=""></div>
+        <div id="u4305_text" class="text ">
+          <p><span>但现在你应该明白：这只是“回答问题(复述事实)”，而不是“建模”</span></p><p><span>所以就容易得到这样错误的结论</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4306" class="ax_default heading_3">
+        <div id="u4306_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4307" class="ax_default heading_3">
+        <div id="u4307_div" class=""></div>
+        <div id="u4307_text" class="text ">
+          <p><span>这个 指导思想 对 定义Object 同样适用：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4308" class="ax_default heading_3">
+        <div id="u4308_div" class=""></div>
+        <div id="u4308_text" class="text ">
+          <p><span>单纯用来指代一个【客观存在】已经有太多类似的概念了</span></p><p><span>例如：东西、实体、事物、个体、数据、物体、实例.......</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4309" class="ax_default heading_3">
+        <div id="u4309_div" class=""></div>
+        <div id="u4309_text" class="text ">
+          <p><span>所以不要让【Object】也掺和进去“和稀泥”，而是应该跳出【客观存在】这个框架，从主观上赋予Object全新的定义</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u4310" class="ax_default line">
+        <img id="u4310_img" class="img " src="images/c指针_语法复杂/u94.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4311" class="ax_default heading_3">
+        <div id="u4311_div" class=""></div>
+        <div id="u4311_text" class="text ">
+          <p><span>指导思想</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4312" class="ax_default paragraph">
+        <div id="u4312_div" class=""></div>
+        <div id="u4312_text" class="text ">
+          <p><span>关键方法论</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4313" class="ax_default box_1">
+        <div id="u4313_div" class=""></div>
+        <div id="u4313_text" class="text ">
+          <p><span style="font-family:'微软雅黑';font-weight:400;">既然【客观事实】已存在，那就别去破坏它，而是把【属性】定义为一种</span><span style="font-family:'微软雅黑';font-weight:400;">【主观认知】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4314" class="ax_default paragraph">
+        <div id="u4314_div" class=""></div>
+        <div id="u4314_text" class="text ">
+          <p><span>在定义“什么是【属性】”的时候，我们说过：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4315" class="ax_default heading_3">
+        <div id="u4315_div" class=""></div>
+        <div id="u4315_text" class="text ">
+          <p><span>方向：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4316" class="ax_default paragraph">
+        <div id="u4316_div" class=""></div>
+        <div id="u4316_text" class="text ">
+          <p><span>既然都说 Object 有 Property，那我们就基于它进行建模</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4317" class="ax_default label">
+        <div id="u4317_div" class=""></div>
+        <div id="u4317_text" class="text ">
+          <p><span>对象不是【客观存在】，而是人类主观认知层面的【关系模型】，体现在三方面：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u4318" class="ax_default line">
+        <img id="u4318_img" class="img " src="images/c指针_语法复杂/u94.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4319" class="ax_default heading_3">
+        <div id="u4319_div" class=""></div>
+        <div id="u4319_text" class="text ">
+          <p><span>对象Object</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4320" class="ax_default label">
+        <div id="u4320_div" class=""></div>
+        <div id="u4320_text" class="text ">
+          <p><span>一、Object的结构与边界由Type决定（二者强绑定）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4321" class="ax_default label">
+        <div id="u4321_div" class=""></div>
+        <div id="u4321_text" class="text ">
+          <p><span>二、Object = Payload + Property</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4322" class="ax_default label">
+        <div id="u4322_div" class=""></div>
+        <div id="u4322_text" class="text ">
+          <p><span>下面分别进行说明</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4323" class="ax_default paragraph">
+        <div id="u4323_div" class=""></div>
+        <div id="u4323_text" class="text ">
+          <p><span>三、Object可以作为Payload继续拥有属性，形成更高Type的Object，这就是【包装链】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4324" class="ax_default box_1">
+        <div id="u4324_div" class=""></div>
+      </div>
+    </div>
+  </body>
+</html>
