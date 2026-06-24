@@ -25,10 +25,18 @@
     <div id="base" class="">
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2743" class="ax_default heading_3">
+      <div id="u2742" class="ax_default heading_3">
+        <div id="u2742_div" class=""></div>
+        <div id="u2742_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">假设我们想给个 int 附加属性：</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">ver</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">update</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">random</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">compare</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">...</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2743" class="ax_default paragraph">
         <div id="u2743_div" class=""></div>
         <div id="u2743_text" class="text ">
-          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">假设我们想给个 int 附加属性：</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">ver</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">update</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">random</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">compare</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">...</span></p>
+          <p><span>如果你希望这个属性跟着整个对象一起移动、赋值、拷贝....</span></p><p><span>那就放到【对象属性】里（定义在class T里）</span></p>
         </div>
       </div>
 
@@ -36,57 +44,57 @@
       <div id="u2744" class="ax_default paragraph">
         <div id="u2744_div" class=""></div>
         <div id="u2744_text" class="text ">
-          <p><span>如果你希望这个属性跟着整个对象一起移动、赋值、拷贝....</span></p><p><span>那就放到【对象属性】里（定义在class T里）</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2745" class="ax_default paragraph">
-        <div id="u2745_div" class=""></div>
-        <div id="u2745_text" class="text ">
           <p><span>你可以灵活地将它们分配给 句柄属性 or 对象属性，</span><span style="color:#0000FF;">没有硬性标准，完全取决于个人需求</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2746" class="ax_default box_1">
-        <div id="u2746_div" class=""></div>
+      <div id="u2745" class="ax_default box_1">
+        <div id="u2745_div" class=""></div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2747" class="ax_default box_1">
-        <div id="u2747_div" class=""></div>
-        <div id="u2747_text" class="text ">
+      <div id="u2746" class="ax_default box_1">
+        <div id="u2746_div" class=""></div>
+        <div id="u2746_text" class="text ">
           <p><span>#compare(..){...}</span></p><p><span>#random(..){...}</span></p><p><span>#update(..){...}</span></p><p><span>#int ver : 0</span></p><p><span style="color:#0000FF;">int</span><span> a : 0</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2748" class="ax_default label">
-        <div id="u2748_div" class=""></div>
-        <div id="u2748_text" class="text ">
+      <div id="u2747" class="ax_default label">
+        <div id="u2747_div" class=""></div>
+        <div id="u2747_text" class="text ">
           <p><span>两类属性的相互转化&nbsp; 与 注意事项</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u2749" class="ax_default line">
-        <img id="u2749_img" class="img " src="images/c指针_语法复杂/u94.png"/>
+      <div id="u2748" class="ax_default line">
+        <img id="u2748_img" class="img " src="images/c指针_语法复杂/u94.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2750" class="ax_default heading_3">
-        <div id="u2750_div" class=""></div>
-        <div id="u2750_text" class="text ">
+      <div id="u2749" class="ax_default heading_3">
+        <div id="u2749_div" class=""></div>
+        <div id="u2749_text" class="text ">
           <p><span>如果你希望这些属性仅依附于a ，右边对象随便怎么更换都不影响、仍然保持int类型</span></p><p><span>那就放到【句柄属性】里</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2751" class="ax_default box_1">
+      <div id="u2750" class="ax_default box_1">
+        <div id="u2750_div" class=""></div>
+        <div id="u2750_text" class="text ">
+          <p><span style="color:#0000FF;">#</span><span>compare(..){...}</span></p><p><span style="color:#0000FF;">#</span><span>random(..){...}</span></p><p><span style="color:#0000FF;">#</span><span>update(..){...}</span></p><p><span style="color:#0000FF;">#</span><span>int ver : 0</span></p><p><span style="color:#0000FF;">int</span><span> </span><span style="color:#0000FF;">payload</span></p><p><span><br></span></p><p><span>onNew(int v){this = v}</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2751" class="ax_default paragraph">
         <div id="u2751_div" class=""></div>
         <div id="u2751_text" class="text ">
-          <p><span style="color:#0000FF;">#</span><span>compare(..){...}</span></p><p><span style="color:#0000FF;">#</span><span>random(..){...}</span></p><p><span style="color:#0000FF;">#</span><span>update(..){...}</span></p><p><span style="color:#0000FF;">#</span><span>int ver : 0</span></p><p><span style="color:#0000FF;">int</span><span> </span><span style="color:#0000FF;">payload</span></p><p><span><br></span></p><p><span>onNew(int v){this = v}</span></p>
+          <p><span>class MyInt</span></p>
         </div>
       </div>
 
@@ -94,23 +102,23 @@
       <div id="u2752" class="ax_default paragraph">
         <div id="u2752_div" class=""></div>
         <div id="u2752_text" class="text ">
-          <p><span>class MyInt</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2753" class="ax_default paragraph">
-        <div id="u2753_div" class=""></div>
-        <div id="u2753_text" class="text ">
           <p><span>使用时</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u2754" class="ax_default box_1">
+      <div id="u2753" class="ax_default box_1">
+        <div id="u2753_div" class=""></div>
+        <div id="u2753_text" class="text ">
+          <p><span style="color:#0000FF;">MyInt</span><span> a ：new </span><span style="color:#0000FF;">MyInt(5)</span></p><p><span style="color:#0000FF;"><br></span></p><p><span>a</span><span style="color:#0000FF;">@</span><span>ver</span></p><p><span>a</span><span style="color:#0000FF;">@</span><span>update()</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2754" class="ax_default heading_3">
         <div id="u2754_div" class=""></div>
         <div id="u2754_text" class="text ">
-          <p><span style="color:#0000FF;">MyInt</span><span> a ：new </span><span style="color:#0000FF;">MyInt(5)</span></p><p><span style="color:#0000FF;"><br></span></p><p><span>a</span><span style="color:#0000FF;">@</span><span>ver</span></p><p><span>a</span><span style="color:#0000FF;">@</span><span>update()</span></p>
+          <p><span style="font-family:'微软雅黑';font-weight:400;">在class 内部，ver、update 是 </span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">int payload的 #句柄属性</span></p>
         </div>
       </div>
 
@@ -118,14 +126,6 @@
       <div id="u2755" class="ax_default heading_3">
         <div id="u2755_div" class=""></div>
         <div id="u2755_text" class="text ">
-          <p><span style="font-family:'微软雅黑';font-weight:400;">在class 内部，ver、update 是 </span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">int payload的 #句柄属性</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u2756" class="ax_default heading_3">
-        <div id="u2756_div" class=""></div>
-        <div id="u2756_text" class="text ">
           <p><span style="font-family:'微软雅黑';font-weight:400;">若脱离了class，在外部访问时，则它们都是</span><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">MyInt 的@对象属性</span></p>
         </div>
       </div>
