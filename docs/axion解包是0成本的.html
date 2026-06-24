@@ -25,145 +25,23 @@
     <div id="base" class="">
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u4522" class="ax_default heading_3">
-        <div id="u4522_div" class=""></div>
-        <div id="u4522_text" class="text ">
+      <div id="u4538" class="ax_default heading_3">
+        <div id="u4538_div" class=""></div>
+        <div id="u4538_text" class="text ">
           <p><span>有些传统编程语言，会给基本类型写死一个包装类，也会有类似的叫“拆箱”过程</span></p><p><span>例如java里int的包装类是class Intger</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Horizontal Line) -->
-      <div id="u4523" class="ax_default line">
-        <img id="u4523_img" class="img " src="images/axion___/u4060.png"/>
+      <div id="u4539" class="ax_default line">
+        <img id="u4539_img" class="img " src="images/axion___/u4060.png"/>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u4524" class="ax_default box_1">
-        <div id="u4524_div" class=""></div>
-        <div id="u4524_text" class="text ">
-          <p><span>new Integer(1) + 1 // 自动拆箱为int再做加法，方便开发者，不用手动取.value了</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4525" class="ax_default heading_3">
-        <div id="u4525_div" class=""></div>
-        <div id="u4525_text" class="text ">
-          <p><span>传统编程的【拆箱】是有成本的</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4526" class="ax_default paragraph">
-        <div id="u4526_div" class=""></div>
-        <div id="u4526_text" class="text ">
-          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">【拆箱】时：</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">Java 编译器会在字节码里插入一个 intValue() 方法调用，把 Integer 对象里的那个 int value提取出来，然后才能做加法</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4527" class="ax_default box_1">
-        <div id="u4527_div" class=""></div>
-        <div id="u4527_text" class="text ">
-          <p><span>new AngleInt(1) + 1&nbsp; -- 解包为int payload + 1&nbsp; </span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4528" class="ax_default heading_3">
-        <div id="u4528_div" class=""></div>
-        <div id="u4528_text" class="text ">
-          <p><span>在编译时，该指令就已经被转化为 int payload + 1 了，运行时0成本</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4529" class="ax_default heading_3">
-        <div id="u4529_div" class=""></div>
-        <div id="u4529_text" class="text ">
-          <p><span>-- 看到这个intValue 和 value 你就应该懂了</span></p><p><span>传统编程所谓的“包装”：只是一堆普通成员堆在一起 ，并没有形成 Payload-Property 这个关系结构 —— 所以只是文字游戏</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Horizontal Line) -->
-      <div id="u4530" class="ax_default line">
-        <img id="u4530_img" class="img " src="images/axion___/u4060.png"/>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4531" class="ax_default heading_3">
-        <div id="u4531_div" class=""></div>
-        <div id="u4531_text" class="text ">
-          <p><span>AXION的【解包】是0成本的</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4532" class="ax_default heading_3">
-        <div id="u4532_div" class=""></div>
-        <div id="u4532_text" class="text ">
-          <p><span>class Integer</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4533" class="ax_default box_1">
-        <div id="u4533_div" class=""></div>
-        <div id="u4533_text" class="text ">
-          <p><span>....</span></p><p><span>value</span></p><p><span>intValue()</span></p><p><span>...</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4534" class="ax_default heading_3">
-        <div id="u4534_div" class=""></div>
-        <div id="u4534_text" class="text ">
-          <p><span>其原理是：</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4535" class="ax_default paragraph">
-        <div id="u4535_div" class=""></div>
-        <div id="u4535_text" class="text ">
-          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">另外，传统编程里，类似Integer这样的所谓“包装类”是写死的、固定的、编译器单独处理的，没有机制层面的支持</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">你也没法自己写个包装类，然后像前文那样自己定义个angle，并指望编译器给你自动“拆箱”</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4536" class="ax_default box_1">
-        <div id="u4536_div" class=""></div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4537" class="ax_default box_1">
-        <div id="u4537_div" class=""></div>
-        <div id="u4537_text" class="text ">
-          <p><span>1</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4538" class="ax_default heading_3">
-        <div id="u4538_div" class=""></div>
-        <div id="u4538_text" class="text ">
-          <p><span>int</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4539" class="ax_default heading_3">
-        <div id="u4539_div" class=""></div>
-        <div id="u4539_text" class="text ">
-          <p><span>angle</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u4540" class="ax_default heading_3">
+      <div id="u4540" class="ax_default box_1">
         <div id="u4540_div" class=""></div>
         <div id="u4540_text" class="text ">
-          <p><span>a</span></p>
+          <p><span>new Integer(1) + 1 // 自动拆箱为int再做加法，方便开发者，不用手动取.value了</span></p>
         </div>
       </div>
 
@@ -171,25 +49,23 @@
       <div id="u4541" class="ax_default heading_3">
         <div id="u4541_div" class=""></div>
         <div id="u4541_text" class="text ">
-          <p><span>payload</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Connector) -->
-      <div id="u4542" class="ax_default connector">
-        <img id="u4542_seg0" class="img " src="images/axion解包是0成本的/u4542_seg0.png" alt="u4542_seg0"/>
-        <img id="u4542_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u298_seg1.png" alt="u4542_seg1"/>
-        <img id="u4542_seg2" class="img " src="images/axion___/u4089_seg2.png" alt="u4542_seg2"/>
-        <div id="u4542_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
+          <p><span>传统编程的【拆箱】是有成本的</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u4543" class="ax_default heading_3">
+      <div id="u4542" class="ax_default paragraph">
+        <div id="u4542_div" class=""></div>
+        <div id="u4542_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">【拆箱】时：</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">Java 编译器会在字节码里插入一个 intValue() 方法调用，把 Integer 对象里的那个 int value提取出来，然后才能做加法</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4543" class="ax_default box_1">
         <div id="u4543_div" class=""></div>
         <div id="u4543_text" class="text ">
-          <p><span>包装链</span></p>
+          <p><span>new AngleInt(1) + 1&nbsp; -- 解包为int payload + 1&nbsp; </span></p>
         </div>
       </div>
 
@@ -197,14 +73,138 @@
       <div id="u4544" class="ax_default heading_3">
         <div id="u4544_div" class=""></div>
         <div id="u4544_text" class="text ">
+          <p><span>在编译时，该指令就已经被转化为 int payload + 1 了，运行时0成本</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4545" class="ax_default heading_3">
+        <div id="u4545_div" class=""></div>
+        <div id="u4545_text" class="text ">
+          <p><span>-- 看到这个intValue 和 value 你就应该懂了</span></p><p><span>传统编程所谓的“包装”：只是一堆普通成员堆在一起 ，并没有形成 Payload-Property 这个关系结构 —— 所以只是文字游戏</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u4546" class="ax_default line">
+        <img id="u4546_img" class="img " src="images/axion___/u4060.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4547" class="ax_default heading_3">
+        <div id="u4547_div" class=""></div>
+        <div id="u4547_text" class="text ">
+          <p><span>AXION的【解包】是0成本的</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4548" class="ax_default heading_3">
+        <div id="u4548_div" class=""></div>
+        <div id="u4548_text" class="text ">
+          <p><span>class Integer</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4549" class="ax_default box_1">
+        <div id="u4549_div" class=""></div>
+        <div id="u4549_text" class="text ">
+          <p><span>....</span></p><p><span>value</span></p><p><span>intValue()</span></p><p><span>...</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4550" class="ax_default heading_3">
+        <div id="u4550_div" class=""></div>
+        <div id="u4550_text" class="text ">
+          <p><span>其原理是：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4551" class="ax_default paragraph">
+        <div id="u4551_div" class=""></div>
+        <div id="u4551_text" class="text ">
+          <p><span style="font-family:'微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight:700;">另外，传统编程里，类似Integer这样的所谓“包装类”是写死的、固定的、编译器单独处理的，没有机制层面的支持</span></p><p><span style="font-family:'微软雅黑';font-weight:400;">你也没法自己写个包装类，然后像前文那样自己定义个angle，并指望编译器给你自动“拆箱”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4552" class="ax_default box_1">
+        <div id="u4552_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4553" class="ax_default box_1">
+        <div id="u4553_div" class=""></div>
+        <div id="u4553_text" class="text ">
+          <p><span>1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4554" class="ax_default heading_3">
+        <div id="u4554_div" class=""></div>
+        <div id="u4554_text" class="text ">
+          <p><span>int</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4555" class="ax_default heading_3">
+        <div id="u4555_div" class=""></div>
+        <div id="u4555_text" class="text ">
+          <p><span>angle</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4556" class="ax_default heading_3">
+        <div id="u4556_div" class=""></div>
+        <div id="u4556_text" class="text ">
+          <p><span>a</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4557" class="ax_default heading_3">
+        <div id="u4557_div" class=""></div>
+        <div id="u4557_text" class="text ">
+          <p><span>payload</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u4558" class="ax_default connector">
+        <img id="u4558_seg0" class="img " src="images/axion解包是0成本的/u4558_seg0.png" alt="u4558_seg0"/>
+        <img id="u4558_seg1" class="img " src="images/axion指针传递性_vs_多级指针/u298_seg1.png" alt="u4558_seg1"/>
+        <img id="u4558_seg2" class="img " src="images/axion___/u4089_seg2.png" alt="u4558_seg2"/>
+        <div id="u4558_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4559" class="ax_default heading_3">
+        <div id="u4559_div" class=""></div>
+        <div id="u4559_text" class="text ">
+          <p><span>包装链</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4560" class="ax_default heading_3">
+        <div id="u4560_div" class=""></div>
+        <div id="u4560_text" class="text ">
           <p><span>解包是在编译时完成的</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u4545" class="ax_default paragraph">
-        <div id="u4545_div" class=""></div>
-        <div id="u4545_text" class="text ">
+      <div id="u4561" class="ax_default paragraph">
+        <div id="u4561_div" class=""></div>
+        <div id="u4561_text" class="text ">
           <p><span>另外，上文只举了一层包装的例子，但实际上无论多少层包装，也和 int + int 性能完全一致</span></p>
         </div>
       </div>
