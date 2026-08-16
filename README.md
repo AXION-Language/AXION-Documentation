@@ -1,4 +1,5 @@
 [点击查看文档，逐步更新中，所以每次打开建议Ctrl+F5清缓存](https://axion-language.github.io/AXION-Documentation/)  
+..2026-8-17 最近遇到一点问题亟需处理，这几天恢复更新
 <br>
 
 
